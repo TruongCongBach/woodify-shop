@@ -1,0 +1,55 @@
+# Node modules
+**/node_modules
+.pnpm-store
+
+# Build outputs
+**/.next
+**/dist
+**/build
+.next
+out
+turbo
+.cache
+
+# Logs
+**/*.log
+**/logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+**/.env
+**/.env.*
+.env
+.env.*
+
+# IDEs
+.vscode
+.idea
+
+# Sanity build output
+**/sanity-build
+**/.sanity
+
+# Optional: test output
+coverage
+**/coverage
+
+# Optional: vitest cache
+**/node_modules/.vitest
+**/.vitest
+
+# Optional: play/preview/temp folders
+**/tmp
+**/temp
+**/.turbo
+
+# Optional: local Firebase/Emulators
+.firebase/
+.firebaserc

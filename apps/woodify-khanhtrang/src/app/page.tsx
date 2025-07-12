@@ -1,0 +1,137 @@
+'use client'
+
+import React from 'react'
+import { HeroSlider } from '@woodify/ui/components/HeroSlider'
+import { ProductSection } from '@/components/product-section'
+import { ProductCarousel } from '@/components/product-carousel'
+import { Product } from '@/data/productsMock'
+
+const slides = [
+	{
+		image: 'https://picsum.photos/1200/600?random=1',
+		title: 'Bàn ghế phòng khách',
+		subtitle: 'Bền – Đẹp – Tiện nghi',
+		cta: 'Xem ngay',
+		ctaHref: '/ban-ghe',
+	},
+	{
+		image: 'https://picsum.photos/1200/600?random=2',
+		title: 'Tủ thờ cao cấp',
+		subtitle: 'Tinh xảo từng chi tiết',
+		cta: 'Khám phá',
+		ctaHref: '/tu-tho',
+	},
+	{
+		image: 'https://picsum.photos/1200/600?random=3',
+		title: 'Vách thờ nghệ thuật',
+		cta: 'Tìm hiểu',
+		ctaHref: '/vach-tho',
+	},
+]
+
+const allProducts: Product[] = [
+	{
+		id: '1',
+		name: 'Bàn ghế A',
+		defaultImage: 'https://picsum.photos/400/300?random=4',
+		images: ['https://picsum.photos/400/300?random=4'],
+		price: '3200000',
+		description: 'Bộ bàn ghế chất liệu gỗ sồi tự nhiên',
+		categoryId: 'ban-ghe',
+		attributes: [],
+		url: '/product/1',
+		tags: ['new']
+	},
+	{
+		id: '2',
+		name: 'Tủ thờ B',
+		defaultImage: 'https://picsum.photos/400/300?random=5',
+		images: ['https://picsum.photos/400/300?random=5'],
+		price: '5500000',
+		description: 'Tủ thờ chạm trổ tinh xảo, gỗ gõ đỏ',
+		categoryId: 'tu-tho',
+		attributes: [],
+		url: '/product/2',
+		tags: ['sale']
+	},
+	{
+		id: '3',
+		name: 'Vách thờ C',
+		defaultImage: 'https://picsum.photos/400/300?random=6',
+		images: ['https://picsum.photos/400/300?random=6'],
+		price: '4800000',
+		description: 'Vách thờ gỗ công nghiệp MDF phủ veneer',
+		categoryId: 'vach-tho',
+		attributes: [],
+		url: '/product/3',
+		tags: []
+	},
+	{
+		id: '4',
+		name: 'Tủ thờ Hưng Gia',
+		defaultImage: 'https://picsum.photos/400/300?random=7',
+		images: ['https://picsum.photos/400/300?random=7'],
+		price: '7600000',
+		description: 'Tủ thờ kiểu dáng truyền thống, gỗ hương',
+		categoryId: 'tu-tho',
+		attributes: [],
+		url: '/product/4',
+		tags: ['freeship']
+	},
+	{
+		id: '5',
+		name: 'Bàn ghế Minh Quốc',
+		defaultImage: 'https://picsum.photos/400/300?random=8',
+		images: ['https://picsum.photos/400/300?random=8'],
+		price: '9100000',
+		description: 'Bàn ghế phong cách Minh Quốc hiện đại',
+		categoryId: 'ban-ghe',
+		attributes: [],
+		url: '/product/5',
+		tags: ['new', 'sale']
+	},
+	{
+		id: '6',
+		name: 'Vách ngăn CNC',
+		defaultImage: 'https://picsum.photos/400/300?random=9',
+		images: ['https://picsum.photos/400/300?random=9'],
+		price: '2500000',
+		description: 'Vách ngăn CNC hiện đại, dễ thi công',
+		categoryId: 'vach-tho',
+		attributes: [],
+		url: '/product/6',
+		tags: ['sale']
+	}
+]
+
+const featuredProducts = allProducts
+const featuredChairs = allProducts.filter(p => p.categoryId === 'ban-ghe')
+const featuredAltProducts = allProducts.filter(p => p.categoryId !== 'ban-ghe')
+
+export default function Home() {
+	return (
+		<div>
+			<HeroSlider slides={slides} />
+
+			<div className="max-w-7xl mx-auto px-4 py-10 space-y-16">
+				<ProductCarousel
+					products={featuredProducts}
+					title="Sản phẩm nổi bật"
+					viewAllHref="/san-pham"
+				/>
+
+				<ProductSection
+					title="Bàn ghế nổi bật"
+					products={featuredChairs}
+					viewAllHref="/ban-ghe"
+				/>
+
+				<ProductSection
+					title="Sản phẩm khác"
+					products={featuredAltProducts}
+					viewAllHref="/san-pham"
+				/>
+			</div>
+		</div>
+	)
+}
