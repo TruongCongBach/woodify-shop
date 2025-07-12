@@ -30,7 +30,8 @@ import { HomeIcon } from '@heroicons/react/24/outline'
 type Props = {
 	category: Category
 }
-export default function CategoryPageClient({ category }: Props) {
+export default function CategoryPageClient(props: Props) {
+	const { category } = props
 	const allProducts = productsMock.filter(p => p.categoryId === category.id)
 	const filters = buildFilters(allProducts)
 

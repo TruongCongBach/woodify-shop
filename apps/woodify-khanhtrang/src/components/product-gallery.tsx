@@ -4,8 +4,7 @@ import * as React from 'react'
 import {
 	Carousel,
 	CarouselContent,
-	CarouselItem, CarouselNext, CarouselPrevious,
-	// Không cần Prev/Next ở main, chỉ dùng trên thumbnail
+	CarouselItem
 } from '@woodify/ui/components/carousel'
 import type { CarouselApi } from '@woodify/ui/components/carousel'
 
