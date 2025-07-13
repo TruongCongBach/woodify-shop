@@ -2,7 +2,6 @@
 'use client';
 import React from 'react';
 import { ProductCard } from './product-card';
-import { Product } from '@/data/productsMock'
 
 export const ProductGrid = ({
 	products,

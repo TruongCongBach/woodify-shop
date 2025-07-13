@@ -1,5 +1,3 @@
-import { Product } from "@/data/productsMock"
-
 export type FilterOption = { label: string; value: string }
 export type Filter = {
 	key: string       // 'size', 'material', 'price', …

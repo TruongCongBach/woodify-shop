@@ -1,4 +1,3 @@
-import { Product } from '@/data/productsMock'
 import { getTagColor } from '@/utils/getTagColor'
 import { formatPrice } from '@/utils/formatPrice'
 

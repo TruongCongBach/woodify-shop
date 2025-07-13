@@ -4,11 +4,8 @@ import {
 	Carousel,
 	CarouselContent,
 	CarouselItem,
-	CarouselNext,
-	CarouselPrevious,
 } from '@woodify/ui/components/carousel'
 import { ProductCard } from '@/components/product-card'
-import { Product } from '@/data/productsMock'
 import Autoplay from 'embla-carousel-autoplay'
 import Link from 'next/link'
 

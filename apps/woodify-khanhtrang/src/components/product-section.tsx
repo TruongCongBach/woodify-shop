@@ -3,7 +3,6 @@
 
 import React from 'react'
 import { ProductCard } from './product-card'
-import { Product } from '@/data/productsMock'
 import Link from 'next/link'
 
 export interface ProductSectionProps {
