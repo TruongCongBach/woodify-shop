@@ -10,10 +10,10 @@ import {
 } from '@woodify/ui/components/breadcrumb'
 import { ProductGallery } from '@/components/product-gallery'
 import { ProductCard } from '@/components/product-card'
-import { productsMock } from '@/data/productsMock'
-import { categoriesMock } from '@/data/categoriesMock'
 import { formatPrice } from '@/utils/formatPrice'
 import { HomeIcon } from '@heroicons/react/24/outline'
+import PRODUCTS from '@/data/products'
+import Link from 'next/link'
 
 const reviews = [
 	{ id: 1, author: 'Nguyễn A', rating: 5, comment: 'Rất đẹp!' },
@@ -21,8 +21,8 @@ const reviews = [
 ]
 
 export default function ProductPageClient() {
-	const { productId } = useParams() as {productId: string}
-	const product = productsMock.find(p => p.id === productId)
+	const { productUrl } = useParams() as {productUrl: string}
+	const product = PRODUCTS.find(p => p.url === productUrl)
 	const [qty, setQty] = useState(1)
 
 	if (!product) {
@@ -30,13 +30,12 @@ export default function ProductPageClient() {
 			tại.</div>
 	}
 
-	const category = categoriesMock.find(c => c.id === product.categoryId)
-	const relatedProducts = productsMock
+	const relatedProducts = PRODUCTS
 	.filter(p => p.id !== product.id && p.categoryId === product.categoryId)
 	.slice(0, 4)
 
 	return (
-		<div className="container mx-auto px-4 py-8 space-y-12">
+		<div className="container mx-auto px-4 py-8 space-y-12 bg-gray-100/70">
 			{/* Breadcrumb */}
 			<Breadcrumb>
 				<BreadcrumbList>
@@ -59,27 +58,14 @@ export default function ProductPageClient() {
 				<div className="space-y-5">
 					<h1 className="text-3xl font-bold">{product.name}</h1>
 					<p className="text-2xl text-red-600 font-semibold">{formatPrice(product.price)}</p>
-					<div className="flex items-center space-x-3">
-						<label htmlFor="qty" className="text-sm font-medium">Số lượng:</label>
-						<input
-							id="qty"
-							type="number"
-							min={1}
-							value={qty}
-							onChange={e => setQty(Number(e.target.value))}
-							className="w-20 border rounded px-2 py-1"
-						/>
-					</div>
-					<button className="w-full bg-primary text-white p-3 rounded hover:bg-primary-dark transition">
-						Thêm vào giỏ hàng
-					</button>
+					{product?.shortDescription && <div className="text-gray-700" dangerouslySetInnerHTML={{__html: product?.shortDescription}}/>}
 				</div>
 			</div>
 
 			{/* Description */}
 			<div className="border-t pt-6">
 				<h2 className="text-xl font-semibold mb-2">Mô tả sản phẩm</h2>
-				<p className="text-gray-700">{product.description}</p>
+				<div className="text-gray-700" dangerouslySetInnerHTML={{__html: product.description}}/>
 			</div>
 
 			{/* Reviews */}
@@ -106,7 +92,9 @@ export default function ProductPageClient() {
 					<h2 className="text-2xl font-semibold mb-4">Sản phẩm liên quan</h2>
 					<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
 						{relatedProducts.map(p => (
-							<ProductCard key={p.id} product={p}/>
+							<Link href={`/product/${p.url}`} key={p.id}>
+								<ProductCard product={p}/>
+							</Link>
 						))}
 					</div>
 				</div>

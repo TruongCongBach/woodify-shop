@@ -21,7 +21,7 @@ type Props = {
 
 export const ProductCarousel = ({ title, products, viewAllHref, tags }: Props) => {
 	return (
-		<section className="space-y-4">
+		<section className="space-y-4 mb-0">
 			{/* Title + Xem tất cả */}
 			<div className="flex items-center justify-between">
 				<h2 className="text-xl sm:text-2xl font-semibold">{title}</h2>

@@ -21,7 +21,7 @@ export const ProductSection = ({
 
 
 	return (
-		<section className="py-12 max-w-7xl mx-auto px-4">
+		<section className="py-12 max-w-7xl mx-auto px-4 mb-0">
 			<div className="flex items-center justify-between mb-6">
 				<h2 className="text-2xl font-bold">{title}</h2>
 				{viewAllHref && (
@@ -35,7 +35,7 @@ export const ProductSection = ({
 			</div>
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 				{products.map((p) => (
-					<Link href={p.url} key={p.id}>
+					<Link href={`/product/${p.url}`} key={p.id}>
 						<ProductCard product={p} />
 					</Link>
 				))}

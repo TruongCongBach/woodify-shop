@@ -1,23 +1,3 @@
-// apps/woodify-khanhtrang/src/data/productsMock.ts
-export type ProductAttribute = {
-	key: string
-	value: string
-	unit?: string
-}
-
-export interface Product {
-	url: string
-	id: string
-	name: string
-	defaultImage: string
-	images: string[]
-	price: string
-	description: string
-	categoryId: string
-	attributes?: ProductAttribute[]
-	tags?: string[]
-}
-
 export const productsMock: Product[] = [
 	{
 		"url": "1",
@@ -61,7 +41,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8192464",
 		"description": "Plant somebody community certainly decide whose someone important visit wish.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -339,7 +319,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4291195",
 		"description": "Officer church mean Mr particular part myself.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -397,7 +377,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7404380",
 		"description": "Hold start art nothing ok build until lose with two strong.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -710,7 +690,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6594202",
 		"description": "Behind argue true stay light strategy child their population case high you generation.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -762,7 +742,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7667535",
 		"description": "Collection majority hard star professional feeling development television lay.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -788,7 +768,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8727219",
 		"description": "They place education Mr design news.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -814,7 +794,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9746032",
 		"description": "Human born leader maintain human of.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -924,7 +904,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7456675",
 		"description": "Ok man travel firm consumer side citizen sometimes million once fish finish.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -1124,7 +1104,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5799089",
 		"description": "Recent issue consumer strategy community past physical own nor brother knowledge.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -1212,7 +1192,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6374499",
 		"description": "Wrong truth easy hair painting character sea color particular cost modern.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -1296,7 +1276,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3304676",
 		"description": "Certain dark blood artist dog become join picture result Democrat business.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -1350,7 +1330,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1959824",
 		"description": "Toward day maintain culture answer join during only democratic.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -1406,7 +1386,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7137102",
 		"description": "Medical stop fine professional series among high lose standard go member record.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -1466,7 +1446,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4295683",
 		"description": "Thousand tend operation TV writer cell change large whether present.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -1668,7 +1648,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5304187",
 		"description": "Do world parent history this newspaper.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -1922,7 +1902,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4515657",
 		"description": "Once tough should method item important decision community also international lay food draw.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -2089,7 +2069,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1525063",
 		"description": "Option any expect skill strong join show actually kind push lawyer.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -2119,7 +2099,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5550836",
 		"description": "All cold probably fall member operation structure that whom natural occur enough type.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -2147,7 +2127,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5260356",
 		"description": "Reach tonight traditional particular loss energy but list decide design according.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -2313,7 +2293,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6565639",
 		"description": "Quality coach light agreement lot yourself official second himself get whether.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -2398,7 +2378,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1593721",
 		"description": "Administration everything how machine later might nearly near city teacher around.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -2428,7 +2408,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3312601",
 		"description": "Parent appear between college walk certain know president whatever stock that smile.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -2710,7 +2690,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9797028",
 		"description": "May democratic product their scientist attention method amount me model fall will those.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -2820,7 +2800,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3632088",
 		"description": "Career company very behavior campaign determine test find.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -2967,7 +2947,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6073102",
 		"description": "Two eat conference away summer case.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3082,7 +3062,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1482881",
 		"description": "Music say matter whom marriage recently pressure world.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3276,7 +3256,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1361682",
 		"description": "Bank those water take score yet become.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3302,7 +3282,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7132645",
 		"description": "Spring think individual language anyone major book part reduce between start upon audience.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3362,7 +3342,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9603529",
 		"description": "Tough son ago thought movie weight despite detail believe right senior.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3388,7 +3368,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6350997",
 		"description": "Record face million mention manage firm range take child.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3472,7 +3452,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1296397",
 		"description": "Free Mrs claim low state evening force better owner cause civil author clear.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3560,7 +3540,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8570601",
 		"description": "Success size parent strong sometimes spring market shake I green.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3586,7 +3566,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1246260",
 		"description": "Not thus practice front still factor.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3729,7 +3709,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2173788",
 		"description": "Matter what bag despite serious next wear above city.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3755,7 +3735,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6456781",
 		"description": "Recognize today loss interesting order billion.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3839,7 +3819,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7615025",
 		"description": "Culture beat treatment among notice four contain firm site.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3921,7 +3901,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3057516",
 		"description": "Skill gun pattern concern plan understand ability.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -3950,7 +3930,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4141042",
 		"description": "Participant sort peace feeling certain management use happen ball claim.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -4316,7 +4296,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9529007",
 		"description": "How after institution protect view while entire late.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -4344,7 +4324,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1319148",
 		"description": "Family not eat house system fast free want child new activity ability big.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -4402,7 +4382,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9234401",
 		"description": "Born save none country agreement special social study foreign crime outside economic major.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -4514,7 +4494,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4300764",
 		"description": "Stop college behavior information say Mr likely which front instead PM mouth social.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -4653,7 +4633,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6879802",
 		"description": "Score response special worker who second every determine among.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -4681,7 +4661,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6946642",
 		"description": "Into better then consumer thus rock room support military cup quality.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -4762,7 +4742,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2524631",
 		"description": "Despite leader receive room it explain.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -4791,7 +4771,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2782862",
 		"description": "End wife four ball week hair usually religious evidence.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -5019,7 +4999,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2614673",
 		"description": "Inside clear trial rise thank audience to design commercial.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -5048,7 +5028,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5506825",
 		"description": "Way should make want none forward daughter agency begin both.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -5102,7 +5082,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9820707",
 		"description": "Tv different just art involve poor lead.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -5245,7 +5225,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8647535",
 		"description": "Raise career message never business just stock brother collection entire product.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -5392,7 +5372,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3077793",
 		"description": "Industry free water drop at figure.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -5418,7 +5398,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6155301",
 		"description": "Bed evening market new writer score bag table.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -5591,7 +5571,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8247219",
 		"description": "Middle suggest officer standard pull officer single place democratic floor born.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -5674,7 +5654,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2155337",
 		"description": "Share white he loss check role and rather nice stage national.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -5702,7 +5682,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3917818",
 		"description": "Offer down course much someone sort other movie.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -5730,7 +5710,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7432081",
 		"description": "Itself look hot door some on job hope figure.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -5813,7 +5793,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5199037",
 		"description": "Worry agreement economy us value thought see food represent exist others.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -6008,7 +5988,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1618348",
 		"description": "Sense east pay quite somebody how.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -6148,7 +6128,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4717748",
 		"description": "Difference reveal news not discuss sea though manage.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -6203,7 +6183,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2910501",
 		"description": "Strategy anything range better baby question three head leg.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -6313,7 +6293,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3665353",
 		"description": "Site message mission describe public popular red pressure four teach.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -6483,7 +6463,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2962199",
 		"description": "Compare can mother big some music analysis.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -6732,7 +6712,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9041822",
 		"description": "Day issue know chair worker detail tax area none political evening need.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -6901,7 +6881,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1238020",
 		"description": "Him keep visit learn certainly institution assume.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -6987,7 +6967,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5037791",
 		"description": "Send character many president executive laugh.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -7046,7 +7026,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1114086",
 		"description": "Happy environment mention effect call face step wrong myself.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -7300,7 +7280,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5261160",
 		"description": "Staff commercial finally trade approach skin physical interest pattern wait than edge almost.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -7634,7 +7614,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9357783",
 		"description": "Part fly opportunity protect group available recognize itself try since theory.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -7663,7 +7643,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1354100",
 		"description": "Man partner defense tree entire yard husband how television here senior spend institution.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -7889,7 +7869,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8396092",
 		"description": "Increase look get others subject hit.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -7919,7 +7899,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3512025",
 		"description": "Moment voice chance hope green technology shoulder.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -7973,7 +7953,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5035821",
 		"description": "Shoulder nearly suffer meet painting machine.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -8029,7 +8009,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9422687",
 		"description": "Forget magazine that seat travel address blue protect middle.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -8116,7 +8096,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7768341",
 		"description": "Writer serve Democrat property later street rather development.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -8171,7 +8151,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4057644",
 		"description": "Rich hope exist condition conference popular indeed citizen enjoy.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -8479,7 +8459,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4364636",
 		"description": "Image partner fish material husband force.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -8505,7 +8485,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5078182",
 		"description": "Example push opportunity agree serve subject ready note he.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -8619,7 +8599,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3923866",
 		"description": "Beat resource question recognize low drug surface loss son measure fear him organization per.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -8649,7 +8629,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5744101",
 		"description": "Especially international purpose believe water opportunity they clearly.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -8734,7 +8714,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1103066",
 		"description": "Natural pick represent effort guess their officer benefit.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -8793,7 +8773,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9986791",
 		"description": "Point wait serve safe score challenge state see country capital country garden.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -8940,7 +8920,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7013563",
 		"description": "Possible woman create great police song mother.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -9025,7 +9005,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7089166",
 		"description": "Institution control measure want cost fill.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -9254,7 +9234,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7117419",
 		"description": "Bill rich fish about against travel agreement south thing ground yourself become study buy.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -9397,7 +9377,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3275680",
 		"description": "Tough will sense during sing century program seat them after half teacher model.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -9426,7 +9406,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6807281",
 		"description": "Themselves ever attack later ask need kitchen data day sign.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -9455,7 +9435,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9064804",
 		"description": "Reach imagine note involve win six side arrive look prepare young occur science.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -9511,7 +9491,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2572286",
 		"description": "Simply for control inside PM sea.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -9566,7 +9546,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1621137",
 		"description": "Forward so arrive memory though before certainly question part.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -9653,7 +9633,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1390327",
 		"description": "Fly go and do ok serious turn well appear election.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -9683,7 +9663,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5102978",
 		"description": "Large yard threat father onto structure bed phone national oil.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -9768,7 +9748,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7482541",
 		"description": "Reality heart morning coach price child fire term long should.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -9909,7 +9889,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6873222",
 		"description": "Gun return activity political couple only always watch participant.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10023,7 +10003,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4854487",
 		"description": "Enter man there cultural old find lead ok speech you various score join.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10081,7 +10061,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2468276",
 		"description": "Make key add want improve put idea pretty evidence.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10109,7 +10089,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1077262",
 		"description": "Attack book method watch another scene.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10249,7 +10229,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2866640",
 		"description": "Car its actually hour whose usually assume democratic walk table common adult black.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10277,7 +10257,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9800265",
 		"description": "Sister management process garden long account.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10337,7 +10317,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5593235",
 		"description": "Take partner eight example product knowledge nice seven because all social low television.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10450,7 +10430,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5606651",
 		"description": "Close rich institution TV relationship scientist great television.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10502,7 +10482,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8146585",
 		"description": "Of manage personal situation exactly fine actually article under center admit.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10669,7 +10649,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5704200",
 		"description": "Building over behind laugh hair send measure send national article treatment.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10727,7 +10707,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5081165",
 		"description": "Southern paper everyone word yourself center something assume.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10840,7 +10820,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4697414",
 		"description": "Plan amount politics teacher party out use.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -10926,7 +10906,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9238640",
 		"description": "Machine teacher level computer win product operation gas.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -11010,7 +10990,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4982964",
 		"description": "With happen factor material popular give risk capital fire record father him author.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -11097,7 +11077,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6676169",
 		"description": "Local church body nothing treatment society act person miss a chair city.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -11125,7 +11105,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3637458",
 		"description": "Ready chair want whom open message line policy clearly great decade down human trial.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -11181,7 +11161,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5101562",
 		"description": "Why member upon control model western big into serve production hair red.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -11407,7 +11387,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1727124",
 		"description": "Second avoid baby begin fact mention.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -11574,7 +11554,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4992816",
 		"description": "Remain interesting personal author stand financial no.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -11603,7 +11583,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5066534",
 		"description": "Federal quality energy voice friend approach participant woman start protect find.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -11659,7 +11639,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3144633",
 		"description": "True nor include want fast real.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -11744,7 +11724,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7584355",
 		"description": "Company investment nice that under team.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -11883,7 +11863,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5855778",
 		"description": "Imagine cultural give artist generation society particularly relate new ability rise market.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12029,7 +12009,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1035586",
 		"description": "Old performance reveal another interesting me term.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12166,7 +12146,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7198510",
 		"description": "That audience very beautiful stock nature wait up something bank.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12281,7 +12261,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3138184",
 		"description": "Security nature to billion now rest billion send heavy.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12371,7 +12351,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6564805",
 		"description": "Leader down knowledge decision road Mrs fine how history figure story program.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12458,7 +12438,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7277912",
 		"description": "Memory mind interview office Mrs safe dream within with subject who choose four.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12486,7 +12466,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8271113",
 		"description": "Prevent experience every a wear foot total serious week trip here base.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12512,7 +12492,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2050510",
 		"description": "Audience role bag none look near fund.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12540,7 +12520,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3241610",
 		"description": "Receive the pressure rate take medical.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12729,7 +12709,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3319357",
 		"description": "Send responsibility quality goal body fly mention interest choice debate research.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12809,7 +12789,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2600888",
 		"description": "Affect doctor type into education describe personal happy care gas western thus understand.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12867,7 +12847,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9434469",
 		"description": "Help where organization become level note.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -12919,7 +12899,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6880179",
 		"description": "Turn traditional wonder degree let draw Congress.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -13064,7 +13044,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5252309",
 		"description": "Indicate center piece add a trial enter eat hard all reduce.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -13176,7 +13156,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4223392",
 		"description": "Network case take design floor campaign small full.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -13230,7 +13210,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3598825",
 		"description": "Professor force performance probably teach dark everyone glass account.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -13346,7 +13326,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3957851",
 		"description": "Parent Democrat among job state water.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -13374,7 +13354,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3770309",
 		"description": "Religious remain your trial road again discussion win.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -13400,7 +13380,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2772313",
 		"description": "Everybody continue each tough majority financial skill their add after bit society drug.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -13452,7 +13432,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7794703",
 		"description": "Yes I company beyond ball able through.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -13677,7 +13657,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5044117",
 		"description": "Effort way article physical have game national generation already full color.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -13791,7 +13771,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5353855",
 		"description": "Size like read media find bar manage difference question chance herself stop before.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -13901,7 +13881,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1676970",
 		"description": "Environment war foot man evidence down.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -13929,7 +13909,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8623715",
 		"description": "Focus choose adult leg effort shake cultural ever treatment simply key.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -14098,7 +14078,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5992479",
 		"description": "Behind order along action cell including owner country.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -14180,7 +14160,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5977213",
 		"description": "Common improve yet feeling produce avoid visit push.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -14238,7 +14218,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4943646",
 		"description": "Letter agency fly bank great four.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -14348,7 +14328,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3361304",
 		"description": "Unit remember story foot food draw goal usually some white hold first.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -14569,7 +14549,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6812889",
 		"description": "Edge wife including southern assume huge manage today course environmental concern.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -14649,7 +14629,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3147475",
 		"description": "Hear would only whether him set test later change.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -14707,7 +14687,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1244785",
 		"description": "Represent dark down later next report main although dark environment image summer.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -14737,7 +14717,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6290747",
 		"description": "Else toward age pay those star health police major truth far.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -14827,7 +14807,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4674945",
 		"description": "Few coach central especially tend position community.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -14993,7 +14973,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6854029",
 		"description": "Power toward method enter whether manager above card own kitchen course.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -15140,7 +15120,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9691646",
 		"description": "Hope factor admit top baby to paper nothing data.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -15198,7 +15178,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9511636",
 		"description": "Two bank none structure movie eat say view item figure.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -15341,7 +15321,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9459596",
 		"description": "Newspaper mention protect so old ground.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -15421,7 +15401,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2280769",
 		"description": "Field century rock special new start author office national cover check law film.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -15703,7 +15683,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2671082",
 		"description": "Low industry fill wind wide however way others value.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -15934,7 +15914,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7405939",
 		"description": "Off must win middle can bar determine enough window south mission.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -15988,7 +15968,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3012704",
 		"description": "Magazine cause when lead western view author cut theory other.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -16099,7 +16079,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5499439",
 		"description": "Nation check lead professional same stuff peace indeed central.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -16125,7 +16105,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8547631",
 		"description": "International coach race security section after senior read.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -16151,7 +16131,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4819324",
 		"description": "Guess garden modern indicate message piece picture even unit within edge one when.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -16316,7 +16296,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9406154",
 		"description": "Accept matter moment know decade democratic us where usually democratic art significant.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -16405,7 +16385,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9620222",
 		"description": "Scene involve a box color they environmental prove.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -16775,7 +16755,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1911568",
 		"description": "Think service anything feel action leave nearly throw new community call some pressure.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -16963,7 +16943,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7340393",
 		"description": "Home agreement Mr charge message age site.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -17330,7 +17310,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5741699",
 		"description": "Up standard even reach standard case how child around.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -17465,7 +17445,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3674143",
 		"description": "Music hard add body smile rule.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -17493,7 +17473,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2317570",
 		"description": "Enjoy house ahead research mind account professor brother.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -17519,7 +17499,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7134010",
 		"description": "Enjoy time television play allow leave officer thus stock leg.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -17604,7 +17584,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2522428",
 		"description": "Past sort growth network nation environmental.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -17800,7 +17780,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7318318",
 		"description": "Yeah argue home spend single purpose art.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -17887,7 +17867,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8371304",
 		"description": "Sometimes value station wonder eye believe meet when.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -18023,7 +18003,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2823145",
 		"description": "Attorney policy size travel next short reduce different senior enter education public since.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -18078,7 +18058,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6847041",
 		"description": "Thousand financial statement real concern all long process fill board sport.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -18160,7 +18140,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1231880",
 		"description": "Suffer character seven power form yet system your meet still full.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -18327,7 +18307,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5658252",
 		"description": "Population reveal available explain shoulder none water prepare mention his feel control letter.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -18410,7 +18390,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6945230",
 		"description": "Wrong response six goal song remain home clear since begin rather even data.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -18521,7 +18501,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4309874",
 		"description": "Finally western lose loss or listen defense recognize couple Mrs.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -18665,7 +18645,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1594534",
 		"description": "Choose pretty perform other surface market.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -18776,7 +18756,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8984461",
 		"description": "Must social during throw oil father result trouble seat.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -19053,7 +19033,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1992807",
 		"description": "Chair social about middle deep my reflect.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -19107,7 +19087,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2904179",
 		"description": "Today forward participant certainly cup employee.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -19219,7 +19199,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6437246",
 		"description": "Part west purpose truth exist focus.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -19362,7 +19342,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9105175",
 		"description": "Ability shake arrive usually mouth represent head rate continue painting simply area.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -19449,7 +19429,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5010269",
 		"description": "Improve decision sound realize follow industry never decide.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -19477,7 +19457,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7862508",
 		"description": "Industry mind picture person candidate somebody pay indicate down leg require center.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -19595,7 +19575,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3575586",
 		"description": "Everybody indicate voice stage explain rate security produce body sell into toward music.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -19879,7 +19859,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8952431",
 		"description": "Involve material list player sense member thus increase have with hospital two.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -19964,7 +19944,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1691210",
 		"description": "Shoulder picture best program large ask back certain.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -20278,7 +20258,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6288337",
 		"description": "Thus my police note theory against size remember across true.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -20448,7 +20428,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5684489",
 		"description": "Second identify coach laugh organization business professor century.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -20561,7 +20541,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9405399",
 		"description": "Police lot discuss provide education look.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -20589,7 +20569,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7358439",
 		"description": "Really fine design sea stuff international cost bad situation year stuff speech threat.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -20615,7 +20595,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2358068",
 		"description": "Investment concern home toward contain movie plan add air.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -20670,7 +20650,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2158895",
 		"description": "Before during culture per boy mind.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -20700,7 +20680,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8877301",
 		"description": "Very have sure white million edge station they feeling available hope.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -20785,7 +20765,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2381187",
 		"description": "Work rule performance dog today trade assume body field.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -20923,7 +20903,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6808580",
 		"description": "Tax already him before loss event such.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -21005,7 +20985,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3577844",
 		"description": "Stop true anything win imagine community subject stay indicate government.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -21619,7 +21599,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6153884",
 		"description": "Treat low increase think executive its contain hold seek.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -21875,7 +21855,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4623093",
 		"description": "Major dark laugh before could future strong one.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -21987,7 +21967,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2649972",
 		"description": "Ever smile arm the contain need.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -22015,7 +21995,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1132101",
 		"description": "Forget fight develop ahead not reason professor.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -22043,7 +22023,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5285270",
 		"description": "Condition second door discover possible prevent agent order large.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -22328,7 +22308,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8168776",
 		"description": "Seven democratic nature two visit program hospital someone realize.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -22354,7 +22334,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5672495",
 		"description": "Fund course window season leave decision able coach them record pick over.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -22437,7 +22417,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7795140",
 		"description": "Like more material kind know shake interesting find majority conference peace shake marriage.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -22493,7 +22473,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1866139",
 		"description": "Create direction short teach truth third plant against goal near position of.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -22579,7 +22559,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6075276",
 		"description": "Bed word professional enter him eat along successful young wrong every.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -22724,7 +22704,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1892139",
 		"description": "Certainly can trial then thousand collection art process.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -22921,7 +22901,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5411654",
 		"description": "Think business if do want long health that full major pick forward.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -23005,7 +22985,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7159733",
 		"description": "May party live grow of miss plan indicate peace special quickly wind.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -23169,7 +23149,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9725045",
 		"description": "Level suddenly officer onto southern where music standard form follow official.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -23308,7 +23288,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4611546",
 		"description": "Environmental whole foot over through represent state.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -23476,7 +23456,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6617509",
 		"description": "Pull leader bar everyone music show.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -23532,7 +23512,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4980506",
 		"description": "Network almost fill society civil yourself development station story attorney cost minute.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -23617,7 +23597,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9475921",
 		"description": "Whether trade something those easy fast pass study entire top.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -23702,7 +23682,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2427067",
 		"description": "Blood dog skill ahead possible go process carry with of significant moment.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -23895,7 +23875,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1005334",
 		"description": "Full buy cultural city drive job garden must yes him.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -24088,7 +24068,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6166681",
 		"description": "Charge food people offer start risk identify relationship amount leg lay.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -24118,7 +24098,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8626317",
 		"description": "Eat couple draw key and difference sea.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -24313,7 +24293,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7153129",
 		"description": "Wife economy act themselves strategy purpose born.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -24372,7 +24352,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8975495",
 		"description": "Simple anything feeling here anything policy direction hard writer her next science professional parent.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -24591,7 +24571,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7972446",
 		"description": "Itself federal experience produce although population care research movie.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -24727,7 +24707,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7452869",
 		"description": "Close open result adult memory project new across however today detail figure.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -24786,7 +24766,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4281666",
 		"description": "National right threat various boy goal method.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -24815,7 +24795,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4002246",
 		"description": "Single response return citizen life likely on much nearly although population month Mr.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -24904,7 +24884,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6436986",
 		"description": "Official anything ahead goal another feeling time.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -24958,7 +24938,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4607397",
 		"description": "Gas responsibility reason discussion establish of economic focus.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -25018,7 +24998,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5644285",
 		"description": "When peace alone fill why five.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -25191,7 +25171,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4664279",
 		"description": "Woman person voice team father fact statement per.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -25248,7 +25228,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7626615",
 		"description": "Democrat tend maintain major risk away song.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -25308,7 +25288,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9059038",
 		"description": "Huge range fill sister job several system go.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -25537,7 +25517,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1999669",
 		"description": "Should like however ready several nearly interest.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -25820,7 +25800,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9722969",
 		"description": "Fight country cut citizen machine threat such accept kitchen field.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -25846,7 +25826,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1565783",
 		"description": "Consumer administration month prevent exist pay leader.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -26297,7 +26277,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8208286",
 		"description": "East view next along smile generation good oil paper seven what sport.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -26351,7 +26331,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5979409",
 		"description": "Purpose difficult deep director through dinner game here whether.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -26493,7 +26473,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8524132",
 		"description": "Design tell whole science beyond onto land guy owner voice.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -26521,7 +26501,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5599782",
 		"description": "Financial friend manage respond rise positive.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -26748,7 +26728,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7974798",
 		"description": "Half indeed technology change ahead common former lay white green go.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -26914,7 +26894,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2622065",
 		"description": "Attention although table sport various world I.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -26998,7 +26978,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1643183",
 		"description": "Cold page music move series floor father statement.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -27115,7 +27095,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8276775",
 		"description": "Long practice little left security central foreign safe.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -27143,7 +27123,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6978471",
 		"description": "Nation work fly lay send out.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -27172,7 +27152,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3053210",
 		"description": "State early area finally from for machine team physical.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -27227,7 +27207,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7824552",
 		"description": "Religious Republican war safe green official impact money he.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -27645,7 +27625,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2636485",
 		"description": "Ahead mouth husband ago officer large alone just enjoy play.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -27810,7 +27790,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8774628",
 		"description": "Thousand walk table onto left PM structure lay.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -27980,7 +27960,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2352654",
 		"description": "Reflect what too partner according particularly PM man during.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28037,7 +28017,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4170153",
 		"description": "Raise low need trip keep my plan mean film professional song someone share.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28093,7 +28073,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3420068",
 		"description": "Option dream air positive cup table teacher.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28205,7 +28185,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3345457",
 		"description": "Number central entire sign least bring level yourself player individual particular.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28398,7 +28378,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8374599",
 		"description": "Nation traditional tree worker about bed standard expect around matter southern.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28428,7 +28408,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7271114",
 		"description": "Little rise place young foreign behind might Republican.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28591,7 +28571,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9573963",
 		"description": "Personal nothing house after tend report test question impact.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28675,7 +28655,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4892700",
 		"description": "Strong system man city why cost north body air game.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28734,7 +28714,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7030105",
 		"description": "Beyond would law many cost summer foreign seek media believe probably.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28792,7 +28772,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9079141",
 		"description": "Wife group well knowledge change degree move.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28852,7 +28832,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6966517",
 		"description": "Head source prove until else discover national water themselves agency scene many.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28880,7 +28860,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1649055",
 		"description": "Behind me heart town service government bar environment receive.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -28909,7 +28889,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3733349",
 		"description": "Evidence get future key think indeed.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -29094,7 +29074,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6126187",
 		"description": "Second old store low imagine music away model person join herself system.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -29152,7 +29132,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5792955",
 		"description": "Movie economy improve simple people air eye discuss involve itself.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -29288,7 +29268,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5469886",
 		"description": "Send brother career arm improve population father off ground.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -29429,7 +29409,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3296261",
 		"description": "Power race her generation share section reach debate when entire discussion bed join game.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -29487,7 +29467,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2535385",
 		"description": "Evening spend relate full Congress north ground.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -29574,7 +29554,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4739772",
 		"description": "Smile traditional attack mean fact push morning strategy never price.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -29628,7 +29608,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5935131",
 		"description": "Go Congress other television suddenly anything bring interesting remember important product team nothing.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -29680,7 +29660,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5403271",
 		"description": "Poor minute cover fill fine social.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -29708,7 +29688,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2112665",
 		"description": "Federal represent pressure threat boy gun fear everybody reduce really.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -29821,7 +29801,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1027915",
 		"description": "Since until Mrs staff difference where scene piece concern nor suggest floor human.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -29908,7 +29888,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6251718",
 		"description": "Air as group maybe among imagine at lose send.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -30307,7 +30287,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7613923",
 		"description": "Fill radio maintain learn respond factor each free billion people executive.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -30505,7 +30485,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6148370",
 		"description": "Particularly ten performance structure worker history.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -30620,7 +30600,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6721660",
 		"description": "Year guy candidate true section data paper certainly season.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -30819,7 +30799,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9150344",
 		"description": "Late wall treatment visit catch he.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -30849,7 +30829,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7513881",
 		"description": "Peace its air sea case compare less test feeling fly over.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -30875,7 +30855,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3779181",
 		"description": "Sure south drive recently might deal she box.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -30905,7 +30885,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8775516",
 		"description": "Food marriage doctor section director radio current yourself partner treatment seek involve skill.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -31274,7 +31254,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6970467",
 		"description": "Tonight leave world somebody then certainly enough rate.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -31384,7 +31364,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6833835",
 		"description": "Old PM no tell clear machine eat professional city lot.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -31438,7 +31418,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5125392",
 		"description": "Indeed affect entire around create home article morning.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -31466,7 +31446,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9215249",
 		"description": "They change season ever decide see best trip how.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -31695,7 +31675,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4192701",
 		"description": "Property page budget matter different short one with case modern.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -31806,7 +31786,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5264922",
 		"description": "Do must big benefit author moment war parent fire.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -31865,7 +31845,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8521279",
 		"description": "Her music lose artist trial strong activity me billion cold.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -31979,7 +31959,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8459811",
 		"description": "Outside rock defense medical they risk education television.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -32008,7 +31988,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5936599",
 		"description": "Tonight lay their employee down career.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -32120,7 +32100,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8563429",
 		"description": "Stuff rate often fish end everything a item.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -32395,7 +32375,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3613986",
 		"description": "Knowledge carry level food travel simple realize service appear play agreement call choose.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -32589,7 +32569,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3108977",
 		"description": "Past you about food society available sit drug pretty.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -32649,7 +32629,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4780190",
 		"description": "Hotel hand writer ready threat so.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -32762,7 +32742,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6081447",
 		"description": "Trip society base cold from amount individual way or visit.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -32849,7 +32829,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7346864",
 		"description": "Your message investment certain eye manager because concern choice example.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -32877,7 +32857,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6770288",
 		"description": "Conference different us government action city.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -32992,7 +32972,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7468810",
 		"description": "Listen success down society standard individual against laugh among pay stock.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33018,7 +32998,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7671400",
 		"description": "Late season myself trip rise fear read particularly.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33104,7 +33084,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8076677",
 		"description": "Same agree improve water political president employee parent network deep your member several.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33130,7 +33110,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9126425",
 		"description": "Value dinner yourself hundred build interview.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33185,7 +33165,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6626263",
 		"description": "Sometimes article suddenly accept guy at.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33298,7 +33278,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7184124",
 		"description": "Age attack husband build similar election table marriage.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33384,7 +33364,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4069747",
 		"description": "Board court project American expect though response air figure population animal.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33497,7 +33477,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2944490",
 		"description": "Modern open local might daughter address thank television minute play white myself father.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33640,7 +33620,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4203775",
 		"description": "Politics someone good friend city base seat response total.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33670,7 +33650,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7413911",
 		"description": "Such score onto might south family indeed painting.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33698,7 +33678,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2186967",
 		"description": "Finish rule dinner deep avoid say why care of never business again individual.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33835,7 +33815,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3564159",
 		"description": "Open low once walk difference down general industry throw give.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -33920,7 +33900,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4135507",
 		"description": "Affect someone president loss grow another trip class cell how.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -34033,7 +34013,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2920047",
 		"description": "Pm letter color finish at others subject source total add know.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -34119,7 +34099,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4842622",
 		"description": "Religious public stand month establish tell piece mention chance fire among hear.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -34321,7 +34301,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7160713",
 		"description": "Window win increase conference answer protect nearly community identify coach trial vote.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -34437,7 +34417,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9667586",
 		"description": "I bar station early American interest someone director explain long second win sport money.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -34467,7 +34447,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8682961",
 		"description": "Five next religious find item whole performance Mr might page science win.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -34550,7 +34530,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6116900",
 		"description": "There form attack large east billion wonder maintain party.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -34580,7 +34560,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7153312",
 		"description": "Nation myself rich property cold show site property purpose.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -34806,7 +34786,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9511783",
 		"description": "Treatment seem American hotel upon wide reduce move girl.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -34835,7 +34815,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1038371",
 		"description": "Indicate study data church agree local figure quite happen clear style.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -34861,7 +34841,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8019329",
 		"description": "Prevent lawyer to our on mention sure whose sea citizen middle account family.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -35057,7 +35037,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8728073",
 		"description": "Responsibility break gun reveal final stage.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -35364,7 +35344,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9758452",
 		"description": "Method care reason part nature clear certain situation mention necessary past.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -35421,7 +35401,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8738650",
 		"description": "Road use impact couple window old sister price win sister image choose.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -35558,7 +35538,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1920764",
 		"description": "Require use teacher table agent role table also wait key station seem production.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -35671,7 +35651,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3208125",
 		"description": "Coach key economic ability adult design may free painting really.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -35728,7 +35708,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6732275",
 		"description": "Lead spend woman question wall sure letter science leg.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -35754,7 +35734,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9126096",
 		"description": "Effect movie finally enjoy newspaper current everyone he wish any religious.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -35783,7 +35763,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3354472",
 		"description": "Appear now adult recently future father whose follow garden teach blood.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -35898,7 +35878,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7702410",
 		"description": "Change piece work determine agency some last firm manage crime cultural easy those.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -35954,7 +35934,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9117084",
 		"description": "Again century a maintain add where analysis poor sometimes play third no.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -36093,7 +36073,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8139969",
 		"description": "Possible tough Democrat hour material city color hotel million goal five.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -36286,7 +36266,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7827995",
 		"description": "End no begin process perform weight although.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -36372,7 +36352,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7415123",
 		"description": "Authority necessary you often water adult little simply language around the story must.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -36547,7 +36527,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6079743",
 		"description": "Play system cover charge land indicate.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -36576,7 +36556,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2041776",
 		"description": "Police window someone long such whom ten without break world want different discuss.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -36750,7 +36730,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5704732",
 		"description": "Suddenly approach too a yes beautiful collection carry chance science safe responsibility.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -37011,7 +36991,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9591057",
 		"description": "Lose note behavior feeling fight record pull her or language understand.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -37099,7 +37079,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3550993",
 		"description": "Clearly world yard hotel drive know audience number job someone mention range.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -37187,7 +37167,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8637822",
 		"description": "Else general thank guy impact plant camera involve throughout prove many he young.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -37303,7 +37283,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4075999",
 		"description": "Film foreign front unit system despite.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -37355,7 +37335,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8984642",
 		"description": "Too development benefit sometimes option really western history the power product.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -37828,7 +37808,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6446000",
 		"description": "Claim technology play yard claim result arm set smile sure.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -37943,7 +37923,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1533548",
 		"description": "Seven realize hundred lawyer phone prevent program organization that tell bad quickly.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -38025,7 +38005,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7372042",
 		"description": "Very all into identify trouble quickly.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -38051,7 +38031,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1237023",
 		"description": "Never answer three dinner society unit administration baby officer here choice.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -38080,7 +38060,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9951255",
 		"description": "Leg television agreement offer stuff plant.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -38441,7 +38421,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8791044",
 		"description": "Hot form account and wait century that catch good indicate five miss.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -38547,7 +38527,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4532852",
 		"description": "Against police continue newspaper get some rate tax him church raise soon.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -38576,7 +38556,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5090241",
 		"description": "Than message mother you skin real answer.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -38604,7 +38584,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6212091",
 		"description": "Rich door something open shake wear serious the edge out.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -38660,7 +38640,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1545052",
 		"description": "Decade once bill could cause moment build have spring will top.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -38777,7 +38757,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3773221",
 		"description": "Last run money outside possible add manage husband summer account.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -38951,7 +38931,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2242036",
 		"description": "Marriage trip summer cell choice apply take need boy weight democratic eye both.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39091,7 +39071,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6756911",
 		"description": "Say strategy single west notice trouble teacher world effect prove Democrat thing.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39121,7 +39101,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9884831",
 		"description": "Coach traditional add without often support.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39489,7 +39469,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8206475",
 		"description": "Back young fish mother we read.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39518,7 +39498,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3490386",
 		"description": "Staff on service involve share adult mouth late compare.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39546,7 +39526,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5139452",
 		"description": "Chair because positive live tax reflect back drop tell exactly.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39746,7 +39726,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1987890",
 		"description": "Provide decide us physical discover who more.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39858,7 +39838,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9824486",
 		"description": "Hand already both third early mind.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39886,7 +39866,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2077751",
 		"description": "Than teach couple energy detail surface computer thing yard team somebody.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39912,7 +39892,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3911902",
 		"description": "Write American on education much yet far arm set so.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39941,7 +39921,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7228978",
 		"description": "Attack decade participant old mother base bank box soon style hair avoid.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39970,7 +39950,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3799498",
 		"description": "Yourself bank thank side let never lay have wear better since none.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -39999,7 +39979,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3943136",
 		"description": "Need quickly around dark allow institution anything plan chance student year teach but.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40027,7 +40007,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5713688",
 		"description": "Mrs person main study personal not he discuss show according.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40082,7 +40062,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4391263",
 		"description": "Race also analysis responsibility attorney lawyer nor two reduce space treatment.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40112,7 +40092,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5757972",
 		"description": "Marriage wrong almost between plan education recognize conference concern visit something experience.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40200,7 +40180,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4630055",
 		"description": "Health financial clear message glass race mission.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40229,7 +40209,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1243022",
 		"description": "Near community may drop threat similar plan down budget.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40314,7 +40294,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6174301",
 		"description": "Trip world of yes knowledge agreement pretty name traditional identify tree possible his.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40428,7 +40408,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6698331",
 		"description": "Never machine he study similar training him another.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40569,7 +40549,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2959652",
 		"description": "Beat me really traditional section process effect good my science western age.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40649,7 +40629,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1972638",
 		"description": "Pay six offer rock hair sign agree off give also.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40675,7 +40655,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8916896",
 		"description": "Rule set owner heart thank discuss million hear.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40732,7 +40712,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4015755",
 		"description": "Order it form fish say arm from less voice kid.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40848,7 +40828,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2400098",
 		"description": "Fall international carry style three four.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -40959,7 +40939,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7292526",
 		"description": "Blood network marriage use mouth avoid little continue.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -41185,7 +41165,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3583629",
 		"description": "Owner help bring same base job add improve bad.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -41267,7 +41247,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6806427",
 		"description": "Between receive hope sea best because.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -41521,7 +41501,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9385997",
 		"description": "Discussion sort mouth cell meeting southern east child.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -41550,7 +41530,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1610458",
 		"description": "Level western process article drug sense.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -41665,7 +41645,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7925504",
 		"description": "Nature gun memory nearly mean movement enjoy.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -41837,7 +41817,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4547926",
 		"description": "Make smile history onto better always miss language.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -41924,7 +41904,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5192481",
 		"description": "Claim in environment join anything story feeling vote goal guy member support.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -42067,7 +42047,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6954243",
 		"description": "Forward debate church two walk suddenly collection natural team machine financial eight debate.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -42179,7 +42159,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7436940",
 		"description": "Arm cause likely seem girl message back attack so notice hit give.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -42205,7 +42185,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4961336",
 		"description": "Law evening grow region food wear.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -42231,7 +42211,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2447952",
 		"description": "Congress should establish floor large black right for.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -42346,7 +42326,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9018333",
 		"description": "Plan resource read source child morning it thousand determine wear.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -42375,7 +42355,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2768085",
 		"description": "As seven least answer operation affect hope never put test food without.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -42432,7 +42412,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7674448",
 		"description": "Recent tree skin concern commercial state technology significant all interest hair loss new.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -42598,7 +42578,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8095968",
 		"description": "Role mean home over throughout accept visit.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -42680,7 +42660,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8369160",
 		"description": "Put a close region anything skill bit above science herself.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -42937,7 +42917,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4124788",
 		"description": "Fund question face keep different military.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -43076,7 +43056,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7439191",
 		"description": "Entire within year test example guy including blood defense.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -43106,7 +43086,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3344392",
 		"description": "Require political once natural can somebody of discover life various most.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -43164,7 +43144,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4415656",
 		"description": "Many each design official color how cell become various begin.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -43249,7 +43229,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8266651",
 		"description": "Require next but nice pull may art through.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -43279,7 +43259,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3404073",
 		"description": "Trade even plant impact ahead protect financial treatment.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -43815,7 +43795,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1310854",
 		"description": "Image find official participant black continue.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -43933,7 +43913,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4472658",
 		"description": "His clearly bank talk street either.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -44237,7 +44217,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9471624",
 		"description": "Gas investment dinner majority attack over sign take.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -44293,7 +44273,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4863892",
 		"description": "During purpose thus line anything city individual sport.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -44400,7 +44380,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9502484",
 		"description": "Year would save then oil apply hold if future hair develop church everything.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -44454,7 +44434,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6089094",
 		"description": "Do arm never he rule they fall he including television brother reach either.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -44484,7 +44464,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9651789",
 		"description": "Decision third situation these police artist activity education form hour.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -44570,7 +44550,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5552339",
 		"description": "Technology page Congress turn institution skin east.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -44681,7 +44661,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1959984",
 		"description": "Hot government war personal trouble perhaps pressure suffer follow artist treatment Mr public.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -44710,7 +44690,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1428702",
 		"description": "Defense best ball sport base and owner organization.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -44766,7 +44746,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3878294",
 		"description": "Compare occur north community behavior impact skill owner put bar study entire near.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -44965,7 +44945,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3568624",
 		"description": "Again use next ago night similar on interest everything head expect.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -45084,7 +45064,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2384111",
 		"description": "To debate others hope bed for.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -45141,7 +45121,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9183908",
 		"description": "Production fly position analysis ball cover level role few late finish particular leader.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -45197,7 +45177,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8831330",
 		"description": "Charge site man situation remain now change.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -45225,7 +45205,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5790197",
 		"description": "Drop if into lawyer line response he turn serve floor whom from.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -45338,7 +45318,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8084032",
 		"description": "Son role method begin heart finally common conference material off have worker.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -45367,7 +45347,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2220297",
 		"description": "Evening effect Mr protect detail open scientist voice data so.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -45644,7 +45624,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8162897",
 		"description": "Avoid song know true wind rich chair fine point.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -45672,7 +45652,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7251522",
 		"description": "Turn city enjoy song truth arrive.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -45816,7 +45796,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5714240",
 		"description": "Yeah mother degree politics center society kitchen some week many worker Democrat fish.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46018,7 +45998,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4826271",
 		"description": "Time whose many lot occur might wrong suffer.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46157,7 +46137,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1669306",
 		"description": "May let argue run I scientist weight agreement ok style.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46187,7 +46167,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4509493",
 		"description": "Less mission want pressure project machine nearly everyone.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46298,7 +46278,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2808380",
 		"description": "Commercial whatever could four cause positive threat card.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46324,7 +46304,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3227140",
 		"description": "Stop three however nor pick build.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46353,7 +46333,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5519762",
 		"description": "Buy large involve herself president send ask adult baby major education police black.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46436,7 +46416,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4324165",
 		"description": "Still collection beat election pattern listen audience lawyer last require letter idea.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46490,7 +46470,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5661440",
 		"description": "Eye story site learn phone establish data outside while fill increase interest.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46544,7 +46524,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1213808",
 		"description": "Raise science east manage son pick garden example purpose old away dream.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46626,7 +46606,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7076950",
 		"description": "Idea life impact middle he try read sometimes effect total official sound find.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46682,7 +46662,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8748234",
 		"description": "Article push article development leader executive their couple page.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -46710,7 +46690,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5504624",
 		"description": "Leg his book relationship trouble partner green cut strategy.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -47132,7 +47112,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5719012",
 		"description": "We reach suggest hair third these team for.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -47160,7 +47140,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7636880",
 		"description": "Kind man wall line clear data.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -47189,7 +47169,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6768204",
 		"description": "Military almost anything win let source treat growth daughter.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -47300,7 +47280,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4614663",
 		"description": "Politics almost project policy anyone which card just hundred company knowledge particular bit.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -47386,7 +47366,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3316978",
 		"description": "Maintain community throw after treat two energy.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -47665,7 +47645,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6603374",
 		"description": "Although ok television if back set.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -47724,7 +47704,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5103397",
 		"description": "Item worry perhaps nearly figure senior world.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -47750,7 +47730,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6511745",
 		"description": "Hospital prove need decision industry fly.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -47949,7 +47929,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6376529",
 		"description": "Student collection region eye responsibility blue across.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -48091,7 +48071,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5224035",
 		"description": "Challenge century development become remember wrong stop method hospital experience large.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -48457,7 +48437,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2321143",
 		"description": "Ok soldier police left drive fund result help question skin budget admit where.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -48595,7 +48575,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2370400",
 		"description": "Option left grow street a floor practice character.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -48734,7 +48714,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2997177",
 		"description": "Cold drug range support perform strategy nothing town sure century.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -48958,7 +48938,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9509206",
 		"description": "Challenge letter song institution everyone go.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -49099,7 +49079,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8370693",
 		"description": "Whether huge per force their space example fine cause time.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -49183,7 +49163,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4026529",
 		"description": "Drive no spring energy maybe own beat.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -49436,7 +49416,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5328065",
 		"description": "Listen move business no end around again no home itself listen who.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -49664,7 +49644,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9623176",
 		"description": "Several appear see would benefit word foreign nor.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -49694,7 +49674,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4271283",
 		"description": "Resource different open receive cultural majority first listen learn not type.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -49722,7 +49702,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4939520",
 		"description": "Catch experience third thought choose position different benefit agency letter remain she mention.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -49806,7 +49786,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6538465",
 		"description": "Cause figure civil career course win answer gun main sure four.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -49894,7 +49874,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9800905",
 		"description": "Tell first good watch window Congress suddenly call.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -49946,7 +49926,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3110254",
 		"description": "Score through certainly race form get sign hit yet less against leg treatment.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -50089,7 +50069,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1201593",
 		"description": "Beautiful ever receive fish down herself table big teach by property side source.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -50319,7 +50299,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2896336",
 		"description": "Physical somebody call management plan hair action treatment back who interest feeling.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -50345,7 +50325,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9108839",
 		"description": "Smile form scientist everyone into yard indeed.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -50490,7 +50470,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8506172",
 		"description": "Class success value candidate manager certainly.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -50721,7 +50701,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9110065",
 		"description": "Usually find training stock full wait.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -50751,7 +50731,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8585926",
 		"description": "Analysis former your agree husband ok movement evening audience policy game.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -50833,7 +50813,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9984309",
 		"description": "Story likely similar with provide city establish.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -50974,7 +50954,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7198410",
 		"description": "Nature anything threat large training do writer hospital resource she tonight town.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -51085,7 +51065,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6301262",
 		"description": "Strategy use middle project any step apply speak audience development mission.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -51114,7 +51094,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8996621",
 		"description": "Political since family view floor or outside box fast plan phone.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -51230,7 +51210,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2258304",
 		"description": "Throw chance short recent world government.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -51342,7 +51322,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3457635",
 		"description": "Sense could happy play hear partner soldier paper.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -51489,7 +51469,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1837164",
 		"description": "Bill choice hundred tend expert argue.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -51599,7 +51579,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3869983",
 		"description": "Natural everybody summer probably seem book manage person remain rest pretty reality lay.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -51677,7 +51657,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3290529",
 		"description": "Wait ask maybe lead realize inside in close.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -51705,7 +51685,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2341879",
 		"description": "Investment market avoid bank young source but hospital.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -51903,7 +51883,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8983363",
 		"description": "Sound most between most skin democratic future.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -51991,7 +51971,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3629437",
 		"description": "Month performance remember thus fall possible sometimes develop wait.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -52521,7 +52501,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2353274",
 		"description": "Last heart wind standard activity laugh design else protect will glass.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -52889,7 +52869,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7503728",
 		"description": "Bit any perhaps while sing their single record itself million order travel.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -52917,7 +52897,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1692184",
 		"description": "Political deal general expert teach such professional series enough tree.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -53334,7 +53314,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7829811",
 		"description": "Get must box forget give family animal cultural once two probably outside opportunity.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -53360,7 +53340,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9500164",
 		"description": "Stuff hard western chance test peace either.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -53390,7 +53370,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6031637",
 		"description": "Person understand door card past agreement these song difference.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -53535,7 +53515,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7123504",
 		"description": "Campaign country campaign nature hope eat similar change hot sort wife.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -53564,7 +53544,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5663784",
 		"description": "Billion man if pick consumer sense beautiful anyone fund war nice appear leave.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -53824,7 +53804,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4125134",
 		"description": "Smile give father find attention hit tonight free specific direction imagine yeah worker.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -53966,7 +53946,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3975930",
 		"description": "Do Mr attack provide catch one operation call lawyer.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54018,7 +53998,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3826177",
 		"description": "With eight interest teach range tell guy same describe.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54099,7 +54079,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5566067",
 		"description": "Reason main food particularly whom Mr serious affect safe network care they.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54188,7 +54168,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7946466",
 		"description": "Series number fine bad ability down our always mission affect physical.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54217,7 +54197,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9810868",
 		"description": "Artist let not total two past.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54276,7 +54256,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2108160",
 		"description": "Away west huge tend evening create point.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54335,7 +54315,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2491670",
 		"description": "Both environment arm knowledge heavy past age.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54452,7 +54432,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6471485",
 		"description": "Health you meeting gas edge truth however station finally former finally wide commercial.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54478,7 +54458,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9921380",
 		"description": "Catch against or account spring sort computer impact Mr concern material.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54507,7 +54487,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5242972",
 		"description": "Stuff perform both team begin as me beautiful.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54623,7 +54603,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8163814",
 		"description": "While girl bag ever hour employee environment style your hard cold treat.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54677,7 +54657,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6335250",
 		"description": "Tell contain whether president tax authority.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54847,7 +54827,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7282957",
 		"description": "Land reason put probably bag thousand draw item.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -54932,7 +54912,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8532021",
 		"description": "Run likely from no early common.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55127,7 +55107,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6527930",
 		"description": "Hit north despite threat ten especially decide traditional Democrat would front report.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55241,7 +55221,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5839531",
 		"description": "Could glass end wrong see toward speech son.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55326,7 +55306,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3427248",
 		"description": "Policy father evening black ground democratic.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55356,7 +55336,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2913148",
 		"description": "Morning weight once skin method movie fish that dinner.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55385,7 +55365,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4677919",
 		"description": "Law every table weight guy him Democrat cause moment day these more.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55527,7 +55507,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4877282",
 		"description": "Minute art send wind church appear.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55609,7 +55589,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6991389",
 		"description": "Every politics bad decade size example law foreign source structure a heavy become.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55635,7 +55615,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6136884",
 		"description": "Treatment force laugh set concern only son population since body culture reach require.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55692,7 +55672,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7485414",
 		"description": "Special full woman free begin return speech leg imagine station deep.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55721,7 +55701,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6818675",
 		"description": "Education six none movement size tonight office sport check several continue enjoy move.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55892,7 +55872,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9090591",
 		"description": "Special situation president adult listen thousand heavy.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -55918,7 +55898,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7331567",
 		"description": "Least drop national there two hour run history carry fine.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -56088,7 +56068,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2416535",
 		"description": "Season believe matter glass nice develop.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -56348,7 +56328,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2925571",
 		"description": "Leader common activity actually note senior writer.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -56374,7 +56354,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7235959",
 		"description": "Easy hear loss section blue president way analysis strategy.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -56737,7 +56717,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4267050",
 		"description": "Player add effect light agent physical mention method success but case detail throughout.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -56848,7 +56828,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7611574",
 		"description": "Find almost through like have chair clear goal activity available stop today clearly.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -57011,7 +56991,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5581610",
 		"description": "This finally act edge magazine white design thought serious.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -57124,7 +57104,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7462582",
 		"description": "Range economy compare and leg develop similar month.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -57291,7 +57271,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7375345",
 		"description": "Measure only different color service position.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -57346,7 +57326,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3139566",
 		"description": "Director price least now center care much industry.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -57401,7 +57381,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6214468",
 		"description": "Administration nothing collection player second to like ability then billion director control situation.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -57487,7 +57467,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3687617",
 		"description": "War end responsibility already care instead structure better husband success there sign.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -57628,7 +57608,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5078549",
 		"description": "Detail take travel identify chair relate true.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -57711,7 +57691,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3703402",
 		"description": "Bit house edge pattern itself scene write measure cause.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -57909,7 +57889,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2522809",
 		"description": "Power high born say drive report.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -57998,7 +57978,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6553391",
 		"description": "Road before again near war job current fall left help bag seat.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -58081,7 +58061,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1685832",
 		"description": "Expert under old affect over individual.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -58166,7 +58146,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4937019",
 		"description": "Girl Mrs performance sort loss mission throw else medical design class organization pass.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -58195,7 +58175,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4732071",
 		"description": "Year outside table official happy war building.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -58734,7 +58714,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6871032",
 		"description": "Weight up join agency form education cup move charge couple adult minute mention.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -58822,7 +58802,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6550908",
 		"description": "Provide trial reality require ready similar sport thousand couple assume smile national.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -58903,7 +58883,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8445001",
 		"description": "Campaign their box major entire until agency spring box recently security feeling central.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -58931,7 +58911,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5601039",
 		"description": "Family surface difference thus two effect grow power long population.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -59181,7 +59161,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7204621",
 		"description": "Ready western especially action theory second school on your now interesting.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -59236,7 +59216,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9336847",
 		"description": "Seek answer road thing knowledge garden author hard.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -59375,7 +59355,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5573825",
 		"description": "Political century left agency election give.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -59687,7 +59667,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2177362",
 		"description": "Measure degree middle police probably main Congress four term.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -60093,7 +60073,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4492269",
 		"description": "Sign example tend among can huge decade its security sell central.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -60153,7 +60133,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5152925",
 		"description": "Head positive reflect try involve PM person argue.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -60267,7 +60247,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7798659",
 		"description": "Wide current some quickly catch social action fine face clear space feeling change.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -60326,7 +60306,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4172247",
 		"description": "Father society dream radio smile conference box form you will degree join.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -60657,7 +60637,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7559415",
 		"description": "International I base score perhaps citizen history major adult thus look common kitchen.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -60686,7 +60666,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1211587",
 		"description": "Sing claim character environment bill way middle continue guess.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -60907,7 +60887,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4204430",
 		"description": "Provide economy teach defense my weight.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -61214,7 +61194,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4298794",
 		"description": "Player hard reduce alone fear charge treat everyone big century team participant rate.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -61327,7 +61307,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2595574",
 		"description": "Threat way participant within opportunity scene human discuss yard detail medical.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -61442,7 +61422,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4184079",
 		"description": "Our hear success avoid form join pretty special alone contain own nothing.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -61529,7 +61509,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8355861",
 		"description": "So wrong throughout water main same white any.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -61783,7 +61763,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8906792",
 		"description": "Learn ten magazine forward suggest laugh theory worker.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -62068,7 +62048,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5969749",
 		"description": "Sound arm class add piece however letter easy.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -62153,7 +62133,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1547191",
 		"description": "Friend huge middle who remember which although time instead claim.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -62428,7 +62408,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4424605",
 		"description": "Help into central today stage bit year mean voice.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -62482,7 +62462,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3267455",
 		"description": "Feeling visit indeed whose above when present these together mean statement.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -62619,7 +62599,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7249472",
 		"description": "Enter of minute wish message minute action into clear low explain.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -62733,7 +62713,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8048535",
 		"description": "Drop wind professor financial heart nature statement hold ten campaign fly student.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -62819,7 +62799,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9862067",
 		"description": "Entire whose rate suddenly study determine attorney could mission pull particularly young daughter.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -63160,7 +63140,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5343858",
 		"description": "General page grow west by current energy return.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -63305,7 +63285,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9940129",
 		"description": "Must same reality skill rock senior.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -63333,7 +63313,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6753036",
 		"description": "Miss once today rock different involve language across.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -63479,7 +63459,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4181006",
 		"description": "May story represent tree hour reality blue behind bad.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -63648,7 +63628,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4117640",
 		"description": "If positive capital friend network computer others act offer if.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -63676,7 +63656,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9718871",
 		"description": "Approach pretty difference bar challenge rise site part market.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -63702,7 +63682,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4543240",
 		"description": "And because beautiful soon someone TV air age Mrs value.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -63728,7 +63708,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9960609",
 		"description": "List important best environmental tree blue brother response look talk above.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -64011,7 +63991,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8182115",
 		"description": "Oil hold his type amount director pass hair natural newspaper.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -64320,7 +64300,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4193454",
 		"description": "Around senior mention environmental century tax party news.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -64825,7 +64805,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7121981",
 		"description": "Truth speech teacher much measure others total oil consider think in best concern.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -64966,7 +64946,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1511256",
 		"description": "Member event back thousand however stage government serve smile where season fund.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -65020,7 +65000,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2294096",
 		"description": "Good small wide upon item system around must.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -65048,7 +65028,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5300964",
 		"description": "Natural address population glass media wife throw under.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -65132,7 +65112,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9996750",
 		"description": "Drug morning which state lay relationship way.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -65304,7 +65284,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9498084",
 		"description": "Own few return direction maintain across candidate address more north their how color.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -65417,7 +65397,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1603957",
 		"description": "Card audience move prove meeting prove this property who change management another debate.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -65446,7 +65426,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3807520",
 		"description": "Require inside not knowledge fact adult.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -65611,7 +65591,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9372545",
 		"description": "Tree task conference free as north happy late party star.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -65723,7 +65703,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4894871",
 		"description": "Big to top light front whatever.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -65835,7 +65815,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3574032",
 		"description": "Time strong garden learn unit chance memory hour visit.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -65893,7 +65873,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6101788",
 		"description": "Hour call national hope when raise statement.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -66138,7 +66118,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3305014",
 		"description": "Area blood face hair prevent table high significant.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -66310,7 +66290,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5818514",
 		"description": "Owner hair few move feel major agent quite a shoulder foreign become thing.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -66420,7 +66400,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3903615",
 		"description": "Water place nor specific floor top have likely prove success hair deal arrive.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -66478,7 +66458,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8237228",
 		"description": "Answer student fight kind course daughter enough successful early information hold place.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -66790,7 +66770,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5183350",
 		"description": "Picture fast less base town college.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -66937,7 +66917,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6137847",
 		"description": "Build game kitchen play radio cell.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -67135,7 +67115,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8164251",
 		"description": "Authority use sister talk consumer around material check soon white must standard if.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -67163,7 +67143,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2762816",
 		"description": "Structure increase challenge college kid particular those sea southern size down.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -67280,7 +67260,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5363699",
 		"description": "Town understand dark future night hotel day offer sell.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -67306,7 +67286,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4434896",
 		"description": "Participant treat sort use daughter follow street.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -67474,7 +67454,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3156168",
 		"description": "Hot thing body strong look meet eight worker box I cell moment.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -67609,7 +67589,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8440649",
 		"description": "Answer choice be seven move employee act wife actually school common stop.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -67638,7 +67618,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2528842",
 		"description": "View just daughter mouth part fly form music shoulder give six.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -67776,7 +67756,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8636777",
 		"description": "History want soon professor street so listen else wait social cup conference reach.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -67946,7 +67926,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8945129",
 		"description": "Plan door line guy walk ago group fast seat push everything reflect.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -68003,7 +67983,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6030643",
 		"description": "Day large with act quite inside here conference pattern again.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -68117,7 +68097,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6324822",
 		"description": "Type here year the democratic perhaps affect house think hour.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -68228,7 +68208,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6806166",
 		"description": "Never control girl style discover several TV girl another.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -68402,7 +68382,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3868290",
 		"description": "Glass join truth win every score several current.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -68430,7 +68410,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5203039",
 		"description": "Attack explain image into around wrong how.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -68490,7 +68470,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2122443",
 		"description": "Move travel as seem parent matter win possible world story reality capital.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -68574,7 +68554,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5659471",
 		"description": "But store news well current get response.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -68743,7 +68723,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7833097",
 		"description": "Training production live talk building company or word them.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -68771,7 +68751,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5615624",
 		"description": "Pick spring ready level senior current.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -68829,7 +68809,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6958591",
 		"description": "Include either whatever senior determine can today image put check whose sport.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -68855,7 +68835,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3010550",
 		"description": "Relationship sort news series position may onto here beautiful since seem prevent.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -69113,7 +69093,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2279512",
 		"description": "Involve design become car stand population.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -69311,7 +69291,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2005505",
 		"description": "Whom north design force now scientist information few firm.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -69341,7 +69321,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4459856",
 		"description": "Weight police time dream general education oil between stop room.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -69509,7 +69489,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9672034",
 		"description": "Everyone final commercial push term offer consumer career above enjoy strong detail move.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -69798,7 +69778,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8638562",
 		"description": "Because play budget fall firm former.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -70164,7 +70144,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8953058",
 		"description": "Idea whatever organization able especially notice morning also body near.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -70612,7 +70592,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7982263",
 		"description": "Beat management across operation letter natural either.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -70696,7 +70676,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8963692",
 		"description": "Suffer even debate system actually central if.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -71204,7 +71184,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5195567",
 		"description": "Teacher skill go beautiful myself event crime.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -71322,7 +71302,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2610555",
 		"description": "Spring social develop rock mother bill relationship.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -71376,7 +71356,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9191199",
 		"description": "Since mention tell final time throughout talk either close.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -71433,7 +71413,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1165013",
 		"description": "Huge out trip realize per cost hope serious beat none value.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -71575,7 +71555,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3562661",
 		"description": "Talk for only security among save father successful similar.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -71627,7 +71607,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7609915",
 		"description": "Consider hear four strategy reach democratic already current bank blue expert worry.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -71766,7 +71746,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1135811",
 		"description": "Whether similar cell top fast under budget whether develop I there measure training.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -71825,7 +71805,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2896609",
 		"description": "Project worry show establish feel start development risk behavior two land else.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -71880,7 +71860,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6510923",
 		"description": "Dream grow agreement war perform lose glass executive staff.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -71938,7 +71918,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7921072",
 		"description": "Time large cost machine discussion bad billion eye money the them start all.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -71997,7 +71977,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2154457",
 		"description": "Scientist Democrat her everything any few professional course table spring top.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -72110,7 +72090,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4815243",
 		"description": "Middle side wide top general present themselves western real college car little.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -72242,7 +72222,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9784642",
 		"description": "Nor white rich support center hour full.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -72354,7 +72334,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4940528",
 		"description": "Then meeting pattern each nothing bag stop another about this page Democrat.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -72383,7 +72363,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5339123",
 		"description": "Above bring know information local movie including provide suddenly evidence base.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -72605,7 +72585,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7043388",
 		"description": "Finish door about cut away participant at choose power health about.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -73082,7 +73062,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4262545",
 		"description": "Save stay spend travel control between.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -73111,7 +73091,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5803005",
 		"description": "Low reach scientist term everything pressure three hold.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -73169,7 +73149,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2541018",
 		"description": "Situation power mouth generation interest explain white.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -73280,7 +73260,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3626989",
 		"description": "Scene food citizen miss matter debate station break.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -73335,7 +73315,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8381916",
 		"description": "Treat thus today soon somebody sometimes safe early administration rule information in crime.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -73620,7 +73600,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1829652",
 		"description": "Series approach ready glass art partner trip model key property step certainly.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -73648,7 +73628,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1759036",
 		"description": "Land general serve cause week along marriage under house center this.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -73674,7 +73654,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3899592",
 		"description": "Director draw herself suddenly peace too.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -73762,7 +73742,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3693378",
 		"description": "Practice form boy this point company manage affect name market stay gas in.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -73791,7 +73771,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9718241",
 		"description": "Others include feel today consumer record.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -73847,7 +73827,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6880720",
 		"description": "Off in behind effort mean our drop walk himself head star hope.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -74014,7 +73994,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5935375",
 		"description": "Author artist provide respond bed little big PM.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -74040,7 +74020,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5748575",
 		"description": "Movement increase culture look area trial.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -74098,7 +74078,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6256191",
 		"description": "Development time look detail process investment.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -74176,7 +74156,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9401579",
 		"description": "Try gun guy establish he bit particular ago key father want administration research.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -74370,7 +74350,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4293595",
 		"description": "Speak certain must local voice life.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -74481,7 +74461,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8643620",
 		"description": "View house north something man economy.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -74652,7 +74632,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1778205",
 		"description": "Effort message raise official executive a religious compare.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -74767,7 +74747,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1970914",
 		"description": "When remain sense tonight condition leader.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -74884,7 +74864,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5157932",
 		"description": "Ask over arrive store us too next tell though.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75023,7 +75003,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7166543",
 		"description": "Check off what moment big anyone worker.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75052,7 +75032,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2207521",
 		"description": "Management subject star people special worker year.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75082,7 +75062,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9866029",
 		"description": "Can crime husband land shoulder project meeting talk floor many business product beyond.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75110,7 +75090,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8975048",
 		"description": "Use point others hope population position turn natural seem use.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75220,7 +75200,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5063704",
 		"description": "Top nice whether kid line anything nice region.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75363,7 +75343,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4060917",
 		"description": "Little determine mission evidence easy cold so table.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75449,7 +75429,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1384552",
 		"description": "Make house street group activity water near hot condition society yard.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75475,7 +75455,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6871227",
 		"description": "Information outside risk magazine instead child another prove.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75504,7 +75484,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6547161",
 		"description": "Entire alone smile attorney push because lead leader.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75562,7 +75542,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6399334",
 		"description": "Expect ability value Mr hit Republican business movie.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75674,7 +75654,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8873252",
 		"description": "Cover increase once officer ahead star some probably street scientist close half whom.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75816,7 +75796,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9975800",
 		"description": "Enough law place marriage me use pay.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -75844,7 +75824,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8576443",
 		"description": "The language include church camera attention item decade reflect maybe.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -76042,7 +76022,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2728792",
 		"description": "Attack staff well fill show may good book very physical.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -76101,7 +76081,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9640608",
 		"description": "Kitchen whom could music seek soon meet across should.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -76131,7 +76111,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6603351",
 		"description": "Floor customer and TV create some.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -76273,7 +76253,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5618495",
 		"description": "Two attack ability trial garden discussion physical behind.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -76328,7 +76308,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2854986",
 		"description": "Far age find special mission expect cover.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -76640,7 +76620,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6801907",
 		"description": "Purpose condition artist growth along we action.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -76666,7 +76646,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4661524",
 		"description": "Mean challenge capital ready rich international one.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -76726,7 +76706,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4510363",
 		"description": "Professional buy himself important no water test.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -76752,7 +76732,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6768168",
 		"description": "Hit share present discussion his worry send.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -77037,7 +77017,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9419085",
 		"description": "Leader believe cost exactly season another rich star.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -77091,7 +77071,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2239056",
 		"description": "Reason step pull live something practice majority sort.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -77235,7 +77215,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4731657",
 		"description": "Foreign tax apply deep husband above.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -77353,7 +77333,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2351351",
 		"description": "Have care surface great me think understand.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -77408,7 +77388,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4514049",
 		"description": "Kind strategy throughout wife success shake left election local rise.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -77434,7 +77414,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5390818",
 		"description": "Many spring how phone professional reflect yard might people.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -77486,7 +77466,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1981865",
 		"description": "Every control director pick wonder type.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -77827,7 +77807,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8463513",
 		"description": "Pick there teacher tend small work wish kitchen feeling recognize coach manage.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -77936,7 +77916,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5164636",
 		"description": "Father safe son list know they apply player financial.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -78019,7 +77999,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7858024",
 		"description": "Sister film throughout worker doctor here pick finish upon.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -78133,7 +78113,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5625285",
 		"description": "Admit money identify affect space hard scientist agency.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -78330,7 +78310,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9867127",
 		"description": "Close save other until action term also through throw.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -78527,7 +78507,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4375907",
 		"description": "Same buy size state other measure newspaper door adult.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -78616,7 +78596,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5951387",
 		"description": "Father fight approach region with opportunity.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -78646,7 +78626,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4768521",
 		"description": "More run president especially message across leg moment economy.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -78674,7 +78654,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8123746",
 		"description": "Throw owner perhaps environmental step need.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -78925,7 +78905,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8174444",
 		"description": "Behind spend model impact new student process top participant let similar let.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79009,7 +78989,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6552546",
 		"description": "Exactly if my provide interesting easy material hundred kid attorney during sea movement.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79037,7 +79017,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3604150",
 		"description": "Mrs sing south happy when candidate operation case hotel especially tough protect word.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79118,7 +79098,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4918269",
 		"description": "Certainly field back send recently sport risk heavy school loss live.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79146,7 +79126,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1888590",
 		"description": "Pay chair less measure talk training.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79172,7 +79152,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4103188",
 		"description": "Red about economic as much window against gun allow run security kid campaign.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79228,7 +79208,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1825000",
 		"description": "Senior campaign produce situation Republican party drug Mrs machine cultural.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79258,7 +79238,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5450123",
 		"description": "Inside peace do above win once thing mission great police arm box agree.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79719,7 +79699,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2734584",
 		"description": "Consider speak thank analysis fast institution send police.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79748,7 +79728,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4096227",
 		"description": "Base mouth feel partner as enough group himself thing.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79832,7 +79812,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9255696",
 		"description": "Music people improve exist boy know body million draw.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79916,7 +79896,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8060557",
 		"description": "Arrive under ball particularly scene personal catch current decide.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -79944,7 +79924,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9627456",
 		"description": "Idea tend avoid officer again audience local if big.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -80031,7 +80011,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9779924",
 		"description": "Actually citizen success before manager rock by time six consider ask.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -80059,7 +80039,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5684458",
 		"description": "Summer should wait thing lead though.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -80119,7 +80099,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6945925",
 		"description": "Single hit form central quality head property yourself beyond drive wrong environment.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -80148,7 +80128,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7815725",
 		"description": "Forward data total travel baby thing throughout.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -80351,7 +80331,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7590062",
 		"description": "Chance argue hair growth major discuss consider ground trip expect.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -80410,7 +80390,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3986283",
 		"description": "Yet century air someone reach discover official serious whom worry.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -80670,7 +80650,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1561308",
 		"description": "Available time black its sure letter close another.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -80755,7 +80735,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9962813",
 		"description": "Both seem theory throw price under radio western organization religious.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -80781,7 +80761,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1914129",
 		"description": "International source read travel million there bring.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -80809,7 +80789,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5130314",
 		"description": "General manager great establish moment decision offer member kind southern notice sing network.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -80893,7 +80873,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3349012",
 		"description": "However near general politics family church audience.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81036,7 +81016,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5819003",
 		"description": "Figure so stage leader world perhaps room.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81118,7 +81098,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2490535",
 		"description": "Challenge early left also leader officer wait social chance.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81176,7 +81156,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7562658",
 		"description": "Need successful control reason most similar mean interview recently those unit.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81378,7 +81358,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6669263",
 		"description": "Series school too animal wish best simply mind occur to response collection.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81436,7 +81416,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4627501",
 		"description": "During black reflect analysis special member practice old.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81464,7 +81444,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2307155",
 		"description": "Argue third into arm wind marriage prove nothing author exist.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81492,7 +81472,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7490542",
 		"description": "Where growth interesting these real experience here unit organization party area seat.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81547,7 +81527,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1172400",
 		"description": "Also reality be us structure group court benefit special majority born star attack also.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81576,7 +81556,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6998715",
 		"description": "Among pressure sea series talk see seat service daughter list.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81633,7 +81613,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9259962",
 		"description": "Recognize generation natural my or clearly go best world.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81752,7 +81732,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2503025",
 		"description": "Offer concern sort small which job notice whom a language week we medical.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -81987,7 +81967,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1232170",
 		"description": "West over staff full outside half child.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -82103,7 +82083,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "2016432",
 		"description": "Ahead impact candidate produce phone center nature time to up time head.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -82214,7 +82194,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "8082869",
 		"description": "Sea pick let husband agreement pressure window place policy never.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -82330,7 +82310,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7671588",
 		"description": "Open authority thousand if go each it style author growth some positive.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -82442,7 +82422,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4153225",
 		"description": "Son hope hot film administration plan professional.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -82468,7 +82448,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1502103",
 		"description": "Staff yet money specific network first standard arm fear generation.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -82498,7 +82478,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "7717300",
 		"description": "Recent arm culture couple training news sing deal Mr similar after.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -82646,7 +82626,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6378477",
 		"description": "Summer energy establish quality to two eat study popular.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -82789,7 +82769,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9237585",
 		"description": "Rate need yes city glass local actually recent positive lawyer.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -82963,7 +82943,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4654459",
 		"description": "Big test show what recognize class subject.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -83160,7 +83140,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1608844",
 		"description": "Explain outside start girl not science rule audience value history prevent message.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -83307,7 +83287,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "3999982",
 		"description": "Need forward someone nor window kind religious policy former the any.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -83475,7 +83455,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4037170",
 		"description": "Natural early central somebody large per listen talk choose couple popular another situation.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -83620,7 +83600,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "9644736",
 		"description": "Evidence under expect six total free employee benefit.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -83986,7 +83966,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "1743757",
 		"description": "Price develop anyone mouth real experience security about.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -84068,7 +84048,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5617534",
 		"description": "Player trouble week new far American on course here director view increase soldier scene.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -84155,7 +84135,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6885754",
 		"description": "Because head Mrs here develop sister.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -84269,7 +84249,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "6479339",
 		"description": "People piece choice kitchen relate use indicate these pattern family.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -84352,7 +84332,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "4523178",
 		"description": "Tv here another heart hot seven act feel carry have front past perhaps.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",
@@ -84520,7 +84500,7 @@ export const productsMock: Product[] = [
 		],
 		"price": "5295158",
 		"description": "Threat skill write development both out similar the leg without black.",
-		"categoryId": "ke-tivi",
+		"categoryId": "ban-ghe",
 		"attributes": [
 			{
 				"key": "Chất liệu",

@@ -4,7 +4,7 @@ import React from 'react'
 import { HeroSlider } from '@woodify/ui/components/HeroSlider'
 import { ProductSection } from '@/components/product-section'
 import { ProductCarousel } from '@/components/product-carousel'
-import { Product } from '@/data/productsMock'
+import PRODUCTS_KE_TIVI from '@/data/products-ke-tivi'
 
 const slides = [
 	{
@@ -105,7 +105,7 @@ const allProducts: Product[] = [
 ]
 
 const featuredProducts = allProducts
-const featuredChairs = allProducts.filter(p => p.categoryId === 'ban-ghe')
+const keTivis = PRODUCTS_KE_TIVI.filter(p => p.categoryId === 'ke-tivi').slice(0, 8)
 const featuredAltProducts = allProducts.filter(p => p.categoryId !== 'ban-ghe')
 
 export default function Home() {
@@ -113,7 +113,7 @@ export default function Home() {
 		<div>
 			<HeroSlider slides={slides} />
 
-			<div className="max-w-7xl mx-auto px-4 py-10 space-y-16">
+			<div className="max-w-7xl mx-auto px-4 py-10 space-y-16 bg-gray-100/70">
 				<ProductCarousel
 					products={featuredProducts}
 					title="Sản phẩm nổi bật"
@@ -121,9 +121,9 @@ export default function Home() {
 				/>
 
 				<ProductSection
-					title="Bàn ghế nổi bật"
-					products={featuredChairs}
-					viewAllHref="/ban-ghe"
+					title="Kệ tivi gỗ"
+					products={keTivis}
+					viewAllHref="/category/ke-tivi"
 				/>
 
 				<ProductSection
