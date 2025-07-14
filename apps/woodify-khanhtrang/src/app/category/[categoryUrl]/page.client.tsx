@@ -109,7 +109,6 @@ export default function CategoryPageClient(props: Props) {
 						<BreadcrumbItem>
 							<BreadcrumbLink href={`/category/${category.url}`}>{category.name}</BreadcrumbLink>
 						</BreadcrumbItem>
-
 					</BreadcrumbList>
 				</Breadcrumb>
 

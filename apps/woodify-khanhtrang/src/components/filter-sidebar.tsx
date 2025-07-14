@@ -8,7 +8,7 @@ import {
 } from '@woodify/ui/components/accordion'
 import { Checkbox } from '@woodify/ui/components/checkbox'
 import { Button } from '@woodify/ui/components/button'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 
 type FilterOption = { label: string; value: string }
 type Filter = { key: string; label: string; type: 'multi' | 'range'; options: FilterOption[] }
@@ -46,17 +46,28 @@ export const FilterSidebar = ({ filters, onApply }: Props) => {
 		onApply(initial)
 	}
 
+	const buildClassNameByKeyFilter = useCallback((key: string) => {
+		switch (key) {
+			case 'price':
+				return 'flex flex-col gap-2 pt-2';
+			case 'Chất liệu Gỗ':
+				return 'grid grid-cols-1';
+			default:
+				return 'grid grid-cols-1 md:grid-cols-2 gap-2 pt-2';
+		}
+
+	}, [])
 
 	return (
 		<div className="flex flex-col h-full md:max-h-[calc(100vh-8rem)] overflow-hidden">
 			{/* Nội dung filter scrollable */}
-			<div className="flex-1 overflow-auto px-2 pb-28 md:pb-4">
+			<div className="overflow-auto px-2 pb-28 md:pb-4">
 				<Accordion type="multiple" className="space-y-2">
 					{filters.map(filter => (
 						<AccordionItem key={filter.key} value={filter.key}>
 							<AccordionTrigger className="text-sm font-medium">{filter.label}</AccordionTrigger>
 							<AccordionContent>
-								<div className={`${filter.key === 'price' ? 'flex flex-col gap-2 pt-2' : 'grid grid-cols-2 sm:grid-cols-3 gap-2 pt-2'}`}>
+								<div className={`${buildClassNameByKeyFilter(filter.key)} space-y-2`}>
 									{filter.options.map(option => (
 										<label key={option.value} className="flex items-center space-x-2 text-sm">
 											{filter.type === 'multi' ? (
@@ -73,6 +84,7 @@ export const FilterSidebar = ({ filters, onApply }: Props) => {
 												/>
 											)}
 											<span>{option.label}</span>
+
 										</label>
 									))}
 								</div>
