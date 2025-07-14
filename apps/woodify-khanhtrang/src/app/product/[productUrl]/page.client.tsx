@@ -1,11 +1,11 @@
 'use client'
 
 import { useParams } from 'next/navigation'
-import { useState } from 'react'
 import {
 	Breadcrumb,
 	BreadcrumbItem,
-	BreadcrumbLink, BreadcrumbList,
+	BreadcrumbLink,
+	BreadcrumbList,
 	BreadcrumbSeparator,
 } from '@woodify/ui/components/breadcrumb'
 import { ProductGallery } from '@/components/product-gallery'
@@ -14,6 +14,7 @@ import { formatPrice } from '@/utils/formatPrice'
 import { HomeIcon } from '@heroicons/react/24/outline'
 import PRODUCTS from '@/data/products'
 import Link from 'next/link'
+import { ProductSection } from '@/components/product-section'
 
 const reviews = [
 	{ id: 1, author: 'Nguyễn A', rating: 5, comment: 'Rất đẹp!' },
@@ -23,16 +24,13 @@ const reviews = [
 export default function ProductPageClient() {
 	const { productUrl } = useParams() as {productUrl: string}
 	const product = PRODUCTS.find(p => p.url === productUrl)
-	const [qty, setQty] = useState(1)
 
 	if (!product) {
 		return <div className="container mx-auto px-4 py-8 text-center text-red-600 font-semibold">Sản phẩm không tồn
 			tại.</div>
 	}
 
-	const relatedProducts = PRODUCTS
-	.filter(p => p.id !== product.id && p.categoryId === product.categoryId)
-	.slice(0, 4)
+	const relatedProducts = PRODUCTS.filter(p => p.id !== product.id && p.categoryId === product.categoryId)
 
 	return (
 		<div className="container mx-auto px-4 py-8 space-y-12 bg-gray-100/70">
@@ -89,14 +87,10 @@ export default function ProductPageClient() {
 			{/* Related products */}
 			{relatedProducts.length > 0 && (
 				<div>
-					<h2 className="text-2xl font-semibold mb-4">Sản phẩm liên quan</h2>
-					<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-						{relatedProducts.map(p => (
-							<Link href={`/product/${p.url}`} key={p.id}>
-								<ProductCard product={p}/>
-							</Link>
-						))}
-					</div>
+					<ProductSection
+						title="Sản phẩm liên quan"
+						products={relatedProducts}
+					/>
 				</div>
 			)}
 		</div>

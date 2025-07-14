@@ -87,7 +87,7 @@ const PRODUCTS_KE_TIVI: Product[] = [
 		],
 	},
 	{
-		id: '3',
+		id: '4',
 		url: 'mo-lom-xoan',
 		name: 'Mõ lõm (xoan)',
 		defaultImage: '/images/ke-tivi/z6423294372703_4010665d4a28d07a5485be49fab92640.jpg',
@@ -119,7 +119,7 @@ const PRODUCTS_KE_TIVI: Product[] = [
 		],
 	},
 	{
-		id: '4',
+		id: '5',
 		url: 'mo-lom-huong-da',
 		name: 'Mõ lõm (hương đá)',
 		defaultImage: '/images/ke-tivi/z6801300359181_2084082aaebd26b5a145f1095f51c16b.jpg',
@@ -152,7 +152,7 @@ const PRODUCTS_KE_TIVI: Product[] = [
 		],
 	},
 	{
-		id: '5',
+		id: '6',
 		url: 'mo-loi-xoan',
 		name: 'Mõ lồi (xoan)',
 		defaultImage: '/images/ke-tivi/z6423295292448_b303cc5e4b0df3b881fb3ecc955dc47b.jpg',
@@ -184,7 +184,7 @@ const PRODUCTS_KE_TIVI: Product[] = [
 		],
 	},
 	{
-		id: '6',
+		id: '7',
 		url: 'mo-loi-huong-da',
 		name: 'Mõ lồi (hương đá)',
 		defaultImage: '/images/ke-tivi/z6801218056344_8a15671b42634f90879f392ef5b859eb.jpg',
@@ -212,7 +212,7 @@ const PRODUCTS_KE_TIVI: Product[] = [
 		],
 	},
 	{
-		id: '7',
+		id: '8',
 		url: 'ke-tivi-hoa-hong',
 		name: 'Kệ hoa hồng',
 		defaultImage: '/images/ke-tivi/z6423295434128_d4bb03f4283f8d173a0d105225a578af.jpg',
@@ -239,9 +239,8 @@ const PRODUCTS_KE_TIVI: Product[] = [
 			{ key: 'Chiều Cao', value: '76', unit: 'cm' },
 		],
 	},
-
 	{
-		id: '12',
+		id: '9',
 		url: 'ke-tivi-cot-nho',
 		name: 'Hàng cột nho',
 		defaultImage: '/images/ke-tivi/z6423296347479_1d3d2fe0dbc19fabfc289f6da938058b.jpg',
@@ -273,9 +272,8 @@ const PRODUCTS_KE_TIVI: Product[] = [
 			{ key: 'Chiều Cao', value: '76', unit: 'cm' },
 		],
 	},
-
 	{
-		id: '14',
+		id: '10',
 		url: 'ke-tivi-sung',
 		name: 'kệ sừng',
 		defaultImage: '/images/ke-tivi/z6423296918807_29647150487780f6557bdb4d7276adcf.jpg',

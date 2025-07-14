@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { buildFilters } from '@/utils/buildFilters'
 import { FilterSidebar } from '@/components/filter-sidebar'
 import {
@@ -12,20 +12,11 @@ import {
 } from '@woodify/ui/components/breadcrumb'
 import { Category } from '@/data/categoriesMock'
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@woodify/ui/components/sheet'
-import {
-	Pagination,
-	PaginationContent,
-	PaginationEllipsis,
-	PaginationItem,
-	PaginationLink,
-	PaginationNext,
-	PaginationPrevious,
-} from '@woodify/ui/components/pagination'
 import Link from 'next/link'
-import { getPaginationRange } from '@/utils/getPaginationRange'
 import { ProductCard } from '@/components/product-card'
 import { HomeIcon } from '@heroicons/react/24/outline'
 import PRODUCTS from '@/data/products'
+import { ProductCardSkeleton } from '@/components/product-card-skeleton'
 
 type Props = {
 	category: Category
@@ -34,6 +25,7 @@ export default function CategoryPageClient(props: Props) {
 	const { category } = props
 	const allProducts = PRODUCTS.filter(p => p.categoryId === category.id)
 	const filters = buildFilters(allProducts)
+	const [loading, setLoading] = useState(false)
 
 	const [filtered, setFiltered] = useState(allProducts)
 
@@ -67,17 +59,40 @@ export default function CategoryPageClient(props: Props) {
 	const [page, setPage] = useState(1)
 	const itemsPerPage = 8
 
-	const sortedProducts = [...filtered].sort((a, b) => {
-		const priceA = parseInt(a.price, 10)
-		const priceB = parseInt(b.price, 10)
+	const sortedProducts = useMemo(() => {
+		return [...filtered].sort((a, b) => {
+			const priceA = +a.price
+			const priceB = +b.price
+			if (sortValue === 'price-asc') return priceA - priceB
+			if (sortValue === 'price-desc') return priceB - priceA
+			return 0
+		})
+	}, [filtered, sortValue])
 
-		if (sortValue === 'price-asc') return priceA - priceB
-		if (sortValue === 'price-desc') return priceB - priceA
-		return 0
-	})
+	const [visibleProducts, setVisibleProducts] = useState(
+		sortedProducts.slice(0, itemsPerPage)
+	)
+	const [hasMore, setHasMore] = useState(sortedProducts.length > itemsPerPage)
+	const observer = useRef<IntersectionObserver | null>(null)
 
-	const totalPages = Math.ceil(sortedProducts.length / itemsPerPage)
-	const pagedProducts = sortedProducts.slice((page - 1) * itemsPerPage, page * itemsPerPage)
+	const bottomRef = useCallback((node: HTMLDivElement | null) => {
+		if (!hasMore) return
+		if (observer.current) observer.current.disconnect()
+		observer.current = new IntersectionObserver(entries => {
+			if (entries[0].isIntersecting) {
+				setLoading(true)
+				setPage(prev => prev + 1)
+			}
+		})
+		if (node) observer.current.observe(node)
+	}, [hasMore])
+
+	useEffect(() => {
+		const end = page * itemsPerPage
+		setVisibleProducts(sortedProducts.slice(0, end))
+		setHasMore(sortedProducts.length > end)
+		setLoading(false)
+	}, [page, sortedProducts])
 
 	return (
 		<div className="bg-gray-100/70">
@@ -145,74 +160,25 @@ export default function CategoryPageClient(props: Props) {
 						</div>
 
 						{/* Product grid */}
-						{pagedProducts.length === 0 ? (
+						{visibleProducts.length === 0 ? (
 							<div className="text-center text-gray-500 py-8">
 								Không có sản phẩm nào phù hợp với bộ lọc đã chọn.
 							</div>
 						) : (
 							<>
-								<div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-									{pagedProducts.map(product => (
+								<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+									{visibleProducts.map(product => (
 										<Link href={`/product/${product.url}`} key={product.id}>
 											<ProductCard product={product}/>
 										</Link>
 									))}
-								</div>
-								<div className="flex justify-center space-x-4 mt-4">
-									<Pagination>
-										<PaginationContent>
-											{/* Previous */}
-											<PaginationItem>
-												<PaginationPrevious
-													href="#"
-													onClick={(e) => {
-														e.preventDefault()
-														setPage((prev) => Math.max(prev - 1, 1))
-													}}
-													aria-disabled={page === 1}
-													className={page === 1 ? 'opacity-50 pointer-events-none' : ''}
-												/>
-											</PaginationItem>
-
-											{/* Page numbers with ellipsis */}
-											{getPaginationRange(page, totalPages).map((item, idx) => (
-												<PaginationItem key={idx}>
-													{item === 'ellipsis' ? (
-														<PaginationEllipsis/>
-													) : (
-														<PaginationLink
-															href="#"
-															isActive={page === item}
-															onClick={(e) => {
-																e.preventDefault()
-																setPage(item)
-															}}
-														>
-															{item}
-														</PaginationLink>
-													)}
-												</PaginationItem>
-											))}
-
-											{/* Next */}
-											<PaginationItem>
-												<PaginationNext
-													href="#"
-													onClick={(e) => {
-														e.preventDefault()
-														setPage((prev) => Math.min(prev + 1, totalPages))
-													}}
-													aria-disabled={page === totalPages}
-													className={page === totalPages ? 'opacity-50 pointer-events-none' : ''}
-												/>
-											</PaginationItem>
-										</PaginationContent>
-									</Pagination>
+									{loading && Array.from({ length: itemsPerPage }).map((_, idx) => (
+										<ProductCardSkeleton key={`skeleton-${page}-${idx}`} />
+									))}
 								</div>
 							</>
 						)}
-
-
+						<div ref={bottomRef} className="h-1"></div>
 					</main>
 				</div>
 			</div>

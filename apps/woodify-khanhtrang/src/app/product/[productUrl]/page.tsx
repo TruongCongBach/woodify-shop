@@ -1,6 +1,7 @@
 // apps/woodify-khanhtrang/src/app/product/[productId]/page.tsx
 import ProductPageClient from './page.client'
 import productsMock from '../../../data/productsMock'
+import PRODUCTS from '@/data/products'
 
 
 export default function ProductPage() {
@@ -16,7 +17,7 @@ export async function generateMetadata(props: Props) {
 	const slug = Array.isArray(productUrl)
 		? productUrl[productUrl.length - 1]
 		: productUrl || '';
-	const product = productsMock.find(p => p.url === slug)
+	const product = PRODUCTS.find(p => p.url === slug)
 
 	if (!product) {
 		return {
@@ -34,7 +35,7 @@ export async function generateMetadata(props: Props) {
 			title: name,
 			description,
 			type: 'website',
-			images: images.map(src => ({
+			images: images.map((src:string) => ({
 				url: src,
 				width: 800,
 				height: 600,
