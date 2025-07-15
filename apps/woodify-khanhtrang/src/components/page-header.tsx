@@ -7,7 +7,6 @@ import {
 	SheetContent,
 	SheetDescription,
 	SheetHeader,
-	SheetTitle,
 	SheetTrigger,
 } from '@woodify/ui/components/sheet'
 import { CategoryAccordionNav } from '@/components/category-accordion-nav'

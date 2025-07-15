@@ -43,7 +43,6 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
 	},
 	{
 		"id": "prod-2",
@@ -89,7 +88,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-3",
@@ -135,7 +134,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-4",
@@ -181,7 +180,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-5",
@@ -227,7 +226,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-6",
@@ -273,7 +272,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-7",
@@ -319,7 +318,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-8",
@@ -365,7 +364,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-9",
@@ -411,7 +410,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-10",
@@ -457,7 +456,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-11",
@@ -503,7 +502,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-12",
@@ -549,7 +548,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-13",
@@ -595,7 +594,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-14",
@@ -641,7 +640,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-15",
@@ -687,7 +686,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-16",
@@ -733,7 +732,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-17",
@@ -779,7 +778,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-18",
@@ -825,7 +824,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-19",
@@ -871,7 +870,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-20",
@@ -917,7 +916,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-21",
@@ -963,7 +962,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-22",
@@ -1009,7 +1008,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-23",
@@ -1055,7 +1054,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-24",
@@ -1101,7 +1100,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-25",
@@ -1147,7 +1146,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-26",
@@ -1193,7 +1192,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-27",
@@ -1239,7 +1238,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-28",
@@ -1285,7 +1284,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-29",
@@ -1331,7 +1330,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-30",
@@ -1377,7 +1376,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-31",
@@ -1423,7 +1422,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-32",
@@ -1469,7 +1468,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-33",
@@ -1515,7 +1514,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-34",
@@ -1561,7 +1560,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-35",
@@ -1607,7 +1606,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-36",
@@ -1653,7 +1652,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-37",
@@ -1699,7 +1698,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-38",
@@ -1745,7 +1744,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-39",
@@ -1791,7 +1790,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-40",
@@ -1837,7 +1836,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-41",
@@ -1883,7 +1882,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-42",
@@ -1929,7 +1928,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-43",
@@ -1975,7 +1974,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-44",
@@ -2021,7 +2020,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-45",
@@ -2067,7 +2066,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-46",
@@ -2113,7 +2112,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-47",
@@ -2159,7 +2158,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-48",
@@ -2205,7 +2204,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-49",
@@ -2251,7 +2250,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-50",
@@ -2297,7 +2296,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-51",
@@ -2343,7 +2342,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-52",
@@ -2389,7 +2388,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-53",
@@ -2435,7 +2434,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-54",
@@ -2481,7 +2480,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-55",
@@ -2527,7 +2526,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-56",
@@ -2573,7 +2572,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-57",
@@ -2619,7 +2618,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-58",
@@ -2665,7 +2664,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-59",
@@ -2711,7 +2710,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-60",
@@ -2757,7 +2756,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-61",
@@ -2803,7 +2802,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-62",
@@ -2849,7 +2848,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-63",
@@ -2895,7 +2894,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-64",
@@ -2941,7 +2940,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-65",
@@ -2987,7 +2986,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-66",
@@ -3033,7 +3032,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-67",
@@ -3079,7 +3078,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-68",
@@ -3125,7 +3124,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-69",
@@ -3171,7 +3170,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-70",
@@ -3217,7 +3216,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-71",
@@ -3263,7 +3262,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-72",
@@ -3309,7 +3308,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-73",
@@ -3355,7 +3354,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-74",
@@ -3401,7 +3400,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-75",
@@ -3447,7 +3446,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-76",
@@ -3493,7 +3492,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-77",
@@ -3539,7 +3538,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-78",
@@ -3585,7 +3584,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-79",
@@ -3631,7 +3630,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-80",
@@ -3677,7 +3676,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-81",
@@ -3723,7 +3722,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-82",
@@ -3769,7 +3768,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-83",
@@ -3815,7 +3814,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-84",
@@ -3861,7 +3860,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-85",
@@ -3907,7 +3906,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-86",
@@ -3953,7 +3952,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-87",
@@ -3999,7 +3998,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-88",
@@ -4045,7 +4044,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-89",
@@ -4091,7 +4090,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-90",
@@ -4137,7 +4136,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-91",
@@ -4183,7 +4182,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-92",
@@ -4229,7 +4228,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-93",
@@ -4275,7 +4274,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-94",
@@ -4321,7 +4320,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-95",
@@ -4367,7 +4366,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-96",
@@ -4413,7 +4412,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-97",
@@ -4459,7 +4458,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-98",
@@ -4505,7 +4504,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-99",
@@ -4551,7 +4550,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-100",
@@ -4597,7 +4596,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-101",
@@ -4643,7 +4642,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-102",
@@ -4689,7 +4688,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-103",
@@ -4735,7 +4734,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-104",
@@ -4781,7 +4780,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-105",
@@ -4827,7 +4826,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-106",
@@ -4873,7 +4872,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-107",
@@ -4919,7 +4918,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-108",
@@ -4965,7 +4964,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-109",
@@ -5011,7 +5010,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-110",
@@ -5057,7 +5056,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-111",
@@ -5103,7 +5102,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-112",
@@ -5149,7 +5148,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-113",
@@ -5195,7 +5194,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-114",
@@ -5241,7 +5240,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-115",
@@ -5287,7 +5286,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-116",
@@ -5333,7 +5332,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-117",
@@ -5379,7 +5378,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-118",
@@ -5425,7 +5424,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-119",
@@ -5471,7 +5470,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-120",
@@ -5517,7 +5516,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-121",
@@ -5563,7 +5562,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-122",
@@ -5609,7 +5608,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-123",
@@ -5655,7 +5654,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-124",
@@ -5701,7 +5700,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-125",
@@ -5747,7 +5746,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-126",
@@ -5793,7 +5792,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-127",
@@ -5839,7 +5838,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-128",
@@ -5885,7 +5884,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-129",
@@ -5931,7 +5930,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-130",
@@ -5977,7 +5976,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-131",
@@ -6023,7 +6022,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-132",
@@ -6069,7 +6068,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-133",
@@ -6115,7 +6114,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-134",
@@ -6161,7 +6160,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-135",
@@ -6207,7 +6206,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-136",
@@ -6253,7 +6252,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-137",
@@ -6299,7 +6298,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-138",
@@ -6345,7 +6344,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-139",
@@ -6391,7 +6390,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-140",
@@ -6437,7 +6436,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-141",
@@ -6483,7 +6482,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-142",
@@ -6529,7 +6528,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-143",
@@ -6575,7 +6574,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-144",
@@ -6621,7 +6620,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-145",
@@ -6667,7 +6666,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-146",
@@ -6713,7 +6712,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-147",
@@ -6759,7 +6758,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-148",
@@ -6805,7 +6804,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-149",
@@ -6851,7 +6850,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-150",
@@ -6897,7 +6896,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-151",
@@ -6943,7 +6942,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-152",
@@ -6989,7 +6988,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-153",
@@ -7035,7 +7034,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-154",
@@ -7081,7 +7080,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-155",
@@ -7127,7 +7126,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-156",
@@ -7173,7 +7172,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-157",
@@ -7219,7 +7218,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-158",
@@ -7265,7 +7264,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-159",
@@ -7311,7 +7310,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-160",
@@ -7357,7 +7356,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-161",
@@ -7403,7 +7402,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-162",
@@ -7449,7 +7448,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-163",
@@ -7495,7 +7494,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-164",
@@ -7541,7 +7540,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-165",
@@ -7587,7 +7586,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-166",
@@ -7633,7 +7632,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-167",
@@ -7679,7 +7678,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-168",
@@ -7725,7 +7724,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-169",
@@ -7771,7 +7770,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-170",
@@ -7817,7 +7816,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-171",
@@ -7863,7 +7862,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-172",
@@ -7909,7 +7908,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-173",
@@ -7955,7 +7954,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-174",
@@ -8001,7 +8000,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-175",
@@ -8047,7 +8046,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-176",
@@ -8093,7 +8092,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-177",
@@ -8139,7 +8138,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-178",
@@ -8185,7 +8184,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-179",
@@ -8231,7 +8230,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-180",
@@ -8277,7 +8276,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-181",
@@ -8323,7 +8322,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-182",
@@ -8369,7 +8368,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-183",
@@ -8415,7 +8414,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-184",
@@ -8461,7 +8460,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-185",
@@ -8507,7 +8506,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-186",
@@ -8553,7 +8552,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-187",
@@ -8599,7 +8598,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-188",
@@ -8645,7 +8644,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-189",
@@ -8691,7 +8690,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-190",
@@ -8737,7 +8736,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-191",
@@ -8783,7 +8782,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-192",
@@ -8829,7 +8828,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-193",
@@ -8875,7 +8874,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-194",
@@ -8921,7 +8920,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-195",
@@ -8967,7 +8966,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-196",
@@ -9013,7 +9012,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-197",
@@ -9059,7 +9058,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-198",
@@ -9105,7 +9104,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-199",
@@ -9151,7 +9150,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-200",
@@ -9197,7 +9196,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-201",
@@ -9243,7 +9242,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-202",
@@ -9289,7 +9288,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-203",
@@ -9335,7 +9334,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-204",
@@ -9381,7 +9380,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-205",
@@ -9427,7 +9426,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-206",
@@ -9473,7 +9472,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-207",
@@ -9519,7 +9518,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-208",
@@ -9565,7 +9564,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-209",
@@ -9611,7 +9610,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-210",
@@ -9657,7 +9656,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-211",
@@ -9703,7 +9702,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-212",
@@ -9749,7 +9748,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-213",
@@ -9795,7 +9794,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-214",
@@ -9841,7 +9840,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-215",
@@ -9887,7 +9886,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-216",
@@ -9933,7 +9932,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-217",
@@ -9979,7 +9978,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-218",
@@ -10025,7 +10024,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-219",
@@ -10071,7 +10070,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-220",
@@ -10117,7 +10116,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-221",
@@ -10163,7 +10162,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-222",
@@ -10209,7 +10208,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-223",
@@ -10255,7 +10254,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-224",
@@ -10301,7 +10300,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-225",
@@ -10347,7 +10346,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-226",
@@ -10393,7 +10392,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-227",
@@ -10439,7 +10438,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-228",
@@ -10485,7 +10484,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-229",
@@ -10531,7 +10530,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-230",
@@ -10577,7 +10576,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-231",
@@ -10623,7 +10622,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-232",
@@ -10669,7 +10668,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-233",
@@ -10715,7 +10714,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-234",
@@ -10761,7 +10760,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-235",
@@ -10807,7 +10806,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-236",
@@ -10853,7 +10852,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-237",
@@ -10899,7 +10898,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-238",
@@ -10945,7 +10944,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-239",
@@ -10991,7 +10990,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-240",
@@ -11037,7 +11036,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-241",
@@ -11083,7 +11082,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-242",
@@ -11129,7 +11128,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-243",
@@ -11175,7 +11174,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-244",
@@ -11221,7 +11220,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-245",
@@ -11267,7 +11266,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-246",
@@ -11313,7 +11312,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-247",
@@ -11359,7 +11358,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-248",
@@ -11405,7 +11404,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-249",
@@ -11451,7 +11450,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-250",
@@ -11497,7 +11496,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-251",
@@ -11543,7 +11542,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-252",
@@ -11589,7 +11588,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-253",
@@ -11635,7 +11634,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-254",
@@ -11681,7 +11680,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-255",
@@ -11727,7 +11726,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-256",
@@ -11773,7 +11772,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-257",
@@ -11819,7 +11818,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-258",
@@ -11865,7 +11864,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-259",
@@ -11911,7 +11910,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-260",
@@ -11957,7 +11956,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-261",
@@ -12003,7 +12002,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-262",
@@ -12049,7 +12048,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-263",
@@ -12095,7 +12094,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-264",
@@ -12141,7 +12140,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-265",
@@ -12187,7 +12186,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-266",
@@ -12233,7 +12232,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-267",
@@ -12279,7 +12278,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-268",
@@ -12325,7 +12324,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-269",
@@ -12371,7 +12370,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-270",
@@ -12417,7 +12416,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-271",
@@ -12463,7 +12462,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-272",
@@ -12509,7 +12508,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-273",
@@ -12555,7 +12554,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-274",
@@ -12601,7 +12600,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-275",
@@ -12647,7 +12646,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-276",
@@ -12693,7 +12692,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-277",
@@ -12739,7 +12738,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-278",
@@ -12785,7 +12784,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-279",
@@ -12831,7 +12830,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-280",
@@ -12877,7 +12876,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-281",
@@ -12923,7 +12922,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-282",
@@ -12969,7 +12968,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-283",
@@ -13015,7 +13014,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-284",
@@ -13061,7 +13060,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-285",
@@ -13107,7 +13106,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-286",
@@ -13153,7 +13152,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-287",
@@ -13199,7 +13198,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-288",
@@ -13245,7 +13244,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-289",
@@ -13291,7 +13290,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-290",
@@ -13337,7 +13336,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-291",
@@ -13383,7 +13382,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-292",
@@ -13429,7 +13428,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-293",
@@ -13475,7 +13474,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-294",
@@ -13521,7 +13520,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-295",
@@ -13567,7 +13566,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-296",
@@ -13613,7 +13612,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-297",
@@ -13659,7 +13658,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-298",
@@ -13705,7 +13704,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-299",
@@ -13751,7 +13750,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-300",
@@ -13797,7 +13796,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-301",
@@ -13843,7 +13842,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-302",
@@ -13889,7 +13888,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-303",
@@ -13935,7 +13934,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-304",
@@ -13981,7 +13980,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-305",
@@ -14027,7 +14026,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-306",
@@ -14073,7 +14072,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-307",
@@ -14119,7 +14118,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-308",
@@ -14165,7 +14164,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-309",
@@ -14211,7 +14210,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-310",
@@ -14257,7 +14256,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-311",
@@ -14303,7 +14302,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-312",
@@ -14349,7 +14348,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-313",
@@ -14395,7 +14394,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-314",
@@ -14441,7 +14440,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-315",
@@ -14487,7 +14486,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-316",
@@ -14533,7 +14532,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-317",
@@ -14579,7 +14578,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-318",
@@ -14625,7 +14624,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-319",
@@ -14671,7 +14670,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-320",
@@ -14717,7 +14716,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-321",
@@ -14763,7 +14762,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-322",
@@ -14809,7 +14808,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-323",
@@ -14855,7 +14854,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-324",
@@ -14901,7 +14900,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-325",
@@ -14947,7 +14946,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-326",
@@ -14993,7 +14992,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-327",
@@ -15039,7 +15038,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-328",
@@ -15085,7 +15084,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-329",
@@ -15131,7 +15130,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-330",
@@ -15177,7 +15176,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-331",
@@ -15223,7 +15222,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-332",
@@ -15269,7 +15268,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-333",
@@ -15315,7 +15314,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-334",
@@ -15361,7 +15360,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-335",
@@ -15407,7 +15406,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-336",
@@ -15453,7 +15452,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-337",
@@ -15499,7 +15498,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-338",
@@ -15545,7 +15544,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-339",
@@ -15591,7 +15590,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-340",
@@ -15637,7 +15636,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-341",
@@ -15683,7 +15682,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-342",
@@ -15729,7 +15728,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-343",
@@ -15775,7 +15774,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-344",
@@ -15821,7 +15820,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-345",
@@ -15867,7 +15866,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-346",
@@ -15913,7 +15912,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-347",
@@ -15959,7 +15958,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-348",
@@ -16005,7 +16004,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-349",
@@ -16051,7 +16050,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-350",
@@ -16097,7 +16096,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-351",
@@ -16143,7 +16142,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-352",
@@ -16189,7 +16188,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-353",
@@ -16235,7 +16234,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-354",
@@ -16281,7 +16280,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-355",
@@ -16327,7 +16326,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-356",
@@ -16373,7 +16372,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-357",
@@ -16419,7 +16418,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-358",
@@ -16465,7 +16464,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-359",
@@ -16511,7 +16510,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-360",
@@ -16557,7 +16556,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-361",
@@ -16603,7 +16602,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-362",
@@ -16649,7 +16648,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-363",
@@ -16695,7 +16694,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-364",
@@ -16741,7 +16740,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-365",
@@ -16787,7 +16786,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-366",
@@ -16833,7 +16832,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-367",
@@ -16879,7 +16878,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-368",
@@ -16925,7 +16924,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-369",
@@ -16971,7 +16970,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-370",
@@ -17017,7 +17016,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-371",
@@ -17063,7 +17062,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-372",
@@ -17109,7 +17108,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-373",
@@ -17155,7 +17154,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-374",
@@ -17201,7 +17200,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-375",
@@ -17247,7 +17246,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-376",
@@ -17293,7 +17292,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-377",
@@ -17339,7 +17338,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-378",
@@ -17385,7 +17384,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-379",
@@ -17431,7 +17430,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-380",
@@ -17477,7 +17476,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-381",
@@ -17523,7 +17522,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-382",
@@ -17569,7 +17568,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-383",
@@ -17615,7 +17614,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-384",
@@ -17661,7 +17660,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-385",
@@ -17707,7 +17706,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-386",
@@ -17753,7 +17752,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-387",
@@ -17799,7 +17798,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-388",
@@ -17845,7 +17844,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-389",
@@ -17891,7 +17890,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-390",
@@ -17937,7 +17936,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-391",
@@ -17983,7 +17982,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-392",
@@ -18029,7 +18028,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-393",
@@ -18075,7 +18074,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-394",
@@ -18121,7 +18120,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-395",
@@ -18167,7 +18166,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-396",
@@ -18213,7 +18212,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-397",
@@ -18259,7 +18258,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-398",
@@ -18305,7 +18304,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-399",
@@ -18351,7 +18350,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-400",
@@ -18397,7 +18396,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-401",
@@ -18443,7 +18442,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-402",
@@ -18489,7 +18488,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-403",
@@ -18535,7 +18534,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-404",
@@ -18581,7 +18580,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-405",
@@ -18627,7 +18626,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-406",
@@ -18673,7 +18672,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-407",
@@ -18719,7 +18718,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-408",
@@ -18765,7 +18764,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-409",
@@ -18811,7 +18810,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-410",
@@ -18857,7 +18856,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-411",
@@ -18903,7 +18902,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-412",
@@ -18949,7 +18948,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-413",
@@ -18995,7 +18994,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-414",
@@ -19041,7 +19040,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-415",
@@ -19087,7 +19086,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-416",
@@ -19133,7 +19132,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-417",
@@ -19179,7 +19178,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-418",
@@ -19225,7 +19224,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-419",
@@ -19271,7 +19270,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-420",
@@ -19317,7 +19316,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-421",
@@ -19363,7 +19362,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-422",
@@ -19409,7 +19408,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-423",
@@ -19455,7 +19454,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-424",
@@ -19501,7 +19500,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-425",
@@ -19547,7 +19546,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-426",
@@ -19593,7 +19592,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-427",
@@ -19639,7 +19638,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-428",
@@ -19685,7 +19684,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-429",
@@ -19731,7 +19730,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-430",
@@ -19777,7 +19776,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-431",
@@ -19823,7 +19822,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-432",
@@ -19869,7 +19868,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-433",
@@ -19915,7 +19914,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-434",
@@ -19961,7 +19960,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-435",
@@ -20007,7 +20006,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-436",
@@ -20053,7 +20052,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-437",
@@ -20099,7 +20098,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-438",
@@ -20145,7 +20144,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-439",
@@ -20191,7 +20190,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-440",
@@ -20237,7 +20236,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-441",
@@ -20283,7 +20282,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-442",
@@ -20329,7 +20328,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-443",
@@ -20375,7 +20374,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-444",
@@ -20421,7 +20420,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-445",
@@ -20467,7 +20466,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-446",
@@ -20513,7 +20512,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-447",
@@ -20559,7 +20558,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-448",
@@ -20605,7 +20604,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-449",
@@ -20651,7 +20650,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-450",
@@ -20697,7 +20696,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-451",
@@ -20743,7 +20742,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-452",
@@ -20789,7 +20788,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-453",
@@ -20835,7 +20834,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-454",
@@ -20881,7 +20880,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-455",
@@ -20927,7 +20926,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-456",
@@ -20973,7 +20972,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-457",
@@ -21019,7 +21018,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-458",
@@ -21065,7 +21064,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-459",
@@ -21111,7 +21110,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-460",
@@ -21157,7 +21156,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-461",
@@ -21203,7 +21202,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-462",
@@ -21249,7 +21248,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-463",
@@ -21295,7 +21294,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-464",
@@ -21341,7 +21340,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-465",
@@ -21387,7 +21386,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-466",
@@ -21433,7 +21432,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-467",
@@ -21479,7 +21478,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-468",
@@ -21525,7 +21524,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-469",
@@ -21571,7 +21570,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-470",
@@ -21617,7 +21616,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-471",
@@ -21663,7 +21662,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-472",
@@ -21709,7 +21708,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-473",
@@ -21755,7 +21754,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-474",
@@ -21801,7 +21800,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-475",
@@ -21847,7 +21846,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-476",
@@ -21893,7 +21892,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-477",
@@ -21939,7 +21938,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-478",
@@ -21985,7 +21984,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-479",
@@ -22031,7 +22030,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-480",
@@ -22077,7 +22076,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-481",
@@ -22123,7 +22122,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-482",
@@ -22169,7 +22168,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-483",
@@ -22215,7 +22214,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-484",
@@ -22261,7 +22260,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-485",
@@ -22307,7 +22306,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-486",
@@ -22353,7 +22352,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-487",
@@ -22399,7 +22398,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-488",
@@ -22445,7 +22444,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-489",
@@ -22491,7 +22490,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-490",
@@ -22537,7 +22536,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-491",
@@ -22583,7 +22582,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-492",
@@ -22629,7 +22628,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-493",
@@ -22675,7 +22674,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-494",
@@ -22721,7 +22720,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-495",
@@ -22767,7 +22766,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-496",
@@ -22813,7 +22812,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-497",
@@ -22859,7 +22858,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-498",
@@ -22905,7 +22904,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-499",
@@ -22951,7 +22950,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-500",
@@ -22997,7 +22996,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-501",
@@ -23043,7 +23042,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-502",
@@ -23089,7 +23088,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-503",
@@ -23135,7 +23134,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-504",
@@ -23181,7 +23180,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-505",
@@ -23227,7 +23226,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-506",
@@ -23273,7 +23272,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-507",
@@ -23319,7 +23318,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-508",
@@ -23365,7 +23364,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-509",
@@ -23411,7 +23410,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-510",
@@ -23457,7 +23456,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-511",
@@ -23503,7 +23502,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-512",
@@ -23549,7 +23548,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-513",
@@ -23595,7 +23594,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-514",
@@ -23641,7 +23640,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-515",
@@ -23687,7 +23686,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-516",
@@ -23733,7 +23732,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-517",
@@ -23779,7 +23778,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-518",
@@ -23825,7 +23824,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-519",
@@ -23871,7 +23870,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-520",
@@ -23917,7 +23916,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-521",
@@ -23963,7 +23962,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-522",
@@ -24009,7 +24008,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-523",
@@ -24055,7 +24054,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-524",
@@ -24101,7 +24100,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-525",
@@ -24147,7 +24146,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-526",
@@ -24193,7 +24192,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-527",
@@ -24239,7 +24238,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-528",
@@ -24285,7 +24284,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-529",
@@ -24331,7 +24330,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-530",
@@ -24377,7 +24376,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-531",
@@ -24423,7 +24422,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-532",
@@ -24469,7 +24468,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-533",
@@ -24515,7 +24514,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-534",
@@ -24561,7 +24560,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-535",
@@ -24607,7 +24606,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-536",
@@ -24653,7 +24652,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-537",
@@ -24699,7 +24698,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-538",
@@ -24745,7 +24744,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-539",
@@ -24791,7 +24790,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-540",
@@ -24837,7 +24836,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-541",
@@ -24883,7 +24882,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-542",
@@ -24929,7 +24928,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-543",
@@ -24975,7 +24974,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-544",
@@ -25021,7 +25020,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-545",
@@ -25067,7 +25066,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-546",
@@ -25113,7 +25112,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-547",
@@ -25159,7 +25158,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-548",
@@ -25205,7 +25204,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-549",
@@ -25251,7 +25250,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-550",
@@ -25297,7 +25296,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-551",
@@ -25343,7 +25342,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-552",
@@ -25389,7 +25388,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-553",
@@ -25435,7 +25434,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-554",
@@ -25481,7 +25480,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-555",
@@ -25527,7 +25526,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-556",
@@ -25573,7 +25572,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-557",
@@ -25619,7 +25618,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-558",
@@ -25665,7 +25664,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-559",
@@ -25711,7 +25710,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-560",
@@ -25757,7 +25756,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-561",
@@ -25803,7 +25802,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-562",
@@ -25849,7 +25848,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-563",
@@ -25895,7 +25894,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-564",
@@ -25941,7 +25940,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-565",
@@ -25987,7 +25986,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-566",
@@ -26033,7 +26032,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-567",
@@ -26079,7 +26078,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-568",
@@ -26125,7 +26124,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-569",
@@ -26171,7 +26170,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-570",
@@ -26217,7 +26216,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-571",
@@ -26263,7 +26262,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-572",
@@ -26309,7 +26308,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-573",
@@ -26355,7 +26354,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-574",
@@ -26401,7 +26400,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-575",
@@ -26447,7 +26446,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-576",
@@ -26493,7 +26492,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-577",
@@ -26539,7 +26538,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-578",
@@ -26585,7 +26584,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-579",
@@ -26631,7 +26630,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-580",
@@ -26677,7 +26676,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-581",
@@ -26723,7 +26722,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-582",
@@ -26769,7 +26768,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-583",
@@ -26815,7 +26814,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-584",
@@ -26861,7 +26860,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-585",
@@ -26907,7 +26906,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-586",
@@ -26953,7 +26952,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-587",
@@ -26999,7 +26998,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-588",
@@ -27045,7 +27044,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-589",
@@ -27091,7 +27090,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-590",
@@ -27137,7 +27136,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-591",
@@ -27183,7 +27182,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-592",
@@ -27229,7 +27228,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-593",
@@ -27275,7 +27274,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-594",
@@ -27321,7 +27320,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-595",
@@ -27367,7 +27366,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-596",
@@ -27413,7 +27412,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-597",
@@ -27459,7 +27458,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-598",
@@ -27505,7 +27504,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-599",
@@ -27551,7 +27550,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-600",
@@ -27597,7 +27596,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-601",
@@ -27643,7 +27642,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-602",
@@ -27689,7 +27688,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-603",
@@ -27735,7 +27734,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-604",
@@ -27781,7 +27780,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-605",
@@ -27827,7 +27826,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-606",
@@ -27873,7 +27872,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-607",
@@ -27919,7 +27918,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-608",
@@ -27965,7 +27964,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-609",
@@ -28011,7 +28010,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-610",
@@ -28057,7 +28056,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-611",
@@ -28103,7 +28102,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-612",
@@ -28149,7 +28148,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-613",
@@ -28195,7 +28194,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-614",
@@ -28241,7 +28240,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-615",
@@ -28287,7 +28286,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-616",
@@ -28333,7 +28332,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-617",
@@ -28379,7 +28378,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-618",
@@ -28425,7 +28424,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-619",
@@ -28471,7 +28470,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-620",
@@ -28517,7 +28516,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-621",
@@ -28563,7 +28562,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-622",
@@ -28609,7 +28608,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-623",
@@ -28655,7 +28654,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-624",
@@ -28701,7 +28700,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-625",
@@ -28747,7 +28746,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-626",
@@ -28793,7 +28792,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-627",
@@ -28839,7 +28838,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-628",
@@ -28885,7 +28884,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-629",
@@ -28931,7 +28930,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-630",
@@ -28977,7 +28976,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-631",
@@ -29023,7 +29022,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-632",
@@ -29069,7 +29068,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-633",
@@ -29115,7 +29114,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-634",
@@ -29161,7 +29160,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-635",
@@ -29207,7 +29206,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-636",
@@ -29253,7 +29252,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-637",
@@ -29299,7 +29298,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-638",
@@ -29345,7 +29344,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-639",
@@ -29391,7 +29390,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-640",
@@ -29437,7 +29436,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-641",
@@ -29483,7 +29482,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-642",
@@ -29529,7 +29528,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-643",
@@ -29575,7 +29574,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-644",
@@ -29621,7 +29620,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-645",
@@ -29667,7 +29666,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-646",
@@ -29713,7 +29712,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-647",
@@ -29759,7 +29758,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-648",
@@ -29805,7 +29804,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-649",
@@ -29851,7 +29850,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-650",
@@ -29897,7 +29896,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-651",
@@ -29943,7 +29942,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-652",
@@ -29989,7 +29988,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-653",
@@ -30035,7 +30034,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-654",
@@ -30081,7 +30080,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-655",
@@ -30127,7 +30126,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-656",
@@ -30173,7 +30172,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-657",
@@ -30219,7 +30218,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-658",
@@ -30265,7 +30264,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-659",
@@ -30311,7 +30310,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-660",
@@ -30357,7 +30356,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-661",
@@ -30403,7 +30402,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-662",
@@ -30449,7 +30448,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-663",
@@ -30495,7 +30494,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-664",
@@ -30541,7 +30540,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-665",
@@ -30587,7 +30586,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-666",
@@ -30633,7 +30632,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-667",
@@ -30679,7 +30678,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-668",
@@ -30725,7 +30724,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-669",
@@ -30771,7 +30770,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-670",
@@ -30817,7 +30816,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-671",
@@ -30863,7 +30862,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-672",
@@ -30909,7 +30908,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-673",
@@ -30955,7 +30954,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-674",
@@ -31001,7 +31000,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-675",
@@ -31047,7 +31046,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-676",
@@ -31093,7 +31092,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-677",
@@ -31139,7 +31138,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-678",
@@ -31185,7 +31184,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-679",
@@ -31231,7 +31230,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-680",
@@ -31277,7 +31276,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-681",
@@ -31323,7 +31322,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-682",
@@ -31369,7 +31368,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-683",
@@ -31415,7 +31414,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-684",
@@ -31461,7 +31460,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-685",
@@ -31507,7 +31506,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-686",
@@ -31553,7 +31552,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-687",
@@ -31599,7 +31598,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-688",
@@ -31645,7 +31644,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-689",
@@ -31691,7 +31690,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-690",
@@ -31737,7 +31736,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-691",
@@ -31783,7 +31782,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-692",
@@ -31829,7 +31828,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-693",
@@ -31875,7 +31874,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-694",
@@ -31921,7 +31920,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-695",
@@ -31967,7 +31966,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-696",
@@ -32013,7 +32012,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-697",
@@ -32059,7 +32058,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-698",
@@ -32105,7 +32104,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-699",
@@ -32151,7 +32150,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-700",
@@ -32197,7 +32196,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-701",
@@ -32243,7 +32242,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-702",
@@ -32289,7 +32288,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-703",
@@ -32335,7 +32334,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-704",
@@ -32381,7 +32380,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-705",
@@ -32427,7 +32426,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-706",
@@ -32473,7 +32472,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-707",
@@ -32519,7 +32518,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-708",
@@ -32565,7 +32564,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-709",
@@ -32611,7 +32610,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-710",
@@ -32657,7 +32656,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-711",
@@ -32703,7 +32702,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-712",
@@ -32749,7 +32748,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-713",
@@ -32795,7 +32794,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-714",
@@ -32841,7 +32840,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-715",
@@ -32887,7 +32886,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-716",
@@ -32933,7 +32932,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-717",
@@ -32979,7 +32978,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-718",
@@ -33025,7 +33024,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-719",
@@ -33071,7 +33070,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-720",
@@ -33117,7 +33116,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-721",
@@ -33163,7 +33162,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-722",
@@ -33209,7 +33208,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-723",
@@ -33255,7 +33254,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-724",
@@ -33301,7 +33300,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-725",
@@ -33347,7 +33346,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-726",
@@ -33393,7 +33392,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-727",
@@ -33439,7 +33438,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-728",
@@ -33485,7 +33484,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-729",
@@ -33531,7 +33530,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-730",
@@ -33577,7 +33576,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-731",
@@ -33623,7 +33622,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-732",
@@ -33669,7 +33668,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-733",
@@ -33715,7 +33714,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-734",
@@ -33761,7 +33760,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-735",
@@ -33807,7 +33806,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-736",
@@ -33853,7 +33852,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-737",
@@ -33899,7 +33898,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-738",
@@ -33945,7 +33944,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-739",
@@ -33991,7 +33990,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-740",
@@ -34037,7 +34036,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-741",
@@ -34083,7 +34082,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-742",
@@ -34129,7 +34128,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-743",
@@ -34175,7 +34174,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-744",
@@ -34221,7 +34220,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-745",
@@ -34267,7 +34266,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-746",
@@ -34313,7 +34312,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-747",
@@ -34359,7 +34358,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-748",
@@ -34405,7 +34404,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-749",
@@ -34451,7 +34450,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-750",
@@ -34497,7 +34496,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-751",
@@ -34543,7 +34542,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-752",
@@ -34589,7 +34588,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-753",
@@ -34635,7 +34634,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-754",
@@ -34681,7 +34680,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-755",
@@ -34727,7 +34726,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-756",
@@ -34773,7 +34772,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-757",
@@ -34819,7 +34818,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-758",
@@ -34865,7 +34864,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-759",
@@ -34911,7 +34910,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-760",
@@ -34957,7 +34956,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-761",
@@ -35003,7 +35002,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-762",
@@ -35049,7 +35048,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-763",
@@ -35095,7 +35094,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-764",
@@ -35141,7 +35140,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-765",
@@ -35187,7 +35186,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-766",
@@ -35233,7 +35232,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-767",
@@ -35279,7 +35278,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-768",
@@ -35325,7 +35324,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-769",
@@ -35371,7 +35370,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-770",
@@ -35417,7 +35416,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-771",
@@ -35463,7 +35462,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-772",
@@ -35509,7 +35508,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-773",
@@ -35555,7 +35554,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-774",
@@ -35601,7 +35600,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-775",
@@ -35647,7 +35646,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-776",
@@ -35693,7 +35692,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-777",
@@ -35739,7 +35738,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-778",
@@ -35785,7 +35784,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-779",
@@ -35831,7 +35830,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-780",
@@ -35877,7 +35876,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-781",
@@ -35923,7 +35922,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-782",
@@ -35969,7 +35968,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-783",
@@ -36015,7 +36014,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-784",
@@ -36061,7 +36060,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-785",
@@ -36107,7 +36106,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-786",
@@ -36153,7 +36152,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-787",
@@ -36199,7 +36198,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-788",
@@ -36245,7 +36244,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-789",
@@ -36291,7 +36290,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-790",
@@ -36337,7 +36336,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-791",
@@ -36383,7 +36382,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-792",
@@ -36429,7 +36428,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-793",
@@ -36475,7 +36474,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-794",
@@ -36521,7 +36520,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-795",
@@ -36567,7 +36566,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-796",
@@ -36613,7 +36612,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-797",
@@ -36659,7 +36658,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-798",
@@ -36705,7 +36704,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-799",
@@ -36751,7 +36750,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-800",
@@ -36797,7 +36796,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-801",
@@ -36843,7 +36842,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-802",
@@ -36889,7 +36888,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-803",
@@ -36935,7 +36934,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-804",
@@ -36981,7 +36980,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-805",
@@ -37027,7 +37026,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-806",
@@ -37073,7 +37072,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-807",
@@ -37119,7 +37118,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-808",
@@ -37165,7 +37164,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-809",
@@ -37211,7 +37210,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-810",
@@ -37257,7 +37256,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-811",
@@ -37303,7 +37302,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-812",
@@ -37349,7 +37348,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-813",
@@ -37395,7 +37394,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-814",
@@ -37441,7 +37440,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-815",
@@ -37487,7 +37486,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-816",
@@ -37533,7 +37532,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-817",
@@ -37579,7 +37578,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-818",
@@ -37625,7 +37624,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-819",
@@ -37671,7 +37670,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-820",
@@ -37717,7 +37716,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-821",
@@ -37763,7 +37762,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-822",
@@ -37809,7 +37808,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-823",
@@ -37855,7 +37854,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-824",
@@ -37901,7 +37900,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-825",
@@ -37947,7 +37946,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-826",
@@ -37993,7 +37992,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-827",
@@ -38039,7 +38038,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-828",
@@ -38085,7 +38084,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-829",
@@ -38131,7 +38130,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-830",
@@ -38177,7 +38176,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-831",
@@ -38223,7 +38222,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-832",
@@ -38269,7 +38268,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-833",
@@ -38315,7 +38314,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-834",
@@ -38361,7 +38360,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-835",
@@ -38407,7 +38406,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-836",
@@ -38453,7 +38452,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-837",
@@ -38499,7 +38498,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-838",
@@ -38545,7 +38544,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-839",
@@ -38591,7 +38590,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-840",
@@ -38637,7 +38636,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-841",
@@ -38683,7 +38682,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-842",
@@ -38729,7 +38728,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-843",
@@ -38775,7 +38774,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-844",
@@ -38821,7 +38820,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-845",
@@ -38867,7 +38866,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-846",
@@ -38913,7 +38912,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-847",
@@ -38959,7 +38958,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-848",
@@ -39005,7 +39004,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-849",
@@ -39051,7 +39050,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-850",
@@ -39097,7 +39096,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-851",
@@ -39143,7 +39142,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-852",
@@ -39189,7 +39188,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-853",
@@ -39235,7 +39234,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-854",
@@ -39281,7 +39280,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-855",
@@ -39327,7 +39326,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-856",
@@ -39373,7 +39372,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-857",
@@ -39419,7 +39418,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-858",
@@ -39465,7 +39464,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-859",
@@ -39511,7 +39510,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-860",
@@ -39557,7 +39556,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-861",
@@ -39603,7 +39602,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-862",
@@ -39649,7 +39648,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-863",
@@ -39695,7 +39694,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-864",
@@ -39741,7 +39740,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-865",
@@ -39787,7 +39786,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-866",
@@ -39833,7 +39832,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-867",
@@ -39879,7 +39878,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-868",
@@ -39925,7 +39924,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-869",
@@ -39971,7 +39970,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-870",
@@ -40017,7 +40016,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-871",
@@ -40063,7 +40062,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-872",
@@ -40109,7 +40108,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-873",
@@ -40155,7 +40154,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-874",
@@ -40201,7 +40200,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-875",
@@ -40247,7 +40246,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-876",
@@ -40293,7 +40292,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-877",
@@ -40339,7 +40338,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-878",
@@ -40385,7 +40384,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-879",
@@ -40431,7 +40430,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-880",
@@ -40477,7 +40476,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-881",
@@ -40523,7 +40522,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-882",
@@ -40569,7 +40568,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-883",
@@ -40615,7 +40614,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-884",
@@ -40661,7 +40660,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-885",
@@ -40707,7 +40706,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-886",
@@ -40753,7 +40752,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-887",
@@ -40799,7 +40798,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-888",
@@ -40845,7 +40844,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-889",
@@ -40891,7 +40890,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-890",
@@ -40937,7 +40936,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-891",
@@ -40983,7 +40982,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-892",
@@ -41029,7 +41028,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-893",
@@ -41075,7 +41074,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-894",
@@ -41121,7 +41120,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-895",
@@ -41167,7 +41166,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-896",
@@ -41213,7 +41212,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-897",
@@ -41259,7 +41258,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-898",
@@ -41305,7 +41304,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-899",
@@ -41351,7 +41350,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-900",
@@ -41397,7 +41396,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-901",
@@ -41443,7 +41442,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-902",
@@ -41489,7 +41488,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-903",
@@ -41535,7 +41534,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-904",
@@ -41581,7 +41580,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-905",
@@ -41627,7 +41626,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-906",
@@ -41673,7 +41672,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-907",
@@ -41719,7 +41718,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-908",
@@ -41765,7 +41764,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-909",
@@ -41811,7 +41810,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-910",
@@ -41857,7 +41856,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-911",
@@ -41903,7 +41902,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-912",
@@ -41949,7 +41948,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-913",
@@ -41995,7 +41994,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-914",
@@ -42041,7 +42040,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-915",
@@ -42087,7 +42086,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-916",
@@ -42133,7 +42132,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-917",
@@ -42179,7 +42178,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-918",
@@ -42225,7 +42224,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-919",
@@ -42271,7 +42270,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-920",
@@ -42317,7 +42316,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-921",
@@ -42363,7 +42362,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-922",
@@ -42409,7 +42408,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-923",
@@ -42455,7 +42454,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-924",
@@ -42501,7 +42500,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-925",
@@ -42547,7 +42546,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-926",
@@ -42593,7 +42592,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-927",
@@ -42639,7 +42638,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-928",
@@ -42685,7 +42684,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-929",
@@ -42731,7 +42730,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-930",
@@ -42777,7 +42776,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-931",
@@ -42823,7 +42822,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-932",
@@ -42869,7 +42868,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-933",
@@ -42915,7 +42914,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-934",
@@ -42961,7 +42960,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-935",
@@ -43007,7 +43006,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-936",
@@ -43053,7 +43052,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-937",
@@ -43099,7 +43098,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-938",
@@ -43145,7 +43144,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-939",
@@ -43191,7 +43190,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-940",
@@ -43237,7 +43236,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-941",
@@ -43283,7 +43282,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-942",
@@ -43329,7 +43328,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-943",
@@ -43375,7 +43374,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-944",
@@ -43421,7 +43420,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-945",
@@ -43467,7 +43466,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-946",
@@ -43513,7 +43512,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-947",
@@ -43559,7 +43558,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-948",
@@ -43605,7 +43604,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-949",
@@ -43651,7 +43650,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-950",
@@ -43697,7 +43696,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-951",
@@ -43743,7 +43742,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-952",
@@ -43789,7 +43788,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-953",
@@ -43835,7 +43834,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-954",
@@ -43881,7 +43880,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-955",
@@ -43927,7 +43926,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-956",
@@ -43973,7 +43972,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-957",
@@ -44019,7 +44018,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-958",
@@ -44065,7 +44064,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-959",
@@ -44111,7 +44110,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-960",
@@ -44157,7 +44156,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-961",
@@ -44203,7 +44202,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-962",
@@ -44249,7 +44248,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-963",
@@ -44295,7 +44294,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-964",
@@ -44341,7 +44340,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-965",
@@ -44387,7 +44386,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-966",
@@ -44433,7 +44432,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-967",
@@ -44479,7 +44478,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-968",
@@ -44525,7 +44524,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-969",
@@ -44571,7 +44570,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-970",
@@ -44617,7 +44616,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-971",
@@ -44663,7 +44662,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-972",
@@ -44709,7 +44708,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-973",
@@ -44755,7 +44754,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-974",
@@ -44801,7 +44800,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-975",
@@ -44847,7 +44846,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-976",
@@ -44893,7 +44892,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-977",
@@ -44939,7 +44938,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-978",
@@ -44985,7 +44984,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-979",
@@ -45031,7 +45030,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-980",
@@ -45077,7 +45076,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-981",
@@ -45123,7 +45122,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-982",
@@ -45169,7 +45168,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-983",
@@ -45215,7 +45214,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-984",
@@ -45261,7 +45260,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-985",
@@ -45307,7 +45306,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-986",
@@ -45353,7 +45352,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-987",
@@ -45399,7 +45398,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-988",
@@ -45445,7 +45444,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-989",
@@ -45491,7 +45490,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-990",
@@ -45537,7 +45536,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-991",
@@ -45583,7 +45582,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-992",
@@ -45629,7 +45628,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-993",
@@ -45675,7 +45674,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-994",
@@ -45721,7 +45720,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-995",
@@ -45767,7 +45766,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-996",
@@ -45813,7 +45812,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-997",
@@ -45859,7 +45858,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-998",
@@ -45905,7 +45904,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-999",
@@ -45951,7 +45950,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	},
 	{
 		"id": "prod-1000",
@@ -45997,7 +45996,7 @@ export const productsMock: Product[] = [
 			"nội thất",
 			"gỗ"
 		],
-		"variants": []
+
 	}
 ]
 
