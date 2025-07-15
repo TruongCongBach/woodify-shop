@@ -13,39 +13,6 @@ import Link from 'next/link'
 import { cva } from 'class-variance-authority'
 import { cn } from '@woodify/ui/lib/utils'
 
-const components: {title: string; href: string; description: string}[] = [
-	{
-		title: 'Bàn ghế gỗ',
-		href: '/ban-ghe',
-		description:
-			'Các mẫu bàn ăn, bàn trà và ghế phòng khách – chất liệu gỗ tự nhiên, thiết kế tinh xảo.',
-	},
-	{
-		title: 'Kệ Tivi',
-		href: '/category/ke-tivi',
-		description:
-			'Kệ tivi đa dạng kiểu dáng – từ kiểu truyền thống đến hiện đại, phù hợp mọi không gian.',
-	},
-	{
-		title: 'Tủ thờ',
-		href: '/tu-tho',
-		description:
-			'Tủ thờ gỗ cao cấp, thiết kế theo phong thủy, mang nét trang nghiêm cho không gian thờ.',
-	},
-	{
-		title: 'Vách thờ',
-		href: '/vach-tho',
-		description:
-			'Vách ngăn thờ trang nghiêm và hoa văn truyền thống, hòa hợp với nội thất phòng thờ.',
-	},
-	{
-		title: 'Bàn ghế phòng thờ',
-		href: '/ban-ghe-phong-tho',
-		description:
-			'Bàn ghế bộ nhỏ gọn, lịch sự cho phòng thờ hoặc khách nhỏ – gỗ tự nhiên bền đẹp.',
-	},
-]
-
 export const CategoryNav = ({
 	categories,
 }: {
@@ -87,7 +54,7 @@ export const CategoryNav = ({
 									</NavigationMenuContent>
 								</NavigationMenuItem>
 							}
-							return <NavigationMenuItem>
+							return <NavigationMenuItem key={idx}>
 								<NavigationMenuLink asChild className={cn('p-6', navigationMenuTriggerStyle())}>
 									<Link href={`/category/${category.url}`}>
 										<span className="font-bold">{category.name}</span>
@@ -99,25 +66,5 @@ export const CategoryNav = ({
 				</NavigationMenu>
 			</div>
 		</div>
-	)
-}
-
-function ListItem({
-	title,
-	children,
-	href,
-	...props
-}: React.ComponentPropsWithoutRef<'li'> & {href: string}) {
-	return (
-		<li {...props}>
-			<NavigationMenuLink asChild>
-				<Link href={href}>
-					<div className="text-sm leading-none font-medium">{title}</div>
-					<p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
-						{children}
-					</p>
-				</Link>
-			</NavigationMenuLink>
-		</li>
 	)
 }

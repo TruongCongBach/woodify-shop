@@ -1,7 +1,7 @@
 'use client'
 // packages/ui/src/components/PageHeader.tsx
-import React, { useState } from 'react'
-import { Bars3Icon, ShoppingCartIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import React from 'react'
+import { Bars3Icon, PhoneIcon } from '@heroicons/react/24/outline'
 import {
 	Sheet,
 	SheetContent,
@@ -11,30 +11,10 @@ import {
 	SheetTrigger,
 } from '@woodify/ui/components/sheet'
 import { CategoryAccordionNav } from '@/components/category-accordion-nav'
-import { Category } from '@/components/category-nav'
 import { useRouter } from 'next/navigation'
 import { ZaloIcon } from '@woodify/ui/components/icons/zalo-icon'
+import categoriesMock from '@/data/categoriesMock'
 
-const categories: Category[] = [
-	{
-		key: 'ban-ghe',
-		label: 'Bàn ghế',
-		image: 'https://picsum.photos/seed/wood1/80',
-		sub: [
-			{ key: 'ban-an', label: 'Bàn ăn' },
-			{ key: 'sofa', label: 'Sofa' },
-		],
-	},
-	{
-		key: 'tu-tho', label: 'Tủ thờ',
-		sub: [
-			{ key: 'ban-an', label: 'Bàn ăn' },
-			{ key: 'sofa', label: 'Sofa' },
-		],
-	},
-	{ key: 'ke-tivi', label: 'Kệ Tivi', image: 'https://picsum.photos/seed/wood3/80' },
-	{ key: 'vach-tho', label: 'Vách thờ', image: 'https://picsum.photos/seed/wood4/80' },
-]
 
 interface PageHeaderProps {
 	phone: string
@@ -44,7 +24,7 @@ interface PageHeaderProps {
 export const PageHeader = ({ phone }: PageHeaderProps) => {
 	const router = useRouter()
 	const handleSelect = (key: string) => {
-		router.push(`/${key}`)
+		router.push(`/category/${key}`)
 	}
 
 	return (
@@ -65,10 +45,9 @@ export const PageHeader = ({ phone }: PageHeaderProps) => {
 					</SheetTrigger>
 					<SheetContent>
 						<SheetHeader>
-							<SheetTitle>Are you absolutely sure?</SheetTitle>
 							<SheetDescription>
 								<CategoryAccordionNav
-									categories={categories}
+									categories={categoriesMock}
 									onSelectAction={handleSelect}
 								/>
 							</SheetDescription>

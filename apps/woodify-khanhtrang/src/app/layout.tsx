@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	metadataBase: new URL(process.env.BASE_URL || 'https://woodify.com'),
-	keywords: ['gỗ', 'nội thất', 'Woodify', 'đồ gỗ chất lượng'],
+	keywords: ['gỗ', 'nội thất', 'Nội Thất Khánh Trang', 'đồ gỗ chất lượng'],
 	verification: {
 		google: process.env.GOOGLE_VERIFICATION_CODE || 'your-google-code',
 		yandex: process.env.YANDEX_VERIFICATION_CODE || 'your-yandex-code',

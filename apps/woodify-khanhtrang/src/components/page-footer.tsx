@@ -63,7 +63,7 @@ export const PageFooter = () => (
 
 		{/* Line */}
 		<div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
-			&copy; {new Date().getFullYear()} Woodify. All rights reserved.
+			&copy; {new Date().getFullYear()} Nội Thất Khánh Trang. All rights reserved.
 		</div>
 	</footer>
 )

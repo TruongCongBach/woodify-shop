@@ -110,7 +110,7 @@ export default function ContactPage() {
 			<div className="w-full h-64 bg-gray-200">
 				<iframe
 					referrerPolicy="no-referrer-when-downgrade"
-					title="Bản đồ Woodify"
+					title="Bản đồ Nội Thất Khánh Trang"
 					src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7441.882403599502!2d105.81023698024018!3d21.154738117009583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1752338914733!5m2!1svi!2s"
 					width="100%"
 					height="100%"

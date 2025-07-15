@@ -10,7 +10,6 @@ import {
 	BreadcrumbList,
 	BreadcrumbSeparator,
 } from '@woodify/ui/components/breadcrumb'
-import { Category } from '@/data/categoriesMock'
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@woodify/ui/components/sheet'
 import Link from 'next/link'
 import { ProductCard } from '@/components/product-card'
