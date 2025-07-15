@@ -1,0 +1,841 @@
+[
+  {
+    'id': '1',
+    'url': 'sofa-phang-xoan',
+    'name': 'Sofa phẳng (xoan)',
+    'defaultImage': '/images/ke-tivi/z6423293222787_0029bc7ba67ce97bb4d0c6ffc20807e4.jpg',
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423293222787_0029bc7ba67ce97bb4d0c6ffc20807e4.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423293115197_b1c28c37e9cb5269769462e0e7269088.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423293064441_2b9e379328c296f57d81dd782b36bd4e.jpg'
+      }
+    ],
+    'price': '5000000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Thiết kế phẳng hiện đại, chất liệu xoan, phù hợp mọi không gian nội thất.</p>',
+    'description': '\n      <p><strong>Sofa phẳng (xoan)</strong> – chất liệu xoan, kích thước 220cm × 40cm × 76cm. Thiết kế phẳng, đường nét thanh mềm, mang nét sang trọng và cảm giác thoải mái.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423293222787_0029bc7ba67ce97bb4d0c6ffc20807e4.jpg" alt="Sofa phẳng xoan – góc 1">\n        <img src="/images/ke-tivi/z6423293115197_b1c28c37e9cb5269769462e0e7269088.jpg" alt="Sofa phẳng xoan – góc 2">\n      </div>\n      <p>Phù hợp đặt kệ tivi, tường trống hoặc làm ghế nghỉ thư giãn. Xử lý kỹ thuật, bảo hành lâu dài.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ xoan'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '220',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '40',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '76',
+        'unit': 'cm'
+      }
+    ]
+  },
+  {
+    'id': '2',
+    'url': 'sofa-phang-huong-da',
+    'name': 'Sofa phẳng (hương đá)',
+    'defaultImage': '/images/ke-tivi/z6423295877422_8c46227de5c2034a9622cf3c186693e6.jpg',
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295877422_8c46227de5c2034a9622cf3c186693e6.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295877734_e62c6f5d8297fe56d4d718e05b3437ac.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295892434_8fb9a3fec36d9d133960f3f68e299d8e.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295887363_1dcc299fa09b72673bccf894e591d772.jpg'
+      }
+    ],
+    'price': '7500000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Sofa phẳng chất liệu hương đá, sang trọng, hiện đại và bền chắc.</p>',
+    'description': '\n      <p><strong>Sofa phẳng (hương đá)</strong> – chất liệu hương đá, kích thước 220×40×76cm. Thiết kế đơn giản nhưng tinh tế, dễ phối nội thất hiện đại.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423295877422_8c46227de5c2034a9622cf3c186693e6.jpg" alt="Sofa phẳng hương đá – góc 1">\n        <img src="/images/ke-tivi/z6423295877734_e62c6f5d8297fe56d4d718e05b3437ac.jpg" alt="Sofa phẳng hương đá – góc 2">\n      </div>\n      <p>Vân gỗ tự nhiên đẹp mắt, phù hợp không gian phòng khách hoặc không gian mở.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ Hương đá'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '220',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '45',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '81',
+        'unit': 'cm'
+      }
+    ]
+  },
+  {
+    'id': '3',
+    'url': 'sofa-loi-xoan',
+    'name': 'Sofa lồi',
+    'defaultImage': '/images/ke-tivi/z6423301503753_729e2efddd3f3239b4f9226ef2986f95.jpg',
+    'price': '5000000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Sofa lồi với hai lựa chọn xoan hoặc hương đá, thiết kế nổi bật, tạo điểm nhấn tinh tế.</p>',
+    'description': '\n      <p><strong>Sofa lồi</strong> – có phiên bản chất liệu xoan hoặc hương đá, kích thước 220×40×76cm. Mặt lồi nổi bật, phù hợp không gian cần điểm nhấn.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423301503753_729e2efddd3f3239b4f9226ef2986f95.jpg" alt="Sofa lồi – góc 1">\n        <img src="/images/ke-tivi/z6423301499884_aa3a9736961eac61a764191d8d024fe0.jpg" alt="Sofa lồi – góc 2">\n      </div>\n      <p>Đường cong tinh tế, bề mặt mịn, dễ làm sạch. Phù hợp nội thất hiện đại hoặc phong cách tối giản.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ Xoan'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '220',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '40',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '76',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423301503753_729e2efddd3f3239b4f9226ef2986f95.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423301499884_aa3a9736961eac61a764191d8d024fe0.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423301493315_1087aff51c01b92ddd76359370f61660.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423301582034_c08125b26ce84fdaf78c2aa39f083743.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423301584973_0da9ae72de60e0c68651a8fc49c868cd.jpg'
+      }
+    ]
+  },
+  {
+    'id': '4',
+    'url': 'mo-lom-xoan',
+    'name': 'Mõ lõm (xoan)',
+    'defaultImage': '/images/ke-tivi/z6423294372703_4010665d4a28d07a5485be49fab92640.jpg',
+    'price': '5000000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi mõ lõm chất xoan, kiểu dáng thấp thoáng phù hợp mọi không gian.</p>',
+    'description': '\n      <p><strong>Mõ lõm (xoan)</strong> – chất liệu xoan, kích thước 220×40×76cm, thiết kế lõm giữa tạo phong cách nhẹ nhàng.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423294372703_4010665d4a28d07a5485be49fab92640.jpg" alt="Mõ lõm xoan – góc 1">\n        <img src="/images/ke-tivi/z6423294431988_5e6c20307fd6e1a9174fb22116b8680d.jpg" alt="Mõ lõm xoan – góc 2">\n      </div>\n      <p>Thiết kế lõm nhẹ nhàng, dễ vệ sinh, phù hợp nội thất thanh lịch.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ xoan'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '220',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '40',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '78',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294372703_4010665d4a28d07a5485be49fab92640.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294431988_5e6c20307fd6e1a9174fb22116b8680d.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294464434_7a11517f82ccbb707e0c155d042daa92.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294439702_86f7854fc7fc303c334c7143415ef87d.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294469989_014a0e18fa786d23c7b9808f813793b3.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294452973_8ae1de19cfeb6a2e6292e49635dcd2ef.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294459278_06fcafb85a761e1ba23fae7759942540.jpg'
+      }
+    ]
+  },
+  {
+    'id': '4',
+    'url': 'mo-lom-xoan',
+    'name': 'Mõ lõm (xoan) 2m4',
+    'defaultImage': '/images/ke-tivi/z6423294372703_4010665d4a28d07a5485be49fab92640.jpg',
+    'price': '5000000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi mõ lõm chất xoan, kiểu dáng thấp thoáng phù hợp mọi không gian.</p>',
+    'description': '\n      <p><strong>Mõ lõm (xoan)</strong> – chất liệu xoan, kích thước 220×40×76cm, thiết kế lõm giữa tạo phong cách nhẹ nhàng.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423294372703_4010665d4a28d07a5485be49fab92640.jpg" alt="Mõ lõm xoan – góc 1">\n        <img src="/images/ke-tivi/z6423294431988_5e6c20307fd6e1a9174fb22116b8680d.jpg" alt="Mõ lõm xoan – góc 2">\n      </div>\n      <p>Thiết kế lõm nhẹ nhàng, dễ vệ sinh, phù hợp nội thất thanh lịch.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ xoan'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '240',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '40',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '78',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294372703_4010665d4a28d07a5485be49fab92640.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294431988_5e6c20307fd6e1a9174fb22116b8680d.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294464434_7a11517f82ccbb707e0c155d042daa92.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294439702_86f7854fc7fc303c334c7143415ef87d.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294469989_014a0e18fa786d23c7b9808f813793b3.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294452973_8ae1de19cfeb6a2e6292e49635dcd2ef.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423294459278_06fcafb85a761e1ba23fae7759942540.jpg'
+      }
+    ]
+  },
+  {
+    'id': '5',
+    'url': 'mo-lom-huong-da',
+    'name': 'Mõ lõm (hương đá)',
+    'defaultImage': '/images/ke-tivi/z6801300359181_2084082aaebd26b5a145f1095f51c16b.jpg',
+    'price': '7500000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi mõ lõm chất hương đá, thiết kế thanh thoát, đẳng cấp.</p>',
+    'description': '\n      <p><strong>Mõ lõm (hương đá)</strong> – chất liệu hương đá, kích thước 220×40×76cm, thiết kế lõm giữa nhẹ nhàng mà chắc chắn.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6801300359181_2084082aaebd26b5a145f1095f51c16b.jpg" alt="Mõ lõm hương đá – góc 1">\n        <img src="/images/ke-tivi/z6801300346701_9ba3be90cada7541bfc61ad5ef197a51.jpg" alt="Mõ lõm hương đá – góc 2">\n      </div>\n      <p>Màu nâu đỏ trầm, vân tinh tế, tăng giá trị thẩm mỹ và độ bền sử dụng.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ hương đá'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '220',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '40',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '76',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801300359181_2084082aaebd26b5a145f1095f51c16b.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801300346701_9ba3be90cada7541bfc61ad5ef197a51.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801300312983_6599ab67755c34c3e7b042e8cca30ea5.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801300362615_062646185fe37dbf7f5633a37b896a79.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801300372147_3d8e415f350b39c08d4090b7f981368a.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801300368125_f065f5845e75bf7f594da18e0e23110d.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801297835382_7c531eb727bc8af5938c500ee860785a.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801300339156_0da43e96f195fe9396f80cbbf8c70d99.jpg'
+      }
+    ]
+  },
+  {
+    'id': '6',
+    'url': 'mo-loi-xoan',
+    'name': 'Mõ lồi (xoan)',
+    'defaultImage': '/images/ke-tivi/z6423295292448_b303cc5e4b0df3b881fb3ecc955dc47b.jpg',
+    'price': '5000000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi mõ lồi chất xoan, thiết kế chắc chắn, mặt nổi hiện đại.</p>',
+    'description': '\n      <p><strong>Mõ lồi (xoan)</strong> – chất liệu xoan, kích thước 220×40×76cm, thiết kế mặt nổi hiện đại.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423295292448_b303cc5e4b0df3b881fb3ecc955dc47b.jpg" alt="Mõ lồi xoan – góc 1">\n        <img src="/images/ke-tivi/z6423295321557_a6682a7788de3d8118faec03ef452834.jpg" alt="Mõ lồi xoan – góc 2">\n      </div>\n      <p>Thiết kế mặt nổi tăng không gian trưng bày, bề mặt mịn, phù hợp gia đình hiện đại.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ xoan'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '220',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '40',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '78',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295292448_b303cc5e4b0df3b881fb3ecc955dc47b.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295321557_a6682a7788de3d8118faec03ef452834.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295318598_0f4d5667447a5e782189a49e60e0ec16.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295314760_3c10a5507ba73401ee5024c2405e6525.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295308859_077feaa4ff0ba3b7ac3539c06530d3e9.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295297758_cdc2ad20a3061f3b061dce4e0c9584ff.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295301357_b4ab14ff7a430162aaa9875e1ddeddaa.jpg'
+      }
+    ]
+  },
+  {
+    'id': '6',
+    'url': 'mo-loi-xoan',
+    'name': 'Mõ lồi (xoan) 2m4',
+    'defaultImage': '/images/ke-tivi/z6423295292448_b303cc5e4b0df3b881fb3ecc955dc47b.jpg',
+    'price': '5000000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi mõ lồi chất xoan, thiết kế chắc chắn, mặt nổi hiện đại.</p>',
+    'description': '\n      <p><strong>Mõ lồi (xoan)</strong> – chất liệu xoan, kích thước 220×40×76cm, thiết kế mặt nổi hiện đại.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423295292448_b303cc5e4b0df3b881fb3ecc955dc47b.jpg" alt="Mõ lồi xoan – góc 1">\n        <img src="/images/ke-tivi/z6423295321557_a6682a7788de3d8118faec03ef452834.jpg" alt="Mõ lồi xoan – góc 2">\n      </div>\n      <p>Thiết kế mặt nổi tăng không gian trưng bày, bề mặt mịn, phù hợp gia đình hiện đại.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ xoan'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '240',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '40',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '78',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295292448_b303cc5e4b0df3b881fb3ecc955dc47b.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295321557_a6682a7788de3d8118faec03ef452834.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295318598_0f4d5667447a5e782189a49e60e0ec16.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295314760_3c10a5507ba73401ee5024c2405e6525.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295308859_077feaa4ff0ba3b7ac3539c06530d3e9.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295297758_cdc2ad20a3061f3b061dce4e0c9584ff.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295301357_b4ab14ff7a430162aaa9875e1ddeddaa.jpg'
+      }
+    ]
+  },
+  {
+    'id': '7',
+    'url': 'mo-loi-huong-da',
+    'name': 'Mõ lồi (hương đá)',
+    'defaultImage': '/images/ke-tivi/z6801218056344_8a15671b42634f90879f392ef5b859eb.jpg',
+    'price': '7500000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi mõ lồi chất hương đá, thiết kế cá tính, chắc chắn. Khung cánh 3p, ván cánh 1,5p ván mặt 1p </p>',
+    'description': '\n      <p><strong>Mõ lồi (hương đá)</strong> – chất liệu hương đá, kích thước 220×40×76cm, mặt nổi mạnh mẽ và tinh xảo.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6801218056344_8a15671b42634f90879f392ef5b859eb.jpg" alt="Mõ lồi hương đá – góc 1">\n        <img src="/images/ke-tivi/z6801187075258_0d1acec9c007228eb5146c4560c61a74.jpg" alt="Mõ lồi hương đá – góc 2">\n      </div>\n      <p>Phong cách mạnh mẽ, thích hợp nội thất hiện đại hoặc công nghiệp nhẹ.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ Hương đá'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '220',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '43',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '77',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801218056344_8a15671b42634f90879f392ef5b859eb.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801187075258_0d1acec9c007228eb5146c4560c61a74.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801214337726_25317974992452ef8fa7ca3e61c83e8a.jpg'
+      }
+    ]
+  },
+  {
+    'id': '7',
+    'url': 'mo-loi-huong-da',
+    'name': 'Mõ lồi (hương đá) 2m4',
+    'defaultImage': '/images/ke-tivi/z6801218056344_8a15671b42634f90879f392ef5b859eb.jpg',
+    'price': '7500000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi mõ lồi chất hương đá, thiết kế cá tính, chắc chắn. Khung cánh 3p, ván cánh 1,5p ván mặt 1p </p>',
+    'description': '\n      <p><strong>Mõ lồi (hương đá)</strong> – chất liệu hương đá, kích thước 220×40×76cm, mặt nổi mạnh mẽ và tinh xảo.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6801218056344_8a15671b42634f90879f392ef5b859eb.jpg" alt="Mõ lồi hương đá – góc 1">\n        <img src="/images/ke-tivi/z6801187075258_0d1acec9c007228eb5146c4560c61a74.jpg" alt="Mõ lồi hương đá – góc 2">\n      </div>\n      <p>Phong cách mạnh mẽ, thích hợp nội thất hiện đại hoặc công nghiệp nhẹ.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ Hương đá'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '240',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '43',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '77',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801218056344_8a15671b42634f90879f392ef5b859eb.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801187075258_0d1acec9c007228eb5146c4560c61a74.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801214337726_25317974992452ef8fa7ca3e61c83e8a.jpg'
+      }
+    ]
+  },
+  {
+    'id': '8',
+    'url': 'ke-tivi-hoa-hong',
+    'name': 'Kệ hoa hồng',
+    'defaultImage': '/images/ke-tivi/z6423295434128_d4bb03f4283f8d173a0d105225a578af.jpg',
+    'price': '9000000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi “hoa hồng” chất hương đá, kiểu dáng lãng mạn và tinh tế. khung cánh 4p ván mặt 1,5p ván cánh 2,5p</p>',
+    'description': '\n      <p><strong>Kệ hoa hồng</strong> – chất liệu hương đá, kích thước ~220×47×76cm. Kiểu dáng cánh hoa mở, tạo điểm nhấn mềm mại.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423295434128_d4bb03f4283f8d173a0d105225a578af.jpg" alt="Kệ hoa hồng – góc 1">\n        <img src="/images/ke-tivi/z6423295430865_08a778a42ae6ff1a3ba3823f9dfd9749.jpg" alt="Kệ hoa hồng – góc 2">\n      </div>\n      <p>Thiết kế mềm mại kiểu cánh hoa, thích hợp phong cách lãng mạn.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ Hương đá'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '220',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '47',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '76',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295434128_d4bb03f4283f8d173a0d105225a578af.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295430865_08a778a42ae6ff1a3ba3823f9dfd9749.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295387869_2b2d64793118bc6b94876218e3ae25cb.jpg'
+      }
+    ]
+  },
+  {
+    'id': '8',
+    'url': 'ke-tivi-hoa-hong',
+    'name': 'Kệ hoa hồng 2m4',
+    'defaultImage': '/images/ke-tivi/z6423295434128_d4bb03f4283f8d173a0d105225a578af.jpg',
+    'price': '9000000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi “hoa hồng” chất hương đá, kiểu dáng lãng mạn và tinh tế. khung cánh 4p ván mặt 1,5p ván cánh 2,5p</p>',
+    'description': '\n      <p><strong>Kệ hoa hồng</strong> – chất liệu hương đá, kích thước ~220×47×76cm. Kiểu dáng cánh hoa mở, tạo điểm nhấn mềm mại.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423295434128_d4bb03f4283f8d173a0d105225a578af.jpg" alt="Kệ hoa hồng – góc 1">\n        <img src="/images/ke-tivi/z6423295430865_08a778a42ae6ff1a3ba3823f9dfd9749.jpg" alt="Kệ hoa hồng – góc 2">\n      </div>\n      <p>Thiết kế mềm mại kiểu cánh hoa, thích hợp phong cách lãng mạn.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ Hương đá'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '240',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '47',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '76',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295434128_d4bb03f4283f8d173a0d105225a578af.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295430865_08a778a42ae6ff1a3ba3823f9dfd9749.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423295387869_2b2d64793118bc6b94876218e3ae25cb.jpg'
+      }
+    ]
+  },
+  {
+    'id': '9',
+    'url': 'ke-tivi-cot-nho',
+    'name': 'Hàng cột nho',
+    'defaultImage': '/images/ke-tivi/z6423296347479_1d3d2fe0dbc19fabfc289f6da938058b.jpg',
+    'price': '9500000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi “cột nho” chất hương đá, kiểu dáng độc đáo, ấn tượng mạnh. chỗ để tivi cao 75 sâu 47 </p>',
+    'description': '\n      <p><strong>Hàng cột nho</strong> – chất liệu hương đá, kích thước dài ~240cm (ghi nhãn 220×40×76cm). Thiết kế dạng cột nối liền kiểu nho.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423296347479_1d3d2fe0dbc19fabfc289f6da938058b.jpg" alt="Hàng cột nho – góc 1">\n        <img src="/images/ke-tivi/z6801185253666_7b0d8f438cb506fff5effac4380a6df0.jpg" alt="Hàng cột nho – góc 2">\n      </div>\n      <p>Kiểu dáng độc đáo, phù hợp không gian sáng tạo hoặc showroom.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ Hương đá'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '240',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '40',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '85',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296347479_1d3d2fe0dbc19fabfc289f6da938058b.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801185253666_7b0d8f438cb506fff5effac4380a6df0.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6801182403604_150df0ca000a0ed54c9294cb20af6404.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296308237_ed9338335f27819132f593eaad3a9e4c.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296360553_c7db159f780e1d3d189dd406b6b4b256.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296360561_bf29c901764856d6afdea51855306c83.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296370390_6874966500f4f7e62faa2d872bda29dc.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296370442_6295ed721d7239279a393e6f4ed1c118.jpg'
+      }
+    ]
+  },
+  {
+    'id': '10',
+    'url': 'ke-tivi-sung',
+    'name': 'kệ sừng',
+    'defaultImage': '/images/ke-tivi/z6423296918807_29647150487780f6557bdb4d7276adcf.jpg',
+    'price': '7500000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi “sừng” chất hương đá, thiết kế cá tính và mạnh mẽ.</p>',
+    'description': '\n      <p><strong>Kệ sừng</strong> – chất liệu hương đá, chiều dài ~240cm, sâu 47cm, cao 76cm. Kiểu dáng như hai sừng nhô cao, ấn tượng mạnh.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423296918807_29647150487780f6557bdb4d7276adcf.jpg" alt="Kệ sừng – góc 1">\n        <img src="/images/ke-tivi/z6423296959354_7a7e370652720d715252a3b68be480d5.jpg" alt="Kệ sừng – góc 2">\n      </div>\n      <p>Phong cách mạnh mẽ, phù hợp không gian hiện đại hoặc showroom nghệ thuật.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ Hương đá'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '220',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '43',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '79',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296918807_29647150487780f6557bdb4d7276adcf.jpg'
+      },
+      {
+        'type': 'video',
+        'src': '/videos/ke-tivi/6807226082366.mp4'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296959354_7a7e370652720d715252a3b68be480d5.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296867469_8698518f3d7ae78366bf1b46c9d1ddca.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296919840_5f9ace04642634b247ed8f652b418066.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296911392_7d65425d0a0c337af73b6e19dca1ea51.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296909451_b5e15688da767d929b12043812ebb47a.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296860675_738c26f4e50020e841ae2f1351b98ab9.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296910915_dcc0eb9374814e277dd324a5a991988f.jpg'
+      }
+    ]
+  },
+  {
+    'id': '10',
+    'url': 'ke-tivi-sung',
+    'name': 'kệ sừng 2m4',
+    'defaultImage': '/images/ke-tivi/z6423296918807_29647150487780f6557bdb4d7276adcf.jpg',
+    'price': '7500000',
+    'categoryId': 'ke-tivi',
+    'shortDescription': '<p>Kệ tivi “sừng” chất hương đá, thiết kế cá tính và mạnh mẽ.</p>',
+    'description': '\n      <p><strong>Kệ sừng</strong> – chất liệu hương đá, chiều dài ~240cm, sâu 47cm, cao 76cm. Kiểu dáng như hai sừng nhô cao, ấn tượng mạnh.</p>\n      <div class="gallery">\n        <img src="/images/ke-tivi/z6423296918807_29647150487780f6557bdb4d7276adcf.jpg" alt="Kệ sừng – góc 1">\n        <img src="/images/ke-tivi/z6423296959354_7a7e370652720d715252a3b68be480d5.jpg" alt="Kệ sừng – góc 2">\n      </div>\n      <p>Phong cách mạnh mẽ, phù hợp không gian hiện đại hoặc showroom nghệ thuật.</p>\n    ',
+    'attributes': [
+      {
+        'key': 'Chất liệu Gỗ',
+        'value': 'Gỗ Hương đá'
+      },
+      {
+        'key': 'Chiều Dài',
+        'value': '240',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Rộng',
+        'value': '43',
+        'unit': 'cm'
+      },
+      {
+        'key': 'Chiều Cao',
+        'value': '79',
+        'unit': 'cm'
+      }
+    ],
+    'media': [
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296918807_29647150487780f6557bdb4d7276adcf.jpg'
+      },
+      {
+        'type': 'video',
+        'src': '/videos/ke-tivi/6807226082366.mp4'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296959354_7a7e370652720d715252a3b68be480d5.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296867469_8698518f3d7ae78366bf1b46c9d1ddca.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296919840_5f9ace04642634b247ed8f652b418066.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296911392_7d65425d0a0c337af73b6e19dca1ea51.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296909451_b5e15688da767d929b12043812ebb47a.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296860675_738c26f4e50020e841ae2f1351b98ab9.jpg'
+      },
+      {
+        'type': 'image',
+        'src': '/images/ke-tivi/z6423296910915_dcc0eb9374814e277dd324a5a991988f.jpg'
+      }
+    ]
+  }
+]

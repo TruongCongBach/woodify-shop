@@ -1,7 +1,7 @@
 // apps/woodify-khanhtrang/src/app/product/[productId]/page.tsx
 import ProductPageClient from './page.client'
-import productsMock from '../../../data/productsMock'
 import PRODUCTS from '@/data/products'
+import { getImagesFromMedia } from '@/utils/getImagesFromMedia'
 
 
 export default function ProductPage() {
@@ -21,32 +21,32 @@ export async function generateMetadata(props: Props) {
 
 	if (!product) {
 		return {
-			title: 'Sản phẩm không tồn tại | Woodify',
+			title: 'Sản phẩm không tồn tại | Nội Thất Khánh Trang',
 			description: 'Sản phẩm bạn tìm kiếm không tồn tại hoặc đã bị xoá.',
 		}
 	}
 
-	const { name, description, images } = product
+	const { name, description, media } = product
 
 	return {
-		title: `${name} | Woodify`,
+		title: `${name} | Nội Thất Khánh Trang`,
 		description,
 		openGraph: {
 			title: name,
 			description,
 			type: 'website',
-			images: images.map((src:string) => ({
-				url: src,
+			images: getImagesFromMedia(media).map((mediaItem) => ({
+				url: mediaItem.src,
 				width: 800,
 				height: 600,
-				alt: name,
+				alt: mediaItem.src,
 			})),
 		},
 		twitter: {
 			card: 'summary_large_image',
 			title: name,
 			description,
-			images,
+			images: getImagesFromMedia(media).map(mediaItem => mediaItem.src),
 		},
 	}
 }

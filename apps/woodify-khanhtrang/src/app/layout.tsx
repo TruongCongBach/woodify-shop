@@ -5,6 +5,7 @@ import React from 'react'
 import { CategoryNav } from '@/components/category-nav'
 import { PageHeader } from '@/components/page-header'
 import { PageFooter } from '@/components/page-footer'
+import categoriesMock from '@/data/categoriesMock'
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -25,12 +26,7 @@ export const metadata: Metadata = {
 	},
 }
 
-const categories = [
-	{ key: 'ban-ghe', label: 'Bàn ghế', sub: [{ key: 'ban-an', label: 'Bàn ăn' }] },
-	{ key: 'tu-tho', label: 'Tủ thờ' },
-	{ key: 'ke-tivi', label: 'Kệ Tivi' },
-	{ key: 'vach-tho', label: 'Vách thờ' },
-]
+
 
 export default function RootLayout({
 	children,
@@ -47,7 +43,7 @@ export default function RootLayout({
 			logo="/logo.png"
 		/>
 		<CategoryNav
-			categories={categories}
+			categories={categoriesMock}
 		/>
 		{children}
 		<PageFooter/>

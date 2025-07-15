@@ -9,19 +9,16 @@ import {
 	BreadcrumbSeparator,
 } from '@woodify/ui/components/breadcrumb'
 import { ProductGallery } from '@/components/product-gallery'
-import { ProductCard } from '@/components/product-card'
 import { formatPrice } from '@/utils/formatPrice'
 import { HomeIcon } from '@heroicons/react/24/outline'
 import PRODUCTS from '@/data/products'
-import Link from 'next/link'
 import { ProductSection } from '@/components/product-section'
 import { ProductReview } from '@/components/product-review'
 import { generateRandomReviews } from '@/utils/generateRandomReviews'
+import dynamic from 'next/dynamic'
 
-const reviews = [
-	{ id: 1, author: 'Nguyễn A', rating: 5, comment: 'Rất đẹp!' },
-	{ id: 2, author: 'Trần B', rating: 4, comment: 'Sản phẩm chắc chắn, đóng gói cẩn thận.' },
-]
+// Dynamic import để chỉ render ở client
+const ARTester = dynamic(() => import('@/components/product-arview'), { ssr: false });
 
 export default function ProductPageClient() {
 	const { productUrl } = useParams() as {productUrl: string}
@@ -33,6 +30,7 @@ export default function ProductPageClient() {
 	}
 
 	const relatedProducts = PRODUCTS.filter(p => p.id !== product.id && p.categoryId === product.categoryId)
+
 
 	return (
 		<div className="bg-gray-100/70">
@@ -55,13 +53,14 @@ export default function ProductPageClient() {
 
 				{/* Gallery + Info */}
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-					<ProductGallery images={product.images}/>
+					<ProductGallery media={product.media}/>
 					<div className="space-y-5">
 						<h1 className="text-3xl font-bold">{product.name}</h1>
 						<p className="text-2xl text-red-600 font-semibold">{formatPrice(product.price)}</p>
 						{product?.shortDescription &&
               <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: product?.shortDescription }}/>}
 					</div>
+					<ARTester/>
 				</div>
 
 				{/* Description */}
