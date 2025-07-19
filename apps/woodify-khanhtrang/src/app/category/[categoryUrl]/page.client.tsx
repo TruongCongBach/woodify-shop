@@ -9,8 +9,8 @@ import {
 	BreadcrumbLink,
 	BreadcrumbList,
 	BreadcrumbSeparator,
-} from '@woodify/ui/components/breadcrumb'
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@woodify/ui/components/sheet'
+} from '@woodify/ui/shadcn-ui/breadcrumb'
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@woodify/ui/shadcn-ui/sheet'
 import Link from 'next/link'
 import { ProductCard } from '@/components/product-card'
 import { HomeIcon } from '@heroicons/react/24/outline'

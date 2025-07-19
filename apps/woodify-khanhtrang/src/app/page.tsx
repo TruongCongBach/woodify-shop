@@ -1,10 +1,14 @@
 'use client'
 
 import React from 'react'
-import { HeroSlider } from '@woodify/ui/components/HeroSlider'
+import { HeroSlider } from '@woodify/ui/shadcn-ui/HeroSlider'
 import { ProductSection } from '@/components/product-section'
 import { ProductCarousel } from '@/components/product-carousel'
 import PRODUCTS_KE_TIVI from '@/data/products-ke-tivi'
+import { getProducts } from '@/modules/product/services/products/getProducts'
+
+
+export const runtime = 'edge'
 
 const slides = [
 	{
@@ -35,7 +39,9 @@ const featuredProducts = allProducts
 const keTivis = PRODUCTS_KE_TIVI.filter(p => p.categoryId === 'ke-tivi').slice(0, 8)
 const featuredAltProducts = allProducts.filter(p => p.categoryId !== 'ban-ghe')
 
-export default function Home() {
+export default async function Home() {
+	const a = await getProducts()
+	console.log(a)
 	return (
 		<div>
 			<HeroSlider slides={slides} />

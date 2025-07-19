@@ -8,10 +8,10 @@ import {
 	SheetDescription,
 	SheetHeader,
 	SheetTrigger,
-} from '@woodify/ui/components/sheet'
+} from '@woodify/ui/shadcn-ui/sheet'
 import { CategoryAccordionNav } from '@/components/category-accordion-nav'
 import { useRouter } from 'next/navigation'
-import { ZaloIcon } from '@woodify/ui/components/icons/zalo-icon'
+import { ZaloIcon } from '@woodify/ui/icons/zalo-icon'
 import categoriesMock from '@/data/categoriesMock'
 
 

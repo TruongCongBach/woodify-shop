@@ -4,16 +4,16 @@
   "rsc": false,
   "tsx": true,
   "tailwind": {
-    "config": "",
+    "config": "tailwind.config.js",
     "css": "src/styles/globals.css",
     "baseColor": "neutral",
     "cssVariables": true,
     "prefix": ""
   },
   "aliases": {
-    "components": "@/components",
+    "components": "@/src/shadcn-ui",
     "utils": "@/src/lib/utils.ts",
-    "ui": "@/src/components",
+    "ui": "@/src/shadcn-ui",
     "lib": "@/src/lib",
     "hooks": "@/src/hooks"
   },

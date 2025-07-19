@@ -3,6 +3,6 @@ interface Category {
 	name: string
 	image?: string
 	url: string
-	sub?: Category[],
+	children?: Category[],
 	description?: string
 }
