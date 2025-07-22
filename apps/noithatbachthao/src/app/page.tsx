@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { HeroSlider } from '@woodify/ui/shadcn-ui/HeroSlider'
 import { ProductSection } from '@/components/product-section'
 import { ProductCarousel } from '@/components/product-carousel'
 import { getProductByCategoryId } from '@/services/getProductByCategoryId'
+import { transformProductToFormData } from '@/utils/transformProductToFormData'
 
 const slides = [
 	{
@@ -36,7 +37,7 @@ export default async function Home() {
 	const productKeTivi = await getProductByCategoryId('3d50e476-fbc6-4bd6-a1c2-25713e677c74', {
 		page: 1,
 		pageSize: 8,
-	})
+	}).then(res => res.map(transformProductToFormData))
 
 	return (
 		<div className="bg-gray-100/70">
