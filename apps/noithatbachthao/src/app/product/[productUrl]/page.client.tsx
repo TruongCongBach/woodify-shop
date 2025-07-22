@@ -10,27 +10,27 @@ import {
 } from '@woodify/ui/shadcn-ui/breadcrumb'
 import { ProductGallery } from '@/components/product-gallery'
 import { formatPrice } from '@/utils/formatPrice'
-import { HomeIcon } from '@heroicons/react/24/outline'
+import { HomeIcon } from 'lucide-react'
 import PRODUCTS from '@/data/products'
 import { ProductSection } from '@/components/product-section'
 import { ProductReview } from '@/components/product-review'
 import { generateRandomReviews } from '@/utils/generateRandomReviews'
-import dynamic from 'next/dynamic'
+import { useProductByUrl } from '@/hooks/useProductByUrl'
 
-// Dynamic import để chỉ render ở client
-const ARTester = dynamic(() => import('@/components/product-arview'), { ssr: false });
 
 export default function ProductPageClient() {
 	const { productUrl } = useParams() as {productUrl: string}
-	const product = PRODUCTS.find(p => p.url === productUrl)
+	const { product, isLoading } = useProductByUrl(productUrl)
 
+	if( isLoading) {
+		return <div className="container mx-auto px-4 py-8 text-center">Loading...</div>
+	}
 	if (!product) {
 		return <div className="container mx-auto px-4 py-8 text-center text-red-600 font-semibold">Sản phẩm không tồn
 			tại.</div>
 	}
 
 	const relatedProducts = PRODUCTS.filter(p => p.id !== product.id && p.categoryId === product.categoryId)
-
 
 	return (
 		<div className="bg-gray-100/70">
@@ -60,7 +60,6 @@ export default function ProductPageClient() {
 						{product?.shortDescription &&
               <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: product?.shortDescription }}/>}
 					</div>
-					<ARTester/>
 				</div>
 
 				{/* Description */}

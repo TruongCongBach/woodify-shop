@@ -1,30 +1,16 @@
 'use client'
-// packages/ui/src/components/PageHeader.tsx
 import React from 'react'
-import { Menu, Phone } from 'lucide-react'
-import {
-	Sheet,
-	SheetContent,
-	SheetDescription,
-	SheetHeader,
-	SheetTrigger,
-} from '@woodify/ui/shadcn-ui/sheet'
-import { CategoryAccordionNav } from '@/components/category-accordion-nav'
-import { useRouter } from 'next/navigation'
+import { Phone } from 'lucide-react'
 import { ZaloIcon } from '@woodify/ui/icons/zalo-icon'
-import categoriesMock from '@/data/categoriesMock'
-
+import { CategoryAccordionNav } from '@/components/category-accordion-nav'
 
 interface PageHeaderProps {
 	phone: string
 	logo: string
+	categoryTreeMenu: Promise<CategoryTree[]>
 }
 
-export const PageHeader = ({ phone }: PageHeaderProps) => {
-	const router = useRouter()
-	const handleSelect = (key: string) => {
-		router.push(`/category/${key}`)
-	}
+export const PageHeader = ({ phone, categoryTreeMenu }: PageHeaderProps) => {
 
 	return (
 		<header className="bg-gray-100/70 backdrop-blur-sm w-full">
@@ -38,21 +24,7 @@ export const PageHeader = ({ phone }: PageHeaderProps) => {
 					</div>
 				</a>
 				{/* Mobile menu button */}
-				<Sheet>
-					<SheetTrigger className="md:hidden">
-						<Menu className="h-6 w-6"/>
-					</SheetTrigger>
-					<SheetContent>
-						<SheetHeader>
-							<SheetDescription>
-								<CategoryAccordionNav
-									categories={categoriesMock}
-									onSelectAction={handleSelect}
-								/>
-							</SheetDescription>
-						</SheetHeader>
-					</SheetContent>
-				</Sheet>
+				<CategoryAccordionNav categoryTreeMenu={categoryTreeMenu}/>
 
 				{/* Desktop nav */}
 				<div className="hidden md:flex md:items-center md:space-x-8 flex-1 mx-4">
@@ -63,10 +35,10 @@ export const PageHeader = ({ phone }: PageHeaderProps) => {
 					/>
 					<div className="flex flex-col items-center gap-y-2">
 						<a href={`tel:${phone}`} className="text-lg font-bold flex gap-x-2">
-							<Phone className="h-6 w-6 text-gray-700" /> <span>{phone}</span>
+							<Phone className="h-6 w-6 text-gray-700"/> <span>{phone}</span>
 						</a>
 						<a href={`https://zalo.me/${phone}`} className="text-lg font-bold flex gap-x-2">
-							<ZaloIcon className="h-6 w-6 text-gray-700" /> <span>{phone}</span>
+							<ZaloIcon className="h-6 w-6 text-gray-700"/> <span>{phone}</span>
 						</a>
 					</div>
 				</div>

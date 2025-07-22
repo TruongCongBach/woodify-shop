@@ -1,10 +1,10 @@
 'use client'
 
+import { CategoryForm, CategoryFormData } from '@/components/category-form'
+import { useCategories } from '@/hooks/useCategories'
+import { processCreateCategory } from '@/services/process-create-category'
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
-import { CategoryForm, CategoryFormData } from '@/modules/category/components/category-form'
-import { useCategories } from '@/modules/category/hooks/useCategories'
-import { processCreateCategory } from '@/modules/category/services/process-create-category'
 
 export default function NewCategoryPage() {
 	const router = useRouter()
@@ -21,14 +21,10 @@ export default function NewCategoryPage() {
 		}
 	}
 
-	const subOptions = (allCategories || []).map((c) => ({
-		id: c.id,
-		name: c.name,
-	}))
+	const subOptions = (allCategories || [])
 
 	return (
 		<div className="max-w-2xl mx-auto p-6">
-			<h1 className="text-2xl font-bold mb-4">Tạo danh mục mới</h1>
 			<CategoryForm
 				initialValues={{
 					name: '',
@@ -36,6 +32,7 @@ export default function NewCategoryPage() {
 					image: '',
 					description: '',
 					children: [],
+					showInNav: false,
 				}}
 				categories={subOptions}
 				onSubmitAction={handleSubmit}

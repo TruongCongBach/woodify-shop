@@ -736,10 +736,6 @@ const PRODUCTS_KE_TIVI: Product[] = [
 				'src': '/images/ke-tivi/z6423296918807_29647150487780f6557bdb4d7276adcf.jpg',
 			},
 			{
-				'type': 'video',
-				'src': '/videos/ke-tivi/6807226082366.mp4',
-			},
-			{
 				'type': 'image',
 				'src': '/images/ke-tivi/z6423296959354_7a7e370652720d715252a3b68be480d5.jpg',
 			},
@@ -803,10 +799,6 @@ const PRODUCTS_KE_TIVI: Product[] = [
 			{
 				'type': 'image',
 				'src': '/images/ke-tivi/z6423296918807_29647150487780f6557bdb4d7276adcf.jpg',
-			},
-			{
-				'type': 'video',
-				'src': '/videos/ke-tivi/6807226082366.mp4',
 			},
 			{
 				'type': 'image',
@@ -874,10 +866,6 @@ const PRODUCTS_KE_TIVI: Product[] = [
 				'src': '/images/ke-tivi/z6423296918807_29647150487780f6557bdb4d7276adcf.jpg',
 			},
 			{
-				'type': 'video',
-				'src': '/videos/ke-tivi/6807226082366.mp4',
-			},
-			{
 				'type': 'image',
 				'src': '/images/ke-tivi/z6423296959354_7a7e370652720d715252a3b68be480d5.jpg',
 			},
@@ -941,10 +929,6 @@ const PRODUCTS_KE_TIVI: Product[] = [
 			{
 				'type': 'image',
 				'src': '/images/ke-tivi/z6423296918807_29647150487780f6557bdb4d7276adcf.jpg',
-			},
-			{
-				'type': 'video',
-				'src': '/videos/ke-tivi/6807226082366.mp4',
 			},
 			{
 				'type': 'image',

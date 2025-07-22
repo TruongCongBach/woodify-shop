@@ -1,6 +1,6 @@
 // packages/ui/src/components/CategoryNav.tsx
 'use client'
-import React from 'react'
+import React, { Suspense, use } from 'react'
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -12,12 +12,14 @@ import {
 import Link from 'next/link'
 import { cva } from 'class-variance-authority'
 import { cn } from '@woodify/ui/lib/utils'
+import { fetchNavCategoriesWithChildren } from '@/services/fetchNavCategoriesWithChildren'
 
 export const CategoryNav = ({
-	categories,
+	categoryTreeMenu,
 }: {
-	categories: Category[]
+	categoryTreeMenu: Promise<CategoryTree[]>
 }) => {
+	const categories = use(categoryTreeMenu)
 	const navigationMenuTriggerStyle = cva(
 		"hover:bg-transparent hover:text-accent-foreground focus:bg-transparent focus:text-accent-foreground data-[state=open]:hover:bg-transparent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent/50"
 	)
@@ -28,7 +30,7 @@ export const CategoryNav = ({
 				<NavigationMenu viewport={false}>
 					<NavigationMenuList>
 						{categories.map((category, idx) => {
-							if(category.sub) {
+							if(category.children && category.children.length > 0) {
 								return <NavigationMenuItem key={idx}>
 									<NavigationMenuTrigger className={cn('p-6 h-full cursor-pointer', navigationMenuTriggerStyle())}>
 										<span className="font-bold">{category.name}</span>
@@ -36,7 +38,7 @@ export const CategoryNav = ({
 									<NavigationMenuContent>
 										<ul className="grid w-[300px] gap-4">
 											<li>
-												{category.sub.map((subCategory, subIdx) => (
+												{category.children.map((subCategory, subIdx) => (
 													<NavigationMenuLink asChild key={subIdx}>
 														<Link
 															href={`/category/${subCategory.url}`}
@@ -68,3 +70,13 @@ export const CategoryNav = ({
 		</div>
 	)
 }
+
+
+const CategoryTreeDesktopMenu = () => {
+	const categoriesNavMenu = fetchNavCategoriesWithChildren()
+	return <Suspense fallback={<> Loading... </>}>
+		<CategoryNav categoryTreeMenu={categoriesNavMenu} />
+	</Suspense>
+
+}
+export default  CategoryTreeDesktopMenu

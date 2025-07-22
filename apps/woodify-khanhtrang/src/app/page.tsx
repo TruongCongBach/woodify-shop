@@ -40,8 +40,6 @@ const keTivis = PRODUCTS_KE_TIVI.filter(p => p.categoryId === 'ke-tivi').slice(0
 const featuredAltProducts = allProducts.filter(p => p.categoryId !== 'ban-ghe')
 
 export default async function Home() {
-	const a = await getProducts()
-	console.log(a)
 	return (
 		<div>
 			<HeroSlider slides={slides} />

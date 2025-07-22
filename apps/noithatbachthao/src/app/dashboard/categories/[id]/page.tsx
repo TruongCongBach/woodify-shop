@@ -1,11 +1,11 @@
 'use client'
 
+import { useCategories } from '@/hooks/useCategories'
+import { useCategoryWithChildrenIdById } from '@/hooks/useCategoryById'
 import { useParams, useRouter } from 'next/navigation'
 import { toast } from 'sonner'
-import { CategoryForm, CategoryFormData } from '@/modules/category/components/category-form'
-import { useCategoryWithChildrenIdById } from '@/modules/category/hooks/useCategoryById'
-import { useCategories } from '@/modules/category/hooks/useCategories'
-import { processUpdateCategory } from '@/modules/category/services/process-update-category'
+import { CategoryForm, CategoryFormData } from '@/components/category-form'
+import { processUpdateCategory } from '@/services/process-update-category'
 
 export default function EditCategoryPage() {
 	const router = useRouter()
@@ -15,7 +15,6 @@ export default function EditCategoryPage() {
 	const { data: allCategories } = useCategories()
 
 	const handleSubmit = async (formData: CategoryFormData, file: File | undefined) => {
-		console.log(file)
 		try {
 			await processUpdateCategory(id, formData, file)
 			toast.success('Cập nhật danh mục thành công')
@@ -28,14 +27,10 @@ export default function EditCategoryPage() {
 
 	if (isLoading || !category) return <div className="p-4">Đang tải...</div>
 
-	const subOptions = (allCategories || []).filter((c) => c.id !== id).map((c) => ({
-		id: c.id,
-		name: c.name,
-	}))
+	const subOptions = (allCategories || []).filter((c) => c.id !== id)
 
 	return (
 		<div className="max-w-2xl mx-auto p-6">
-			<h1 className="text-2xl font-bold mb-4">Chỉnh sửa danh mục</h1>
 			<CategoryForm
 				initialValues={{
 					name: category.name,

@@ -1,12 +1,12 @@
 'use client'
 import React from 'react'
-import { PhoneIcon, ShieldCheckIcon } from '@heroicons/react/24/outline'
+import { Phone, ShieldCheck } from 'lucide-react'
 
 export default function WarrantyPolicyPage() {
 	return (
 		<section className="container mx-auto px-4 py-8 space-y-10">
 			<header className="flex items-center space-x-3">
-				<ShieldCheckIcon className="h-8 w-8 text-primary" />
+				<ShieldCheck className="h-8 w-8 text-primary" />
 				<h1 className="text-3xl font-semibold">Chính sách bảo hành</h1>
 			</header>
 
@@ -51,7 +51,7 @@ export default function WarrantyPolicyPage() {
 					href="/lien-he"
 					className="inline-flex items-center space-x-2 bg-primary text-white px-6 py-3 rounded-full text-lg hover:bg-primary-dark transition"
 				>
-					<PhoneIcon className="h-5 w-5" />
+					<Phone className="h-5 w-5" />
 					<span>Liên hệ tư vấn bảo hành</span>
 				</a>
 			</div>

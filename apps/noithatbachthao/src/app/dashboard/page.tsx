@@ -1,7 +1,3 @@
-// app/dashboard/page.tsx
-'use client'
-
-
 export default function DashboardPage() {
 	return (
 		<div className="space-y-10 p-6">

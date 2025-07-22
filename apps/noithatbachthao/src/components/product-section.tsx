@@ -1,6 +1,4 @@
 // packages/ui/src/components/ProductSection.tsx
-'use client'
-
 import React from 'react'
 import { ProductCard } from './product-card'
 import Link from 'next/link'
@@ -16,8 +14,6 @@ export const ProductSection = ({
 	products,
 	viewAllHref
 }: ProductSectionProps) => {
-
-
 
 	return (
 		<section className="py-12 max-w-7xl mx-auto px-4 mb-0">

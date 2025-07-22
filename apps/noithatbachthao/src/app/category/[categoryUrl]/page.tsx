@@ -1,19 +1,19 @@
 import { notFound } from 'next/navigation'
-import { categoriesMock } from '@/data/categoriesMock'
 import CategoryPageClient from '@/app/category/[categoryUrl]/page.client'
 import { Metadata } from 'next'
+import { getCategoryByUrl } from '@/services/getCategoryByUrl'
 
 type Props = {
-	params: Promise<{ categoryUrl: string | string[] }>;
+	params: Promise<{categoryUrl: string | string[]}>;
 }
 
 export default async function CategoryPage(props: Props) {
-	const { categoryUrl } = await props.params;
+	const { categoryUrl } = await props.params
 	const slug = Array.isArray(categoryUrl)
 		? categoryUrl[categoryUrl.length - 1]
-		: categoryUrl || '';
+		: categoryUrl || ''
 
-	const category = categoriesMock.find(c => c.url === slug)
+	const category = await getCategoryByUrl(slug)
 
 	if (!category) {
 		notFound()
@@ -28,7 +28,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 		? categoryUrl[categoryUrl.length - 1]
 		: categoryUrl || ''
 
-	const category = categoriesMock.find(c => c.url === slug)
+	const category = await getCategoryByUrl(slug)
 	if (!category) notFound()
 
 	const title = `${category.name} – Nội Thất Khánh Trang`
@@ -44,8 +44,18 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 		'@context': 'https://schema.org',
 		'@type': 'BreadcrumbList',
 		'itemListElement': [
-			{ '@type': 'ListItem', position: 1, name: 'Trang chủ', item: `${process.env.BASE_URL || 'https://woodify.com'}/` },
-			{ '@type': 'ListItem', position: 2, name: category.name, item: `${process.env.BASE_URL || 'https://woodify.com'}/category/${slug}` },
+			{
+				'@type': 'ListItem',
+				position: 1,
+				name: 'Trang chủ',
+				item: `${process.env.BASE_URL || 'https://woodify.com'}/`,
+			},
+			{
+				'@type': 'ListItem',
+				position: 2,
+				name: category.name,
+				item: `${process.env.BASE_URL || 'https://woodify.com'}/category/${slug}`,
+			},
 		],
 	}
 	return {
@@ -59,8 +69,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 				index: true,
 				follow: true,
 				'max-image-preview': 'large',
-				'max-video-preview': -1
-			}
+				'max-video-preview': -1,
+			},
 		},
 		openGraph: {
 			title,
@@ -68,13 +78,13 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 			url: `/category/${slug}`,
 			siteName: 'Nội Thất Khánh Trang',
 			images: [{ url: imageUrl, alt: category.name, width: 1200, height: 630 }],
-			type: 'website'
+			type: 'website',
 		},
 		twitter: {
 			card: 'summary_large_image',
 			title,
 			description,
-			images: image ? [image] : []
+			images: image ? [image] : [],
 		},
 		other: {
 			'application/ld+json': JSON.stringify(breadcrumb),

@@ -1,10 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import {
-	MapPinIcon,
-	PhoneIcon,
-	EnvelopeIcon,
-} from '@heroicons/react/24/outline'
+import { MapPin, Phone, Mail } from 'lucide-react'
 
 export default function ContactPage() {
 	const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -36,21 +32,21 @@ export default function ContactPage() {
 				{/* Thông tin liên hệ */}
 				<div className="space-y-6">
 					<div className="flex items-start space-x-4">
-						<MapPinIcon className="h-6 w-6 text-primary mt-1" />
+						<MapPin className="h-6 w-6 text-primary mt-1" />
 						<div>
 							<h2 className="font-semibold text-lg">Địa chỉ</h2>
 							<p>123 Phố Gỗ, Hải Phòng</p>
 						</div>
 					</div>
 					<div className="flex items-start space-x-4">
-						<PhoneIcon className="h-6 w-6 text-primary mt-1" />
+						<Phone className="h-6 w-6 text-primary mt-1" />
 						<div>
 							<h2 className="font-semibold text-lg">Hotline / Zalo</h2>
 							<p><a href="tel:0988303534" className="text-primary">098.830.3534</a></p>
 						</div>
 					</div>
 					<div className="flex items-start space-x-4">
-						<EnvelopeIcon className="h-6 w-6 text-primary mt-1" />
+						<Mail className="h-6 w-6 text-primary mt-1" />
 						<div>
 							<h2 className="font-semibold text-lg">TikTok</h2>
 							<p><a

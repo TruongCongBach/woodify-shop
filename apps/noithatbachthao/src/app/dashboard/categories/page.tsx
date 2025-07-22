@@ -1,7 +1,5 @@
 'use client'
-
 import { useState } from 'react'
-import { useCategories } from '@/modules/category/hooks/useCategories'
 import {
 	Table,
 	TableBody,
@@ -15,7 +13,6 @@ import { Skeleton } from '@woodify/ui/shadcn-ui/skeleton'
 import { Card } from '@woodify/ui/shadcn-ui/card'
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
-import { deleteCategory } from '@/modules/category/services'
 
 import {
 	Dialog,
@@ -26,6 +23,9 @@ import {
 	DialogDescription,
 	DialogFooter,
 } from '@woodify/ui/shadcn-ui/dialog'
+import { Checkbox } from '@woodify/ui/shadcn-ui/checkbox'
+import { deleteCategory } from '@/services/categoryAPI'
+import { useCategories } from '@/hooks/useCategories'
 
 export default function CategoriesPage() {
 	const { data: categories, isLoading, mutate } = useCategories()
@@ -67,6 +67,7 @@ export default function CategoriesPage() {
 				<Table>
 					<TableHeader>
 						<TableRow>
+							<TableHead>Hiện thị trên Menu</TableHead>
 							<TableHead>Tên danh mục</TableHead>
 							<TableHead>Mô tả</TableHead>
 							<TableHead className="text-right">Hành động</TableHead>
@@ -75,6 +76,9 @@ export default function CategoriesPage() {
 					<TableBody>
 						{categories?.map((cat) => (
 							<TableRow key={cat.id}>
+								<TableCell className="text-center">
+									<Checkbox defaultChecked={cat.showInNav}/>
+								</TableCell>
 								<TableCell>{cat.name}</TableCell>
 								<TableCell>{cat.description}</TableCell>
 								<TableCell className="text-right space-x-2">
@@ -99,7 +103,7 @@ export default function CategoriesPage() {
 											<DialogHeader>
 												<DialogTitle>Xác nhận xóa</DialogTitle>
 												<DialogDescription>
-													Bạn có chắc chắn muốn xóa danh mục "{cat.name}" không? Hành động này không thể hoàn tác.
+													Bạn có chắc chắn muốn xóa danh mục <b>{cat.name}</b> không? Hành động này không thể hoàn tác.
 												</DialogDescription>
 											</DialogHeader>
 											<DialogFooter className="gap-2">

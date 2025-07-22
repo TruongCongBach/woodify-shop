@@ -1,15 +1,12 @@
 'use client'
 import React from 'react'
-import {
-	TruckIcon,
-	PhoneIcon
-} from '@heroicons/react/24/outline'
+import { Truck, Phone } from 'lucide-react'
 
 export default function ShippingPolicyPage() {
 	return (
 		<section className="container mx-auto px-4 py-8 space-y-10">
 			<header className="flex items-center space-x-3">
-				<TruckIcon className="h-8 w-8 text-primary" />
+				<Truck className="h-8 w-8 text-primary" />
 				<h1 className="text-3xl font-semibold">Chính sách vận chuyển</h1>
 			</header>
 
@@ -59,7 +56,7 @@ export default function ShippingPolicyPage() {
 					href="/lien-he"
 					className="inline-flex items-center space-x-2 bg-primary text-white px-6 py-3 rounded-full text-lg hover:bg-primary-dark transition"
 				>
-					<PhoneIcon className="h-5 w-5" />
+					<Phone className="h-5 w-5" />
 					<span>Liên hệ tư vấn vận chuyển</span>
 				</a>
 			</div>

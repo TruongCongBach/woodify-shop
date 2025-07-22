@@ -1,10 +1,10 @@
 'use client'
 
-import { useProducts } from '@/modules/product/hooks/useProducts'
 import { Button } from '@woodify/ui/shadcn-ui/button'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@woodify/ui/shadcn-ui/table'
 import { Skeleton } from '@woodify/ui/shadcn-ui/skeleton'
 import Link from 'next/link'
+import { useProducts } from '@/hooks/useProducts'
 
 export default function ProductListPage() {
 	const { data: products, isLoading } = useProducts()
@@ -42,7 +42,7 @@ export default function ProductListPage() {
 						))
 					}
 
-					{products?.map((product) => (
+					{products?.map((product: Product) => (
 						<TableRow key={product.id}>
 							<TableCell>
 								<img

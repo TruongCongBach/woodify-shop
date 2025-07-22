@@ -2,15 +2,15 @@
 
 import { useParams, useRouter } from 'next/navigation'
 import { toast } from 'sonner'
-import { useProductById } from '@/modules/product/hooks/useProductById'
-import ProductForm, { ProductFormData } from '@/modules/product/components/product-form'
 import { useState } from 'react'
-import { UploadedMedia } from '@/modules/product/components/product-form/MediaUpload'
-import { validateMediaFiles } from '@/modules/product/utils/validateMediaFiles'
-import { ProductUrlExistsError } from '@/modules/product/utils/ProductUrlExistsError'
-import { MediaUploadError } from '@/modules/cloudinary/MediaUploadError'
-import { useCategories } from '@/modules/category/hooks/useCategories'
-import { updateProductWithMedia } from '@/modules/product/services/updateProductWithMedia'
+import { MediaUploadError } from '@/services/MediaUploadError'
+import { ProductUrlExistsError } from '@/utils/ProductUrlExistsError'
+import { validateMediaFiles } from '@/utils/validateMediaFiles'
+import { useCategories } from '@/hooks/useCategories'
+import { useProductById } from '@/hooks/useProductById'
+import { ProductForm, ProductFormData } from '@/components/product-form'
+import { UploadedMedia } from '@/components/product-form/MediaUpload'
+import { updateProductWithMedia } from '@/services/updateProductWithMedia'
 
 export default function ProductEditPage() {
 	const { id } = useParams<{id: string}>()
@@ -23,6 +23,7 @@ export default function ProductEditPage() {
 	const [urlError, setUrlError] = useState<string | null>(null)
 
 	const handleSubmit = async (formData: ProductFormData, media: UploadedMedia) => {
+
 		try {
 			setLoading(true)
 
@@ -32,7 +33,6 @@ export default function ProductEditPage() {
 				alert(validation.errors.join('\n'))
 				return
 			}
-			console.log(formData, media)
 			await updateProductWithMedia(id, formData, media, product)
 
 			toast.success('Product update successfully')
@@ -71,6 +71,7 @@ export default function ProductEditPage() {
 				product={product}
 				onSubmitAction={handleSubmit}
 				onCancel={() => router.push('/dashboard/products')}
+				loading={loading}
 			/>
 		</div>
 	)

@@ -11,6 +11,8 @@
   "dependencies": {
     "@google/model-viewer": "^4.1.0",
     "@hookform/resolvers": "^5.1.1",
+    "@supabase/auth-helpers-nextjs": "^0.10.0",
+    "@supabase/ssr": "^0.6.1",
     "@supabase/supabase-js": "^2.51.0",
     "@vercel/edge-config": "^1.4.0",
     "class-variance-authority": "^0.7.1",

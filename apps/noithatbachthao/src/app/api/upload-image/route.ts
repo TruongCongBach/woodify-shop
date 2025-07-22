@@ -1,12 +1,13 @@
 // app/api/upload-image/route.ts
-import { uploadImageToCloudinary } from '@/modules/cloudinary/upload'
 import { NextRequest, NextResponse } from 'next/server'
+import { uploadImageToCloudinary } from '@/services/upload'
 
 export const runtime = 'nodejs' // bắt buộc cần nodejs để dùng stream
 
 export async function POST(req: NextRequest) {
 	const formData = await req.formData()
 	const file = formData.get('file') as File
+	const folderName = formData.get('folder') as string
 
 	if (!file) {
 		return NextResponse.json({ error: 'No file provided' }, { status: 400 })
@@ -16,7 +17,7 @@ export async function POST(req: NextRequest) {
 	const buffer = Buffer.from(arrayBuffer)
 
 	try {
-		const url = await uploadImageToCloudinary(buffer, 'categories')
+		const url = await uploadImageToCloudinary(buffer, folderName || 'categories')
 		return NextResponse.json({ url })
 	} catch (err) {
 		return NextResponse.json({ error: 'Upload failed' }, { status: 500 })

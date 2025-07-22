@@ -2,15 +2,14 @@
 
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
-import { createProduct } from '@/modules/product/services'
-import { useCategories } from '@/modules/category/hooks/useCategories'
-import ProductForm, { ProductFormData } from '@/modules/product/components/product-form'
-import { UploadedMedia } from '@/modules/product/components/product-form/MediaUpload'
-import { validateMediaFiles } from '@/modules/product/utils/validateMediaFiles'
-import { createProductWithMedia } from '@/modules/product/services/createProductWithMedia'
-import { ProductUrlExistsError } from '@/modules/product/utils/ProductUrlExistsError'
-import { MediaUploadError } from '@/modules/cloudinary/MediaUploadError'
 import { useState } from 'react'
+import { MediaUploadError } from '@/services/MediaUploadError'
+import { useCategories } from '@/hooks/useCategories'
+import { ProductForm, ProductFormData } from '@/components/product-form'
+import { UploadedMedia } from '@/components/product-form/MediaUpload'
+import { validateMediaFiles } from '@/utils/validateMediaFiles'
+import { createProductWithMedia } from '@/services/createProductWithMedia'
+import { ProductUrlExistsError } from '@/utils/ProductUrlExistsError'
 
 export default function NewProductPage() {
 	const router = useRouter()
@@ -28,7 +27,6 @@ export default function NewProductPage() {
 				alert(validation.errors.join('\n'))
 				return
 			}
-			console.log(formData, media)
 			await createProductWithMedia(formData, media)
 
 			toast.success('Product create successfully')
@@ -61,6 +59,7 @@ export default function NewProductPage() {
 				categories={categoryOptions}
 				onSubmitAction={handleSubmit}
 				onCancel={() => router.push('/dashboard/products')}
+				loading={loading}
 			/>
 		</div>
 	)
