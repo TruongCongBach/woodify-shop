@@ -20,6 +20,6 @@ interface CategoryDataBase {
 	image?: string
 	url: string
 	description?: string
-	show_in_nav?: boolean
+	show_in_nav: boolean
 	parent_id?: string | null
 }

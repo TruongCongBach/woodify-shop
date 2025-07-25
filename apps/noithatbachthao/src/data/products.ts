@@ -1,4 +1,4 @@
-import productsMock from '@/data/productsMock'
+import productsMock from '@/data/products-mock'
 import PRODUCTS_KE_TIVI from '@/data/products-ke-tivi'
 
 const PRODUCTS = [

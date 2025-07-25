@@ -24,7 +24,7 @@ import {
 	DialogFooter,
 } from '@woodify/ui/shadcn-ui/dialog'
 import { Checkbox } from '@woodify/ui/shadcn-ui/checkbox'
-import { deleteCategory } from '@/services/categoryAPI'
+import { deleteCategory } from '@/services/category-api'
 import { useCategories } from '@/hooks/useCategories'
 
 export default function CategoriesPage() {

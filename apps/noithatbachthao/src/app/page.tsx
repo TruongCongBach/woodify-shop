@@ -2,8 +2,8 @@ import React, { useMemo } from 'react'
 import { HeroSlider } from '@woodify/ui/shadcn-ui/HeroSlider'
 import { ProductSection } from '@/components/product-section'
 import { ProductCarousel } from '@/components/product-carousel'
-import { getProductByCategoryId } from '@/services/getProductByCategoryId'
-import { transformProductToFormData } from '@/utils/transformProductToFormData'
+import { getProductByCategoryId } from '@/services/get-product-by-category-id'
+import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
 
 const slides = [
 	{

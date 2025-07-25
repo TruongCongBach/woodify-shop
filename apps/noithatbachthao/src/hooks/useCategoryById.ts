@@ -1,5 +1,5 @@
 import useSWR from 'swr'
-import { getCategoryById } from '@/services/categoryAPI'
+import { getCategoryById } from '@/services/category-api'
 import { getCategoryWithChildrenIdById } from '@/services/get-category-with-children-id-by-id'
 
 export function useCategoryById(id?: string) {

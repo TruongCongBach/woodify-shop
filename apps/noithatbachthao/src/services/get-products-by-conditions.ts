@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase'
-import { transformProductToFormData } from '@/utils/transformProductToFormData'
+import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
 
 interface Conditions {
 	categoryId?: string

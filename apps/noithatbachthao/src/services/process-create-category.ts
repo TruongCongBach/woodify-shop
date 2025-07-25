@@ -1,6 +1,6 @@
 import { CategoryFormData } from '@/components/category-form'
-import { createCategory, updateCategory } from '@/services/categoryAPI'
-import { transformCategoryToDbFormat } from '@/utils/transformCategoryToDbFormat'
+import { createCategory, updateCategory } from '@/services/category-api'
+import { transformCategoryToDbFormat } from '@/utils/transform-category-to-db-format'
 
 export const processCreateCategory = async (formData: CategoryFormData, mediaFile: File | undefined) => {
 	let imageUrl= undefined
@@ -19,6 +19,7 @@ export const processCreateCategory = async (formData: CategoryFormData, mediaFil
 	}
   const category = await createCategory(transformCategoryToDbFormat({
 		...formData,
+		showInNav: formData.showInNav,
 		image: imageUrl,
 	}))
 	if(formData.children) {

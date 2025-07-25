@@ -1,6 +1,6 @@
-import { updateCategory } from "./categoryAPI"
+import { updateCategory } from "./category-api"
 import { getCategoryWithChildrenIdById } from '@/services/get-category-with-children-id-by-id'
-import { transformCategoryToDbFormat } from '@/utils/transformCategoryToDbFormat'
+import { transformCategoryToDbFormat } from '@/utils/transform-category-to-db-format'
 import { CategoryFormData } from '@/components/category-form'
 
 export const processUpdateCategory = async (categoryId: string, formData: CategoryFormData, mediaFile: File | undefined) => {

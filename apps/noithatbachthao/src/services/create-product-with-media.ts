@@ -1,11 +1,11 @@
 import { ProductFormData } from "@/components/product-form"
 import { UploadedMedia } from "@/components/product-form/MediaUpload"
-import { checkProductUrlExists } from '@/utils/checkProductUrlExists'
+import { checkProductUrlExists } from '@/utils/check-product-url-exists'
 import { ProductUrlExistsError } from "@/utils/ProductUrlExistsError"
-import { processUploadedMedia } from '@/services/processUploadedMedia'
-import { transformProductToDbFormat } from '@/utils/transformProductToDbFormat'
-import { createProduct } from '@/services/productAPI'
-import { MediaUploadError } from '@/services/MediaUploadError'
+import { processUploadedMedia } from '@/services/process-uploaded-media'
+import { transformProductToDbFormat } from '@/utils/transform-product-to-db-format'
+import { createProduct } from '@/services/product-api'
+import { MediaUploadError } from '@/services/media-upload-error'
 
 
 /**

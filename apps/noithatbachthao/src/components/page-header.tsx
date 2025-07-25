@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import { Phone } from 'lucide-react'
 import { ZaloIcon } from '@woodify/ui/icons/zalo-icon'

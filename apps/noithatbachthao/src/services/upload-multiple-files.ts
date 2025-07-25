@@ -1,4 +1,4 @@
-import { uploadSingleFile } from './uploadSingleFile'
+import { uploadSingleFile } from './upload-single-file'
 
 /**
  * Upload multiple files concurrently

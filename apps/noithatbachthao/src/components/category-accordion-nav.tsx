@@ -1,4 +1,5 @@
 // packages/ui/src/components/CategoryAccordionNav.tsx
+'use client'
 import React, { use } from 'react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@woodify/ui/shadcn-ui/accordion'
 import { useRouter } from 'next/navigation'

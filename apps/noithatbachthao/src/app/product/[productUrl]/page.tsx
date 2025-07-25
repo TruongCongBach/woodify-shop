@@ -1,7 +1,7 @@
 // apps/woodify-khanhtrang/src/app/product/[productId]/page.tsx
 import ProductPageClient from './page.client'
 import PRODUCTS from '@/data/products'
-import { getImagesFromMedia } from '@/utils/getImagesFromMedia'
+import { getImagesFromMedia } from '@/utils/get-images-from-media'
 
 
 export default function ProductPage() {

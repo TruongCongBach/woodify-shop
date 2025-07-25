@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
-import CategoryPageClient from '@/app/category/[categoryUrl]/page.client'
+import CategoryPageClient from './page.client'
 import { Metadata } from 'next'
-import { getCategoryByUrl } from '@/services/getCategoryByUrl'
+import { getCategoryByUrl } from '@/services/get-category-by-url'
 
 type Props = {
 	params: Promise<{categoryUrl: string | string[]}>;

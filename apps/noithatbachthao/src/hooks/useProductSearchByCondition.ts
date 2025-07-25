@@ -1,6 +1,5 @@
-import React from 'react'
 import useSWRInfinite from 'swr/infinite'
-import { getProductsByConditions } from '@/services/getProductsByConditions'
+import { getProductsByConditions } from '@/services/get-products-by-conditions'
 
 
 export interface SearchConditions {
@@ -17,6 +16,7 @@ export interface ProductSearchResult {
 	size: number
 	setSize: (size: number) => void
 	totalCount: number | null
+	hasMore: boolean
 }
 
 export function useProductSearchByCondition(
@@ -48,7 +48,7 @@ export function useProductSearchByCondition(
 		] as any[]
 	}
 
-	const { data, error, size, setSize, mutate } = useSWRInfinite(
+	const { data, error, size, setSize, isLoading: isLoadingApi } = useSWRInfinite(
 		getKey,
 		async (key) => {
 			const [_keyName, _categoryId, attrsStr, priceRangeStr, page, pageSizeNum] = key
@@ -71,7 +71,7 @@ export function useProductSearchByCondition(
 				page: page,
 				pageSize: pageSizeNum,
 			})
-
+			console.log(res)
 			return {
 				products: res.data,
 				total: res.total,
@@ -85,20 +85,11 @@ export function useProductSearchByCondition(
 		}
 	)
 
-	// Khi attributes thay đổi, reset về page đầu
-	const attributesKey = JSON.stringify(attributes)
-	const priceRangeKey = priceRange ?? ''
-
-	React.useEffect(() => {
-		if (data && data.length > 1) {
-			setSize(1)
-		}
-	}, [attributesKey, priceRangeKey, data, setSize])
-
 	const products = data ? data.flatMap(page => page.products) : []
 	const totalCount = data?.[0]?.total ?? null
-	const isLoading = !error && !data
+	const isLoading = isLoadingApi
 	const isError = !!error
+	const hasMore = products.length < (totalCount ?? 0) && !isLoadingApi
 
 	return {
 		products,
@@ -107,5 +98,6 @@ export function useProductSearchByCondition(
 		size,
 		setSize,
 		totalCount,
+		hasMore
 	}
 }

@@ -1,6 +1,6 @@
-import { getProductByCategoryId } from "@/services/getProductByCategoryId";
+import { getProductByCategoryId } from "@/services/get-product-by-category-id";
 import useSWR from "swr";
-import { transformProductToFormData } from '@/utils/transformProductToFormData'
+import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
 
 export const useProductByCategoryId = (categoryId: string) => {
 	const fn = useSWR(

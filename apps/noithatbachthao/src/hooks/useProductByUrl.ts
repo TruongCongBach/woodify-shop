@@ -1,5 +1,5 @@
 import useSWR from 'swr'
-import { getProductByUrl } from '@/services/getProductByUrl'
+import { getProductByUrl } from '@/services/get-product-by-url'
 
 export function useProductByUrl(url?: string) {
 	const shouldFetch = Boolean(url)

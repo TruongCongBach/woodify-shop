@@ -24,9 +24,6 @@ export default function CategoryPageClient({ category }: Props) {
 	const [selectedFilters, setSelectedFilters] = useState<any>({})
 	const [priceRange, setPriceRange] = useState<string | undefined>()
 
-	const onApply = useCallback((sel: any) => {
-		setSelectedFilters(sel)
-	}, [])
 
 	const attributesSelected = useMemo(() => {
 		return Object.entries(selectedFilters)
@@ -34,30 +31,31 @@ export default function CategoryPageClient({ category }: Props) {
 		.flatMap(([key, values]: any) => values.map((v:any) => ({ key, value: v })))
 	}, [selectedFilters])
 
-	const { products, isLoading, isError, size, setSize, totalCount } = useProductSearchByCondition({
+	const { products, isLoading, isError, size, setSize, totalCount, hasMore } = useProductSearchByCondition({
 		categoryId: category.id,
 		attributes: attributesSelected,
 		priceRange,
 		pageSize: 12,
 	})
 
-	const loadMore = useCallback(() => {
-		if (products.length < (totalCount ?? 0)) {
-			setSize(size + 1)
-		}
-	}, [products, totalCount, setSize, size])
+	const onApply = useCallback((sel: any) => {
+		setSize(1)
+		setSelectedFilters(sel)
+	}, [setSize])
 
 	const observer = useRef<IntersectionObserver | null>(null)
 	const bottomRef = useCallback((node: HTMLDivElement | null) => {
 		if (!node) return
 		if (observer.current) observer.current.disconnect()
 		observer.current = new IntersectionObserver(entries => {
-			if (entries[0].isIntersecting && products.length < (totalCount ?? 0) && !isLoading) {
-				loadMore()
+			if (entries[0].isIntersecting && hasMore && !isLoading) {
+				setTimeout(() => {
+					setSize(size + 1)
+				}, 1000) // Thêm delay để tránh gọi quá nhanh
 			}
 		})
 		observer.current.observe(node)
-	}, [products.length, totalCount, isLoading, loadMore])
+	}, [isLoading, hasMore, size, setSize])
 
 	return (
 		<div className="bg-gray-100/70">
@@ -124,7 +122,7 @@ export default function CategoryPageClient({ category }: Props) {
 							<div ref={bottomRef} className="h-1"></div>
 						)}
 
-						{isError && <div className="text-center text-red-500">Không tải được sản phẩm.</div>}
+						{isError && hasMore && <div className="text-center text-red-500">Không tải được sản phẩm.</div>}
 
 						{/* Debug info - remove in production */}
 						<div className="text-sm text-gray-500">

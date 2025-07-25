@@ -1,5 +1,5 @@
 import { UploadedMedia } from '@/components/product-form/MediaUpload'
-import { uploadMultipleFiles } from './uploadMultipleFiles'
+import { uploadMultipleFiles } from './upload-multiple-files'
 
 /**
  * Process uploaded media and convert to MediaItem format

@@ -9,12 +9,12 @@ import {
 	BreadcrumbSeparator,
 } from '@woodify/ui/shadcn-ui/breadcrumb'
 import { ProductGallery } from '@/components/product-gallery'
-import { formatPrice } from '@/utils/formatPrice'
+import { formatPrice } from '@/utils/format-price'
 import { HomeIcon } from '@heroicons/react/24/outline'
 import PRODUCTS from '@/data/products'
 import { ProductSection } from '@/components/product-section'
 import { ProductReview } from '@/components/product-review'
-import { generateRandomReviews } from '@/utils/generateRandomReviews'
+import { generateRandomReviews } from '@/utils/generate-random-reviews'
 import dynamic from 'next/dynamic'
 
 // Dynamic import để chỉ render ở client

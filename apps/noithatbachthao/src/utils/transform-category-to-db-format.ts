@@ -7,7 +7,7 @@ export function transformCategoryToDbFormat(formData: Omit<Category, 'id'>): Omi
 		image: formData.image || '',
 		url: formData.url,
 		description: formData.description,
-		show_in_nav: formData.showInNav,
+		show_in_nav: !!formData.showInNav,
 		parent_id: formData.parentId,
 	}
 }

@@ -1,7 +1,7 @@
 // src/modules/product/services/productService.ts
 
 import { supabase } from '@/lib/supabase'
-import { transformProductToFormData } from '@/utils/transformProductToFormData'
+import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
 
 export async function fetchProducts(): Promise<Product[]> {
 	const { data, error } = await supabase.from('products').select('*')

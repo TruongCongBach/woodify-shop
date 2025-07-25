@@ -1,4 +1,4 @@
-import { MediaUploadError } from "./MediaUploadError"
+import { MediaUploadError } from "./media-upload-error"
 
 /**
  * Upload a single file and return the URL

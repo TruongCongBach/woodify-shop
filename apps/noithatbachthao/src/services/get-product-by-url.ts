@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase'
-import { transformProductToFormData } from '@/utils/transformProductToFormData'
+import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
 
 export async function getProductByUrl(url: string): Promise<Product | undefined> {
 	// 1. Get product

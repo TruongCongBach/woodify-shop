@@ -5,10 +5,12 @@ import React, { Suspense } from 'react'
 import { PageHeader } from '@/components/page-header'
 import { PageFooter } from '@/components/page-footer'
 import { CategoryNav } from '@/components/category-nav'
-import { fetchNavCategoriesWithChildren } from '@/services/fetchNavCategoriesWithChildren'
+import { fetchNavCategoriesWithChildren } from '@/services/fetch-nav-categories-with-children'
+import AuthProvider from '@/components/auth-provider'
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
+
 	subsets: ['latin'],
 })
 
@@ -37,16 +39,18 @@ export default function RootLayout({
 		<body
 			className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 		>
-		<Suspense fallback={<> Loading... </>}>
-			<PageHeader
-				phone="098.830.3534"
-				logo="/logo.png"
-				categoryTreeMenu={categoriesNavMenu}
-			/>
-			<CategoryNav categoryTreeMenu={categoriesNavMenu}/>
-		</Suspense>
-		{children}
-		<PageFooter/>
+		<AuthProvider>
+			<Suspense fallback={<> Loading... </>}>
+				<PageHeader
+					phone="098.830.3534"
+					logo="/logo.png"
+					categoryTreeMenu={categoriesNavMenu}
+				/>
+				<CategoryNav categoryTreeMenu={categoriesNavMenu}/>
+			</Suspense>
+			{children}
+			<PageFooter/>
+		</AuthProvider>
 		</body>
 		</html>
 	)

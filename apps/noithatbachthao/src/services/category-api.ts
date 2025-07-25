@@ -1,6 +1,6 @@
 import { supabase } from '@/lib/supabase/client'
 import { supabase as supabasejs } from '@/lib/supabase'
-import { transformCategoryToFormData } from '@/utils/transformCategoryToFormData'
+import { transformCategoryToFormData } from '@/utils/transform-category-to-form-data'
 
 export async function fetchCategories(): Promise<Category[]> {
 	const { data, error } = await supabase

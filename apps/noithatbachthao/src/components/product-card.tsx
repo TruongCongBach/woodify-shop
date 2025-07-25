@@ -1,5 +1,5 @@
-import { getTagColor } from '@/utils/getTagColor'
-import { formatPrice } from '@/utils/formatPrice'
+import { getTagColor } from '@/utils/get-tag-color'
+import { formatPrice } from '@/utils/format-price'
 
 type Props = {
 	product: Product

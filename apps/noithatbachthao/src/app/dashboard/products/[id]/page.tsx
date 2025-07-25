@@ -3,14 +3,14 @@
 import { useParams, useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 import { useState } from 'react'
-import { MediaUploadError } from '@/services/MediaUploadError'
+import { MediaUploadError } from '@/services/media-upload-error'
 import { ProductUrlExistsError } from '@/utils/ProductUrlExistsError'
-import { validateMediaFiles } from '@/utils/validateMediaFiles'
+import { validateMediaFiles } from '@/utils/validate-media-files'
 import { useCategories } from '@/hooks/useCategories'
 import { useProductById } from '@/hooks/useProductById'
 import { ProductForm, ProductFormData } from '@/components/product-form'
 import { UploadedMedia } from '@/components/product-form/MediaUpload'
-import { updateProductWithMedia } from '@/services/updateProductWithMedia'
+import { updateProductWithMedia } from '@/services/update-product-with-media'
 
 export default function ProductEditPage() {
 	const { id } = useParams<{id: string}>()
