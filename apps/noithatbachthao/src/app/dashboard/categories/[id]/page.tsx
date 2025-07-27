@@ -5,7 +5,7 @@ import { useCategoryWithChildrenIdById } from '@/hooks/useCategoryById'
 import { useParams, useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 import { CategoryForm, CategoryFormData } from '@/components/category-form'
-import { processUpdateCategory } from '@/services/process-update-category'
+import { processUpdateCategory } from '@/services/category/process-update-category'
 
 export default function EditCategoryPage() {
 	const router = useRouter()

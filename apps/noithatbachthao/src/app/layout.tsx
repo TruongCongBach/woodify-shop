@@ -1,12 +1,10 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import '@woodify/ui/styles/globals.css'
-import React, { Suspense } from 'react'
-import { PageHeader } from '@/components/page-header'
-import { PageFooter } from '@/components/page-footer'
-import { CategoryNav } from '@/components/category-nav'
-import { fetchNavCategoriesWithChildren } from '@/services/fetch-nav-categories-with-children'
+import React from 'react'
 import AuthProvider from '@/components/auth-provider'
+import { HeaderPage } from '@woodify/ui/components/layout'
+import FooterPage from '@woodify/ui/components/layout/footer'
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -33,23 +31,17 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	const categoriesNavMenu = fetchNavCategoriesWithChildren()
 	return (
 		<html lang="en">
 		<body
 			className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 		>
 		<AuthProvider>
-			<Suspense fallback={<> Loading... </>}>
-				<PageHeader
-					phone="098.830.3534"
-					logo="/logo.png"
-					categoryTreeMenu={categoriesNavMenu}
-				/>
-				<CategoryNav categoryTreeMenu={categoriesNavMenu}/>
-			</Suspense>
-			{children}
-			<PageFooter/>
+			<div className="min-h-screen bg-white">
+				<HeaderPage/>
+				{children}
+				<FooterPage/>
+			</div>
 		</AuthProvider>
 		</body>
 		</html>

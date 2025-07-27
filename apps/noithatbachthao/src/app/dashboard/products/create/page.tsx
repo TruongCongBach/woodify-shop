@@ -3,12 +3,12 @@
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 import { useState } from 'react'
-import { MediaUploadError } from '@/services/media-upload-error'
+import { MediaUploadError } from '@/services/media/media-upload-error'
 import { useCategories } from '@/hooks/useCategories'
 import { ProductForm, ProductFormData } from '@/components/product-form'
 import { UploadedMedia } from '@/components/product-form/MediaUpload'
 import { validateMediaFiles } from '@/utils/validate-media-files'
-import { createProductWithMedia } from '@/services/create-product-with-media'
+import { createProductWithMedia } from '@/services/product/create-product-with-media'
 import { ProductUrlExistsError } from '@/utils/ProductUrlExistsError'
 
 export default function NewProductPage() {

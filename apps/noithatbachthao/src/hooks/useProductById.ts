@@ -1,5 +1,5 @@
 import useSWR from 'swr'
-import { getProductById } from '@/services/product-api'
+import { getProductById } from '@/services/product'
 
 export function useProductById(id?: string) {
 	const shouldFetch = Boolean(id)

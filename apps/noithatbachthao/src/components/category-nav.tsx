@@ -12,7 +12,7 @@ import {
 import Link from 'next/link'
 import { cva } from 'class-variance-authority'
 import { cn } from '@woodify/ui/lib/utils'
-import { fetchNavCategoriesWithChildren } from '@/services/fetch-nav-categories-with-children'
+import { fetchNavCategoriesWithChildren } from '@/services/category/fetch-nav-categories-with-children'
 
 export const CategoryNav = ({
 	categoryTreeMenu,

@@ -1,7 +1,7 @@
 import useSWR from 'swr'
 import { useMemo } from 'react'
 import { buildFiltersFromAttributes } from '@/utils/build-filters-from-attributes'
-import { getAttributeByCategory } from '@/services/get-attribute-by-category'
+import { getAttributeByCategory } from '@/services/category/get-attribute-by-category'
 
 
 export const useProductAttributesByCategoryId = (categoryId: string) => {

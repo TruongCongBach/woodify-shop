@@ -1,5 +1,5 @@
 import { CategoryFormData } from '@/components/category-form'
-import { createCategory, updateCategory } from '@/services/category-api'
+import { createCategory, updateCategory } from '@/services/category'
 import { transformCategoryToDbFormat } from '@/utils/transform-category-to-db-format'
 
 export const processCreateCategory = async (formData: CategoryFormData, mediaFile: File | undefined) => {

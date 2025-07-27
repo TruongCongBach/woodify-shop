@@ -2,10 +2,10 @@ import { ProductFormData } from "@/components/product-form"
 import { UploadedMedia } from "@/components/product-form/MediaUpload"
 import { checkProductUrlExists } from "@/utils/check-product-url-exists"
 import { ProductUrlExistsError } from "@/utils/ProductUrlExistsError"
-import { processUploadedMedia } from '@/services/process-uploaded-media'
+import { processUploadedMedia } from '@/services/media/process-uploaded-media'
 import { transformProductToDbFormat } from '@/utils/transform-product-to-db-format'
-import { updateProduct } from '@/services/product-api'
-import { MediaUploadError } from '@/services/media-upload-error'
+import { updateProduct } from '@/services/product'
+import { MediaUploadError } from '@/services/media/media-upload-error'
 
 const FOLDER = 'ke-tivi'
 /**

@@ -1,5 +1,5 @@
 import useSWRInfinite from 'swr/infinite'
-import { getProductsByConditions } from '@/services/get-products-by-conditions'
+import { getProductsByConditions } from '@/services/product/get-products-by-conditions'
 
 
 export interface SearchConditions {

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { getCategoryTree } from '@/services/category-api'
+import { getCategoryTree } from '@/services/category'
 
 export async function GET() {
 	try {

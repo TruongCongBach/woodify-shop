@@ -1,9 +1,9 @@
-import React, { useMemo } from 'react'
-import { HeroSlider } from '@woodify/ui/shadcn-ui/HeroSlider'
-import { ProductSection } from '@/components/product-section'
-import { ProductCarousel } from '@/components/product-carousel'
-import { getProductByCategoryId } from '@/services/get-product-by-category-id'
+import React from 'react'
+import { getProductByCategoryId } from '@/services/product/get-product-by-category-id'
 import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
+import SectionProductGallery from '@woodify/ui/components/section-product-gallery'
+import SectionHeroGallery from '@woodify/ui/components/section-hero-gallery'
+import SectionFeatures from '@woodify/ui/components/section-features'
 
 const slides = [
 	{
@@ -40,23 +40,18 @@ export default async function Home() {
 	}).then(res => res.map(transformProductToFormData))
 
 	return (
-		<div className="bg-gray-100/70">
-			<HeroSlider slides={slides} />
+		<>
+			<div className="min-h-screen bg-white">
+				{/* Hero Gallery Section */}
+				<SectionHeroGallery/>
 
-			<div className="max-w-7xl mx-auto px-4 py-10 space-y-16">
-				<ProductCarousel
-					products={featuredProducts}
-					title="Sản phẩm nổi bật"
-					viewAllHref="/san-pham"
-				/>
+				{/* Product Gallery Section */}
+				<SectionProductGallery/>
 
-				<ProductSection
-					products={productKeTivi}
-					title="Kệ tivi gỗ"
-					viewAllHref="/category/ke-tivi"
-				/>
+				{/* Features */}
+				<SectionFeatures/>
 
 			</div>
-		</div>
+		</>
 	)
 }

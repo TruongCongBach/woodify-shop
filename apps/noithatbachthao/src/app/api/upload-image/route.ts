@@ -1,6 +1,6 @@
 // app/api/upload-image/route.ts
 import { NextRequest, NextResponse } from 'next/server'
-import { uploadImageToCloudinary } from '@/services/upload'
+import { uploadImageToCloudinary } from '@/services/media/upload'
 
 export const runtime = 'nodejs' // bắt buộc cần nodejs để dùng stream
 

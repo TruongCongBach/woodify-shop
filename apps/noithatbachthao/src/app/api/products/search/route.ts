@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { getProductsByConditions } from '@/services/get-products-by-conditions'
+import { getProductsByConditions } from '@/services/product/get-products-by-conditions'
 
 export async function GET() {
 	try {

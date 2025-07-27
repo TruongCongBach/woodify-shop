@@ -2,7 +2,7 @@
 
 import { CategoryForm, CategoryFormData } from '@/components/category-form'
 import { useCategories } from '@/hooks/useCategories'
-import { processCreateCategory } from '@/services/process-create-category'
+import { processCreateCategory } from '@/services/category/process-create-category'
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 

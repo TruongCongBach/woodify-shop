@@ -1,4 +1,4 @@
-import { getProductByCategoryId } from "@/services/get-product-by-category-id";
+import { getProductByCategoryId } from "@/services/product/get-product-by-category-id";
 import useSWR from "swr";
 import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
 
