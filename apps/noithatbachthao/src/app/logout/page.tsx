@@ -12,7 +12,7 @@ export default function SignOutPage() {
 		signOut({ redirect: false }).then(() => {
 			router.push('/login') // Hoặc '/' tùy ý
 		})
-	}, [])
+	}, [router])
 
 	return (
 		<div className="flex justify-center items-center min-h-screen">
