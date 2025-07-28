@@ -23,8 +23,8 @@ const HeaderPage = () => {
 					<a href="/" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Trang Chủ</a>
 					<a href="/category/ke-tivi" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Bộ Sưu Tập</a>
 					<a href="/category/ke-tivi" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Showroom</a>
-					<a href="#" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Về Chúng Tôi</a>
-					<a href="#" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Liên Hệ</a>
+					<a href="/ve-chung-toi" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Về Chúng Tôi</a>
+					<a href="/lien-he" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Liên Hệ</a>
 				</nav>
 
 				<div className="flex items-center space-x-4">

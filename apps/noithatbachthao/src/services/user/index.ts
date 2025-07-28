@@ -9,6 +9,9 @@ export interface User {
   name?: string;
   password?: string; // Column name in Supabase
   role?: string;
+  avatar_url?: string;
+  provider?: string;
+  provider_id?: string;
 }
 export class UserService {
   /**
@@ -54,4 +57,46 @@ export class UserService {
     return null;
   }
 
+  /**
+   * Finds a user by their social profile or creates a new one.
+   * @param profile The user's social profile information.
+   * @returns A user object.
+   */
+  static async findOrCreate(profile: {
+    email: string;
+    name: string;
+    avatar: string;
+    provider: 'google' | 'facebook';
+    providerId: string;
+  }): Promise<User> {
+    const user = await this.getByEmail(profile.email);
+
+    if (user) {
+      // Optionally, you could update the user's info here if it has changed.
+      return user;
+    }
+
+    // User not found, create a new one.
+    const { data: newUser, error } = await supabase
+      .from('users')
+      .insert([
+        {
+          email: profile.email,
+          name: profile.name,
+          avatar_url: profile.avatar,
+          provider: profile.provider,
+          provider_id: profile.providerId,
+          password: `${process.env.DEFAULT_PASSWORD}`,
+          role: 'user', // Default role for new social sign-ups
+        },
+      ])
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Error creating new user via social provider:', error);
+      throw new Error('Could not create a new user.');
+    }
+    return newUser;
+  }
 }

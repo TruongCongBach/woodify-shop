@@ -83,6 +83,14 @@ export const CategoryAccordionNav = ({
 							</div>
 
 						})}
+						<div className="border-t border-gray-200 pt-4 mt-4">
+							<a href="/lien-he" className="block text-left w-full py-4 rounded hover:bg-gray-100 transition font-bold">
+								Liên hệ
+							</a>
+							<a href="/ve-chung-toi" className="block text-left w-full py-4 rounded hover:bg-gray-100 transition font-bold">
+								Về chúng tôi
+							</a>
+						</div>
 					</Accordion>
 				</SheetDescription>
 			</SheetHeader>

@@ -13,22 +13,15 @@ const FooterPage = () => {
 					<p className="text-gray-400 leading-relaxed">
 						Nơi hội tụ những tác phẩm kệ tivi gỗ nghệ thuật, mang vẻ đẹp tự nhiên đến không gian sống của bạn.
 					</p>
-					<div className="flex space-x-4">
-						{['f', 'ig', 'tw', 'yt'].map((social) => (
-							<div key={social} className="w-10 h-10 bg-amber-600 hover:bg-amber-700 rounded-full flex items-center justify-center cursor-pointer transition-colors duration-300">
-								<span className="text-white font-bold">{social}</span>
-							</div>
-						))}
-					</div>
 				</div>
 
 				<div className="space-y-4">
 					<h3 className="text-lg font-bold text-amber-400">Danh Mục</h3>
 					<ul className="space-y-2 text-gray-400">
-						<li><a href="#" className="hover:text-amber-400 transition-colors">Kệ Tivi Hiện Đại</a></li>
-						<li><a href="#" className="hover:text-amber-400 transition-colors">Kệ Tivi Tối Giản</a></li>
-						<li><a href="#" className="hover:text-amber-400 transition-colors">Kệ Tivi Cổ Điển</a></li>
-						<li><a href="#" className="hover:text-amber-400 transition-colors">Kệ Tivi Cao Cấp</a></li>
+						<li><a href="/category/ke-tivi" className="hover:text-amber-400 transition-colors">Kệ Tivi Hiện Đại</a></li>
+						<li><a href="/category/ke-tivi" className="hover:text-amber-400 transition-colors">Kệ Tivi Tối Giản</a></li>
+						<li><a href="/category/ke-tivi" className="hover:text-amber-400 transition-colors">Kệ Tivi Cổ Điển</a></li>
+						<li><a href="/category/ke-tivi" className="hover:text-amber-400 transition-colors">Kệ Tivi Cao Cấp</a></li>
 					</ul>
 				</div>
 
@@ -67,7 +60,7 @@ const FooterPage = () => {
 			</div>
 
 			<div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-				<p>&copy; 2025 NoiThatGiaDinh. Tất cả quyền được bảo lưu.</p>
+				<p>&copy; 2025 Đại Lý Kệ Tivi. Tất cả quyền được bảo lưu.</p>
 			</div>
 		</div>
 	</footer>)

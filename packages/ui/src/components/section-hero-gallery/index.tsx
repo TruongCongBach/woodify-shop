@@ -65,7 +65,7 @@ const SectionHeroGallery = () => {
 					<div className="space-y-6">
 						<div
 							className="inline-block px-4 py-2 bg-amber-600/20 backdrop-blur-sm rounded-full border border-amber-400/30">
-							<span className="text-amber-300 font-medium">✨ Bộ Sưu Tập 2024</span>
+							<span className="text-amber-300 font-medium">✨ Bộ Sưu Tập 2025</span>
 						</div>
 						<h1 className="text-6xl md:text-8xl font-bold leading-tight">
 							Kệ Tivi Gỗ

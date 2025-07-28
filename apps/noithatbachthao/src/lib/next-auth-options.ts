@@ -9,6 +9,16 @@ export const authOptions: NextAuthOptions = {
 		GoogleProvider({
 			clientId: process.env.GOOGLE_CLIENT_ID!,
 			clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+			async profile(profile) {
+				const user = await UserService.findOrCreate({
+					email: profile.email,
+					name: profile.name,
+					avatar: profile.picture,
+					provider: 'google',
+					providerId: profile.sub,
+				});
+				return { ...profile, id: user.id, role: user.role };
+			},
 		}),
 		FacebookProvider({
 			clientId: process.env.FACEBOOK_CLIENT_ID!,
@@ -44,6 +54,12 @@ export const authOptions: NextAuthOptions = {
 		strategy: 'jwt',
 	},
 	callbacks: {
+		async signIn({ user }) {
+			if (user && (user as any).role !== 'admin') {
+				return '/login?error=unauthorized';
+			}
+			return true;
+		},
 		async jwt({ token, user }) {
 			// When the user signs in, the `user` object from `authorize` is passed here.
 			if (user) {
@@ -63,7 +79,7 @@ export const authOptions: NextAuthOptions = {
 		},
 	},
 	pages: {
-		signIn: '/signin',
+		signIn: '/login',
 		// signOut: '/auth/signout',
 		// error: '/auth/error', // Error code passed in query string as ?error=
 		// verifyRequest: '/auth/verify-request', // (used for email/passwordless login)
