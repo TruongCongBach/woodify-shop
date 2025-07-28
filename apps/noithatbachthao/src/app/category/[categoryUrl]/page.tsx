@@ -7,7 +7,7 @@ type Props = {
 	params: Promise<{categoryUrl: string | string[]}>;
 }
 
-export default async (props: Props) => {
+export default async function CategoryDetailPage(props: Props){
 	const { categoryUrl } = await props.params
 	const slug = Array.isArray(categoryUrl)
 		? categoryUrl[categoryUrl.length - 1]

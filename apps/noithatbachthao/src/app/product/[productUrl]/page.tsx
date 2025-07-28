@@ -6,7 +6,7 @@ type Props = {
 	params: Promise<{ productUrl: string | string[] }>;
 }
 
-export default async (props: Props) => {
+export default async function ProductDetailPage(props: Props) {
 	const { productUrl } = await props.params;
 	const slug = Array.isArray(productUrl)
 		? productUrl[productUrl.length - 1]
