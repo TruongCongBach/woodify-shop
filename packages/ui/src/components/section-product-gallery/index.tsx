@@ -1,78 +1,12 @@
 'use client'
-import { Eye, Grid, Heart, ShoppingCart, Star, ZoomIn } from 'lucide-react'
-import React, { useEffect, useState } from 'react'
+import { Eye, Grid, Star } from 'lucide-react'
+import React, { useState } from 'react'
 
-const SectionProductGallery = () => {
+type Props = {
+	products: any[];
+}
+const SectionProductGallery: React.FC<Props> = ({ products:productShowcase }: Props) => {
 	const [selectedCategory, setSelectedCategory] = useState('all')
-
-	const productShowcase = [
-		{
-			id: 1,
-			name: 'Kệ Tivi Gỗ Kiểu Vát',
-			price: '8,500,000',
-			originalPrice: '7,000,000',
-			image: 'https://res.cloudinary.com/furniture-shop/image/upload/v1753109708/ke-tivi/zfurdxwvr80z1v22kdeu.jpg',
-			category: 'luxury',
-			badge: 'Best Seller',
-			rating: 4.9,
-			views: '2.1k',
-		},
-		{
-			id: 2,
-			name: 'Kệ Tivi Dáng Cột Nho',
-			price: '9,500,000',
-			originalPrice: null,
-			image: 'https://res.cloudinary.com/furniture-shop/image/upload/v1753109690/ke-tivi/o7nqasfoynykgyfmnzcn.jpg',
-			category: 'luxury',
-			badge: 'luxury',
-			rating: 4.8,
-			views: '1.8k',
-		},
-		{
-			id: 3,
-			name: 'Kệ Tivi Khắc Hoa Hồng',
-			price: '9,000,000',
-			originalPrice: '9,500,000',
-			image: 'https://res.cloudinary.com/furniture-shop/image/upload/v1753109683/ke-tivi/yzphwzcvl0kfmjgulooz.jpg',
-			category: 'vintage',
-			badge: 'Limited',
-			rating: 4.7,
-			views: '1.5k',
-		},
-		{
-			id: 4,
-			name: 'Kệ Tivi Dáng lồi',
-			price: '5,000,000',
-			originalPrice: null,
-			image: 'https://res.cloudinary.com/furniture-shop/image/upload/v1753109655/ke-tivi/mfcsgkgqoawadvl4qxuy.jpg',
-			category: 'modern',
-			badge: 'Trending',
-			rating: 4.6,
-			views: '2.3k',
-		},
-		{
-			id: 5,
-			name: 'Kệ Tivi sofa',
-			price: '5,000,000',
-			originalPrice: '5,200,000',
-			image: 'https://res.cloudinary.com/furniture-shop/image/upload/v1753109640/ke-tivi/kmbmho6m8pcsgn2u8ft0.jpg',
-			category: 'minimal',
-			badge: 'Sale',
-			rating: 4.9,
-			views: '3.2k',
-		},
-		{
-			id: 6,
-			name: 'Kệ Tivi Góc Sừng',
-			price: '7,500,000',
-			originalPrice: null,
-			image: 'https://res.cloudinary.com/furniture-shop/image/upload/v1753109693/ke-tivi/jtcbznppdj8jeurvnbps.jpg',
-			category: 'luxury',
-			badge: 'Premium',
-			rating: 5.0,
-			views: '1.2k',
-		},
-	]
 
 	const categories = [
 		{ id: 'all', name: 'Tất Cả', count: 6 },
@@ -84,7 +18,13 @@ const SectionProductGallery = () => {
 
 	const filteredProducts = selectedCategory === 'all'
 		? productShowcase
-		: productShowcase.filter(product => product.category === selectedCategory)
+		: productShowcase.filter(product => {
+			if(selectedCategory === 'modern') return ['sofa-phang-xoan-0'].includes(product.url)
+			if(selectedCategory === 'minimal') return ['ke-tivi-hoa-hong-11'].includes(product.url)
+			if(selectedCategory === 'vintage') return ['ke-tivi-sung-13'].includes(product.url)
+			if(selectedCategory === 'luxury') return ['mo-loi-huong-da-9'].includes(product.url)
+			return product
+		})
 
 	return (<section id="gallery" className="py-20 bg-gray-50">
 		<div className="container mx-auto px-4">
@@ -137,39 +77,20 @@ const SectionProductGallery = () => {
 									className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
 								{/* Badge */}
-								<div className={`absolute top-6 left-6 px-4 py-2 rounded-full text-sm font-bold text-white ${
-									product.badge === 'Best Seller' ? 'bg-red-500' :
-										product.badge === 'New' ? 'bg-green-500' :
-											product.badge === 'Limited' ? 'bg-purple-500' :
-												product.badge === 'Trending' ? 'bg-blue-500' :
-													product.badge === 'Sale' ? 'bg-orange-500' :
-														'bg-amber-600'
-								}`}>
-									{product.badge}
-								</div>
-
-								{/* Action Buttons */}
-								<div
-									className="absolute top-6 right-6 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-									<button
-										className="p-3 bg-white/90 hover:bg-white rounded-full shadow-lg hover:scale-110 transition-all duration-300">
-										<Heart className="w-5 h-5 text-gray-700 hover:text-red-500"/>
-									</button>
-									<button
-										className="p-3 bg-white/90 hover:bg-white rounded-full shadow-lg hover:scale-110 transition-all duration-300">
-										<ZoomIn className="w-5 h-5 text-gray-700"/>
-									</button>
-								</div>
-
-								{/* Quick View Button */}
-								<div
-									className="absolute bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300">
-									<button
-										className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition-all duration-300 flex items-center space-x-2">
-										<Eye className="w-5 h-5"/>
-										<span>Xem Chi Tiết</span>
-									</button>
-								</div>
+								{product.badges && product.badges.length > 0 && product.badges.map((badge:string, index: number) => {
+									const classPosition = index === 0 ? `top-6 left-6` : index === 1 ? 'top-18 left-6' : index === 2 ? 'top-32 left-6' : 'top-64 left-6';
+									return <div key={index}
+															className={`absolute ${classPosition} px-4 py-2 rounded-full text-sm font-bold text-white ${
+																badge === 'Best Seller' ? 'bg-red-500' :
+																	badge === 'New' ? 'bg-green-500' :
+																		badge === 'Limited' ? 'bg-purple-500' :
+																			badge === 'Trending' ? 'bg-blue-500' :
+																				badge === 'Sale' ? 'bg-orange-500' :
+																					'bg-amber-600'
+															}`}>
+										{badge}
+									</div>
+								})}
 							</div>
 
 							{/* Product Info */}
@@ -207,8 +128,10 @@ const SectionProductGallery = () => {
 
 								<button
 									className="w-full bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3">
-									<ShoppingCart className="w-6 h-6"/>
-									<span>Thêm Vào Giỏ Hàng</span>
+									<a href={`/product/${product.url}`} className="flex items-center space-x-3">
+										<Eye className="w-6 h-6"/>
+										<span>Xem Chi Tiết</span>
+									</a>
 								</button>
 							</div>
 						</div>

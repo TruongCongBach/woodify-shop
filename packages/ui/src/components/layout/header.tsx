@@ -28,15 +28,6 @@ const HeaderPage = () => {
 				</nav>
 
 				<div className="flex items-center space-x-4">
-					<button className="p-2 text-gray-600 hover:text-amber-600 transition-colors">
-						<Heart className="w-6 h-6"/>
-					</button>
-					<button className="p-2 text-gray-600 hover:text-amber-600 transition-colors relative">
-						<ShoppingCart className="w-6 h-6"/>
-						<span
-							className="absolute -top-1 -right-1 bg-amber-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
-					</button>
-
 					{/* Mobile Navigation */}
 					<NavMenuMobile/>
 				</div>

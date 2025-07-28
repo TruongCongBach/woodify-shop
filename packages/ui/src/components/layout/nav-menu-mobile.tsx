@@ -6,7 +6,7 @@ import { Menu } from 'lucide-react'
 const NavMenuMobile = () => {
 
 	return <Sheet>
-		<SheetTrigger className="md:hidden">
+		<SheetTrigger className="lg:hidden">
 			<Menu className="h-6 w-6"/>
 		</SheetTrigger>
 		<SheetContent>

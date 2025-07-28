@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 // Assuming the user table in Supabase has these columns.
 // You might need to adjust this based on your actual table structure.

@@ -7,17 +7,17 @@ const SectionHeroGallery = () => {
 	const heroImages = [
 		{
 			url: 'https://res.cloudinary.com/furniture-shop/image/upload/v1753109693/ke-tivi/jtcbznppdj8jeurvnbps.jpg',
-			title: 'Kệ Tivi Gỗ Sồi Cao Cấp',
+			title: 'Kệ Tivi Gỗ Hương Cao Cấp',
 			description: 'Thiết kế hiện đại, chất lượng vượt trội',
 		},
 		{
 			url: 'https://res.cloudinary.com/furniture-shop/image/upload/v1753109686/ke-tivi/ddr3oqxdffhnr19upiao.jpg',
-			title: 'Minimalist Collection',
+			title: 'Vát Cạnh Tối Giản',
 			description: 'Đơn giản nhưng tinh tế',
 		},
 		{
 			url: 'https://res.cloudinary.com/furniture-shop/image/upload/v1753109690/ke-tivi/zj7re6ao1p5stt6mslp3.jpg',
-			title: 'Vintage Masterpiece',
+			title: 'Tùng Cúc Trúc Mai',
 			description: 'Nghệ thuật gỗ truyền thống',
 		},
 	]
