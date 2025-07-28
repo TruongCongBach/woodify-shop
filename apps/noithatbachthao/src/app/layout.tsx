@@ -18,13 +18,33 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-	metadataBase: new URL(process.env.BASE_URL || 'https://woodify.com'),
-	keywords: ['gỗ', 'nội thất', 'Nội Thất Gia Đình', 'đồ gỗ chất lượng'],
-	verification: {
-		google: process.env.GOOGLE_VERIFICATION_CODE || 'your-google-code',
-		yandex: process.env.YANDEX_VERIFICATION_CODE || 'your-yandex-code',
-	},
-}
+  metadataBase: new URL(process.env.BASE_URL || 'https://noithatbachthao.com'), // <-- THAY THẾ BẰNG DOMAIN CỦA BẠN
+  title: {
+    template: '%s | Nội thất Bách Thảo',
+    default: 'Nội thất Bách Thảo - Uy tín, Chất lượng, Giá tại xưởng',
+  },
+  description: 'Nội thất Bách Thảo chuyên cung cấp các sản phẩm nội thất gỗ tự nhiên và công nghiệp. Mẫu mã đa dạng, chất lượng cao, giá tại xưởng. Mua ngay!',
+  keywords: ['nội thất', 'đồ gỗ', 'nội thất gỗ', 'nội thất giá rẻ', 'nội thất phòng khách', 'nội thất phòng ngủ', 'kệ tivi', 'bàn ăn', 'sofa'],
+  openGraph: {
+    title: 'Nội thất Bách Thảo - Uy tín, Chất lượng, Giá tại xưởng',
+    description: 'Chuyên cung cấp các sản phẩm nội thất gỗ tự nhiên và công nghiệp. Mẫu mã đa dạng, chất lượng cao, giá tại xưởng.',
+    url: process.env.BASE_URL || 'https://noithatbachthao.com', // <-- THAY THẾ BẰNG DOMAIN CỦA BẠN
+    siteName: 'Nội thất Bách Thảo',
+    images: [
+      {
+        url: '/og-image.png', // <-- TẠO 1 FILE HÌNH ĐẠI DIỆN KHI SHARE
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'vi_VN',
+    type: 'website',
+  },
+  verification: {
+    google: process.env.GOOGLE_VERIFICATION_CODE || 'your-google-code',
+    yandex: process.env.YANDEX_VERIFICATION_CODE || 'your-yandex-code',
+  },
+};
 
 export default function RootLayout({
 	children,
