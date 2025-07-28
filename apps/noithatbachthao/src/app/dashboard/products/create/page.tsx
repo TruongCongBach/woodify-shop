@@ -15,7 +15,6 @@ export default function NewProductPage() {
 	const router = useRouter()
 	const { data: allCategories } = useCategories()
 	const [loading, setLoading] = useState(false)
-	const [urlError, setUrlError] = useState<string | null>(null)
 
 	const handleSubmit = async (formData: ProductFormData, media: UploadedMedia) => {
 		try {
@@ -35,7 +34,6 @@ export default function NewProductPage() {
 		} catch (error) {
 			if (error instanceof ProductUrlExistsError) {
 				// Show specific URL error message
-				setUrlError(error.message)
 			} else if (error instanceof MediaUploadError) {
 				// Show media upload error
 				toast.error(error.message)
@@ -48,15 +46,10 @@ export default function NewProductPage() {
 		}
 	}
 
-	const categoryOptions = (allCategories || []).map((c) => ({
-		id: c.id,
-		name: c.name,
-	}))
-
 	return (
 		<div className="max-w-3xl mx-auto p-6">
 			<ProductForm
-				categories={categoryOptions}
+				categories={allCategories || []}
 				onSubmitAction={handleSubmit}
 				onCancel={() => router.push('/dashboard/products')}
 				loading={loading}

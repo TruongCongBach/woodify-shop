@@ -16,39 +16,6 @@ import { AttributesManager } from './AttributesManager'
 import { DefaultImageSelector } from './DefaultImageSelector'
 import { TagsInput } from './TagsInput'
 
-// Types
-type ProductAttribute = {
-	key: string
-	value: string
-	unit?: string
-}
-
-type MediaItem = {
-	src: string
-	type: 'image' | 'video'
-	alt?: string
-}
-
-interface Product {
-	url: string
-	id: string
-	name: string
-	defaultImage: string
-	media: MediaItem[]
-	price: string
-	description: string
-	shortDescription?: string
-	categoryId: string
-	attributes?: ProductAttribute[]
-	tags?: string[]
-}
-
-interface Category {
-	id: string
-	name: string
-}
-
-
 // Validation Schema
 const productSchema = z.object({
 	name: z.string().min(1, 'Tên sản phẩm là bắt buộc'),

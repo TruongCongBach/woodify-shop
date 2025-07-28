@@ -20,7 +20,6 @@ export default function ProductEditPage() {
 	const { product, isLoading } = useProductById(id)
 
 	const [loading, setLoading] = useState(false)
-	const [urlError, setUrlError] = useState<string | null>(null)
 
 	const handleSubmit = async (formData: ProductFormData, media: UploadedMedia) => {
 
@@ -40,8 +39,6 @@ export default function ProductEditPage() {
 
 		} catch (error) {
 			if (error instanceof ProductUrlExistsError) {
-				// Show specific URL error message
-				setUrlError(error.message)
 			} else if (error instanceof MediaUploadError) {
 				// Show media upload error
 				toast.error(error.message)
@@ -54,10 +51,6 @@ export default function ProductEditPage() {
 		}
 	}
 
-	const categoryOptions = (allCategories || []).map((c) => ({
-		id: c.id,
-		name: c.name,
-	}))
 
 	if (isLoading) {
 		return <div>
@@ -67,7 +60,7 @@ export default function ProductEditPage() {
 	return (
 		<div className="max-w-3xl mx-auto p-6">
 			<ProductForm
-				categories={categoryOptions}
+				categories={allCategories || []}
 				product={product}
 				onSubmitAction={handleSubmit}
 				onCancel={() => router.push('/dashboard/products')}

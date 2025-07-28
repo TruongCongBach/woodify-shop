@@ -8,8 +8,6 @@ import {
 import { ProductGallery } from '@/components/product-gallery'
 import { formatPrice } from '@/utils/format-price'
 import { HomeIcon } from 'lucide-react'
-import PRODUCTS from '@/data/products'
-import { ProductSection } from '@/components/product-section'
 import { ProductReview } from './product-review'
 import { generateRandomReviews } from '@/utils/generate-random-reviews'
 import ProductRelated from '@/containers/product-page/product-related'
