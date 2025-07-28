@@ -5,26 +5,24 @@ import React, { useState } from 'react'
 type Props = {
 	products: any[];
 }
-const SectionProductGallery: React.FC<Props> = ({ products:productShowcase }: Props) => {
+const SectionProductGallery: React.FC<Props> = ({ products: productShowcase }: Props) => {
 	const [selectedCategory, setSelectedCategory] = useState('all')
 
 	const categories = [
-		{ id: 'all', name: 'Tất Cả', count: 6 },
-		{ id: 'modern', name: 'Hiện Đại', count: 1 },
-		{ id: 'minimal', name: 'Tối Giản', count: 1 },
-		{ id: 'vintage', name: 'Cổ Điển', count: 1 },
-		{ id: 'luxury', name: 'Cao Cấp', count: 3 },
+		{ id: 'all', name: 'Tất Cả', count: productShowcase.length },
+		{ id: 'modern', name: 'Hiện Đại', count: productShowcase.filter(product => product.category === 'modern').length },
+		{
+			id: 'minimal',
+			name: 'Tối Giản',
+			count: productShowcase.filter(product => product.category === 'minimal').length,
+		},
+		{ id: 'vintage', name: 'Cổ Điển', count: productShowcase.filter(product => product.category === 'vintage').length },
+		{ id: 'luxury', name: 'Cao Cấp', count: productShowcase.filter(product => product.category === 'luxury').length },
 	]
 
 	const filteredProducts = selectedCategory === 'all'
 		? productShowcase
-		: productShowcase.filter(product => {
-			if(selectedCategory === 'modern') return ['sofa-phang-xoan-0'].includes(product.url)
-			if(selectedCategory === 'minimal') return ['ke-tivi-hoa-hong-11'].includes(product.url)
-			if(selectedCategory === 'vintage') return ['ke-tivi-sung-13'].includes(product.url)
-			if(selectedCategory === 'luxury') return ['mo-loi-huong-da-9'].includes(product.url)
-			return product
-		})
+		: productShowcase.filter(product => product.category === selectedCategory)
 
 	return (<section id="gallery" className="py-20 bg-gray-50">
 		<div className="container mx-auto px-4">
@@ -77,8 +75,8 @@ const SectionProductGallery: React.FC<Props> = ({ products:productShowcase }: Pr
 									className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
 								{/* Badge */}
-								{product.badges && product.badges.length > 0 && product.badges.map((badge:string, index: number) => {
-									const classPosition = index === 0 ? `top-6 left-6` : index === 1 ? 'top-18 left-6' : index === 2 ? 'top-32 left-6' : 'top-64 left-6';
+								{product.badges && product.badges.length > 0 && product.badges.map((badge: string, index: number) => {
+									const classPosition = index === 0 ? `top-6 left-6` : index === 1 ? 'top-18 left-6' : index === 2 ? 'top-32 left-6' : 'top-64 left-6'
 									return <div key={index}
 															className={`absolute ${classPosition} px-4 py-2 rounded-full text-sm font-bold text-white ${
 																badge === 'Best Seller' ? 'bg-red-500' :
@@ -119,9 +117,9 @@ const SectionProductGallery: React.FC<Props> = ({ products:productShowcase }: Pr
 
 								<div className="flex items-center justify-between mb-6">
 									<div className="space-y-1">
-										<div className="text-3xl font-bold text-amber-600">{product.price}₫</div>
+										<div className="text-3xl font-bold text-amber-600">{product.price}</div>
 										{product.originalPrice ? (
-											<div className="text-lg text-gray-500 line-through">{product.originalPrice}₫</div>
+											<div className="text-lg text-gray-500 line-through">{product.originalPrice}</div>
 										) : (<div className="text-lg text-gray-500 line-through h-[28px]"/>)}
 									</div>
 								</div>

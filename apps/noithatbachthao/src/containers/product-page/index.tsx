@@ -1,6 +1,3 @@
-'use client'
-
-import { useParams } from 'next/navigation'
 import {
 	Breadcrumb,
 	BreadcrumbItem,
@@ -13,24 +10,21 @@ import { formatPrice } from '@/utils/format-price'
 import { HomeIcon } from 'lucide-react'
 import PRODUCTS from '@/data/products'
 import { ProductSection } from '@/components/product-section'
-import { ProductReview } from '@/components/product-review'
+import { ProductReview } from './product-review'
 import { generateRandomReviews } from '@/utils/generate-random-reviews'
-import { useProductByUrl } from '@/hooks/useProductByUrl'
+import ProductRelated from '@/containers/product-page/product-related'
 
+type Props = {
+	product?: any
 
-export default function ProductPageClient() {
-	const { productUrl } = useParams() as {productUrl: string}
-	const { product, isLoading } = useProductByUrl(productUrl)
+}
+export default async function ProductPage(props: Props) {
+	const { product } = props
 
-	if( isLoading) {
-		return <div className="container mx-auto px-4 py-8 text-center">Loading...</div>
-	}
 	if (!product) {
 		return <div className="container mx-auto px-4 py-8 text-center text-red-600 font-semibold">Sản phẩm không tồn
 			tại.</div>
 	}
-
-	const relatedProducts = PRODUCTS.filter(p => p.id !== product.id && p.categoryId === product.categoryId)
 
 	return (
 		<div className="bg-gray-100/70">
@@ -72,14 +66,7 @@ export default function ProductPageClient() {
 				<ProductReview reviews={generateRandomReviews(5)}/>
 
 				{/* Related products */}
-				{relatedProducts.length > 0 && (
-					<div>
-						<ProductSection
-							title="Sản phẩm liên quan"
-							products={relatedProducts}
-						/>
-					</div>
-				)}
+				<ProductRelated product={product}/>
 			</div>
 		</div>
 	)

@@ -16,13 +16,6 @@ export const getProductsByConditions = async ({
 	page = 1,
 	pageSize = 12,
 }: Conditions) => {
-	console.log('Service called with:', {
-		categoryId,
-		attributes,
-		priceRange,
-		page,
-		pageSize
-	})
 
 	const from = (page - 1) * pageSize
 	const to = from + pageSize - 1
@@ -46,7 +39,6 @@ export const getProductsByConditions = async ({
 		const { data, error, count } = await query
 
 		if (error) {
-			console.error('Supabase error (simple query):', error)
 			throw error
 		}
 
@@ -67,7 +59,6 @@ export const getProductsByConditions = async ({
 		return acc
 	}, {} as Record<string, any[]>)
 
-	console.log('Attribute groups:', attributeGroups)
 
 	// Tìm product IDs thỏa mãn điều kiện
 	let productIds: string[] = []
@@ -76,8 +67,6 @@ export const getProductsByConditions = async ({
 	for (let i = 0; i < attributeKeys.length; i++) {
 		const key = attributeKeys[i]
 		const values = attributeGroups[key]
-
-		console.log(`Filtering by key "${key}" with values:`, values)
 
 		// Query với OR cho các values của cùng key
 		let attrQuery = supabase
@@ -106,8 +95,6 @@ export const getProductsByConditions = async ({
 			// AND giữa các keys khác nhau
 			productIds = productIds.filter(id => currentProductIds.includes(id))
 		}
-
-		console.log(`Remaining products after filtering key "${key}":`, productIds.length)
 
 		// Nếu không còn product nào thỏa mãn, return empty
 		if (productIds.length === 0) {

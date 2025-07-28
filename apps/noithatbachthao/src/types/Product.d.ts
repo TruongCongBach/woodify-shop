@@ -16,12 +16,13 @@ interface Product {
 	name: string
 	defaultImage: string
 	media: MediaItem[]
-	price: string
+	price: number
 	description: string
 	shortDescription?: string
 	categoryId: string
 	attributes?: ProductAttribute[]
 	tags?: string[]
+	originalPrice: number
 }
 
 interface ProductDataBase {
@@ -30,6 +31,7 @@ interface ProductDataBase {
 	url: string
 	default_image?: string
 	price?: number
+	original_price?: number
 	description?: string
 	short_description?: string
 	category_id: string

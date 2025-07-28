@@ -1,13 +1,13 @@
 import { notFound } from 'next/navigation'
-import CategoryPageClient from './page.client'
 import { Metadata } from 'next'
 import { getCategoryByUrl } from '@/services/category/get-category-by-url'
+import CategoryPage from '@/containers/category-page'
 
 type Props = {
 	params: Promise<{categoryUrl: string | string[]}>;
 }
 
-export default async function CategoryPage(props: Props) {
+export default async (props: Props) => {
 	const { categoryUrl } = await props.params
 	const slug = Array.isArray(categoryUrl)
 		? categoryUrl[categoryUrl.length - 1]
@@ -19,7 +19,7 @@ export default async function CategoryPage(props: Props) {
 		notFound()
 	}
 
-	return <CategoryPageClient category={category}/>
+	return <CategoryPage category={category}/>
 }
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
@@ -31,8 +31,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 	const category = await getCategoryByUrl(slug)
 	if (!category) notFound()
 
-	const title = `${category.name} – Nội Thất Khánh Trang`
-	const description = `Xem các mẫu ${category.name} chất lượng dành cho đồ gỗ tại Nội Thất Khánh Trang.`
+	const title = `${category.name} – Nội Thất Gia Đình`
+	const description = `Xem các mẫu ${category.name} chất lượng dành cho đồ gỗ tại Nội Thất Gia Đình.`
 
 	const image = category.image
 	const imageUrl = category.image?.startsWith('http')
@@ -76,7 +76,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 			title,
 			description,
 			url: `/category/${slug}`,
-			siteName: 'Nội Thất Khánh Trang',
+			siteName: 'Nội Thất Gia Đình',
 			images: [{ url: imageUrl, alt: category.name, width: 1200, height: 630 }],
 			type: 'website',
 		},

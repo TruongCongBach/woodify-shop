@@ -8,12 +8,13 @@ export function transformProductToFormData(product: ProductDataBase): Product {
 		name: product.name,
 		url: product.url,
 		defaultImage: product.default_image || '',
-		price: `${product.price || '0'}`,
+		price: product.price || 0,
 		description: product.description || '',
 		shortDescription: product.short_description || '',
 		categoryId: product.category_id,
 		media: product.media as MediaItem[] || [],
 		attributes: product.attributes || [],
-		tags: product.tags || []
+		tags: product.tags || [],
+		originalPrice: product.original_price || 0,
 	}
 }

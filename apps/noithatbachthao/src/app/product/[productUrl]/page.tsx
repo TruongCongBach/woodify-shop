@@ -1,15 +1,20 @@
-// apps/woodify-khanhtrang/src/app/product/[productId]/page.tsx
-import ProductPageClient from './page.client'
-import PRODUCTS from '@/data/products'
 import { getImagesFromMedia } from '@/utils/get-images-from-media'
-
-
-export default function ProductPage() {
-	return <ProductPageClient/>
-}
+import { getProductByUrl } from '@/services/product/get-product-by-url'
+import ProductPage from '@/containers/product-page'
 
 type Props = {
 	params: Promise<{ productUrl: string | string[] }>;
+}
+
+export default async (props: Props) => {
+	const { productUrl } = await props.params;
+	const slug = Array.isArray(productUrl)
+		? productUrl[productUrl.length - 1]
+		: productUrl || '';
+
+	const product = await getProductByUrl(slug)
+
+	return <ProductPage product={product} />
 }
 
 export async function generateMetadata(props: Props) {
@@ -17,11 +22,12 @@ export async function generateMetadata(props: Props) {
 	const slug = Array.isArray(productUrl)
 		? productUrl[productUrl.length - 1]
 		: productUrl || '';
-	const product = PRODUCTS.find(p => p.url === slug)
+
+	const product = await getProductByUrl(slug)
 
 	if (!product) {
 		return {
-			title: 'Sản phẩm không tồn tại | Nội Thất Khánh Trang',
+			title: 'Sản phẩm không tồn tại | Nội Thất Gia Đình',
 			description: 'Sản phẩm bạn tìm kiếm không tồn tại hoặc đã bị xoá.',
 		}
 	}
@@ -29,7 +35,7 @@ export async function generateMetadata(props: Props) {
 	const { name, description, media } = product
 
 	return {
-		title: `${name} | Nội Thất Khánh Trang`,
+		title: `${name} | Nội Thất Gia Đình`,
 		description,
 		openGraph: {
 			title: name,
