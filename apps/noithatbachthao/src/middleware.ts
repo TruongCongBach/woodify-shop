@@ -19,7 +19,7 @@ export async function middleware(request: NextRequest) {
 
 	if (!token || token.role !== 'admin') {
 		// Nếu chưa đăng nhập, chuyển hướng đến trang signin
-		const signInUrl = new URL('/signin', request.url)
+		const signInUrl = new URL('/login', request.url)
 		signInUrl.searchParams.set('callbackUrl', pathname) // để redirect lại sau khi login
 		return NextResponse.redirect(signInUrl)
 	}

@@ -33,8 +33,7 @@ export default function SignInPage() {
         setError('Invalid email or password. Please try again.');
         setIsLoading(false);
       } else if (result?.ok) {
-        // Redirect to the home page on successful login
-        router.push('/');
+        router.push('/dashboard/categories'); // quay về trang trước đó
       }
     } catch (err) {
       setError('An unexpected error occurred. Please try again.');
