@@ -56,13 +56,6 @@ export function useProductSearchByCondition(
 
 
 			const attrs = typeof attrsStr === 'string' ? JSON.parse(attrsStr || '[]') as ProductAttribute[] : []
-			console.log('Fetching products:', {
-				categoryId: _categoryId,
-				attributes: attrs as ProductAttribute[],
-				priceRange: priceRangeStr || undefined,
-				page,
-				pageSize: pageSizeNum
-			})
 
 			const res = await getProductsByConditions({
 				categoryId: _categoryId,
@@ -71,7 +64,7 @@ export function useProductSearchByCondition(
 				page: page,
 				pageSize: pageSizeNum,
 			})
-			console.log(res)
+
 			return {
 				products: res.data,
 				total: res.total,

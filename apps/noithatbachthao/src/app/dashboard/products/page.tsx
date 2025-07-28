@@ -5,9 +5,32 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { Skeleton } from '@woodify/ui/shadcn-ui/skeleton'
 import Link from 'next/link'
 import { useProducts } from '@/hooks/useProducts'
+import ProductAlertConfirmDelete from '@/containers/product-page/product-alert-confirm-delete'
+import { deleteProduct } from '@/services/product/delete-product'
+import { useRouter } from 'next/navigation'
+import { useState } from 'react'
 
 export default function ProductListPage() {
-	const { data: products, isLoading } = useProducts()
+	const { data: products, isLoading, mutate } = useProducts()
+	const [selectedProductId, setSelectedProductId] = useState<string | null>(null)
+	const [isDeleting, setIsDeleting] = useState(false)
+	const router = useRouter()
+
+
+	const handleDelete = async () => {
+		if (!selectedProductId) return
+		try {
+			setIsDeleting(true)
+			await deleteProduct(selectedProductId)
+			mutate()
+		} catch (err) {
+			console.error('Delete error:', err)
+			alert('Xoá thất bại.')
+		} finally {
+			setIsDeleting(false)
+			setSelectedProductId(null)
+		}
+	}
 
 
 	return (
@@ -60,13 +83,18 @@ export default function ProductListPage() {
 								<Link href={`/dashboard/products/${product.id}`}>
 									<Button size="sm" variant="outline">Edit</Button>
 								</Link>
-								{/* TODO: Add Delete logic here */}
-								<Button size="sm" variant="destructive">Delete</Button>
+								<Button onClick={() => setSelectedProductId(product.id)} size="sm" variant="destructive">Delete</Button>
 							</TableCell>
 						</TableRow>
 					))}
 				</TableBody>
 			</Table>
+			<ProductAlertConfirmDelete
+				selectedProductId={selectedProductId}
+				setSelectedProductId={setSelectedProductId}
+				handleDelete={handleDelete}
+				isDeleting={isDeleting}
+			/>
 		</div>
 	)
 }
