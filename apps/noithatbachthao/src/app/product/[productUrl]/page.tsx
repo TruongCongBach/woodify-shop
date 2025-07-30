@@ -2,15 +2,18 @@ import { getImagesFromMedia } from '@/utils/get-images-from-media';
 import { getProductByUrl } from '@/services/product/get-product-by-url';
 import ProductPage from '@/containers/product-page';
 import { Metadata } from 'next';
-import { formatPrice } from '@/utils/format-price';
 
 type Props = {
-  params: { productUrl: string };
+  params: Promise<{productUrl: string | string[]}>;
 }
 
 // Generate metadata for the page
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const product = await getProductByUrl(params.productUrl);
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const { productUrl } = await props.params
+  const slug = Array.isArray(productUrl)
+    ? productUrl[productUrl.length - 1]
+    : productUrl || ''
+  const product = await getProductByUrl(slug);
 
   if (!product) {
     return {
@@ -28,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: name,
       description: description || `Mua ngay ${name} chất lượng cao, giá tốt tại Nội thất Bách Thảo.`,
-      type: 'product',
+      type: 'website',
       images: images.length ? images.map((img) => ({
         url: img.src,
         width: 800,
@@ -40,8 +43,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 // The main page component
-export default async function ProductDetailPage({ params }: Props) {
-  const product = await getProductByUrl(params.productUrl);
+export default async function ProductDetailPage(props: Props) {
+  const { productUrl } = await props.params;
+  const slug = Array.isArray(productUrl)
+    ? productUrl[productUrl.length - 1]
+    : productUrl || ''
+  const product = await getProductByUrl(slug);
 
   if (!product) {
     // Handle product not found, maybe render a not-found component
