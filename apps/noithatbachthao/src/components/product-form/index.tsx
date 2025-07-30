@@ -16,12 +16,17 @@ import { AttributesManager } from './AttributesManager'
 import { DefaultImageSelector } from './DefaultImageSelector'
 import { TagsInput } from './TagsInput'
 
+import { toast } from 'sonner'
+import { checkProductUrlExists } from '@/utils/check-product-url-exists'
+import { slugify } from '@/utils/slugify'
+
 // Validation Schema
 const productSchema = z.object({
 	name: z.string().min(1, 'Tên sản phẩm là bắt buộc'),
 	url: z.string().min(1, 'URL là bắt buộc'),
-	price: z.string().min(1, 'Giá là bắt buộc'),
-	description: z.string().min(1, 'Mô tả là bắt buộc'),
+	price: z.string().min(1, 'Giá bán là bắt buộc'),
+	originalPrice: z.string().optional(),
+	description: z.string().optional(),
 	shortDescription: z.string().optional(),
 	categoryId: z.string().min(1, 'Danh mục là bắt buộc'),
 	defaultImage: z.string().optional(),
@@ -51,6 +56,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
 	onCancel,
 	loading = false,
 }) => {
+	const [isGeneratingUrl, setIsGeneratingUrl] = useState(false)
 	const [uploadedMedia, setUploadedMedia] = useState<UploadedMedia>({
 		type: 'image',
 		files: [],
@@ -63,6 +69,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
 			name: product?.name || '',
 			url: product?.url || '',
 			price: product?.price || '',
+			originalPrice: product?.originalPrice || '',
 			description: product?.description || '',
 			shortDescription: product?.shortDescription || '',
 			categoryId: product?.categoryId || '',
@@ -87,9 +94,34 @@ export const ProductForm: React.FC<ProductFormProps> = ({
 	const handleMediaChange = useCallback((media: UploadedMedia) => {
 		setUploadedMedia(media)
 	}, [])
-	useEffect(() => {
-		console.log('Form errors:', form.formState.errors)
-	}, [form.formState.errors])
+
+	const handleGenerateUrl = async () => {
+		const name = form.getValues('name')
+		if (!name) {
+			toast.error('Vui lòng nhập tên sản phẩm trước khi tạo URL.')
+			return
+		}
+
+		setIsGeneratingUrl(true)
+		try {
+			let finalUrl = slugify(name)
+			let counter = 2
+			// Check if the URL exists, excluding the current product's ID if we are editing
+			while (await checkProductUrlExists(finalUrl, product?.id)) {
+				finalUrl = `${slugify(name)}-${counter}`
+				counter++
+			}
+
+			form.setValue('url', finalUrl, { shouldValidate: true })
+			toast.success('Đã tạo URL thành công!')
+		} catch (error) {
+			console.error('Error generating URL:', error)
+			toast.error('Đã xảy ra lỗi khi tạo URL. Vui lòng thử lại.')
+		} finally {
+			setIsGeneratingUrl(false)
+		}
+	}
+
 	return (
 		<div className="max-w-4xl mx-auto p-6 space-y-6">
 			<div className="flex justify-between items-center">
@@ -135,9 +167,19 @@ export const ProductForm: React.FC<ProductFormProps> = ({
 											render={({ field }) => (
 												<FormItem>
 													<FormLabel>URL</FormLabel>
-													<FormControl>
-														<Input placeholder="product-url" {...field} />
-													</FormControl>
+													<div className="flex items-center gap-2">
+														<FormControl>
+															<Input placeholder="product-url" {...field} />
+														</FormControl>
+														<Button
+															type="button"
+															variant="outline"
+															onClick={handleGenerateUrl}
+															disabled={!form.watch('name') || isGeneratingUrl}
+														>
+															{isGeneratingUrl ? 'Đang tạo...' : 'Tạo URL'}
+														</Button>
+													</div>
 													<FormMessage/>
 												</FormItem>
 											)}
@@ -150,7 +192,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
 											name="price"
 											render={({ field }) => (
 												<FormItem>
-													<FormLabel>Giá</FormLabel>
+													<FormLabel>Giá bán</FormLabel>
 													<FormControl>
 														<Input placeholder="0" {...field} />
 													</FormControl>
@@ -158,7 +200,22 @@ export const ProductForm: React.FC<ProductFormProps> = ({
 												</FormItem>
 											)}
 										/>
+										<FormField
+											control={form.control}
+											name="originalPrice"
+											render={({ field }) => (
+												<FormItem>
+													<FormLabel>Giá gốc (Tùy chọn)</FormLabel>
+													<FormControl>
+														<Input placeholder="0" {...field} />
+													</FormControl>
+													<FormMessage/>
+												</FormItem>
+											)}
+										/>
+									</div>
 
+									<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 										<FormField
 											control={form.control}
 											name="categoryId"
@@ -296,6 +353,9 @@ export const ProductForm: React.FC<ProductFormProps> = ({
 														onChange={field.onChange}
 													/>
 												</FormControl>
+												<p className="text-sm text-muted-foreground">
+													Lưu ý: Các tag như <b className="text-red-500">Mới</b>, <b className="text-yellow-500">Giảm giá</b>, <b className="text-green-500">Freeship</b> sẽ có màu sắc đặc biệt.
+												</p>
 												<FormMessage/>
 											</FormItem>
 										)}

@@ -17,12 +17,12 @@ interface Product {
 	defaultImage: string
 	media: MediaItem[]
 	price: string
+	originalPrice?: string
 	description: string
 	shortDescription?: string
 	categoryId: string
 	attributes?: ProductAttribute[]
 	tags?: string[]
-	originalPrice: string
 }
 
 interface ProductDataBase {

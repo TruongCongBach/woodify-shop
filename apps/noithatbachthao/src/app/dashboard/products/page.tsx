@@ -42,53 +42,59 @@ export default function ProductListPage() {
 				</Link>
 			</div>
 
-			<Table>
-				<TableHeader>
-					<TableRow>
-						<TableHead className="w-[80px]">Image</TableHead>
-						<TableHead>Name</TableHead>
-						<TableHead className="hidden md:table-cell">Description</TableHead>
-						<TableHead>Price</TableHead>
-						<TableHead className="w-[140px] text-right">Actions</TableHead>
-					</TableRow>
-				</TableHeader>
-				<TableBody>
-					{isLoading &&
-						[...Array(5)].map((_, i) => (
-							<TableRow key={i}>
-								<TableCell><Skeleton className="h-12 w-12 rounded-md"/></TableCell>
-								<TableCell><Skeleton className="h-4 w-32"/></TableCell>
-								<TableCell className="hidden md:table-cell"><Skeleton className="h-4 w-64"/></TableCell>
-								<TableCell><Skeleton className="h-4 w-16"/></TableCell>
-								<TableCell></TableCell>
-							</TableRow>
-						))
-					}
-
-					{products?.map((product: Product) => (
-						<TableRow key={product.id}>
-							<TableCell>
-								<img
-									src={product.defaultImage}
-									alt={product.name}
-									width={48}
-									height={48}
-									className="rounded-md object-cover"
-								/>
-							</TableCell>
-							<TableCell>{product.name}</TableCell>
-							<TableCell className="hidden md:table-cell truncate">{product.shortDescription || '-'}</TableCell>
-							<TableCell>{product.price} ₫</TableCell>
-							<TableCell className="text-right space-x-2">
-								<Link href={`/dashboard/products/${product.id}`}>
-									<Button size="sm" variant="outline">Edit</Button>
-								</Link>
-								<Button onClick={() => setSelectedProductId(product.id)} size="sm" variant="destructive">Delete</Button>
-							</TableCell>
+			<div className="border rounded-lg w-full">
+				<Table>
+					<TableHeader className="hidden md:table-header-group">
+						<TableRow>
+							<TableHead className="w-[80px]">Image</TableHead>
+							<TableHead>Name</TableHead>
+							<TableHead>Price</TableHead>
+							<TableHead className="w-[140px] text-right">Actions</TableHead>
 						</TableRow>
-					))}
-				</TableBody>
-			</Table>
+					</TableHeader>
+					<TableBody>
+						{isLoading &&
+							[...Array(5)].map((_, i) => (
+								<TableRow key={i}>
+									<TableCell><Skeleton className="h-12 w-12 rounded-md"/></TableCell>
+									<TableCell><Skeleton className="h-4 w-32"/></TableCell>
+									<TableCell><Skeleton className="h-4 w-16"/></TableCell>
+									<TableCell></TableCell>
+								</TableRow>
+							))
+						}
+
+						{products?.map((product: Product) => (
+							<TableRow key={product.id} className="block md:table-row border-b md:border-b-0">
+								<TableCell className="flex items-center justify-between md:table-cell">
+									<span className="font-bold md:hidden mr-2">Image</span>
+									<img
+										src={product.defaultImage}
+										alt={product.name}
+										width={48}
+										height={48}
+										className="rounded-md object-cover"
+									/>
+								</TableCell>
+								<TableCell className="block md:table-cell">
+									<span className="font-bold md:hidden mr-2">Name:</span>
+									{product.name}
+								</TableCell>
+								<TableCell className="block md:table-cell">
+									<span className="font-bold md:hidden mr-2">Price:</span>
+									{product.price} ₫
+								</TableCell>
+								<TableCell className="block md:table-cell text-right space-x-2">
+									<Link href={`/dashboard/products/${product.id}`}>
+										<Button size="sm" variant="outline">Edit</Button>
+									</Link>
+									<Button onClick={() => setSelectedProductId(product.id)} size="sm" variant="destructive">Delete</Button>
+								</TableCell>
+							</TableRow>
+						))}
+					</TableBody>
+				</Table>
+			</div>
 			<ProductAlertConfirmDelete
 				selectedProductId={selectedProductId}
 				setSelectedProductId={setSelectedProductId}

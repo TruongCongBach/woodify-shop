@@ -34,9 +34,16 @@ export const ProductCard = ({ product, tags }: Props) => {
 				<h3 className="text-sm sm:text-base font-medium text-gray-800 line-clamp-2">
 					{product.name}
 				</h3>
-				<p className="text-red-600 font-semibold text-base sm:text-lg mt-1">
-					{formatPrice(product.price)}
-				</p>
+				<div className="mt-1 flex items-baseline gap-2">
+					<p className="text-red-600 font-semibold text-base sm:text-lg">
+						{formatPrice(product.price)}
+					</p>
+					{product.originalPrice && parseFloat(product.originalPrice) > parseFloat(product.price) && (
+						<p className="text-gray-500 line-through text-sm">
+							{formatPrice(product.originalPrice)}
+						</p>
+					)}
+				</div>
 			</div>
 		</div>
 	)

@@ -48,16 +48,27 @@ export default async function ProductPage(props: Props) {
 					<ProductGallery media={product.media}/>
 					<div className="space-y-5">
 						<h1 className="text-3xl font-bold">{product.name}</h1>
-						<p className="text-2xl text-red-600 font-semibold">{formatPrice(product.price)}</p>
-						{product?.shortDescription &&
-              <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: product?.shortDescription }}/>}
+						<div className="flex items-baseline gap-4">
+							<p className="text-2xl text-red-600 font-semibold">{formatPrice(product.price)}</p>
+							{product.originalPrice && parseFloat(product.originalPrice) > parseFloat(product.price) && (
+								<p className="text-xl text-gray-500 line-through">
+									{formatPrice(product.originalPrice)}
+								</p>
+							)}
+						</div>
+						{!!product?.shortDescription &&
+              <pre className="text-gray-700 whitespace-pre-wrap break-words font-sans">
+								{product?.shortDescription}
+							</pre>}
 					</div>
 				</div>
 
 				{/* Description */}
 				<div className="border-t pt-6">
 					<h2 className="text-xl font-semibold mb-2">Mô tả sản phẩm</h2>
-					<div className="text-gray-700" dangerouslySetInnerHTML={{ __html: product.description }}/>
+					{!!product.description && <pre className="text-gray-700 whitespace-pre-wrap break-words font-sans">
+						{product.description}
+					</pre>}
 				</div>
 
 				{/* Reviews */}

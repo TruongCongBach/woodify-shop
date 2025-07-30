@@ -31,7 +31,7 @@ export const ProductSection = ({
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 				{products.map((p) => (
 					<Link href={`/product/${p.url}`} key={p.id}>
-						<ProductCard product={p} />
+						<ProductCard product={p} tags={p.tags} />
 					</Link>
 				))}
 			</div>

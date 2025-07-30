@@ -5,6 +5,7 @@ import React from 'react'
 import AuthProvider from '@/components/auth-provider'
 import { HeaderPage } from '@woodify/ui/components/layout'
 import FooterPage from '@woodify/ui/components/layout/footer'
+import { ToasterProvider } from '@/components/toaster-provider'
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -61,6 +62,7 @@ export default function RootLayout({
 				<HeaderPage/>
 				{children}
 				<FooterPage/>
+				<ToasterProvider />
 			</div>
 		</AuthProvider>
 		</body>

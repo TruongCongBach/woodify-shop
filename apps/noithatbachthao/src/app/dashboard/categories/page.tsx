@@ -64,67 +64,76 @@ export default function CategoriesPage() {
 					<Skeleton className="h-6 w-full" />
 				</div>
 			) : (
-				<Table>
-					<TableHeader>
-						<TableRow>
-							<TableHead>Hiện thị trên Menu</TableHead>
-							<TableHead>Tên danh mục</TableHead>
-							<TableHead>Mô tả</TableHead>
-							<TableHead className="text-right">Hành động</TableHead>
-						</TableRow>
-					</TableHeader>
-					<TableBody>
-						{categories?.map((cat) => (
-							<TableRow key={cat.id}>
-								<TableCell className="text-center">
-									<Checkbox defaultChecked={cat.showInNav}/>
-								</TableCell>
-								<TableCell>{cat.name}</TableCell>
-								<TableCell>{cat.description}</TableCell>
-								<TableCell className="text-right space-x-2">
-									<Button
-										variant="outline"
-										size="sm"
-										onClick={() => router.push(`/dashboard/categories/${cat.id}`)}
-									>
-										Sửa
-									</Button>
+				<div className="border rounded-lg w-full">
+					<Table>
+						<TableHeader className="hidden md:table-header-group">
+							<TableRow>
+								<TableHead className="w-[180px]">Hiện thị trên Menu</TableHead>
+								<TableHead>Tên danh mục</TableHead>
+								<TableHead className="hidden md:table-cell">Mô tả</TableHead>
+								<TableHead className="text-right w-[160px]">Hành động</TableHead>
+							</TableRow>
+						</TableHeader>
+						<TableBody>
+							{categories?.map((cat) => (
+								<TableRow key={cat.id} className="block md:table-row border-b md:border-b-0">
+									<TableCell className="flex items-center justify-between md:table-cell md:text-center">
+										<span className="font-bold md:hidden mr-2">Hiện thị trên Menu:</span>
+										<Checkbox defaultChecked={cat.showInNav}/>
+									</TableCell>
+									<TableCell className="block md:table-cell">
+										<span className="font-bold md:hidden mr-2">Tên danh mục:</span>
+										{cat.name}
+									</TableCell>
+									<TableCell className="block md:table-cell">
+										<span className="font-bold md:hidden mr-2">Mô tả:</span>
+										{cat.description}
+									</TableCell>
+									<TableCell className="block md:table-cell text-right space-x-2">
+										<Button
+											variant="outline"
+											size="sm"
+											onClick={() => router.push(`/dashboard/categories/${cat.id}`)}
+										>
+											Sửa
+										</Button>
 
-									<Dialog open={openDialogId === cat.id} onOpenChange={(open) => setOpenDialogId(open ? cat.id : null)}>
-										<DialogTrigger asChild>
-											<Button
-												variant="destructive"
-												size="sm"
-											>
-												Xóa
-											</Button>
-										</DialogTrigger>
-										<DialogContent>
-											<DialogHeader>
-												<DialogTitle>Xác nhận xóa</DialogTitle>
-												<DialogDescription>
-													Bạn có chắc chắn muốn xóa danh mục <b>{cat.name}</b> không? Hành động này không thể hoàn tác.
-												</DialogDescription>
-											</DialogHeader>
-											<DialogFooter className="gap-2">
-												<Button variant="outline" onClick={() => setOpenDialogId(null)}>
-													Hủy
-												</Button>
+										<Dialog open={openDialogId === cat.id} onOpenChange={(open) => setOpenDialogId(open ? cat.id : null)}>
+											<DialogTrigger asChild>
 												<Button
 													variant="destructive"
-													disabled={loadingId === cat.id}
-													onClick={() => handleDelete(cat.id)}
+													size="sm"
 												>
-													{loadingId === cat.id ? 'Đang xóa...' : 'Xác nhận xóa'}
+													Xóa
 												</Button>
-											</DialogFooter>
-										</DialogContent>
-									</Dialog>
-								</TableCell>
-							</TableRow>
-						))}
-					</TableBody>
-				</Table>
+											</DialogTrigger>
+											<DialogContent>
+												<DialogHeader>
+													<DialogTitle>Xác nhận xóa</DialogTitle>
+													<DialogDescription>
+														Bạn có chắc chắn muốn xóa danh mục <b>{cat.name}</b> không? Hành động này không thể hoàn tác.
+													</DialogDescription>
+												</DialogHeader>
+												<DialogFooter className="gap-2">
+													<Button variant="outline" onClick={() => setOpenDialogId(null)}>
+														Hủy
+													</Button>
+													<Button
+														variant="destructive"
+														disabled={loadingId === cat.id}
+														onClick={() => handleDelete(cat.id)}
+													>
+														{loadingId === cat.id ? 'Đang xóa...' : 'Xác nhận xóa'}
+													</Button>
+												</DialogFooter>
+											</DialogContent>
+										</Dialog>
+									</TableCell>
+								</TableRow>
+							))}
+						</TableBody>
+					</Table>
+				</div>
 			)}
 		</Card>
 	)
