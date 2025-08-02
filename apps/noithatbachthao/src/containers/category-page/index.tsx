@@ -110,7 +110,7 @@ export default function CategoryPageClient({ category }: Props) {
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 							{products.map(p => (
 								<Link href={`/product/${p.url}`} key={p.id}>
-									<ProductCard product={p}/>
+									<ProductCard product={p} tags={p.tags}/>
 								</Link>
 							))}
 							{isLoading && Array.from({ length: 12 }).map((_, idx) => (

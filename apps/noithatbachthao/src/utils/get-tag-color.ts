@@ -2,6 +2,7 @@ export function getTagColor(label: string): string {
 	switch (label.toLowerCase()) {
 		case 'mới':
 		case 'new':
+		case 'vip':
 			return 'bg-red-500'
 		case 'giảm giá':
 		case 'sale':

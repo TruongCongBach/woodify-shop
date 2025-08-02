@@ -4,7 +4,7 @@ import { supabase } from '@/lib/supabase'
 import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
 
 export async function fetchProducts(): Promise<Product[]> {
-	const { data, error } = await supabase.from('products').select('*')
+	const { data, error } = await supabase.from('products').select('*').order('updated_at', { ascending: true });
 	if (error) throw error
 	return data?.map(value => {
 		return transformProductToFormData(value)
@@ -71,7 +71,10 @@ export async function updateProduct(id: string, updates: Partial<Product>): Prom
 	const { attributes, ...otherField} = updates
 	const { data: updatedProduct, error: productError } = await supabase
 	.from('products')
-	.update(otherField)
+	.update({
+		...otherField,
+		updated_at: new Date().toISOString()
+	})
 	.eq('id', id)
 	.select()
 	.single()
@@ -96,7 +99,6 @@ export async function updateProduct(id: string, updates: Partial<Product>): Prom
 		.insert(newAttrs)
 		if (attrError) throw attrError
 	}
-	console.log('heeelo')
 	// 4. Return updated product (attributes can be fetched separately)
 	return transformProductToFormData(updatedProduct)
 }

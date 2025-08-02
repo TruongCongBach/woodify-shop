@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useMemo, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
@@ -68,8 +68,8 @@ export const ProductForm: React.FC<ProductFormProps> = ({
 		defaultValues: {
 			name: product?.name || '',
 			url: product?.url || '',
-			price: product?.price || '',
-			originalPrice: product?.originalPrice || '',
+			price: product?.price ? `${product?.price}` : '',
+			originalPrice: product?.originalPrice ? `${product.originalPrice}` : '',
 			description: product?.description || '',
 			shortDescription: product?.shortDescription || '',
 			categoryId: product?.categoryId || '',
