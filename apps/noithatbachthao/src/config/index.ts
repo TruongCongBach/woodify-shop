@@ -17,6 +17,7 @@ const config  = {
 		clientId: process.env.GOOGLE_CLIENT_ID ?? '',
 		clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? '',
 	},
+	googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION ?? 'your-google-code',
 	facebookAuth: {
 		clientId: process.env.FACEBOOK_CLIENT_ID ?? '',
 		clientSecret: process.env.FACEBOOK_CLIENT_SECRET ?? '',

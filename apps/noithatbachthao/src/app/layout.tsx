@@ -43,8 +43,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   verification: {
-    google: process.env.GOOGLE_VERIFICATION_CODE || 'your-google-code',
-    yandex: process.env.YANDEX_VERIFICATION_CODE || 'your-yandex-code',
+    google: config.googleSiteVerification,
   },
 };
 

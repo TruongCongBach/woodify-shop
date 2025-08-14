@@ -6,6 +6,7 @@ import SectionHeroGallery from '@woodify/ui/components/section-hero-gallery'
 import SectionFeatures from '@woodify/ui/components/section-features'
 import { getProductsByUrls } from '@/services/product/get-product-by-urls'
 import { formatPrice } from '@/utils/format-price'
+import config from '@/config'
 
 // ===== GIẢI QUYẾT VẤN ĐỀ 1: CACHING =====
 // Revalidate mỗi 60 giây (có thể điều chỉnh theo nhu cầu)
@@ -34,10 +35,10 @@ export const metadata: Metadata = {
 		},
 	},
 	openGraph: {
-		title: 'Woodify - Nội Thất Gỗ Cao Cấp Handmade',
+		title: 'Nội thất Bách Thảo - Nội Thất Gỗ Cao Cấp Handmade',
 		description: 'Khám phá bộ sưu tập nội thất gỗ cao cấp: kệ tivi, sofa, bàn ghế được chế tác thủ công từ gỗ tự nhiên.',
-		url: 'https://yourdomain.com', // Thay bằng domain thật
-		siteName: 'Woodify',
+		url: config.domainUrl, // Thay bằng domain thật
+		siteName: 'Nội thất Bách Thảo', // Tên website
 		type: 'website',
 		locale: 'vi_VN',
 		images: [
@@ -45,21 +46,21 @@ export const metadata: Metadata = {
 				url: '/images/og-image.jpg', // Tạo ảnh OG cho website
 				width: 1200,
 				height: 630,
-				alt: 'Woodify - Nội thất gỗ cao cấp',
+				alt: 'Nội thất Bách Thảo - Nội thất gỗ cao cấp',
 			},
 		],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Woodify - Nội Thất Gỗ Cao Cấp',
+		title: 'Nội thất Bách Thảo - Nội Thất Gỗ Cao Cấp',
 		description: 'Nội thất gỗ handmade cao cấp - Kệ tivi, sofa, bàn ghế từ gỗ tự nhiên',
 		images: ['/images/twitter-image.jpg'],
 	},
 	alternates: {
-		canonical: 'https://yourdomain.com', // Thay bằng domain thật
+		canonical: config.domainUrl, // Thay bằng domain thật
 	},
 	other: {
-		'google-site-verification': 'your-google-verification-code', // Thêm Google verification
+		'google-site-verification': config.googleSiteVerification, // Thêm Google verification
 	},
 }
 
@@ -67,19 +68,18 @@ export const metadata: Metadata = {
 const jsonLd = {
 	'@context': 'https://schema.org',
 	'@type': 'Organization',
-	name: 'Woodify',
+	name: 'Nội thất Bách Thảo',
 	description: 'Chuyên cung cấp nội thất gỗ cao cấp handmade',
-	url: 'https://yourdomain.com',
-	logo: 'https://yourdomain.com/logo.png',
+	url: config.domainUrl,
+	logo: `${config.domainUrl}/logo.png`, // Thay bằng đường dẫn logo thật
 	contactPoint: {
 		'@type': 'ContactPoint',
-		telephone: '+84-xxx-xxx-xxx',
+		telephone: '+84-347-373-891',
 		contactType: 'customer service',
 		availableLanguage: 'Vietnamese'
 	},
 	sameAs: [
-		'https://facebook.com/yourpage',
-		'https://instagram.com/yourpage'
+		'https://www.facebook.com/profile.php?id=61572613597186',
 	],
 	hasOfferCatalog: {
 		'@type': 'OfferCatalog',
