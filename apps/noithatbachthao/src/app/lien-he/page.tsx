@@ -91,7 +91,6 @@ export default function ContactPage() {
           <a href="https://www.facebook.com/noithatmynghegiadinh"
              className="flex items-center space-x-4">
             <FacebookIcon className="w-6 h-6" />
-            <p>contact@woodify.com</p>
           </a>
           <a href="tel:0347373891" className="flex items-center space-x-4">
             <Phone className="w-6 h-6" />

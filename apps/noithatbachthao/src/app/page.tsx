@@ -17,12 +17,12 @@ export const revalidate = 60
 
 // ===== GIẢI QUYẾT VẤN ĐỀ 2: SEO METADATA =====
 export const metadata: Metadata = {
-	title: 'Woodify - Nội Thất Gỗ Cao Cấp | Kệ Tivi, Sofa, Bàn Ghế Handmade',
+	title: 'Nội Thất Bách Thảo - Nội Thất Gỗ Cao Cấp | Kệ Tivi, Sofa, Bàn Ghế Handmade',
 	description: 'Chuyên cung cấp nội thất gỗ cao cấp handmade. Kệ tivi, sofa, bàn ghế được chế tác tỉ mỉ từ gỗ tự nhiên. Giao hàng toàn quốc, bảo hành 5 năm.',
 	keywords: 'nội thất gỗ, kệ tivi gỗ, sofa gỗ, bàn ghế gỗ, nội thất cao cấp, đồ gỗ handmade, nội thất tự nhiên',
-	authors: [{ name: 'Woodify' }],
-	creator: 'Woodify',
-	publisher: 'Woodify',
+	authors: [{ name: 'Nội Thất Bách Thảo' }],
+	creator: 'Nội Thất Bách Thảo',
+	publisher: 'Nội Thất Bách Thảo',
 	robots: {
 		index: true,
 		follow: true,
