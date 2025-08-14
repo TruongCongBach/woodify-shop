@@ -1,4 +1,5 @@
 import React from 'react'
+import { Metadata } from 'next'
 import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
 import SectionProductGallery from '@woodify/ui/components/section-product-gallery'
 import SectionHeroGallery from '@woodify/ui/components/section-hero-gallery'
@@ -6,10 +7,119 @@ import SectionFeatures from '@woodify/ui/components/section-features'
 import { getProductsByUrls } from '@/services/product/get-product-by-urls'
 import { formatPrice } from '@/utils/format-price'
 
-export default async function Home() {
+// ===== GIẢI QUYẾT VẤN ĐỀ 1: CACHING =====
+// Revalidate mỗi 60 giây (có thể điều chỉnh theo nhu cầu)
+export const revalidate = 60
 
-	const productKeTivi = await getProductsByUrls(['ke-tivi-sung-13', 'ke-tivi-hoa-hong-11', 'mo-loi-huong-da-9', 'mo-lom-huong-da-5', 'sofa-phang-xoan-0', 'sofa-phang-huong-da-1']).then((productsDataBase) => {
-		return productsDataBase.map((productRaw) => {
+// Hoặc dùng dynamic rendering nếu muốn luôn fresh data
+// export const dynamic = 'force-dynamic'
+
+// ===== GIẢI QUYẾT VẤN ĐỀ 2: SEO METADATA =====
+export const metadata: Metadata = {
+	title: 'Woodify - Nội Thất Gỗ Cao Cấp | Kệ Tivi, Sofa, Bàn Ghế Handmade',
+	description: 'Chuyên cung cấp nội thất gỗ cao cấp handmade. Kệ tivi, sofa, bàn ghế được chế tác tỉ mỉ từ gỗ tự nhiên. Giao hàng toàn quốc, bảo hành 5 năm.',
+	keywords: 'nội thất gỗ, kệ tivi gỗ, sofa gỗ, bàn ghế gỗ, nội thất cao cấp, đồ gỗ handmade, nội thất tự nhiên',
+	authors: [{ name: 'Woodify' }],
+	creator: 'Woodify',
+	publisher: 'Woodify',
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			'max-video-preview': -1,
+			'max-image-preview': 'large',
+			'max-snippet': -1,
+		},
+	},
+	openGraph: {
+		title: 'Woodify - Nội Thất Gỗ Cao Cấp Handmade',
+		description: 'Khám phá bộ sưu tập nội thất gỗ cao cấp: kệ tivi, sofa, bàn ghế được chế tác thủ công từ gỗ tự nhiên.',
+		url: 'https://yourdomain.com', // Thay bằng domain thật
+		siteName: 'Woodify',
+		type: 'website',
+		locale: 'vi_VN',
+		images: [
+			{
+				url: '/images/og-image.jpg', // Tạo ảnh OG cho website
+				width: 1200,
+				height: 630,
+				alt: 'Woodify - Nội thất gỗ cao cấp',
+			},
+		],
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Woodify - Nội Thất Gỗ Cao Cấp',
+		description: 'Nội thất gỗ handmade cao cấp - Kệ tivi, sofa, bàn ghế từ gỗ tự nhiên',
+		images: ['/images/twitter-image.jpg'],
+	},
+	alternates: {
+		canonical: 'https://yourdomain.com', // Thay bằng domain thật
+	},
+	other: {
+		'google-site-verification': 'your-google-verification-code', // Thêm Google verification
+	},
+}
+
+// JSON-LD Schema cho SEO
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Organization',
+	name: 'Woodify',
+	description: 'Chuyên cung cấp nội thất gỗ cao cấp handmade',
+	url: 'https://yourdomain.com',
+	logo: 'https://yourdomain.com/logo.png',
+	contactPoint: {
+		'@type': 'ContactPoint',
+		telephone: '+84-xxx-xxx-xxx',
+		contactType: 'customer service',
+		availableLanguage: 'Vietnamese'
+	},
+	sameAs: [
+		'https://facebook.com/yourpage',
+		'https://instagram.com/yourpage'
+	],
+	hasOfferCatalog: {
+		'@type': 'OfferCatalog',
+		name: 'Nội thất gỗ cao cấp',
+		itemListElement: [
+			{
+				'@type': 'Offer',
+				itemOffered: {
+					'@type': 'Product',
+					name: 'Kệ Tivi Gỗ Cao Cấp',
+					category: 'Furniture'
+				}
+			},
+			{
+				'@type': 'Offer',
+				itemOffered: {
+					'@type': 'Product',
+					name: 'Sofa Gỗ Handmade',
+					category: 'Furniture'
+				}
+			}
+		]
+	}
+}
+
+export default async function Home() {
+	// Thêm error handling để tăng reliability
+	let productKeTivi: any[] = []
+
+	try {
+		const productsDataBase = await getProductsByUrls([
+			'ke-tivi-sung-13',
+			'ke-tivi-hoa-hong-11',
+			'mo-loi-huong-da-9',
+			'mo-lom-huong-da-5',
+			'sofa-phang-xoan-0',
+			'sofa-phang-huong-da-1'
+		])
+
+		productKeTivi = productsDataBase.map((productRaw) => {
 			const product = transformProductToFormData(productRaw)
 			let category = 'modern'
 			if(['mo-lom-huong-da-5'].includes(product.url)) category = 'minimal'
@@ -26,14 +136,23 @@ export default async function Home() {
 				category: category,
 				badges: product.tags,
 				rating: Math.round((Math.random() * 1.5 + 4) * 10) / 10,
-				views:  `${Math.floor(Math.random() * (9999 - 100 + 1)) + 100}k`,
+				views: `${Math.floor(Math.random() * (9999 - 100 + 1)) + 100}k`,
 				url: product.url,
 			}
 		})
-	})
+	} catch (error) {
+		console.error('Error fetching products:', error)
+		// Fallback hoặc empty array
+	}
 
 	return (
 		<>
+			{/* JSON-LD Schema */}
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+			/>
+
 			<div className="min-h-screen bg-white">
 				{/* Hero Gallery Section */}
 				<SectionHeroGallery/>
@@ -43,7 +162,6 @@ export default async function Home() {
 
 				{/* Features */}
 				<SectionFeatures/>
-
 			</div>
 		</>
 	)

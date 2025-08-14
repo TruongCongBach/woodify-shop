@@ -3,12 +3,13 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 import { UserService } from '@/services/user'
 import GoogleProvider from "next-auth/providers/google";
 import FacebookProvider from "next-auth/providers/facebook";
+import config from '@/config'
 
 export const authOptions: NextAuthOptions = {
 	providers: [
 		GoogleProvider({
-			clientId: process.env.GOOGLE_CLIENT_ID!,
-			clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+			clientId: config.googleAuth.clientId!,
+			clientSecret: config.googleAuth.clientSecret!,
 			async profile(profile) {
 				const user = await UserService.findOrCreate({
 					email: profile.email,
@@ -21,8 +22,8 @@ export const authOptions: NextAuthOptions = {
 			},
 		}),
 		FacebookProvider({
-			clientId: process.env.FACEBOOK_CLIENT_ID!,
-			clientSecret: process.env.FACEBOOK_CLIENT_SECRET!,
+			clientId: config.facebookAuth.clientId!,
+			clientSecret: config.facebookAuth.clientId!,
 		}),
 		CredentialsProvider({
 			name: 'Credentials',
@@ -85,5 +86,5 @@ export const authOptions: NextAuthOptions = {
 		// verifyRequest: '/auth/verify-request', // (used for email/passwordless login)
 		// newUser: '/auth/new-user' // New users will be directed here on first sign in (leave the property out to disable)
 	},
-	secret: process.env.NEXTAUTH_SECRET,
+	secret: config.nextAuth.secret,
 };

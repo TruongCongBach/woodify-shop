@@ -6,6 +6,7 @@ import AuthProvider from '@/components/auth-provider'
 import { HeaderPage } from '@woodify/ui/components/layout'
 import FooterPage from '@woodify/ui/components/layout/footer'
 import { ToasterProvider } from '@/components/toaster-provider'
+import config from '@/config'
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -19,7 +20,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.BASE_URL || 'https://noithatbachthao.com'), // <-- THAY THẾ BẰNG DOMAIN CỦA BẠN
+  metadataBase: new URL(config.domainUrl), // <-- THAY THẾ BẰNG DOMAIN CỦA BẠN
   title: {
     template: '%s | Nội thất Bách Thảo',
     default: 'Nội thất Bách Thảo - Uy tín, Chất lượng, Giá tại xưởng',
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Nội thất Bách Thảo - Uy tín, Chất lượng, Giá tại xưởng',
     description: 'Chuyên cung cấp các sản phẩm nội thất gỗ tự nhiên và công nghiệp. Mẫu mã đa dạng, chất lượng cao, giá tại xưởng.',
-    url: process.env.BASE_URL || 'https://noithatbachthao.com', // <-- THAY THẾ BẰNG DOMAIN CỦA BẠN
+    url: config.domainUrl, // <-- THAY THẾ BẰNG DOMAIN CỦA BẠN
     siteName: 'Nội thất Bách Thảo',
     images: [
       {

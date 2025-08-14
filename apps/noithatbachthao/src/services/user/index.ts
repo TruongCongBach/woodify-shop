@@ -1,5 +1,6 @@
 import { supabase } from '@/lib/supabase';
 import bcrypt from 'bcryptjs';
+import config from '@/config'
 
 // Assuming the user table in Supabase has these columns.
 // You might need to adjust this based on your actual table structure.
@@ -86,7 +87,7 @@ export class UserService {
           avatar_url: profile.avatar,
           provider: profile.provider,
           provider_id: profile.providerId,
-          password: `${process.env.DEFAULT_PASSWORD}`,
+          password: `${config.defaultPassword}`,
           role: 'user', // Default role for new social sign-ups
         },
       ])

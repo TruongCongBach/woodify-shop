@@ -2,6 +2,7 @@ import { getImagesFromMedia } from '@/utils/get-images-from-media';
 import { getProductByUrl } from '@/services/product/get-product-by-url';
 import ProductPage from '@/containers/product-page';
 import { Metadata } from 'next';
+import config from '@/config'
 
 type Props = {
   params: Promise<{productUrl: string | string[]}>;
@@ -71,7 +72,7 @@ export default async function ProductDetailPage(props: Props) {
     },
     offers: {
       '@type': 'Offer',
-      url: `${process.env.BASE_URL}/product/${product.url}`,
+      url: `${config.domainUrl}/product/${product.url}`,
       priceCurrency: 'VND',
       price: product.price,
       itemCondition: 'https://schema.org/NewCondition',

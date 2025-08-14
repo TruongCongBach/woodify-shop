@@ -2,6 +2,7 @@
 import { getToken } from 'next-auth/jwt'
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
+import appConfig from '@/config'
 
 // List các route cần bảo vệ
 const protectedRoutes = ['/dashboard']
@@ -15,7 +16,7 @@ export async function middleware(request: NextRequest) {
 
 	if (!isProtected) return NextResponse.next()
 
-	const token = await getToken({ req: request, secret: process.env.NEXTAUTH_SECRET })
+	const token = await getToken({ req: request, secret: appConfig.nextAuth.secret })
 
 	if (!token || token.role !== 'admin') {
 		// Nếu chưa đăng nhập, chuyển hướng đến trang signin

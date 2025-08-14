@@ -1,10 +1,11 @@
 // lib/cloudinary.ts
 import { v2 as cloudinary } from 'cloudinary'
+import config from '@/config'
 
 cloudinary.config({
-	cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME!,
-	api_key: process.env.CLOUDINARY_API_KEY!,
-	api_secret: process.env.CLOUDINARY_API_SECRET!,
+	cloud_name: config.cloudinaryCloud.cloudName!,
+	api_key: config.cloudinaryCloud.apiKey!,
+	api_secret: config.cloudinaryCloud.apiSecret!,
 	secure: true,
 })
 

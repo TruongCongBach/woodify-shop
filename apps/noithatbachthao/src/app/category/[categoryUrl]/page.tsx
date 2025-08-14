@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getCategoryByUrl } from '@/services/category/get-category-by-url'
 import CategoryPage from '@/containers/category-page'
+import config from '@/config'
 
 type Props = {
 	params: Promise<{categoryUrl: string | string[]}>;
@@ -48,13 +49,13 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 				'@type': 'ListItem',
 				position: 1,
 				name: 'Trang chủ',
-				item: `${process.env.BASE_URL || 'https://woodify.com'}/`,
+				item: `${config.domainUrl}/`,
 			},
 			{
 				'@type': 'ListItem',
 				position: 2,
 				name: category.name,
-				item: `${process.env.BASE_URL || 'https://woodify.com'}/category/${slug}`,
+				item: `${config.domainUrl}/category/${slug}`,
 			},
 		],
 	}
