@@ -24,8 +24,10 @@ function getMediaType(src: string): 'image' | 'video' {
 	return videoExtensions.includes(extension || '') ? 'video' : 'image'
 }
 
+import Image from 'next/image'
+
 // Component để render media item
-function MediaRenderer({ item, className }: { item: MediaItem, className?: string }) {
+function MediaRenderer({ item, className, priority = false }: { item: MediaItem, className?: string, priority?: boolean }) {
 	if (item.type === 'video') {
 		return (
 			<video
@@ -42,9 +44,12 @@ function MediaRenderer({ item, className }: { item: MediaItem, className?: strin
 	}
 
 	return (
-		<img
+		<Image
 			src={item.src}
 			alt={item.alt || 'Product image'}
+			fill
+			priority={priority}
+			sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 			className={className}
 		/>
 	)
@@ -92,6 +97,7 @@ export function ProductGallery({ media }: ProductGalleryProps) {
 								<MediaRenderer
 									item={item}
 									className="w-full h-full rounded object-cover"
+									priority={idx === 0}
 								/>
 								{/* Video indicator */}
 								{item.type === 'video' && (

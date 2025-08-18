@@ -1,5 +1,6 @@
 import { getTagColor } from '@/utils/get-tag-color'
 import { formatPrice } from '@/utils/format-price'
+import Image from 'next/image'
 
 type Props = {
 	product: Product
@@ -11,9 +12,11 @@ export const ProductCard = ({ product, tags }: Props) => {
 	return (
 		<div className="flex flex-col bg-white rounded shadow overflow-hidden transition group hover:shadow-lg h-full">
 			<div className="relative w-full flex-shrink-0 h-48 sm:h-56 overflow-hidden">
-				<img
+				<Image
 					src={product.defaultImage}
 					alt={product.name}
+					fill
+					sizes="(min-width: 768px) 25vw, (min-width: 640px) 50vw, 100vw"
 					className="w-full h-full object-cover transition-transform duration-300 sm:group-hover:scale-105"
 				/>
 				{tags && tags.length > 0 && (

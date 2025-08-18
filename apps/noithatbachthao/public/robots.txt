@@ -9,4 +9,4 @@ Disallow: /logout/
 Disallow: /api/
 
 # Point crawlers to the sitemap
-Sitemap: https://www.your-domain.com/sitemap.xml
+Sitemap: https://www.noithatbachthao/sitemap.xml

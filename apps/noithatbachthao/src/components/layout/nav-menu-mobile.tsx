@@ -1,7 +1,7 @@
 // packages/ui/src/components/CategoryAccordionNav.tsx
 import React from 'react'
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTrigger } from '../../shadcn-ui/sheet'
 import { Menu } from 'lucide-react'
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTrigger } from '@woodify/ui/shadcn-ui/sheet'
 
 const NavMenuMobile = () => {
 

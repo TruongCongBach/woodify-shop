@@ -1,12 +1,12 @@
 import React from 'react'
 import { Metadata } from 'next'
 import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
-import SectionProductGallery from '@woodify/ui/components/section-product-gallery'
 import SectionHeroGallery from '@woodify/ui/components/section-hero-gallery'
 import SectionFeatures from '@woodify/ui/components/section-features'
 import { getProductsByUrls } from '@/services/product/get-product-by-urls'
 import { formatPrice } from '@/utils/format-price'
 import config from '@/config'
+import { SectionProductGallery } from '@/components/dynamic-imports'
 
 // ===== GIẢI QUYẾT VẤN ĐỀ 1: CACHING =====
 // Revalidate mỗi 60 giây (có thể điều chỉnh theo nhu cầu)
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: 'Nội thất Bách Thảo - Nội Thất Gỗ Cao Cấp',
 		description: 'Nội thất gỗ handmade cao cấp - Kệ tivi, sofa, bàn ghế từ gỗ tự nhiên',
-		images: ['/images/twitter-image.jpg'],
+		images: ['/images/og-image.jpg'],
 	},
 	alternates: {
 		canonical: config.domainUrl, // Thay bằng domain thật
@@ -71,7 +71,7 @@ const jsonLd = {
 	name: 'Nội thất Bách Thảo',
 	description: 'Chuyên cung cấp nội thất gỗ cao cấp handmade',
 	url: config.domainUrl,
-	logo: `${config.domainUrl}/logo.png`, // Thay bằng đường dẫn logo thật
+	logo: `${config.domainUrl}/logo-full-white.png`, // Thay bằng đường dẫn logo thật
 	contactPoint: {
 		'@type': 'ContactPoint',
 		telephone: '+84-347-373-891',

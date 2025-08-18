@@ -3,10 +3,9 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import '@woodify/ui/styles/globals.css'
 import React from 'react'
 import AuthProvider from '@/components/auth-provider'
-import { HeaderPage } from '@woodify/ui/components/layout'
-import FooterPage from '@woodify/ui/components/layout/footer'
 import { ToasterProvider } from '@/components/toaster-provider'
 import config from '@/config'
+import { FooterPage, HeaderPage } from '@/components/layout'
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -25,11 +24,11 @@ export const metadata: Metadata = {
     template: '%s | Nội thất Bách Thảo',
     default: 'Nội thất Bách Thảo - Uy tín, Chất lượng, Giá tại xưởng',
   },
-  description: 'Nội thất Bách Thảo chuyên cung cấp các sản phẩm nội thất gỗ tự nhiên và công nghiệp. Mẫu mã đa dạng, chất lượng cao, giá tại xưởng. Mua ngay!',
+  description: 'Nội thất Bách Thảo chuyên cung cấp các sản phẩm nội thất gỗ chất lượng cao, mẫu mã đa dạng, giá tại xưởng. Mua ngay!',
   keywords: ['nội thất', 'đồ gỗ', 'nội thất gỗ', 'nội thất giá rẻ', 'nội thất phòng khách', 'nội thất phòng ngủ', 'kệ tivi', 'bàn ăn', 'sofa'],
   openGraph: {
     title: 'Nội thất Bách Thảo - Uy tín, Chất lượng, Giá tại xưởng',
-    description: 'Chuyên cung cấp các sản phẩm nội thất gỗ tự nhiên và công nghiệp. Mẫu mã đa dạng, chất lượng cao, giá tại xưởng.',
+    description: 'Chuyên cung cấp các sản phẩm nội thất gỗ chất lượng cao, mẫu mã đa dạng, giá tại xưởng.',
     url: config.domainUrl, // <-- THAY THẾ BẰNG DOMAIN CỦA BẠN
     siteName: 'Nội thất Bách Thảo',
     images: [

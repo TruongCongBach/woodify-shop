@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 
 export const PageFooter = () => (
 	<footer className="bg-gray-900 text-gray-300 pt-12 pb-6">
@@ -8,7 +9,7 @@ export const PageFooter = () => (
 			{/* Logo & contact */}
 			<div>
 				<a href="/" className="flex items-center">
-					<img src="/logo-white.png" alt="Logo" className="h-20 w-auto"/>
+					<Image src="/logo-white.png" alt="Logo" width={80} height={80} className="h-20 w-auto"/>
 					<div className="text-center">
 						<span className="ml-2 text-xl font-bold">Khánh Trang</span><br/>
 						<span className="ml-2 text-xs font-bold">Đồ Gỗ Nội Thất</span>
@@ -63,7 +64,7 @@ export const PageFooter = () => (
 
 		{/* Line */}
 		<div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
-			&copy; {new Date().getFullYear()} Nội Thất Gia Đình. All rights reserved.
+			&copy; {new Date().getFullYear()} Nội Thất Bách Thảo. All rights reserved.
 		</div>
 	</footer>
 )

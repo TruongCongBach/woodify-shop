@@ -32,8 +32,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 	const category = await getCategoryByUrl(slug)
 	if (!category) notFound()
 
-	const title = `${category.name} – Nội Thất Gia Đình`
-	const description = `Xem các mẫu ${category.name} chất lượng dành cho đồ gỗ tại Nội Thất Gia Đình.`
+	const title = `${category.name} – Nội Thất Bách Thảo`
+	const description = `Xem các mẫu ${category.name} chất lượng dành cho đồ gỗ tại Nội Thất Bách Thảo.`
 
 	const image = category.image
 	const imageUrl = category.image?.startsWith('http')
@@ -77,7 +77,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 			title,
 			description,
 			url: `/category/${slug}`,
-			siteName: 'Nội Thất Gia Đình',
+			siteName: 'Nội Thất Bách Thảo',
 			images: [{ url: imageUrl, alt: category.name, width: 1200, height: 630 }],
 			type: 'website',
 		},

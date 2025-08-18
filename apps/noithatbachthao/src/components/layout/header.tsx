@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import { Heart, ShoppingCart } from 'lucide-react'
 import NavMenuMobile from './nav-menu-mobile'
 
 const HeaderPage = () => {
@@ -10,10 +9,10 @@ const HeaderPage = () => {
 			<div className="flex items-center justify-between h-20">
 				<div className="flex items-center space-x-4">
 					<a href="/" className="flex items-center">
-						<img src="/logo-ketivi-icon.png" alt="Logo" className="h-20 w-auto"/>
-						<div className="text-3xl font-bold">
-							<span className="text-gray-900">Đại Lý Kệ</span>
-							<span className="text-amber-600">Tivi</span>
+						<img src="/logo-black.png" alt="Logo" className="h-20 w-auto"/>
+						<div className="text-3xl font-bold flex flex-col md:flex-row items-center space-x-2">
+							<span className="text-gray-900">Nội Thất</span>
+							<span className="text-amber-600">Bách Thảo</span>
 						</div>
 					</a>
 				</div>
