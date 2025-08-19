@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import { getCategoryByUrl } from '@/services/category/get-category-by-url'
 import CategoryPage from '@/containers/category-page'
 import config from '@/config'
+import { getDescription, getKeywords } from '@/seo'
 
 type Props = {
 	params: Promise<{categoryUrl: string | string[]}>;
@@ -31,9 +32,9 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 
 	const category = await getCategoryByUrl(slug)
 	if (!category) notFound()
-
 	const title = `${category.name} – Nội Thất Bách Thảo`
-	const description = `Xem các mẫu ${category.name} chất lượng dành cho đồ gỗ tại Nội Thất Bách Thảo.`
+	const description = getDescription(category.url)
+	const keywords = getKeywords(category.url)
 
 	const image = category.image
 	const imageUrl = category.image?.startsWith('http')
@@ -62,6 +63,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 	return {
 		title,
 		description,
+		keywords,
 		alternates: { canonical: `/category/${slug}` },
 		robots: {
 			index: true,

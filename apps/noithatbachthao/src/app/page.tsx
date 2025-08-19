@@ -18,8 +18,8 @@ export const revalidate = 60
 // ===== GIẢI QUYẾT VẤN ĐỀ 2: SEO METADATA =====
 export const metadata: Metadata = {
 	title: 'Nội Thất Bách Thảo - Nội Thất Gỗ Cao Cấp | Kệ Tivi, Sofa, Bàn Ghế Handmade',
-	description: 'Chuyên cung cấp nội thất gỗ cao cấp handmade. Kệ tivi, sofa, bàn ghế được chế tác tỉ mỉ từ gỗ tự nhiên. Giao hàng toàn quốc, bảo hành 5 năm.',
-	keywords: 'nội thất gỗ, kệ tivi gỗ, sofa gỗ, bàn ghế gỗ, nội thất cao cấp, đồ gỗ handmade, nội thất tự nhiên',
+	description: 'Chuyên cung cấp nội thất gỗ cao cấp handmade. Kệ tivi, sofa, bàn ghế được chế tác tỉ mỉ từ gỗ tự nhiên. Giao hàng toàn quốc.',
+	keywords: 'Kệ tivi gỗ hương đá, kệ tivi gỗ xoan, nội thất bách thảo, nội thất gỗ cao cấp, sofa gỗ handmade, bàn ghế gỗ tự nhiên, nội thất hiện đại, nội thất tối giản, nội thất cổ điển, nội thất vintage',
 	authors: [{ name: 'Nội Thất Bách Thảo' }],
 	creator: 'Nội Thất Bách Thảo',
 	publisher: 'Nội Thất Bách Thảo',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		title: 'Nội thất Bách Thảo - Nội Thất Gỗ Cao Cấp Handmade',
-		description: 'Khám phá bộ sưu tập nội thất gỗ cao cấp: kệ tivi, sofa, bàn ghế được chế tác thủ công từ gỗ tự nhiên.',
+		description: 'Khám phá bộ sưu tập nội thất gỗ cao cấp: kệ tivi, sofa, bàn ghế được chế tác thủ công',
 		url: config.domainUrl, // Thay bằng domain thật
 		siteName: 'Nội thất Bách Thảo', // Tên website
 		type: 'website',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 	twitter: {
 		card: 'summary_large_image',
 		title: 'Nội thất Bách Thảo - Nội Thất Gỗ Cao Cấp',
-		description: 'Nội thất gỗ handmade cao cấp - Kệ tivi, sofa, bàn ghế từ gỗ tự nhiên',
+		description: 'Nội thất gỗ cao cấp - Kệ tivi, sofa, bàn ghế',
 		images: ['/images/og-image.jpg'],
 	},
 	alternates: {
@@ -69,7 +69,7 @@ const jsonLd = {
 	'@context': 'https://schema.org',
 	'@type': 'Organization',
 	name: 'Nội thất Bách Thảo',
-	description: 'Chuyên cung cấp nội thất gỗ cao cấp handmade',
+	description: 'Chuyên cung cấp nội thất gỗ cao cấp',
 	url: config.domainUrl,
 	logo: `${config.domainUrl}/logo-full-white.png`, // Thay bằng đường dẫn logo thật
 	contactPoint: {
@@ -97,7 +97,7 @@ const jsonLd = {
 				'@type': 'Offer',
 				itemOffered: {
 					'@type': 'Product',
-					name: 'Sofa Gỗ Handmade',
+					name: 'Sofa Gỗ Cao Cấp',
 					category: 'Furniture'
 				}
 			}

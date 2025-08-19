@@ -1,8 +1,9 @@
-import { Facebook, Mail, MapPin, Phone } from 'lucide-react'
+import { Facebook, MapPin, Phone } from 'lucide-react'
 import React from 'react'
 import Image from 'next/image'
 
 const FooterPage = () => {
+	const currentYear = new Date().getFullYear();
   return (<footer className="bg-gray-900 text-white py-8">
 		<div className="container mx-auto px-4">
 			<div className="grid md:grid-cols-4 gap-8">
@@ -64,7 +65,16 @@ const FooterPage = () => {
 			</div>
 
 			<div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-				<p>&copy; 2025 Đại Lý Kệ Tivi. Tất cả quyền được bảo lưu.</p>
+				<p>
+					© {currentYear}{" "}
+					<a
+						href="https://noithatbachthao.com"
+						className="font-medium"
+					>
+						Nội Thất Bách Thảo
+					</a>{" "}
+					– Chuyên kệ gỗ tivi xoan &amp; hương đá. All rights reserved.
+				</p>
 			</div>
 		</div>
 	</footer>)
