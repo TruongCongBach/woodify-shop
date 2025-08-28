@@ -88,7 +88,7 @@ const jsonLd = {
 			{
 				'@type': 'Offer',
 				itemOffered: {
-					'@type': 'Product',
+					'@type': 'Offer',
 					name: 'Kệ Tivi Gỗ Cao Cấp',
 					category: 'Furniture'
 				}
@@ -96,7 +96,7 @@ const jsonLd = {
 			{
 				'@type': 'Offer',
 				itemOffered: {
-					'@type': 'Product',
+					'@type': 'Offer',
 					name: 'Sofa Gỗ Cao Cấp',
 					category: 'Furniture'
 				}
