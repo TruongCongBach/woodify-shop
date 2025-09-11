@@ -17,7 +17,7 @@ export const revalidate = 60
 
 // ===== GIẢI QUYẾT VẤN ĐỀ 2: SEO METADATA =====
 export const metadata: Metadata = {
-	title: 'Nội Thất Bách Thảo - Nội Thất Gỗ Cao Cấp | Kệ Tivi, Sofa, Bàn Ghế Handmade',
+	title: 'Kệ Tivi Gỗ & Đồ Gỗ Nội Thất Cao Cấp | Nội Thất Bách Thảo',
 	description: 'Chuyên cung cấp nội thất gỗ cao cấp handmade. Kệ tivi, sofa, bàn ghế được chế tác tỉ mỉ từ gỗ tự nhiên. Giao hàng toàn quốc.',
 	keywords: 'Kệ tivi gỗ hương đá, kệ tivi gỗ xoan, nội thất bách thảo, nội thất gỗ cao cấp, sofa gỗ handmade, bàn ghế gỗ tự nhiên, nội thất hiện đại, nội thất tối giản, nội thất cổ điển, nội thất vintage',
 	authors: [{ name: 'Nội Thất Bách Thảo' }],

@@ -29,6 +29,9 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   return {
     title: name, // The template in layout.tsx will add "| Nội thất Bách Thảo"
     description: description || `Mua ngay ${name} chất lượng cao, giá tốt tại Nội thất Bách Thảo.`,
+    alternates: {
+      canonical: `${config.domainUrl}/product/${slug}`,
+    },
     openGraph: {
       title: name,
       description: description || `Mua ngay ${name} chất lượng cao, giá tốt tại Nội thất Bách Thảo.`,

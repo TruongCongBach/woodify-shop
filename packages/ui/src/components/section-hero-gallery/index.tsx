@@ -68,9 +68,9 @@ const SectionHeroGallery = () => {
 							<span className="text-amber-300 font-medium">✨ Bộ Sưu Tập 2025</span>
 						</div>
 						<h1 className="text-6xl md:text-8xl font-bold leading-tight">
-							Kệ Tivi Gỗ
+							Kệ Tivi & Đồ Gỗ
 							<span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">
-								Nghệ Thuật
+								Nội Thất Cao Cấp
 							</span>
 						</h1>
 						<p className="text-xl md:text-2xl text-gray-200 leading-relaxed max-w-3xl">

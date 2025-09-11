@@ -1,6 +1,7 @@
 import { Facebook, MapPin, Phone } from 'lucide-react'
 import React from 'react'
 import Image from 'next/image'
+import config from '@/config'
 
 const FooterPage = () => {
 	const currentYear = new Date().getFullYear();
@@ -68,7 +69,7 @@ const FooterPage = () => {
 				<p>
 					© {currentYear}{" "}
 					<a
-						href="https://noithatbachthao.com"
+						href={config.domainUrl}
 						className="font-medium"
 					>
 						Nội Thất Bách Thảo

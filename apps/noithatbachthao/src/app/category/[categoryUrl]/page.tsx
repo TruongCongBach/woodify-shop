@@ -64,7 +64,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 		title,
 		description,
 		keywords,
-		alternates: { canonical: `/category/${slug}` },
+		alternates: { canonical: `${config.domainUrl}/category/${slug}` },
 		robots: {
 			index: true,
 			follow: true,

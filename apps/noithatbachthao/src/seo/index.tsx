@@ -1,13 +1,13 @@
 export const getDescription = (pageUrl?: string) => {
 	if( pageUrl === 'ke-tivi' ) {
-		return 'Kệ gỗ tivi tự nhiên sang trọng, bền đẹp theo thời gian. Mẫu kệ gỗ xoan, gỗ hương đá cao cấp, phù hợp mọi không gian phòng khách hiện đại.'
+		return 'Chuyên kệ tivi gỗ, đồ gỗ tivi tự nhiên cao cấp. Khám phá hàng trăm mẫu kệ gỗ tivi phòng khách đẹp, hiện đại với giá tại xưởng. Bền đẹp, sang trọng, bảo hành uy tín.'
 	}
 	return ''
 }
 
 export const getKeywords = (pageUrl?: string) => {
 	if( pageUrl === 'ke-tivi' ) {
-		return 'kệ gỗ tivi, kệ gỗ tivi đẹp, kệ gỗ tivi tự nhiên, kệ gỗ tivi phòng khách, kệ gỗ tivi hiện đại, kệ gỗ tivi cao cấp, kệ gỗ tivi gỗ xoan, kệ gỗ tivi gỗ hương đá, mua kệ gỗ tivi, giá kệ gỗ tivi'
+		return 'kệ tivi, kệ gỗ tivi, đồ gỗ tivi, kệ tivi đẹp, kệ tivi hiện đại, kệ tivi gỗ tự nhiên, kệ tivi phòng khách, mẫu kệ tivi đẹp, giá kệ tivi, mua kệ tivi'
 	}
 	return ''
 }
