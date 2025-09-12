@@ -1,12 +1,12 @@
 import React from 'react'
 import { Metadata } from 'next'
 import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
-import SectionHeroGallery from '@woodify/ui/components/section-hero-gallery'
-import SectionFeatures from '@woodify/ui/components/section-features'
 import { getProductsByUrls } from '@/services/product/get-product-by-urls'
 import { formatPrice } from '@/utils/format-price'
 import config from '@/config'
-import { SectionProductGallery } from '@/components/dynamic-imports'
+import SectionProductGallery from '@/containers/home-page/section-product-gallery'
+import SectionHeroGallery from '@/containers/home-page/section-hero-gallery'
+import SectionFeatures from '@/containers/home-page/section-features'
 
 // ===== GIẢI QUYẾT VẤN ĐỀ 1: CACHING =====
 // Revalidate mỗi 60 giây (có thể điều chỉnh theo nhu cầu)
