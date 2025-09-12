@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: 'Nội thất Bách Thảo',
     images: [
       {
-        url: '/og-image.png', // <-- TẠO 1 FILE HÌNH ĐẠI DIỆN KHI SHARE
+        url: '/images/og-image.jpg', // Đồng bộ với ảnh có thật trong public/images
         width: 1200,
         height: 630,
       },

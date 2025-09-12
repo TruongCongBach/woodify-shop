@@ -21,8 +21,29 @@ export default async function CategoryDetailPage(props: Props){
 		notFound()
 	}
 
-	return <CategoryPage category={category}/>
+	// Render JSON-LD breadcrumb script directly for correct structured data output
+	const breadcrumb = {
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Trang chủ', item: `${config.domainUrl}/` },
+			{ '@type': 'ListItem', position: 2, name: category.name, item: `${config.domainUrl}/category/${slug}` },
+		],
+	}
+
+	return (
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+			/>
+			<CategoryPage category={category}/>
+		</>
+	)
 }
+
+// Revalidate category pages periodically to balance freshness and performance
+export const revalidate = 300
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
 	const { categoryUrl } = await props.params
@@ -78,7 +99,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 		openGraph: {
 			title,
 			description,
-			url: `/category/${slug}`,
+			url: `${config.domainUrl}/category/${slug}`,
 			siteName: 'Nội Thất Bách Thảo',
 			images: [{ url: imageUrl, alt: category.name, width: 1200, height: 630 }],
 			type: 'website',
@@ -89,8 +110,6 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 			description,
 			images: image ? [image] : [],
 		},
-		other: {
-			'application/ld+json': JSON.stringify(breadcrumb),
-		},
+		// JSON-LD is rendered via script in the page component
 	}
 }

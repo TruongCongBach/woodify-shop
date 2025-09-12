@@ -4,6 +4,9 @@ import ProductPage from '@/containers/product-page';
 import { Metadata } from 'next';
 import config from '@/config'
 
+// Revalidate product pages periodically for better performance
+export const revalidate = 300
+
 type Props = {
   params: Promise<{productUrl: string | string[]}>;
 }
