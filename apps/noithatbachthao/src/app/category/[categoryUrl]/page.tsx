@@ -62,25 +62,6 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 		? category.image
 		: `/images/${category.image}`
 
-	// Tạo schema JSON-LD dạng BreadcrumbList
-	const breadcrumb = {
-		'@context': 'https://schema.org',
-		'@type': 'BreadcrumbList',
-		'itemListElement': [
-			{
-				'@type': 'ListItem',
-				position: 1,
-				name: 'Trang chủ',
-				item: `${config.domainUrl}/`,
-			},
-			{
-				'@type': 'ListItem',
-				position: 2,
-				name: category.name,
-				item: `${config.domainUrl}/category/${slug}`,
-			},
-		],
-	}
 	return {
 		title,
 		description,

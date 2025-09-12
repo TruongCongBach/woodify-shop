@@ -26,6 +26,18 @@ export const metadata: Metadata = {
   },
   description: 'Nội thất Bách Thảo chuyên cung cấp các sản phẩm nội thất gỗ chất lượng cao, mẫu mã đa dạng, giá tại xưởng. Mua ngay!',
   keywords: ['nội thất', 'đồ gỗ', 'nội thất gỗ', 'nội thất giá rẻ', 'nội thất phòng khách', 'nội thất phòng ngủ', 'kệ tivi', 'bàn ăn', 'sofa'],
+	icons: {
+		icon: [
+			{ url: '/favicon.ico' },
+			{ url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+			{ url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+		],
+		shortcut: '/favicon.ico',
+		apple: [
+			{ url: '/apple-touch-icon.png' },
+			{ url: '/apple-touch-icon-180x180.png', sizes: '180x180' },
+		],
+	},
   openGraph: {
     title: 'Nội thất Bách Thảo - Uy tín, Chất lượng, Giá tại xưởng',
     description: 'Chuyên cung cấp các sản phẩm nội thất gỗ chất lượng cao, mẫu mã đa dạng, giá tại xưởng.',
