@@ -1,16 +1,16 @@
 import React from 'react'
 import { Metadata } from 'next'
-import { transformProductToFormData } from '@/utils/transform-product-to-form-data'
-import { getProductsByUrls } from '@/services/product/get-product-by-urls'
-import { formatPrice } from '@/utils/format-price'
+import { transformProductToFormData, formatPrice } from '@/utils'
+import { getProductsByUrls } from '@/services'
+import { API_CONFIG } from '@/constants/app-config'
 import config from '@/config'
 import SectionProductGallery from '@/containers/home-page/section-product-gallery'
 import SectionHeroGallery from '@/containers/home-page/section-hero-gallery'
 import SectionFeatures from '@/containers/home-page/section-features'
+import SectionProducts from '@/containers/home-page/section-products'
 
-// ===== GIẢI QUYẾT VẤN ĐỀ 1: CACHING =====
-// Revalidate mỗi 60 giây (có thể điều chỉnh theo nhu cầu)
-export const revalidate = 60
+// ===== CACHING CONFIGURATION =====
+export const revalidate = 60 // API_CONFIG.CACHE.REVALIDATE_TIME - Next.js needs static value
 
 // Hoặc dùng dynamic rendering nếu muốn luôn fresh data
 // export const dynamic = 'force-dynamic'
@@ -76,7 +76,7 @@ const jsonLd = {
 		'@type': 'ContactPoint',
 		telephone: '+84-347-373-891',
 		contactType: 'customer service',
-		availableLanguage: 'Vietnamese'
+		availableLanguage: 'Vietnamese',
 	},
 	sameAs: [
 		'https://www.facebook.com/profile.php?id=61572613597186',
@@ -90,19 +90,19 @@ const jsonLd = {
 				itemOffered: {
 					'@type': 'Offer',
 					name: 'Kệ Tivi Gỗ Cao Cấp',
-					category: 'Furniture'
-				}
+					category: 'Furniture',
+				},
 			},
 			{
 				'@type': 'Offer',
 				itemOffered: {
 					'@type': 'Offer',
 					name: 'Sofa Gỗ Cao Cấp',
-					category: 'Furniture'
-				}
-			}
-		]
-	}
+					category: 'Furniture',
+				},
+			},
+		],
+	},
 }
 
 export default async function Home() {
@@ -110,6 +110,7 @@ export default async function Home() {
 	let productKeTivi: any[] = []
 
 	try {
+		// Fetch specific products for gallery
 		const productsDataBase = await getProductsByUrls([
 			'ke-tivi-sung-13',
 			'ke-tivi-hoa-hong-11',
@@ -122,10 +123,10 @@ export default async function Home() {
 		productKeTivi = productsDataBase.map((productRaw) => {
 			const product = transformProductToFormData(productRaw)
 			let category = 'modern'
-			if(['mo-lom-huong-da-5'].includes(product.url)) category = 'minimal'
-			if(['mo-loi-huong-da-9', 'ke-tivi-sung-13'].includes(product.url)) category = 'luxury'
-			if(['sofa-phang-xoan-0'].includes(product.url)) category = 'modern'
-			if(['ke-tivi-sung-13', 'ke-tivi-hoa-hong-11'].includes(product.url)) category = 'vintage'
+			if (['mo-lom-huong-da-5'].includes(product.url)) category = 'minimal'
+			if (['mo-loi-huong-da-9', 'ke-tivi-sung-13'].includes(product.url)) category = 'luxury'
+			if (['sofa-phang-xoan-0'].includes(product.url)) category = 'modern'
+			if (['ke-tivi-sung-13', 'ke-tivi-hoa-hong-11'].includes(product.url)) category = 'vintage'
 
 			return {
 				id: product.id,
@@ -159,9 +160,13 @@ export default async function Home() {
 
 				{/* Product Gallery Section */}
 				<SectionProductGallery products={productKeTivi}/>
+				
+				{/* Featured Products Section - Lazy Loaded */}
+				<SectionProducts/>
 
 				{/* Features */}
 				<SectionFeatures/>
+
 			</div>
 		</>
 	)

@@ -13,10 +13,9 @@ type Props = {
 	title: string
 	products: Product[]
 	viewAllHref?: string
-	tags?: string[]
 }
 
-export const ProductCarousel = ({ title, products, viewAllHref, tags }: Props) => {
+export const ProductCarousel = ({ title, products, viewAllHref }: Props) => {
 	return (
 		<section className="space-y-4 mb-0">
 			{/* Title + Xem tất cả */}
@@ -45,8 +44,8 @@ export const ProductCarousel = ({ title, products, viewAllHref, tags }: Props) =
 								key={product.id}
 								className="basis-[80%] sm:basis-[45%] md:basis-[30%] lg:basis-[24%]"
 							>
-								<Link href={product.url}>
-									<ProductCard product={product} tags={tags}/>
+								<Link href={`/product/${product.url}`}>
+									<ProductCard product={product} tags={product.tags}/>
 								</Link>
 							</CarouselItem>
 						))}
