@@ -35,8 +35,8 @@ export const PageFooter = () => (
 			<div>
 				<h3 className="text-white font-semibold mb-3">Hỗ trợ khách hàng</h3>
 				<ul className="space-y-2 text-sm">
-					<li><a href="/chinh-sach-bao-hanh" className="hover:text-white">Chính sách bảo hành</a></li>
-					<li><a href="/chinh-sach-van-chuyen" className="hover:text-white">Vận chuyển</a></li>
+					<li><a href="//warranty-policy" className="hover:text-white">Chính sách bảo hành</a></li>
+					<li><a href="/shipping-policy" className="hover:text-white">Vận chuyển</a></li>
 				</ul>
 			</div>
 

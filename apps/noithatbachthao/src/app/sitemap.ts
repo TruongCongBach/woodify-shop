@@ -36,25 +36,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Các trang khác
     {
-      url: `${URL}/ve-chung-toi`,
+      url: `${URL}/about-us`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.7
     },
     {
-      url: `${URL}/lien-he`,
+      url: `${URL}/contact-us`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.6
     },
     {
-      url: `${URL}/chinh-sach-bao-hanh`,
+      url: `${URL}//warranty-policy`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.5
     },
     {
-      url: `${URL}/chinh-sach-van-chuyen`,
+      url: `${URL}/shipping-policy`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.5

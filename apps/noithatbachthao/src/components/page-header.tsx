@@ -33,8 +33,8 @@ export const PageHeader = ({ phone, categoryTreeMenu }: PageHeaderProps) => {
 						placeholder="Tìm kiếm sản phẩm..."
 						className="flex-1 border rounded px-3 py-2"
 					/>
-					<a href="/lien-he" className="text-lg font-bold">Liên hệ</a>
-					<a href="/ve-chung-toi" className="text-lg font-bold">Về chúng tôi</a>
+					<a href="/contact-us" className="text-lg font-bold">Liên hệ</a>
+					<a href="/about-us" className="text-lg font-bold">Về chúng tôi</a>
 					<div className="flex flex-col items-center gap-y-2">
 						<a href={`tel:${phone}`} className="text-lg font-bold flex gap-x-2">
 							<Phone className="h-6 w-6 text-gray-700"/> <span>{phone}</span>

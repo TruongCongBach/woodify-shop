@@ -24,8 +24,8 @@ const HeaderPage = () => {
 					<Link href="/" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Trang Chủ</Link>
 					<Link href="/category/ke-tivi" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Bộ Sưu Tập</Link>
 					<Link href="/category/ke-tivi" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Showroom</Link>
-					<Link href="/ve-chung-toi" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Về Chúng Tôi</Link>
-					<Link href="/lien-he" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Liên Hệ</Link>
+					<Link href="/about-us" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Về Chúng Tôi</Link>
+					<Link href="/contact-us" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Liên Hệ</Link>
 				</nav>
 
 				<div className="flex items-center space-x-4">

@@ -2,7 +2,6 @@ import React from 'react'
 import { Metadata } from 'next'
 import { transformProductToFormData, formatPrice } from '@/utils'
 import { getProductsByUrls } from '@/services'
-import { API_CONFIG } from '@/constants/app-config'
 import config from '@/config'
 import SectionProductGallery from '@/containers/home-page/section-product-gallery'
 import SectionHeroGallery from '@/containers/home-page/section-hero-gallery'
@@ -160,7 +159,7 @@ export default async function Home() {
 
 				{/* Product Gallery Section */}
 				<SectionProductGallery products={productKeTivi}/>
-				
+
 				{/* Featured Products Section - Lazy Loaded */}
 				<SectionProducts/>
 

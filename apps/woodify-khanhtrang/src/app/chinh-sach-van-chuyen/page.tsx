@@ -56,7 +56,7 @@ export default function ShippingPolicyPage() {
 
 			<div className="pt-8 text-center">
 				<a
-					href="/lien-he"
+					href="/contact-us"
 					className="inline-flex items-center space-x-2 bg-primary text-white px-6 py-3 rounded-full text-lg hover:bg-primary-dark transition"
 				>
 					<PhoneIcon className="h-5 w-5" />
