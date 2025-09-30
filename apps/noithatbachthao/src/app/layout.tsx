@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import '@woodify/ui/styles/globals.css'
 import React from 'react'
+import Script from 'next/script'
 import AuthProvider from '@/components/auth-provider'
 import { ToasterProvider } from '@/components/toaster-provider'
 import config from '@/config'
@@ -68,6 +69,19 @@ export default function RootLayout({
 		<body
 			className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 		>
+			<Script
+				src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalytics.measurementId}`}
+				strategy="afterInteractive"
+			/>
+			<Script id="gtag-init" strategy="afterInteractive">
+				{`
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+
+					gtag('config', '${config.googleAnalytics.measurementId}');
+				`}
+			</Script>
 		<AuthProvider>
 			<div className="min-h-screen bg-white">
 				<HeaderPage/>
@@ -80,4 +94,3 @@ export default function RootLayout({
 		</html>
 	)
 }
-

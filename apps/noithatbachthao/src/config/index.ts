@@ -18,6 +18,9 @@ const config  = {
 		clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? '',
 	},
 	googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION ?? 'your-google-code',
+	googleAnalytics: {
+		measurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? 'GT-WRGG93R8',
+	},
 	facebookAuth: {
 		clientId: process.env.FACEBOOK_CLIENT_ID ?? '',
 		clientSecret: process.env.FACEBOOK_CLIENT_SECRET ?? '',
