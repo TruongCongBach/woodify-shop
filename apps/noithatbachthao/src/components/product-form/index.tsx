@@ -15,6 +15,7 @@ import { MediaUpload, UploadedMedia } from './MediaUpload'
 import { AttributesManager } from './AttributesManager'
 import { DefaultImageSelector } from './DefaultImageSelector'
 import { TagsInput } from './TagsInput'
+import { AIDescriptionGenerator } from './AIDescriptionGenerator'
 
 import { toast } from 'sonner'
 import { checkProductUrlExists } from '@/utils/check-product-url-exists'
@@ -120,6 +121,20 @@ export const ProductForm: React.FC<ProductFormProps> = ({
 		} finally {
 			setIsGeneratingUrl(false)
 		}
+	}
+
+	const handleDescriptionGenerated = useCallback((shortDescription: string, description: string) => {
+		if (shortDescription) {
+			form.setValue('shortDescription', shortDescription, { shouldValidate: true })
+		}
+		if (description) {
+			form.setValue('description', description, { shouldValidate: true })
+		}
+	}, [form])
+
+	const getCategoryName = () => {
+		const categoryId = form.watch('categoryId')
+		return categories.find(cat => cat.id === categoryId)?.name || ''
 	}
 
 	return (
@@ -278,6 +293,14 @@ export const ProductForm: React.FC<ProductFormProps> = ({
 												<FormMessage/>
 											</FormItem>
 										)}
+									/>
+
+									<AIDescriptionGenerator
+										productName={form.watch('name') || ''}
+										categoryName={getCategoryName()}
+										attributes={form.watch('attributes') || []}
+										onDescriptionGenerated={handleDescriptionGenerated}
+										disabled={loading}
 									/>
 								</CardContent>
 							</Card>

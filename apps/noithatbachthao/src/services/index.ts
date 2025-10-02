@@ -26,3 +26,6 @@ export * from './media/media-upload-error'
 
 // User services
 export * from './user/index'
+
+// AI services
+export * from './ai/generate-product-description'

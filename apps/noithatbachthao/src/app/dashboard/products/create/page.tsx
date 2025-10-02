@@ -3,13 +3,9 @@
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 import { useState } from 'react'
-import { MediaUploadError } from '@/services/media/media-upload-error'
 import { useCategories } from '@/hooks/useCategories'
 import { ProductForm, ProductFormData } from '@/components/product-form'
 import { UploadedMedia } from '@/components/product-form/MediaUpload'
-import { validateMediaFiles } from '@/utils/validate-media-files'
-import { createProductWithMedia } from '@/services/product/create-product-with-media'
-import { ProductUrlExistsError } from '@/utils/ProductUrlExistsError'
 
 export default function NewProductPage() {
 	const router = useRouter()
@@ -20,27 +16,39 @@ export default function NewProductPage() {
 		try {
 			setLoading(true)
 
-			// Validate files first
-			const validation = validateMediaFiles(media.files)
-			if (!validation.valid) {
-				alert(validation.errors.join('\n'))
+			// Basic validation
+			if (media.files.length > 10) {
+				toast.error('Không thể upload quá 10 files')
 				return
 			}
-			await createProductWithMedia(formData, media)
 
-			toast.success('Product create successfully')
+			// Call API endpoint to create product
+			const response = await fetch('/api/products', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					formData,
+					media
+				})
+			})
+
+			if (!response.ok) {
+				const errorData = await response.json()
+				throw new Error(errorData.error || 'Failed to create product')
+			}
+
+			toast.success('Tạo sản phẩm thành công!')
 			router.push('/dashboard/products')
 
 		} catch (error) {
-			if (error instanceof ProductUrlExistsError) {
-				// Show specific URL error message
-			} else if (error instanceof MediaUploadError) {
-				// Show media upload error
-				toast.error(error.message)
-			} else {
-				// General error
-				console.error('Error:', error)
-			}
+			console.error('Error creating product:', error)
+			toast.error(
+				error instanceof Error 
+					? error.message 
+					: 'Đã xảy ra lỗi khi tạo sản phẩm'
+			)
 		} finally {
 			setLoading(false)
 		}

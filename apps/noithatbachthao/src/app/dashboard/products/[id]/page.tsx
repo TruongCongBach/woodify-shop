@@ -3,14 +3,10 @@
 import { useParams, useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 import { useState } from 'react'
-import { MediaUploadError } from '@/services/media/media-upload-error'
-import { ProductUrlExistsError } from '@/utils/ProductUrlExistsError'
-import { validateMediaFiles } from '@/utils/validate-media-files'
 import { useCategories } from '@/hooks/useCategories'
 import { useProductById } from '@/hooks/useProductById'
 import { ProductForm, ProductFormData } from '@/components/product-form'
 import { UploadedMedia } from '@/components/product-form/MediaUpload'
-import { updateProductWithMedia } from '@/services/product/update-product-with-media'
 
 export default function ProductEditPage() {
 	const { id } = useParams<{id: string}>()
@@ -22,30 +18,43 @@ export default function ProductEditPage() {
 	const [loading, setLoading] = useState(false)
 
 	const handleSubmit = async (formData: ProductFormData, media: UploadedMedia) => {
-
 		try {
 			setLoading(true)
 
-			// Validate files first
-			const validation = validateMediaFiles(media.files)
-			if (!validation.valid) {
-				alert(validation.errors.join('\n'))
+			// Basic validation
+			if (media.files.length > 10) {
+				toast.error('Không thể upload quá 10 files')
 				return
 			}
-			await updateProductWithMedia(id, formData, media, product)
 
-			toast.success('Product update successfully')
+			// Call API endpoint to update product
+			const response = await fetch(`/api/products/${id}`, {
+				method: 'PATCH',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					formData,
+					media,
+					existingProduct: product
+				})
+			})
+
+			if (!response.ok) {
+				const errorData = await response.json()
+				throw new Error(errorData.error || 'Failed to update product')
+			}
+
+			toast.success('Cập nhật sản phẩm thành công!')
 			router.push('/dashboard/products')
 
 		} catch (error) {
-			if (error instanceof ProductUrlExistsError) {
-			} else if (error instanceof MediaUploadError) {
-				// Show media upload error
-				toast.error(error.message)
-			} else {
-				// General error
-				console.error('Error:', error)
-			}
+			console.error('Error updating product:', error)
+			toast.error(
+				error instanceof Error 
+					? error.message 
+					: 'Đã xảy ra lỗi khi cập nhật sản phẩm'
+			)
 		} finally {
 			setLoading(false)
 		}

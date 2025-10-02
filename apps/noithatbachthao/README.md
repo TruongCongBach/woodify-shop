@@ -1,10 +1,42 @@
-# 🧱 Project Structure Overview – Next.js 14/15 (App Router)
+# 🛋️ Nội Thất Bách Thảo - E-commerce Platform
 
-This project is structured following **domain-based (feature-first)** architecture, optimized for scalability, maintainability, and clean separation of concerns. Ideal for medium to large Next.js applications using the App Router.
+Hệ thống thương mại điện tử nội thất với tích hợp AI tự động tạo mô tả sản phẩm.
 
----
+## 🚀 Tính năng chính
 
-## 📁 Folder Structure
+- 🛒 **E-commerce đầy đủ**: Catalog sản phẩm, giỏ hàng, thanh toán
+- 🤖 **AI Product Description**: Tự động tạo mô tả sản phẩm bằng Google Gemini AI
+- 📱 **Responsive Design**: Tối ưu cho mọi thiết bị
+- 🔐 **Authentication**: NextAuth.js với Google, Facebook login
+- 📊 **Dashboard**: Quản lý sản phẩm, đơn hàng, khách hàng
+- 🖼️ **Media Management**: Upload và quản lý hình ảnh với Cloudinary
+- 💾 **Database**: Supabase với real-time updates
+
+## 🧠 AI Features
+
+### Tự động tạo mô tả sản phẩm
+- Sử dụng Google Gemini AI (SDK chính thức `@google/generative-ai`)
+- Tạo mô tả ngắn và chi tiết dựa trên tên sản phẩm, danh mục, thuộc tính
+- UI/UX thân thiện với loading states và error handling
+- Bảo mật API key ở server-side
+
+Chi tiết: [AI Description Generator Documentation](./docs/AI_DESCRIPTION_GENERATOR.md)
+
+## 🛠️ Tech Stack
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4 + Shadcn/UI
+- **Database**: Supabase (PostgreSQL)
+- **Authentication**: NextAuth.js
+- **AI**: Google Generative AI (Gemini)
+- **Media**: Cloudinary
+- **State**: React Hook Form + Zod validation
+- **Deployment**: Vercel
+
+## 📁 Project Structure
 
 my-next-app/
 ├── public/

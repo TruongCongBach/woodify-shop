@@ -19,3 +19,6 @@ export { generateRandomReviews } from './generate-random-reviews'
 
 // Custom errors
 export { ProductUrlExistsError } from './ProductUrlExistsError'
+
+// AI utilities
+export { createProductDescriptionPrompt, createCustomPrompt } from './ai-prompt-builder'

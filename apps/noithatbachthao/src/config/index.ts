@@ -21,6 +21,16 @@ const config  = {
 	googleAnalytics: {
 		measurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? 'GT-WRGG93R8',
 	},
+	googleAI: {
+		apiKey: process.env.GOOGLE_AI_STUDIO_API_KEY ?? '',
+		model: process.env.GOOGLE_AI_MODEL ?? 'gemini-2.5-flash',
+		generationConfig: {
+			temperature: Number(process.env.GOOGLE_AI_TEMPERATURE) || 0.7,
+			topK: Number(process.env.GOOGLE_AI_TOP_K) || 40,
+			topP: Number(process.env.GOOGLE_AI_TOP_P) || 0.95,
+			maxOutputTokens: Number(process.env.GOOGLE_AI_MAX_OUTPUT_TOKENS) || 2048,
+		}
+	},
 	facebookAuth: {
 		clientId: process.env.FACEBOOK_CLIENT_ID ?? '',
 		clientSecret: process.env.FACEBOOK_CLIENT_SECRET ?? '',
