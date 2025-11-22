@@ -3,8 +3,7 @@
 import { ProductCarousel } from '@/components/product-carousel'
 import { ProductCarouselSkeleton } from '@/components/product-carousel-skeleton'
 import { useFeaturedProducts } from '@/hooks/useFeaturedProducts'
-import { FEATURED_PRODUCTS_CONFIG, ERROR_MESSAGES } from '@/constants/featured-products'
-import { UI_MESSAGES } from '@/constants/messages'
+import { FEATURED_PRODUCTS_CONFIG, ERROR_MESSAGES, UI_MESSAGES } from '@/constants'
 
 const FeaturedProductsCarousel = () => {
 	const { products, loading, error } = useFeaturedProducts(FEATURED_PRODUCTS_CONFIG.LIMIT)

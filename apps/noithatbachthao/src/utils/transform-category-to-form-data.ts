@@ -5,7 +5,7 @@
 export function transformCategoryToFormData(category: CategoryDataBase): Category {
 	return {
 		id: category.id,
-		name: category.url,
+		name: category.name,
 		image: category.image || '',
 		url: category.url,
 		description: category.description,

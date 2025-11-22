@@ -1,13 +1,16 @@
-export default function DashboardPage() {
-	return (
-		<div className="space-y-10 p-6">
-			<section>
-				<h2 className="text-xl font-bold mb-4">Danh mục</h2>
-			</section>
+import { Metadata } from 'next'
+import DashboardPageContainer from '@/containers/dashboard-page'
 
-			<section>
-				<h2 className="text-xl font-bold mb-4">Sản phẩm</h2>
-			</section>
-		</div>
-	)
+export const metadata: Metadata = {
+	title: 'Dashboard - Nội Thất Bách Thảo',
+	description: 'Quản lý sản phẩm và danh mục',
+	robots: 'noindex, nofollow', // Dashboard should not be indexed
+}
+
+/**
+ * Dashboard page (Server Component)
+ * Follows Clean Architecture: Page → Container pattern
+ */
+export default function DashboardPage() {
+	return <DashboardPageContainer />
 }

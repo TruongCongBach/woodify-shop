@@ -3,7 +3,7 @@
  */
 export function transformCategoryToDbFormat(formData: Omit<Category, 'id'>): Omit<CategoryDataBase, 'id'> {
 	return {
-		name: formData.url,
+		name: formData.name,
 		image: formData.image || '',
 		url: formData.url,
 		description: formData.description,

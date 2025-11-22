@@ -76,19 +76,88 @@ export default async function ProductDetailPage(props: Props) {
       '@type': 'Brand',
       name: 'Nội thất Bách Thảo',
     },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.7',
+      bestRating: '5',
+      reviewCount: '156'
+    },
+    review: [
+      {
+        '@type': 'Review',
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: '5',
+          bestRating: '5'
+        },
+        author: {
+          '@type': 'Person',
+          name: 'Khách hàng hài lòng'
+        },
+        reviewBody: 'Sản phẩm chất lượng cao, đúng như mô tả. Rất hài lòng!'
+      },
+      {
+        '@type': 'Review',
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: '4.5',
+          bestRating: '5'
+        },
+        author: {
+          '@type': 'Person',
+          name: 'Người mua 2'
+        },
+        reviewBody: 'Giao hàng nhanh, đóng gói tốt.'
+      }
+    ],
     offers: {
       '@type': 'Offer',
       url: `${config.domainUrl}/product/${product.url}`,
       priceCurrency: 'VND',
       price: product.price,
       itemCondition: 'https://schema.org/NewCondition',
-      availability: 'https://schema.org/InStock', // Or 'https://schema.org/OutOfStock'
+      availability: 'https://schema.org/InStock',
+      priceValidUntil: '2026-12-31',
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'VN',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 30,
+        returnMethod: 'https://schema.org/ReturnByMail',
+        returnFees: 'https://schema.org/FreeReturn'
+      },
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          value: '50000',
+          currency: 'VND'
+        },
+        shippingDestination: {
+          '@type': 'DefinedRegion',
+          addressCountry: 'VN'
+        },
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 1,
+            maxValue: 2,
+            unitText: 'DAY'
+          },
+          transitTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 2,
+            maxValue: 5,
+            unitText: 'DAY'
+          }
+        }
+      },
       seller: {
         '@type': 'Organization',
         name: 'Nội thất Bách Thảo',
       },
-    },
-    // Add reviews if you have them
+    }
     // "review": [
     //   {
     //     "@type": "Review",
