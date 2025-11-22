@@ -16,7 +16,6 @@ export default async function CategoryDetailPage(props: Props){
 		: categoryUrl || ''
 
 	const category = await getCategoryByUrl(slug)
-
 	if (!category) {
 		notFound()
 	}
@@ -37,7 +36,7 @@ export default async function CategoryDetailPage(props: Props){
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
 			/>
-			<CategoryPage category={category}/>
+			<CategoryPage category={category} />
 		</>
 	)
 }
@@ -51,9 +50,15 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 		? categoryUrl[categoryUrl.length - 1]
 		: categoryUrl || ''
 
-	const category = await getCategoryByUrl(slug)
-	if (!category) notFound()
-	const title = `${category.name} – Nội Thất Bách Thảo`
+	let category
+	try {
+		category = await getCategoryByUrl(slug)
+		if (!category) notFound()
+	} catch (error) {
+		console.error(`Category metadata fetch error for slug "${slug}":`, error)
+		notFound()
+	}
+	const title = `${category!.name} – Nội Thất Bách Thảo`
 	const description = getDescription(category.url)
 	const keywords = getKeywords(category.url)
 
