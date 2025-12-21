@@ -63,6 +63,8 @@ export default async function ProductDetailPage(props: Props) {
   }
 
   const images = getImagesFromMedia(product.media);
+  const numericPrice = Number(String(product.price ?? '').replace(/[^\d.]/g, ''));
+  const priceValue = Number.isFinite(numericPrice) && numericPrice > 0 ? numericPrice : product.price;
 
   // Create the JSON-LD structured data
   const jsonLd = {
@@ -110,54 +112,58 @@ export default async function ProductDetailPage(props: Props) {
         reviewBody: 'Giao hàng nhanh, đóng gói tốt.'
       }
     ],
-    offers: {
-      '@type': 'Offer',
-      url: `${config.domainUrl}/product/${product.url}`,
-      priceCurrency: 'VND',
-      price: product.price,
-      itemCondition: 'https://schema.org/NewCondition',
-      availability: 'https://schema.org/InStock',
-      priceValidUntil: '2026-12-31',
-      hasMerchantReturnPolicy: {
-        '@type': 'MerchantReturnPolicy',
-        applicableCountry: 'VN',
-        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
-        merchantReturnDays: 30,
-        returnMethod: 'https://schema.org/ReturnByMail',
-        returnFees: 'https://schema.org/FreeReturn'
-      },
-      shippingDetails: {
-        '@type': 'OfferShippingDetails',
-        shippingRate: {
-          '@type': 'MonetaryAmount',
-          value: '50000',
-          currency: 'VND'
+    offers: [
+      {
+        '@type': 'Offer',
+        url: `${config.domainUrl}/product/${product.url}`,
+        priceCurrency: 'VND',
+        price: priceValue,
+        itemCondition: 'https://schema.org/NewCondition',
+        availability: 'https://schema.org/InStock',
+        priceValidUntil: '2026-12-31',
+        hasMerchantReturnPolicy: {
+          '@type': 'MerchantReturnPolicy',
+          applicableCountry: 'VN',
+          returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+          merchantReturnDays: 30,
+          returnMethod: 'https://schema.org/ReturnByMail',
+          returnFees: 'https://schema.org/FreeReturn'
         },
-        shippingDestination: {
-          '@type': 'DefinedRegion',
-          addressCountry: 'VN'
-        },
-        deliveryTime: {
-          '@type': 'ShippingDeliveryTime',
-          handlingTime: {
-            '@type': 'QuantitativeValue',
-            minValue: 1,
-            maxValue: 2,
-            unitText: 'DAY'
-          },
-          transitTime: {
-            '@type': 'QuantitativeValue',
-            minValue: 2,
-            maxValue: 5,
-            unitText: 'DAY'
+        shippingDetails: [
+          {
+            '@type': 'OfferShippingDetails',
+            shippingRate: {
+              '@type': 'MonetaryAmount',
+              value: 50000,
+              currency: 'VND'
+            },
+            shippingDestination: {
+              '@type': 'DefinedRegion',
+              addressCountry: 'VN'
+            },
+            deliveryTime: {
+              '@type': 'ShippingDeliveryTime',
+              handlingTime: {
+                '@type': 'QuantitativeValue',
+                minValue: 1,
+                maxValue: 2,
+                unitCode: 'DAY'
+              },
+              transitTime: {
+                '@type': 'QuantitativeValue',
+                minValue: 2,
+                maxValue: 5,
+                unitCode: 'DAY'
+              }
+            }
           }
-        }
-      },
-      seller: {
-        '@type': 'Organization',
-        name: 'Nội thất Bách Thảo',
-      },
-    }
+        ],
+        seller: {
+          '@type': 'Organization',
+          name: 'Nội thất Bách Thảo',
+        },
+      }
+    ]
     // "review": [
     //   {
     //     "@type": "Review",
@@ -185,4 +191,3 @@ export default async function ProductDetailPage(props: Props) {
     </>
   );
 }
-
