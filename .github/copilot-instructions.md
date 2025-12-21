@@ -1,28 +1,8 @@
-# Woodify Shop Monorepo - AI Coding Guide
+# Woodify Shop - AI Coding Guide
 
 ## Project Architecture
 
-**Monorepo Structure**: Two Next.js 15 apps sharing a design system via pnpm workspaces:
-- `apps/noithatbachthao` - Vi## Do / Don't
-
-- ✅ Use centralized exports, constants, generic hooks, skeletons, dynamic imports, ErrorBoundary.  
-- ✅ Keep to Tailwind scales and Shadcn patterns.
-- ✅ **Use official SDKs** - prefer `@google/generative-ai` over manual fetch calls
-- ✅ **Singleton services** - reuse expensive instances (AI models, DB connections)
-- ✅ **Direct imports** - `import from '@/services/specific/file'` when needed in client
-- ✅ **Environment-driven config** - make all external service params configurable
-- ✅ **Structured prompt building** - use builder functions, not hardcoded strings
-- ❌ Don't deep-import internals or hardcode values.  
-- ❌ Don't bypass container structure.  
-- ❌ Don't inline arbitrary styles.  
-- ❌ Don't SSR client-only widgets.
-- ❌ **Don't over-abstract** - simple direct imports often work better than complex client/server wrappers
-- ❌ **Don't use barrel exports** from `@/services` in client components - pulls in server dependencies
-- ❌ **Don't recreate instances** - use singletons for AI models, DB clients, etc.
-- ❌ **Don't hardcode external service configs** - centralize in `config/index.ts` with env vars furniture e-commerce (Supabase + auth)
-- `apps/woodify-khanhtrang` - Product showcase (3D models via Three.js)
-- `packages/ui` - Shared Shadcn/UI components with Tailwind v4
-- `packages/types`, `packages/utils`, `packages/services` - Shared libraries
+Single Next.js 15 app at the repo root. Core code lives under `src/` and shared UI helpers live in `src/ui/`.
 
 **Key Architecture Patterns**:
 - **Container-Component separation**: `containers/` orchestrate pages, `components/` are reusable UI
@@ -33,7 +13,7 @@
 ## Critical File Locations
 
 ```
-apps/noithatbachthao/src/
+src/
 ├── app/                    # Next.js App Router
 ├── containers/             # Page orchestration (home-page/, product-page/)
 ├── components/             # Reusable UI + layout (page-header.tsx, product-card.tsx)
@@ -50,16 +30,11 @@ apps/noithatbachthao/src/
 
 **Commands** (run from root):
 ```bash
-pnpm dev                          # Start all apps in dev mode
-pnpm install                      # Install all workspace dependencies
-pnpm add <pkg> --filter <app>    # Add dependency to specific app
+pnpm dev                          # Start dev server
+pnpm install                      # Install dependencies
+pnpm add <pkg>                    # Add dependency
 ANALYZE=true pnpm build          # Bundle analysis for optimization
 ```
-
-**Monorepo Package Management**:
-- Install shared deps in `packages/ui`: `pnpm add lucide-react --filter @woodify/ui`
-- App-specific deps: `pnpm add @supabase/supabase-js --filter noithatbachthao`
-- Global deps in root only for tooling
 
 **Database Integration**:
 - Supabase client in `lib/supabase/index.ts` with config from `config/index.ts`
@@ -217,7 +192,7 @@ const FeaturedProductsCarousel = dynamic(
 - Bundle analysis: `ANALYZE=true pnpm build` (configured in next.config.ts)
 - Cloudinary + Next.js Image optimization with WebP/AVIF formats
 - Individual Lucide icon imports: `import { ArrowRight } from 'lucide-react'`
-- Package transpilation in next.config.ts: `transpilePackages: ["@woodify/ui"]`
+ 
 
 **Image Configuration** (already configured):
 ```typescript
@@ -234,7 +209,7 @@ images: {
 ```bash
 pnpm dev                          # Start all apps
 pnpm install                      # Install dependencies
-pnpm add <pkg> --filter <app>    # Add app-specific package
+pnpm add <pkg>                    # Add dependency
 ANALYZE=true pnpm build          # Bundle analysis
 ```
 

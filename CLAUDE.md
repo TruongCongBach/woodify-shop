@@ -4,39 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Woodify Shop** is a pnpm monorepo for Vietnamese furniture e-commerce. It uses Next.js 15 with App Router, Tailwind CSS v4, and shared packages for reusable code.
-
-**Current Apps**:
-- `apps/noithatbachthao` - Full-featured furniture e-commerce with Supabase, NextAuth, Google AI (Gemini), and Cloudinary integration
-
-**Note**: `apps/woodify-khanhtrang` was removed (see git status). The monorepo is structured for multiple apps but currently focuses on `noithatbachthao`.
-
-## Monorepo Structure
-
-```
-woodify-shop/
-├── apps/
-│   └── noithatbachthao/           # Next.js 15 e-commerce app
-│       └── src/
-│           ├── app/                # Next.js App Router (pages + API routes)
-│           ├── containers/         # Page orchestration layer
-│           ├── components/         # Reusable UI components
-│           ├── hooks/              # Custom React hooks
-│           ├── services/           # API calls & data fetching
-│           ├── lib/                # External integrations (Supabase, Cloudinary, Google AI)
-│           ├── config/             # Environment configuration
-│           ├── constants/          # Feature configs
-│           ├── types/              # TypeScript types
-│           ├── utils/              # Transform & utility functions
-│           └── seo/                # SEO utilities
-├── packages/
-│   ├── ui/                         # Shared Shadcn/UI components
-│   ├── types/                      # Shared TypeScript types
-│   ├── utils/                      # Shared utilities
-│   ├── hooks/                      # Shared React hooks
-│   └── services/                   # Shared services
-└── pnpm-workspace.yaml
-```
+**Woodify Shop** is a single Next.js 15 app for Vietnamese furniture e-commerce. It uses App Router, Tailwind CSS v4, and local UI utilities in `src/ui`.
 
 ## Development Commands
 
@@ -52,15 +20,8 @@ pnpm build                        # Build all apps (with Turbopack)
 ANALYZE=true pnpm build          # Bundle analysis for optimization
 
 # Package management
-pnpm add <pkg> --filter noithatbachthao          # Add dependency to specific app
-pnpm add <pkg> --filter @woodify/ui              # Add dependency to shared UI package
-
-# App-specific commands (from apps/noithatbachthao/)
-pnpm dev                          # Start dev server with Turbopack
-pnpm build                        # Build for production
-pnpm start                        # Start production server
-pnpm lint                         # Run ESLint
-pnpm analyze                      # Bundle analysis
+pnpm add <pkg>                    # Add dependency
+pnpm add -D <pkg>                 # Add dev dependency
 ```
 
 ## Architecture Patterns
@@ -321,11 +282,13 @@ import { ArrowRight, ShoppingCart } from 'lucide-react'
 
 ### Shared UI Package
 
-Import from `@woodify/ui`:
+`@/ui/*` resolves to `src/ui/*`.
+
+Import from `@/ui`:
 ```typescript
-import { Button } from '@woodify/ui/components/button'
-import { Card } from '@woodify/ui/components/card'
-import { cn } from '@woodify/ui/lib/utils'
+import { Button } from '@/ui/shadcn-ui/button'
+import { Card } from '@/ui/shadcn-ui/card'
+import { cn } from '@/ui/lib/utils'
 ```
 
 ## Coding Standards
@@ -547,26 +510,4 @@ Example: AI Product Description Generator
 
 ## Package Management
 
-This is a pnpm workspace. The `pnpm-workspace.yaml` defines:
-```yaml
-packages:
-  - apps/*
-  - packages/*
-```
-
-**Adding dependencies**:
-- Workspace-wide (rarely needed): `pnpm add <pkg> -w`
-- App-specific: `pnpm add <pkg> --filter noithatbachthao`
-- Shared package: `pnpm add <pkg> --filter @woodify/ui`
-
-**Using workspace packages**:
-```json
-// apps/noithatbachthao/package.json
-{
-  "dependencies": {
-    "@woodify/ui": "workspace:*"
-  }
-}
-```
-
-**Transpilation**: `@woodify/ui` is transpiled via `transpilePackages` in `next.config.ts`.
+Use root-level `pnpm` commands for dependencies and keep UI helpers under `src/ui`.
