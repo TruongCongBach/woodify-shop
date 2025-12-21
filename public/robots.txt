@@ -1,0 +1,12 @@
+# Allow all crawlers to access the site
+User-agent: *
+Allow: /
+
+# Disallow access to admin, login, and API routes
+Disallow: /dashboard/
+Disallow: /login/
+Disallow: /logout/
+Disallow: /api/
+
+# Point crawlers to the sitemap
+Sitemap: https://noithatbachthao.com/sitemap.xml
