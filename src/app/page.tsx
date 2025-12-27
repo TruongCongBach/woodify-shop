@@ -104,6 +104,22 @@ const jsonLd = {
 	},
 }
 
+const hashString = (value: string) => {
+	let hash = 0
+	for (let i = 0; i < value.length; i += 1) {
+		hash = (hash << 5) - hash + value.charCodeAt(i)
+		hash |= 0
+	}
+	return hash
+}
+
+const getProductStats = (key: string) => {
+	const hash = Math.abs(hashString(key))
+	const rating = 4 + (hash % 16) / 10
+	const views = 100 + (hash % 9900)
+	return { rating, views: `${views}k` }
+}
+
 export default async function Home() {
 	// Thêm error handling để tăng reliability
 	let productKeTivi: any[] = []
@@ -126,6 +142,7 @@ export default async function Home() {
 			if (['mo-loi-huong-da-9', 'ke-tivi-sung-13'].includes(product.url)) category = 'luxury'
 			if (['sofa-phang-xoan-0'].includes(product.url)) category = 'modern'
 			if (['ke-tivi-sung-13', 'ke-tivi-hoa-hong-11'].includes(product.url)) category = 'vintage'
+			const { rating, views } = getProductStats(product.url)
 
 			return {
 				id: product.id,
@@ -135,8 +152,8 @@ export default async function Home() {
 				image: product.defaultImage,
 				category: category,
 				badges: product.tags,
-				rating: Math.round((Math.random() * 1.5 + 4) * 10) / 10,
-				views: `${Math.floor(Math.random() * (9999 - 100 + 1)) + 100}k`,
+				rating,
+				views,
 				url: product.url,
 			}
 		})

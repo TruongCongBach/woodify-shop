@@ -11,15 +11,27 @@ interface ImageUploaderProps {
 export function ImageUploader({ multiple = false, defaultUrls = [], onChange }: ImageUploaderProps) {
 	const [previews, setPreviews] = useState<string[]>([])
 
+	const displayedPreviews = previews.length > 0 ? previews : defaultUrls
+
 	useEffect(() => {
-		if (defaultUrls.length > 0) {
-			setPreviews(defaultUrls)
+		return () => {
+			previews.forEach((url) => {
+				if (url.startsWith('blob:')) {
+					URL.revokeObjectURL(url)
+				}
+			})
 		}
-	}, [defaultUrls])
+	}, [previews])
 
 	const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
 		const files = Array.from(e.target.files || [])
 		if (!files.length) return
+
+		previews.forEach((url) => {
+			if (url.startsWith('blob:')) {
+				URL.revokeObjectURL(url)
+			}
+		})
 
 		const urls = files.map((file) => URL.createObjectURL(file))
 		setPreviews(urls)
@@ -29,7 +41,7 @@ export function ImageUploader({ multiple = false, defaultUrls = [], onChange }: 
 	return (
 		<div className="space-y-2">
 			<div className="flex gap-2 flex-wrap">
-				{previews.map((url, index) => (
+				{displayedPreviews.map((url, index) => (
 					<img
 						key={index}
 						src={url}

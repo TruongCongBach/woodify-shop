@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useCallback, useEffect, useState } from 'react'
-import { useForm } from 'react-hook-form'
+import { useForm, useWatch } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { Button } from '@/ui/shadcn-ui/button'
@@ -63,7 +63,7 @@ export const CategoryForm: React.FC<CategoryFormProps> = ({
 	})
 
 	// Auto generate URL slug from name
-	const watchedName = form.watch('name')
+	const watchedName = useWatch({ control: form.control, name: 'name' })
 	useEffect(() => {
 		if (watchedName && !isEditing) {
 			const slug = watchedName
@@ -299,5 +299,4 @@ export const CategoryForm: React.FC<CategoryFormProps> = ({
 		</div>
 	)
 }
-
 

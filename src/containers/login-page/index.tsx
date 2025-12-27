@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -22,12 +22,15 @@ const formSchema = z.object({
 
 export default function SignInPage() {
 	const [showPassword, setShowPassword] = useState(false);
-	const [error, setError] = useState<string | null>(null);
 	const [isLoading, setIsLoading] = useState(false);
 	const [socialLoading, setSocialLoading] = useState<string | null>(null);
 	const router = useRouter();
 	const searchParams = useSearchParams();
-
+	const initialError =
+		searchParams.get('error') === 'unauthorized'
+			? 'Tài khoản của bạn không có quyền truy cập. Vui lòng liên hệ với admin để được cấp quyền.'
+			: null;
+	const [error, setError] = useState<string | null>(initialError);
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
@@ -36,13 +39,6 @@ export default function SignInPage() {
 			remember: false,
 		},
 	});
-
-	useEffect(() => {
-		const errorParam = searchParams.get('error');
-		if (errorParam === 'unauthorized') {
-			setError('Tài khoản của bạn không có quyền truy cập. Vui lòng liên hệ với admin để được cấp quyền.');
-		}
-	}, [searchParams]);
 
 	const handleSignIn = async (values: z.infer<typeof formSchema>) => {
 		setError(null);
@@ -295,4 +291,3 @@ export default function SignInPage() {
 		</div>
 	);
 }
-
