@@ -13,6 +13,9 @@ Furniture e-commerce site for "Noi That Bach Thao" with a public catalog, admin 
 - Database: Supabase (PostgreSQL) via @supabase/supabase-js and @supabase/ssr
 - Media storage: Cloudinary
 - AI: Google Gemini via @google/genai
+- **Calendar/Dates**: `lunar-javascript`, `ics`, `date-fns`
+- **UI UX**: `sonner` (Toasts), `embla-carousel`
+- Analytics: Google Analytics 4
 - Deployment: Vercel
 
 ## Project Conventions
@@ -26,9 +29,11 @@ Furniture e-commerce site for "Noi That Bach Thao" with a public catalog, admin 
 ### Architecture Patterns
 - App Router in `src/app`; route handlers in `src/app/api/*/route.ts`.
 - Pages are server components by default; interactive UIs live in client components with `use client`.
-- `src/containers` for page-level orchestration; `src/components` for feature UI; `src/ui/shadcn-ui` for base UI primitives.
+- `src/containers` for page-level orchestration; `src/components` for feature UI.
+- `src/ui` holds base UI primitives (shadcn) and global styles.
 - `src/services` encapsulate Supabase and API calls; `src/hooks` provide SWR wrappers.
 - `src/lib` holds third-party integrations (Supabase, Cloudinary, Google AI, NextAuth); `src/config` centralizes env config.
+- `src/constants` for static data and enums.
 
 ### Testing Strategy
 - No automated test runner is configured.
@@ -43,6 +48,7 @@ Furniture e-commerce site for "Noi That Bach Thao" with a public catalog, admin 
 - Admin dashboard for managing categories/products.
 - AI-generated short and long product descriptions are created server-side.
 - UI copy is primarily Vietnamese.
+- **Schedule Calendar**: A comprehensive personal scheduling tool with Vietnamese Lunar Calendar support and ICS subscription capabilities. See [specs/calendar.md](specs/calendar.md) for details.
 
 ## Important Constraints
 - Environment variables are required for Supabase, NextAuth, OAuth providers, Cloudinary, and Google AI.
@@ -55,4 +61,6 @@ Furniture e-commerce site for "Noi That Bach Thao" with a public catalog, admin 
 - Cloudinary (media uploads)
 - Google Gemini (AI content generation)
 - Google/Facebook OAuth providers (NextAuth)
+- `lunar-javascript` (Date conversion)
+- `ics` (Calendar export)
 - Vercel (hosting/runtime)
