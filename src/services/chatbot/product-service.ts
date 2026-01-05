@@ -24,7 +24,7 @@ export async function searchProducts(query: string, context: QueryAttributes | n
 
 		let dbQuery = supabase
 			.from('products')
-			.select('id, name, price, description, url, default_image, media')
+			.select('id, name, price, description, url, default_image, media, category_id')
 
 		if (productType) {
 			dbQuery = dbQuery.ilike('name', `%${productType}%`)

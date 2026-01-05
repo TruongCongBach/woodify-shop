@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import '@/ui/styles/globals.css'
 import React from 'react'
 import Script from 'next/script'
@@ -7,17 +6,6 @@ import AuthProvider from '@/components/auth-provider'
 import { ToasterProvider } from '@/components/toaster-provider'
 import config from '@/config'
 import { FooterPage, HeaderPage } from '@/components/layout'
-
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-
-	subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
-	subsets: ['latin'],
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL(config.domainUrl), // <-- THAY THẾ BẰNG DOMAIN CỦA BẠN
@@ -67,7 +55,7 @@ export default function RootLayout({
 	return (
 		<html lang="vi">
 		<body
-			className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+			className="antialiased font-sans"
 		>
 			<Script
 				src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalytics.measurementId}`}

@@ -38,6 +38,9 @@ export function updateAttributes(userId: string, newAttrs: Partial<QueryAttribut
 	}
 
 	if (newAttrs.priceRange) {
+		if (!session.lastAttributes.priceRange) {
+			session.lastAttributes.priceRange = { min: null, max: null }
+		}
 		if (newAttrs.priceRange.min !== undefined) session.lastAttributes.priceRange.min = newAttrs.priceRange.min
 		if (newAttrs.priceRange.max !== undefined) session.lastAttributes.priceRange.max = newAttrs.priceRange.max
 	}
