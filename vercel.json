@@ -3,5 +3,18 @@
   "installCommand": "pnpm install",
   "buildCommand": "pnpm build",
   "outputDirectory": ".next",
-  "devCommand": "pnpm dev"
+  "devCommand": "pnpm dev",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.noithatbachthao.com"
+        }
+      ],
+      "destination": "https://noithatbachthao.com/:path*",
+      "permanent": true
+    }
+  ]
 }

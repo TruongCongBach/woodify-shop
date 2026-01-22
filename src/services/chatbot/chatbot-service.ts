@@ -148,7 +148,7 @@ function formatImageGallery(products: ProductDataBase[]): ChatbotTemplatePayload
 }
 
 function formatProductCarousel(products: ProductDataBase[]): ChatbotTemplatePayload {
-	const websiteUrl = process.env.WEBSITE_URL || config.domainUrl || 'https://www.noithatbachthao.com'
+	const websiteUrl = process.env.WEBSITE_URL || config.domainUrl || 'https://noithatbachthao.com'
 	const productPath = process.env.PRODUCT_PATH || '/product'
 
 	const elements = products.map(product => {
