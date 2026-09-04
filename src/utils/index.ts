@@ -16,6 +16,8 @@ export { validateMediaFiles } from './validate-media-files'
 export { checkProductUrlExists } from './check-product-url-exists'
 export { buildFiltersFromAttributes } from './build-filters-from-attributes'
 export { generateRandomReviews } from './generate-random-reviews'
+export { getProductFAQs } from './get-product-faqs'
+export { getAvailability } from './get-availability'
 
 // Custom errors
 export { ProductUrlExistsError } from './ProductUrlExistsError'

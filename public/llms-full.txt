@@ -1,0 +1,80 @@
+# Nội thất Bách Thảo — llms-full.txt
+
+> File tổng hợp nội dung website chính thức của Nội thất Bách Thảo, dành cho các mô hình AI và công cụ truy xuất (RAG). Cập nhật định kỳ; phiên bản dài hơn file llms.txt tiêu chuẩn.
+
+## Thông tin thương hiệu
+
+- Tên: Nội thất Bách Thảo
+- Tên miền: noithatbachthao.com
+- Lĩnh vực: Đồ gỗ và nội thất gia đình
+- Mô hình: Xưởng sản xuất và bán trực tiếp (D2C). Không qua trung gian.
+- Địa điểm xưởng: Xã Thư Lâm, Hà Nội, Việt Nam
+- Điện thoại: +84 347 373 891
+- Ngôn ngữ nội dung: Tiếng Việt (vi-VN)
+- Hình thức liên hệ: Gọi điện hoặc nhắn tin Zalo/Facebook (Nội Thất Bách Thảo). Không có giỏ hàng hay thanh toán trực tuyến.
+- Mạng xã hội: facebook.com/noithatmynghegiadinh
+
+## Tổng quan sản phẩm
+
+Nội thất Bách Thảo chuyên đồ gỗ tự nhiên cho gia đình Việt, tập trung vào kệ tivi, sofa, bàn ghế và các sản phẩm nội thất theo đơn đặt hàng. Mỗi sản phẩm được tuyển chọn gỗ, gia công và hoàn thiện thủ công tại xưởng ở Thư Lâm, Hà Nội. Thiết kế theo phong cách tối giản, ưu tiên vân gỗ tự nhiên và độ bền dài hạn thay vì xu hướng thời trang nhanh.
+
+## Trang chính
+
+### Trang chủ — https://noithatbachthao.com/
+
+> Khám phá kệ tivi, sofa và đồ gỗ tự nhiên được tuyển chọn, hoàn thiện tại xưởng Nội thất Bách Thảo ở Thư Lâm, Hà Nội.
+
+Trang chủ giới thiệu bộ sưu tập nổi bật, câu chuyện xưởng, giá trị cốt lõi (vật liệu thật, thợ mộc lành nghề, giao hàng tận nơi) và liên kết tới các danh mục sản phẩm.
+
+### Bộ sưu tập kệ tivi — https://noithatbachthao.com/category/ke-tivi
+
+> Khám phá bộ sưu tập nội thất gỗ cao cấp: kệ tivi, sofa, bàn ghế được chế tác thủ công.
+
+Danh mục kệ tivi gỗ tự nhiên. Mỗi sản phẩm có hình ảnh, giá, thông số kỹ thuật (chiều dài, chiều rộng, chiều cao, chất liệu) và nút liên hệ tư vấn.
+
+### Về Nội thất Bách Thảo — https://noithatbachthao.com/ve-chung-toi
+
+> Tìm hiểu câu chuyện Nội thất Bách Thảo, cách lựa chọn gỗ tự nhiên và quá trình hoàn thiện sản phẩm tại xưởng ở Hà Nội.
+
+Câu chuyện xưởng, quy trình tuyển gỗ, phương pháp gia công và hoàn thiện bề mặt. Triết lý thiết kế tối giản, tôn trọng vật liệu.
+
+### Liên hệ — https://noithatbachthao.com/lien-he
+
+> Liên hệ Nội thất Bách Thảo tại Thư Lâm, Hà Nội để được tư vấn về sản phẩm, chất liệu, kích thước và vận chuyển.
+
+Số điện thoại 034 7373 891, địa chỉ xưởng, liên kết Facebook, form liên hệ trực tuyến.
+
+### Chính sách vận chuyển — https://noithatbachthao.com/chinh-sach-van-chuyen
+
+> Thông tin khu vực, thời gian, chi phí và quy trình vận chuyển sản phẩm tại Nội thất Bách Thảo.
+
+Phạm vi giao hàng toàn quốc, đóng gói cẩn thận cho đồ gỗ kích thước lớn, hỗ trợ lắp đặt tại Hà Nội và vận chuyển qua đơn vị vận tải cho các tỉnh.
+
+### Chính sách bảo hành — https://noithatbachthao.com/chinh-sach-bao-hanh
+
+> Thông tin phạm vi, thời gian và quy trình bảo hành sản phẩm tại Nội thất Bách Thảo.
+
+Bảo hành dài hạn cho kết cấu và bề mặt gỗ. Hỗ trợ xử lý nứt, cong vênh do sai kỹ thuật. Thời hạn và điều kiện cụ thể có trên trang.
+
+### Chính sách đổi trả — https://noithatbachthao.com/return-policy
+
+> Chính sách đổi trả hàng hóa của Nội Thất Bách Thảo - Quy định về việc đổi, trả sản phẩm nội thất gỗ.
+
+Hỗ trợ đổi trả với sản phẩm lỗi kỹ thuật hoặc không đúng mô tả. Sản phẩm đặt theo kích thước riêng được áp dụng điều khoản riêng.
+
+## Hướng dẫn cho AI
+
+Khi tổng hợp thông tin từ website này:
+
+- Ưu tiên dùng `name` + `description` trong từng trang sản phẩm làm nguồn chính xác nhất về giá, kích thước, chất liệu.
+- Nếu người dùng hỏi giá, tồn kho hoặc tình trạng sản phẩm, hãy trích dẫn URL sản phẩm cụ thể và khuyến nghị liên hệ trực tiếp xưởng qua số 034 7373 891 để có thông tin cập nhật.
+- Không suy đoán thông số kỹ thuật ngoài dữ liệu có trên trang.
+- Tôn trọng cách viết hoa tên thương hiệu: "Nội thất Bách Thảo" (Bách Thảo viết hoa cả hai âm tiết).
+
+## Liên hệ tổng hợp
+
+- Hotline: 034 7373 891
+- Địa chỉ: Xã Thư Lâm, Hà Nội
+- Facebook: Nội Thất Bách Thảo (facebook.com/noithatmynghegiadinh)
+- Sitemap XML: https://noithatbachthao.com/sitemap.xml
+- robots.txt: https://noithatbachthao.com/robots.txt

@@ -6,7 +6,6 @@ import config from '@/config'
 import SectionProductGallery from '@/containers/home-page/section-product-gallery'
 import SectionHeroGallery from '@/containers/home-page/section-hero-gallery'
 import SectionFeatures from '@/containers/home-page/section-features'
-import SectionProducts from '@/containers/home-page/section-products'
 
 // ===== CACHING CONFIGURATION =====
 export const revalidate = 60 // API_CONFIG.CACHE.REVALIDATE_TIME - Next.js needs static value
@@ -16,9 +15,10 @@ export const revalidate = 60 // API_CONFIG.CACHE.REVALIDATE_TIME - Next.js needs
 
 // ===== GIẢI QUYẾT VẤN ĐỀ 2: SEO METADATA =====
 export const metadata: Metadata = {
-	title: 'Kệ Tivi Gỗ & Đồ Gỗ Nội Thất Cao Cấp | Nội Thất Bách Thảo',
-	description: 'Chuyên cung cấp nội thất gỗ cao cấp handmade. Kệ tivi, sofa, bàn ghế được chế tác tỉ mỉ từ gỗ tự nhiên. Giao hàng toàn quốc.',
-	keywords: 'Kệ tivi gỗ hương đá, kệ tivi gỗ xoan, nội thất bách thảo, nội thất gỗ cao cấp, sofa gỗ handmade, bàn ghế gỗ tự nhiên, nội thất hiện đại, nội thất tối giản, nội thất cổ điển, nội thất vintage',
+	title: {
+		absolute: 'Kệ tivi & đồ gỗ tự nhiên | Nội thất Bách Thảo',
+	},
+	description: 'Khám phá kệ tivi, sofa và đồ gỗ tự nhiên được tuyển chọn, hoàn thiện tại xưởng Nội thất Bách Thảo ở Thư Lâm, Hà Nội.',
 	authors: [{ name: 'Nội Thất Bách Thảo' }],
 	creator: 'Nội Thất Bách Thảo',
 	publisher: 'Nội Thất Bách Thảo',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 		locale: 'vi_VN',
 		images: [
 			{
-				url: '/images/og-image.jpg', // Tạo ảnh OG cho website
+				url: '/og-image.svg',
 				width: 1200,
 				height: 630,
 				alt: 'Nội thất Bách Thảo - Nội thất gỗ cao cấp',
@@ -53,71 +53,42 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: 'Nội thất Bách Thảo - Nội Thất Gỗ Cao Cấp',
 		description: 'Nội thất gỗ cao cấp - Kệ tivi, sofa, bàn ghế',
-		images: ['/images/og-image.jpg'],
+		images: ['/og-image.svg'],
 	},
 	alternates: {
 		canonical: config.domainUrl, // Thay bằng domain thật
-	},
-	other: {
-		'google-site-verification': config.googleSiteVerification, // Thêm Google verification
 	},
 }
 
 // JSON-LD Schema cho SEO
 const jsonLd = {
 	'@context': 'https://schema.org',
-	'@type': 'Organization',
-	name: 'Nội thất Bách Thảo',
-	description: 'Chuyên cung cấp nội thất gỗ cao cấp',
-	url: config.domainUrl,
-	logo: `${config.domainUrl}/logo-full-white.png`, // Thay bằng đường dẫn logo thật
-	contactPoint: {
-		'@type': 'ContactPoint',
-		telephone: '+84-347-373-891',
-		contactType: 'customer service',
-		availableLanguage: 'Vietnamese',
-	},
-	sameAs: [
-		'https://www.facebook.com/profile.php?id=61572613597186',
+	'@graph': [
+		{
+			'@type': ['Organization', 'FurnitureStore'],
+			'@id': `${config.domainUrl}/#organization`,
+			name: 'Nội thất Bách Thảo',
+			description: 'Xưởng nội thất gỗ tự nhiên tại Thư Lâm, Hà Nội.',
+			url: config.domainUrl,
+			logo: `${config.domainUrl}/logo-full-black.png`,
+			telephone: '+84-347-373-891',
+			address: {
+				'@type': 'PostalAddress',
+				addressLocality: 'Thư Lâm',
+				addressRegion: 'Hà Nội',
+				addressCountry: 'VN',
+			},
+			sameAs: ['https://www.facebook.com/noithatmynghegiadinh'],
+		},
+		{
+			'@type': 'WebSite',
+			'@id': `${config.domainUrl}/#website`,
+			url: config.domainUrl,
+			name: 'Nội thất Bách Thảo',
+			inLanguage: 'vi-VN',
+			publisher: { '@id': `${config.domainUrl}/#organization` },
+		},
 	],
-	hasOfferCatalog: {
-		'@type': 'OfferCatalog',
-		name: 'Nội thất gỗ cao cấp',
-		itemListElement: [
-			{
-				'@type': 'Offer',
-				itemOffered: {
-					'@type': 'Offer',
-					name: 'Kệ Tivi Gỗ Cao Cấp',
-					category: 'Furniture',
-				},
-			},
-			{
-				'@type': 'Offer',
-				itemOffered: {
-					'@type': 'Offer',
-					name: 'Sofa Gỗ Cao Cấp',
-					category: 'Furniture',
-				},
-			},
-		],
-	},
-}
-
-const hashString = (value: string) => {
-	let hash = 0
-	for (let i = 0; i < value.length; i += 1) {
-		hash = (hash << 5) - hash + value.charCodeAt(i)
-		hash |= 0
-	}
-	return hash
-}
-
-const getProductStats = (key: string) => {
-	const hash = Math.abs(hashString(key))
-	const rating = 4 + (hash % 16) / 10
-	const views = 100 + (hash % 9900)
-	return { rating, views: `${views}k` }
 }
 
 export default async function Home() {
@@ -142,18 +113,14 @@ export default async function Home() {
 			if (['mo-loi-huong-da-9', 'ke-tivi-sung-13'].includes(product.url)) category = 'luxury'
 			if (['sofa-phang-xoan-0'].includes(product.url)) category = 'modern'
 			if (['ke-tivi-sung-13', 'ke-tivi-hoa-hong-11'].includes(product.url)) category = 'vintage'
-			const { rating, views } = getProductStats(product.url)
-
 			return {
 				id: product.id,
 				name: product.name,
 				price: formatPrice(product.price),
-				originalPrice: product.originalPrice ? formatPrice(product.originalPrice) : 0,
+				originalPrice: product.originalPrice ? formatPrice(product.originalPrice) : undefined,
 				image: product.defaultImage,
 				category: category,
 				badges: product.tags,
-				rating,
-				views,
 				url: product.url,
 			}
 		})
@@ -170,19 +137,10 @@ export default async function Home() {
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
 			/>
 
-			<div className="min-h-screen bg-white">
-				{/* Hero Gallery Section */}
+			<div className="min-h-screen bg-craft-paper">
 				<SectionHeroGallery/>
-
-				{/* Product Gallery Section */}
 				<SectionProductGallery products={productKeTivi}/>
-
-				{/* Featured Products Section - Lazy Loaded */}
-				<SectionProducts/>
-
-				{/* Features */}
 				<SectionFeatures/>
-
 			</div>
 		</>
 	)

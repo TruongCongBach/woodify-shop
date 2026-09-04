@@ -2,19 +2,33 @@ import type { Metadata } from 'next'
 import '@/ui/styles/globals.css'
 import React from 'react'
 import Script from 'next/script'
+import { Be_Vietnam_Pro, Lora } from 'next/font/google'
 import AuthProvider from '@/components/auth-provider'
 import { ToasterProvider } from '@/components/toaster-provider'
 import config from '@/config'
 import { FooterPage, HeaderPage } from '@/components/layout'
+import { buildOrganizationJsonLd, buildWebsiteJsonLd } from '@/seo/jsonld'
+
+const bodyFont = Be_Vietnam_Pro({
+	subsets: ['latin', 'vietnamese'],
+	weight: ['400', '500', '600', '700'],
+	variable: '--font-body',
+	display: 'swap',
+})
+
+const displayFont = Lora({
+	subsets: ['latin', 'vietnamese'],
+	variable: '--font-display',
+	display: 'swap',
+})
 
 export const metadata: Metadata = {
-  metadataBase: new URL(config.domainUrl), // <-- THAY THẾ BẰNG DOMAIN CỦA BẠN
+  metadataBase: new URL(config.domainUrl),
   title: {
     template: '%s | Nội thất Bách Thảo',
-    default: 'Nội thất Bách Thảo - Uy tín, Chất lượng, Giá tại xưởng',
+    default: 'Nội thất Bách Thảo | Đồ gỗ tự nhiên chế tác tại xưởng',
   },
-  description: 'Nội thất Bách Thảo chuyên cung cấp các sản phẩm nội thất gỗ chất lượng cao, mẫu mã đa dạng, giá tại xưởng. Mua ngay!',
-  keywords: ['nội thất', 'đồ gỗ', 'nội thất gỗ', 'nội thất giá rẻ', 'nội thất phòng khách', 'nội thất phòng ngủ', 'kệ tivi', 'bàn ăn', 'sofa'],
+  description: 'Khám phá kệ tivi, sofa và đồ gỗ tự nhiên được tuyển chọn, chế tác tại xưởng Nội thất Bách Thảo ở Hà Nội.',
 	icons: {
 		icon: [
 			{ url: '/favicon.ico' },
@@ -28,15 +42,16 @@ export const metadata: Metadata = {
 		],
 	},
   openGraph: {
-    title: 'Nội thất Bách Thảo - Uy tín, Chất lượng, Giá tại xưởng',
-    description: 'Chuyên cung cấp các sản phẩm nội thất gỗ chất lượng cao, mẫu mã đa dạng, giá tại xưởng.',
-    url: config.domainUrl, // <-- THAY THẾ BẰNG DOMAIN CỦA BẠN
+    title: 'Nội thất Bách Thảo | Đồ gỗ tự nhiên chế tác tại xưởng',
+    description: 'Kệ tivi, sofa và đồ gỗ tự nhiên cho không gian sống Việt.',
+    url: config.domainUrl,
     siteName: 'Nội thất Bách Thảo',
     images: [
       {
-        url: '/images/og-image.jpg', // Đồng bộ với ảnh có thật trong public/images
+        url: '/og-image.svg',
         width: 1200,
         height: 630,
+        alt: 'Nội thất Bách Thảo — đồ gỗ tự nhiên chế tác tại xưởng',
       },
     ],
     locale: 'vi_VN',
@@ -45,6 +60,30 @@ export const metadata: Metadata = {
   verification: {
     google: config.googleSiteVerification,
   },
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			'max-image-preview': 'large',
+			'max-snippet': -1,
+			'max-video-preview': -1,
+		},
+	},
+	alternates: {
+		canonical: config.domainUrl,
+		languages: {
+			'vi-VN': config.domainUrl,
+			'x-default': config.domainUrl,
+		},
+	},
+	formatDetection: {
+		telephone: false,
+		address: false,
+		email: false,
+	},
+	manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
@@ -53,31 +92,48 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="vi">
-		<body
-			className="antialiased font-sans"
-		>
-			<Script
-				src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalytics.measurementId}`}
-				strategy="afterInteractive"
-			/>
-			<Script id="gtag-init" strategy="afterInteractive">
-				{`
+		<html lang="vi" className={`${bodyFont.variable} ${displayFont.variable}`}>
+		<body>
+			<a
+				href="#main-content"
+				className="fixed left-4 top-4 z-[100] -translate-y-24 bg-craft-ink px-4 py-3 text-sm font-semibold text-white transition-transform focus:translate-y-0"
+			>
+				Chuyển đến nội dung chính
+			</a>
+			{config.googleAnalytics.measurementId ? (
+				<>
+					<Script
+						src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalytics.measurementId}`}
+						strategy="afterInteractive"
+					/>
+					<Script id="gtag-init" strategy="afterInteractive">
+						{`
 					window.dataLayer = window.dataLayer || [];
 					function gtag(){dataLayer.push(arguments);}
 					gtag('js', new Date());
 
 					gtag('config', '${config.googleAnalytics.measurementId}');
 				`}
-			</Script>
+					</Script>
+				</>
+			) : null}
 		<AuthProvider>
-			<div className="min-h-screen bg-white">
+			<div className="min-h-screen bg-background">
 				<HeaderPage/>
-				{children}
+				<main id="main-content">
+					{children}
+				</main>
 				<FooterPage/>
 				<ToasterProvider />
 			</div>
 		</AuthProvider>
+		<script
+			type="application/ld+json"
+			dangerouslySetInnerHTML={{ __html: JSON.stringify({
+				'@context': 'https://schema.org',
+				'@graph': [buildOrganizationJsonLd(), buildWebsiteJsonLd()],
+			}) }}
+		/>
 		</body>
 		</html>
 	)

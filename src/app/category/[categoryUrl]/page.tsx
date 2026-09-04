@@ -4,6 +4,7 @@ import { getCategoryByUrl } from '@/services/category/get-category-by-url'
 import CategoryPage from '@/containers/category-page'
 import config from '@/config'
 import { getDescription, getKeywords } from '@/seo'
+import { buildCategoryJsonLd, buildBreadcrumbJsonLd } from '@/seo/jsonld'
 
 type Props = {
 	params: Promise<{categoryUrl: string | string[]}>;
@@ -29,12 +30,16 @@ export default async function CategoryDetailPage(props: Props){
 			{ '@type': 'ListItem', position: 2, name: category.name, item: `${config.domainUrl}/category/${slug}` },
 		],
 	}
+	const collectionJsonLd = {
+		'@context': 'https://schema.org',
+		'@graph': [buildCategoryJsonLd(category), breadcrumb],
+	}
 
 	return (
 		<>
 			<script
 				type="application/ld+json"
-				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
 			/>
 			<CategoryPage category={category} />
 		</>
@@ -58,14 +63,15 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 		console.error(`Category metadata fetch error for slug "${slug}":`, error)
 		notFound()
 	}
-	const title = `${category!.name} – Nội Thất Bách Thảo`
+	const title = category!.name
 	const description = getDescription(category.url)
 	const keywords = getKeywords(category.url)
 
-	const image = category.image
 	const imageUrl = category.image?.startsWith('http')
 		? category.image
-		: `/images/${category.image}`
+		: category.image
+			? `/images/${category.image}`
+			: '/images/og-image.jpg'
 
 	return {
 		title,
@@ -94,7 +100,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 			card: 'summary_large_image',
 			title,
 			description,
-			images: image ? [image] : [],
+			images: [imageUrl],
 		},
 		// JSON-LD is rendered via script in the page component
 	}

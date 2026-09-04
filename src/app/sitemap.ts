@@ -1,76 +1,82 @@
-import { MetadataRoute } from 'next';
-import { fetchProducts } from '@/services/product';
-import { fetchCategories } from '@/services/category';
+import type { MetadataRoute } from 'next'
+import { fetchProducts } from '@/services/product'
+import { fetchCategories } from '@/services/category'
 import config from '@/config'
 
-const URL = config.domainUrl; // <-- NHỚ THAY THẾ BẰNG TÊN MIỀN THẬT
+// Honest lastModified: at build time, giving crawlers a fresh re-crawl signal.
+const NOW = new Date()
+
+const toValidDate = (value?: string) => {
+	if (!value) return NOW
+	const date = new Date(value)
+	return Number.isNaN(date.getTime()) ? NOW : date
+}
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  let productEntries: MetadataRoute.Sitemap = [];
-  let categoryEntries: MetadataRoute.Sitemap = [];
+	let productEntries: MetadataRoute.Sitemap = []
+	let categoryEntries: MetadataRoute.Sitemap = []
 
-  try {
-    // 1. Lấy tất cả sản phẩm
-    const products = await fetchProducts();
-    productEntries = products.map(({ url }) => ({
-      url: `${URL}/product/${url}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    }));
+	try {
+		const [products, categories] = await Promise.all([
+			fetchProducts(),
+			fetchCategories(),
+		])
 
-    // 2. Lấy tất cả danh mục
-    const categories = await fetchCategories();
-    categoryEntries = categories.map(({ url }) => ({
-      url: `${URL}/category/${url}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    }));
-  } catch {
-    // Build không cần fail nếu mất mạng; trả về sitemap tĩnh.
-  }
+		productEntries = products.map((product) => ({
+			url: `${config.domainUrl}/product/${product.url}`,
+			lastModified: toValidDate(product.updatedAt),
+			changeFrequency: 'weekly',
+			priority: 0.85,
+		}))
 
-  // 3. Thêm các trang tĩnh (bao gồm HOMEPAGE)
-  const staticRoutes = [
-    // ✅ HOMEPAGE - priority cao nhất
-    {
-      url: URL,
-      lastModified: new Date(),
-      changeFrequency: 'daily' as const,
-      priority: 1.0
-    },
+		categoryEntries = categories.map((category) => ({
+			url: `${config.domainUrl}/category/${category.url}`,
+			lastModified: toValidDate(category.updatedAt),
+			changeFrequency: 'weekly',
+			priority: 0.9,
+		}))
+	} catch {
+		// Keep canonical static routes available if the catalog data source is unavailable.
+	}
 
-    // Các trang khác
-    {
-      url: `${URL}/about-us`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7
-    },
-    {
-      url: `${URL}/contact-us`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.6
-    },
-    {
-      url: `${URL}/warranty-policy`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.5
-    },
-    {
-      url: `${URL}/shipping-policy`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.5
-    },
-  ];
+	const staticRoutes: MetadataRoute.Sitemap = [
+		{
+			url: config.domainUrl,
+			lastModified: NOW,
+			changeFrequency: 'daily',
+			priority: 1,
+		},
+		{
+			url: `${config.domainUrl}/ve-chung-toi`,
+			lastModified: NOW,
+			changeFrequency: 'monthly',
+			priority: 0.7,
+		},
+		{
+			url: `${config.domainUrl}/lien-he`,
+			lastModified: NOW,
+			changeFrequency: 'monthly',
+			priority: 0.7,
+		},
+		{
+			url: `${config.domainUrl}/chinh-sach-bao-hanh`,
+			lastModified: NOW,
+			changeFrequency: 'yearly',
+			priority: 0.5,
+		},
+		{
+			url: `${config.domainUrl}/chinh-sach-van-chuyen`,
+			lastModified: NOW,
+			changeFrequency: 'yearly',
+			priority: 0.5,
+		},
+		{
+			url: `${config.domainUrl}/return-policy`,
+			lastModified: NOW,
+			changeFrequency: 'yearly',
+			priority: 0.5,
+		},
+	]
 
-  return [
-    ...staticRoutes,      // Homepage đầu tiên
-    ...categoryEntries,   // Categories ưu tiên cao
-    ...productEntries,    // Products cuối cùng
-  ];
+	return [...staticRoutes, ...categoryEntries, ...productEntries]
 }
