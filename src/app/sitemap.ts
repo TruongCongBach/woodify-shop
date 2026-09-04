@@ -6,12 +6,6 @@ import config from '@/config'
 // Honest lastModified: at build time, giving crawlers a fresh re-crawl signal.
 const NOW = new Date()
 
-const toValidDate = (value?: string) => {
-	if (!value) return NOW
-	const date = new Date(value)
-	return Number.isNaN(date.getTime()) ? NOW : date
-}
-
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	let productEntries: MetadataRoute.Sitemap = []
 	let categoryEntries: MetadataRoute.Sitemap = []
@@ -24,14 +18,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
 		productEntries = products.map((product) => ({
 			url: `${config.domainUrl}/product/${product.url}`,
-			lastModified: toValidDate(product.updatedAt),
+			lastModified: NOW,
 			changeFrequency: 'weekly',
 			priority: 0.85,
 		}))
 
 		categoryEntries = categories.map((category) => ({
 			url: `${config.domainUrl}/category/${category.url}`,
-			lastModified: toValidDate(category.updatedAt),
+			lastModified: NOW,
 			changeFrequency: 'weekly',
 			priority: 0.9,
 		}))
