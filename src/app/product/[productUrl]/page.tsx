@@ -155,7 +155,7 @@ export default async function ProductDetailPage(props: Props) {
     review: reviews.map((r) => ({
       '@type': 'Review',
       author: { '@type': 'Person', name: r.author },
-      datePublished: product.updatedAt ?? new Date().toISOString().slice(0, 10),
+      datePublished: new Date().toISOString().slice(0, 10),
       reviewBody: r.comment,
       reviewRating: { '@type': 'Rating', ratingValue: r.rating, bestRating: 5 },
     })),
