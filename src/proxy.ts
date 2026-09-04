@@ -8,20 +8,12 @@ const PROTECTED_ROUTES = ['/dashboard']
 export async function proxy(request: NextRequest) {
 	const { pathname } = request.nextUrl
 
-	const userAgent = request.headers.get('user-agent') || ''
-	const isBot = /Googlebot|Bingbot|YandexBot|Baiduspider/i.test(userAgent)
-
-	if (isBot) {
-		const canonicalHost = 'noithatbachthao.com'
-		const host = request.headers.get('host')
-		if (host && host !== canonicalHost && host.includes(canonicalHost)) {
-			const url = request.url.replace(
-				`https://${host}`,
-				`https://${canonicalHost}`,
-			)
-			return NextResponse.redirect(new URL(url, request.url))
-		}
-		return NextResponse.next()
+	const host = request.headers.get('host')
+	if (host?.startsWith('www.')) {
+		const canonicalUrl = request.nextUrl.clone()
+		canonicalUrl.host = host.replace(/^www\./, '')
+		canonicalUrl.protocol = 'https'
+		return NextResponse.redirect(canonicalUrl, 301)
 	}
 
 	const isProtected = PROTECTED_ROUTES.some((route) =>
